@@ -1,0 +1,1894 @@
+Archive member included because of file (symbol)
+
+C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_board_nxp_lpclink2_4370\HARD\liblpc_board_nxp_lpclink2_4370_HARD.a(board_sysinit.o)
+                              ./src/sysinit.o (Board_SystemInit)
+C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(clock_18xx_43xx.o)
+                              C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_board_nxp_lpclink2_4370\HARD\liblpc_board_nxp_lpclink2_4370_HARD.a(board_sysinit.o) (Chip_Clock_SetDivider)
+C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(fpu_init.o)
+                              ./src/CM4_TEST.o (fpuInit)
+C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(sysinit_18xx_43xx.o)
+                              C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_board_nxp_lpclink2_4370\HARD\liblpc_board_nxp_lpclink2_4370_HARD.a(board_sysinit.o) (Chip_SetupCoreClock)
+c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_semihost.a(_cr__main.o)
+                              ./src/cr_startup_lpc43xx.o (__main)
+c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(cos.o)
+                              ./src/IIR.o (cos)
+c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(initio.o)
+                              c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_semihost.a(_cr__main.o) (_initio)
+c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(pow.o)
+                              ./src/IIR.o (pow)
+c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(setvbuf.o)
+                              c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(initio.o) (setvbuf)
+c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(sin.o)
+                              ./src/IIR.o (sin)
+c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(sqrt.o)
+                              ./src/IIR.o (sqrt)
+c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(stdio.o)
+                              c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(initio.o) (__Ciob)
+c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(memset.o)
+                              c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(initio.o) (memset)
+c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(__fillbuf.o)
+                              c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(stdio.o) (__filbuf)
+c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(_deferredlazyseek.o)
+                              c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(__fillbuf.o) (_deferredlazyseek)
+c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(_fdopen.o)
+                              c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(initio.o) (_fdopen)
+c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(_fflush.o)
+                              c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(__fillbuf.o) (_fflush)
+c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(_hugeval.o)
+                              c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(pow.o) (__huge_val)
+c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(_sincos.o)
+                              c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(cos.o) (_sincos)
+c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(_writebuf.o)
+                              c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(_deferredlazyseek.o) (_Cwritebuf)
+c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(alloc.o)
+                              c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(initio.o) (_Csys_alloc)
+c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(errno.o)
+                              c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(pow.o) (errno)
+c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(fabs.o)
+                              c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(_sincos.o) (fabs)
+c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(fclose.o)
+                              c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(initio.o) (fclose)
+c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(fflush.o)
+                              c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(fclose.o) (fflush)
+c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(frexp.o)
+                              c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(pow.o) (frexp)
+c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(fseek.o)
+                              c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(_deferredlazyseek.o) (fseek)
+c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(ftell.o)
+                              c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(fseek.o) (ftell)
+c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(ldexp.o)
+                              c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(pow.o) (ldexp)
+c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(remove.o)
+                              c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(fclose.o) (remove)
+c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(strlen.o)
+                              c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(remove.o) (strlen)
+c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(memcpy.o)
+                              c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(alloc.o) (memcpy)
+c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(__init_alloc.o)
+                              c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(alloc.o) (__heaps)
+c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(_cr_sbrk.o)
+                              c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(alloc.o) (_sbrk)
+c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(_do_fflush.o)
+                              c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(fflush.o) (_do_fflush)
+c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(_cr_check_heap.o)
+                              c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(_cr_sbrk.o) (__check_heap_overflow)
+c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/fpu\libcr_eabihelpers.a(double.o)
+                              ./src/IIR.o (__aeabi_dmul)
+c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/fpu\libcr_eabihelpers.a(float.o)
+                              ./src/IIR.o (__aeabi_f2d)
+c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/fpu\libcr_eabihelpers.a(llong.o)
+                              ./src/IIR.o (__aeabi_llsl)
+c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/fpu\libcr_eabihelpers.a(memcpy.o)
+                              c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(memcpy.o) (__aeabi_memcpy)
+c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_semihost.a(__sys_appexit.o)
+                              c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(alloc.o) (__sys_appexit)
+c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_semihost.a(__sys_close.o)
+                              c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(fclose.o) (__sys_close)
+c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_semihost.a(__sys_flen.o)
+                              c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(_writebuf.o) (__sys_flen)
+c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_semihost.a(__sys_istty.o)
+                              c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(_deferredlazyseek.o) (__sys_istty)
+c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_semihost.a(__sys_read.o)
+                              c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(__fillbuf.o) (__sys_read)
+c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_semihost.a(__sys_readc.o)
+                              c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(__fillbuf.o) (__sys_readc)
+c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_semihost.a(__sys_remove.o)
+                              c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(remove.o) (__sys_remove)
+c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_semihost.a(__sys_rename.o)
+                              c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(remove.o) (__sys_rename)
+c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_semihost.a(__sys_seek.o)
+                              c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(__fillbuf.o) (__sys_seek)
+c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_semihost.a(__sys_tmpnam.o)
+                              c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(fclose.o) (__sys_tmpnam)
+c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_semihost.a(__sys_write.o)
+                              c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(_writebuf.o) (__sys_write)
+
+Allocating common symbols
+Common symbol       size              file
+
+FIR_Coef_q15        0x40              ./src/CM4_TEST.o
+_extra              0x4               c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(initio.o)
+A                   0x8               ./src/IIR.o
+E_IIR               0x50              ./src/CM4_TEST.o
+w0                  0x8               ./src/IIR.o
+coef                0x30              ./src/IIR.o
+FIR_Coef_f32        0x80              ./src/CM4_TEST.o
+__heaps             0x4               c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(__init_alloc.o)
+__end_of_heap       0x4               c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(__init_alloc.o)
+FIR_Coef_q31        0x80              ./src/CM4_TEST.o
+alpha               0x8               ./src/IIR.o
+__Ciob              0x140             c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(stdio.o)
+
+Discarded input sections
+
+ .group         0x00000000        0x8 ./src/CM4_TEST.o
+ .group         0x00000000        0x8 ./src/CM4_TEST.o
+ .group         0x00000000        0x8 ./src/CM4_TEST.o
+ .group         0x00000000        0x8 ./src/CM4_TEST.o
+ .group         0x00000000        0x8 ./src/CM4_TEST.o
+ .group         0x00000000        0x8 ./src/CM4_TEST.o
+ .group         0x00000000        0x8 ./src/CM4_TEST.o
+ .group         0x00000000        0x8 ./src/CM4_TEST.o
+ .group         0x00000000        0x8 ./src/CM4_TEST.o
+ .group         0x00000000        0x8 ./src/CM4_TEST.o
+ .group         0x00000000        0x8 ./src/CM4_TEST.o
+ .group         0x00000000        0x8 ./src/CM4_TEST.o
+ .group         0x00000000        0x8 ./src/CM4_TEST.o
+ .group         0x00000000        0x8 ./src/CM4_TEST.o
+ .group         0x00000000        0x8 ./src/CM4_TEST.o
+ .group         0x00000000        0x8 ./src/CM4_TEST.o
+ .group         0x00000000        0x8 ./src/CM4_TEST.o
+ .group         0x00000000        0x8 ./src/CM4_TEST.o
+ .group         0x00000000        0x8 ./src/CM4_TEST.o
+ .group         0x00000000        0x8 ./src/CM4_TEST.o
+ .group         0x00000000        0x8 ./src/CM4_TEST.o
+ .group         0x00000000        0x8 ./src/CM4_TEST.o
+ .group         0x00000000        0x8 ./src/CM4_TEST.o
+ .group         0x00000000        0x8 ./src/CM4_TEST.o
+ .group         0x00000000        0x8 ./src/CM4_TEST.o
+ .group         0x00000000        0x8 ./src/CM4_TEST.o
+ .group         0x00000000        0x8 ./src/CM4_TEST.o
+ .group         0x00000000        0x8 ./src/CM4_TEST.o
+ .group         0x00000000        0x8 ./src/CM4_TEST.o
+ .group         0x00000000        0x8 ./src/CM4_TEST.o
+ .group         0x00000000        0x8 ./src/CM4_TEST.o
+ .group         0x00000000        0x8 ./src/CM4_TEST.o
+ .group         0x00000000        0x8 ./src/CM4_TEST.o
+ .group         0x00000000        0x8 ./src/CM4_TEST.o
+ .group         0x00000000        0x8 ./src/CM4_TEST.o
+ .group         0x00000000        0x8 ./src/CM4_TEST.o
+ .group         0x00000000        0x8 ./src/CM4_TEST.o
+ .group         0x00000000        0x8 ./src/CM4_TEST.o
+ .group         0x00000000        0x8 ./src/CM4_TEST.o
+ .group         0x00000000        0x8 ./src/CM4_TEST.o
+ .group         0x00000000        0x8 ./src/CM4_TEST.o
+ .group         0x00000000        0x8 ./src/CM4_TEST.o
+ .group         0x00000000        0x8 ./src/CM4_TEST.o
+ .group         0x00000000        0x8 ./src/CM4_TEST.o
+ .group         0x00000000        0x8 ./src/CM4_TEST.o
+ .group         0x00000000        0x8 ./src/CM4_TEST.o
+ .group         0x00000000        0x8 ./src/CM4_TEST.o
+ .group         0x00000000        0x8 ./src/CM4_TEST.o
+ .group         0x00000000        0x8 ./src/CM4_TEST.o
+ .group         0x00000000        0x8 ./src/CM4_TEST.o
+ .group         0x00000000        0x8 ./src/CM4_TEST.o
+ .group         0x00000000        0x8 ./src/CM4_TEST.o
+ .group         0x00000000        0x8 ./src/CM4_TEST.o
+ .group         0x00000000        0x8 ./src/CM4_TEST.o
+ .group         0x00000000        0x8 ./src/CM4_TEST.o
+ .group         0x00000000        0x8 ./src/CM4_TEST.o
+ .group         0x00000000        0x8 ./src/CM4_TEST.o
+ .group         0x00000000        0x8 ./src/CM4_TEST.o
+ .group         0x00000000        0x8 ./src/CM4_TEST.o
+ .text          0x00000000        0x0 ./src/CM4_TEST.o
+ .data          0x00000000        0x0 ./src/CM4_TEST.o
+ .bss           0x00000000        0x0 ./src/CM4_TEST.o
+ .bss.IIR_State_q31
+                0x00000000       0x10 ./src/CM4_TEST.o
+ .data.IIR_Coef_q15
+                0x00000000        0xa ./src/CM4_TEST.o
+ .bss.IIR_State_f32
+                0x00000000       0x10 ./src/CM4_TEST.o
+ .data.IIR_Coef_q31
+                0x00000000       0x14 ./src/CM4_TEST.o
+ .data.IIR_Coef_f32
+                0x00000000       0x14 ./src/CM4_TEST.o
+ .bss.IIR_State_q63
+                0x00000000       0x20 ./src/CM4_TEST.o
+ .bss.$RAM3     0x00000000     0x4040 ./src/CM4_TEST.o
+ .bss.$RAM4     0x00000000     0x4000 ./src/CM4_TEST.o
+ .bss.$RAM5     0x00000000     0x2080 ./src/CM4_TEST.o
+ .bss.IIR_State_q15
+                0x00000000        0x8 ./src/CM4_TEST.o
+ COMMON         0x00000000      0x190 ./src/CM4_TEST.o
+ .group         0x00000000        0x8 ./src/IIR.o
+ .group         0x00000000        0x8 ./src/IIR.o
+ .group         0x00000000        0x8 ./src/IIR.o
+ .group         0x00000000        0x8 ./src/IIR.o
+ .group         0x00000000        0x8 ./src/IIR.o
+ .group         0x00000000        0x8 ./src/IIR.o
+ .group         0x00000000        0x8 ./src/IIR.o
+ .group         0x00000000        0x8 ./src/IIR.o
+ .group         0x00000000        0x8 ./src/IIR.o
+ .group         0x00000000        0x8 ./src/IIR.o
+ .group         0x00000000        0x8 ./src/IIR.o
+ .group         0x00000000        0x8 ./src/IIR.o
+ .text          0x00000000        0x0 ./src/IIR.o
+ .data          0x00000000        0x0 ./src/IIR.o
+ .bss           0x00000000        0x0 ./src/IIR.o
+ .text.Init_q31_t_IIR
+                0x00000000       0x14 ./src/IIR.o
+ .text.Compute_q31_t_IIR
+                0x00000000       0xea ./src/IIR.o
+ .text.GetPeak  0x00000000       0x4c ./src/IIR.o
+ .text.DesignAudioBiquadIIR_q31_t
+                0x00000000      0xa20 ./src/IIR.o
+ .debug_info    0x00000000      0x5b0 ./src/IIR.o
+ .debug_abbrev  0x00000000      0x20d ./src/IIR.o
+ .debug_loc     0x00000000      0x347 ./src/IIR.o
+ .debug_aranges
+                0x00000000       0x38 ./src/IIR.o
+ .debug_ranges  0x00000000       0x48 ./src/IIR.o
+ .debug_macro   0x00000000       0xd0 ./src/IIR.o
+ .debug_macro   0x00000000      0x8c2 ./src/IIR.o
+ .debug_macro   0x00000000       0x12 ./src/IIR.o
+ .debug_macro   0x00000000       0x3b ./src/IIR.o
+ .debug_macro   0x00000000       0x10 ./src/IIR.o
+ .debug_macro   0x00000000      0x12d ./src/IIR.o
+ .debug_macro   0x00000000      0x5b2 ./src/IIR.o
+ .debug_macro   0x00000000       0x2d ./src/IIR.o
+ .debug_macro   0x00000000       0x26 ./src/IIR.o
+ .debug_macro   0x00000000       0xc4 ./src/IIR.o
+ .debug_macro   0x00000000       0xd6 ./src/IIR.o
+ .debug_macro   0x00000000       0x82 ./src/IIR.o
+ .debug_macro   0x00000000       0x40 ./src/IIR.o
+ .debug_line    0x00000000      0x3a7 ./src/IIR.o
+ .debug_str     0x00000000     0x53ac ./src/IIR.o
+ .comment       0x00000000       0x71 ./src/IIR.o
+ .debug_frame   0x00000000       0xbc ./src/IIR.o
+ .ARM.attributes
+                0x00000000       0x39 ./src/IIR.o
+ COMMON         0x00000000       0x48 ./src/IIR.o
+ .group         0x00000000        0x8 ./src/cr_startup_lpc43xx.o
+ .text          0x00000000        0x0 ./src/cr_startup_lpc43xx.o
+ .data          0x00000000        0x0 ./src/cr_startup_lpc43xx.o
+ .bss           0x00000000        0x0 ./src/cr_startup_lpc43xx.o
+ .debug_macro   0x00000000      0x8c2 ./src/cr_startup_lpc43xx.o
+ .group         0x00000000        0x8 ./src/crp.o
+ .group         0x00000000        0x8 ./src/crp.o
+ .text          0x00000000        0x0 ./src/crp.o
+ .data          0x00000000        0x0 ./src/crp.o
+ .bss           0x00000000        0x0 ./src/crp.o
+ .debug_macro   0x00000000      0x8c2 ./src/crp.o
+ .group         0x00000000        0x8 ./src/sysinit.o
+ .group         0x00000000        0x8 ./src/sysinit.o
+ .group         0x00000000        0x8 ./src/sysinit.o
+ .group         0x00000000        0x8 ./src/sysinit.o
+ .group         0x00000000        0x8 ./src/sysinit.o
+ .group         0x00000000        0x8 ./src/sysinit.o
+ .group         0x00000000        0x8 ./src/sysinit.o
+ .group         0x00000000        0x8 ./src/sysinit.o
+ .group         0x00000000        0x8 ./src/sysinit.o
+ .group         0x00000000        0x8 ./src/sysinit.o
+ .group         0x00000000        0x8 ./src/sysinit.o
+ .group         0x00000000        0x8 ./src/sysinit.o
+ .group         0x00000000        0x8 ./src/sysinit.o
+ .group         0x00000000        0x8 ./src/sysinit.o
+ .group         0x00000000        0x8 ./src/sysinit.o
+ .group         0x00000000        0x8 ./src/sysinit.o
+ .group         0x00000000        0x8 ./src/sysinit.o
+ .group         0x00000000        0x8 ./src/sysinit.o
+ .group         0x00000000        0x8 ./src/sysinit.o
+ .group         0x00000000        0x8 ./src/sysinit.o
+ .group         0x00000000        0x8 ./src/sysinit.o
+ .group         0x00000000        0x8 ./src/sysinit.o
+ .group         0x00000000        0x8 ./src/sysinit.o
+ .group         0x00000000        0x8 ./src/sysinit.o
+ .group         0x00000000        0x8 ./src/sysinit.o
+ .group         0x00000000        0x8 ./src/sysinit.o
+ .group         0x00000000        0x8 ./src/sysinit.o
+ .group         0x00000000        0x8 ./src/sysinit.o
+ .group         0x00000000        0x8 ./src/sysinit.o
+ .group         0x00000000        0x8 ./src/sysinit.o
+ .group         0x00000000        0x8 ./src/sysinit.o
+ .group         0x00000000        0x8 ./src/sysinit.o
+ .group         0x00000000        0x8 ./src/sysinit.o
+ .group         0x00000000        0x8 ./src/sysinit.o
+ .group         0x00000000        0x8 ./src/sysinit.o
+ .group         0x00000000        0x8 ./src/sysinit.o
+ .group         0x00000000        0x8 ./src/sysinit.o
+ .group         0x00000000        0x8 ./src/sysinit.o
+ .group         0x00000000        0x8 ./src/sysinit.o
+ .group         0x00000000        0x8 ./src/sysinit.o
+ .group         0x00000000        0x8 ./src/sysinit.o
+ .group         0x00000000        0x8 ./src/sysinit.o
+ .group         0x00000000        0x8 ./src/sysinit.o
+ .group         0x00000000        0x8 ./src/sysinit.o
+ .group         0x00000000        0x8 ./src/sysinit.o
+ .group         0x00000000        0x8 ./src/sysinit.o
+ .group         0x00000000        0x8 ./src/sysinit.o
+ .group         0x00000000        0x8 ./src/sysinit.o
+ .group         0x00000000        0x8 ./src/sysinit.o
+ .group         0x00000000        0x8 ./src/sysinit.o
+ .group         0x00000000        0x8 ./src/sysinit.o
+ .group         0x00000000        0x8 ./src/sysinit.o
+ .text          0x00000000        0x0 ./src/sysinit.o
+ .data          0x00000000        0x0 ./src/sysinit.o
+ .bss           0x00000000        0x0 ./src/sysinit.o
+ .debug_macro   0x00000000      0x8c2 ./src/sysinit.o
+ .debug_macro   0x00000000       0x10 ./src/sysinit.o
+ .debug_macro   0x00000000       0x10 ./src/sysinit.o
+ .debug_macro   0x00000000      0x12d ./src/sysinit.o
+ .debug_macro   0x00000000      0x5b2 ./src/sysinit.o
+ .debug_macro   0x00000000       0x22 ./src/sysinit.o
+ .debug_macro   0x00000000       0x7b ./src/sysinit.o
+ .debug_macro   0x00000000       0x28 ./src/sysinit.o
+ .debug_macro   0x00000000       0x3b ./src/sysinit.o
+ .debug_macro   0x00000000       0x2d ./src/sysinit.o
+ .debug_macro   0x00000000       0x42 ./src/sysinit.o
+ .debug_macro   0x00000000      0xd39 ./src/sysinit.o
+ .debug_macro   0x00000000      0x2bc ./src/sysinit.o
+ .debug_macro   0x00000000      0x112 ./src/sysinit.o
+ .debug_macro   0x00000000       0x11 ./src/sysinit.o
+ .debug_macro   0x00000000       0x1e ./src/sysinit.o
+ .debug_macro   0x00000000       0x16 ./src/sysinit.o
+ .debug_macro   0x00000000      0x2e6 ./src/sysinit.o
+ .debug_macro   0x00000000       0x82 ./src/sysinit.o
+ .debug_macro   0x00000000      0x13d ./src/sysinit.o
+ .debug_macro   0x00000000      0x198 ./src/sysinit.o
+ .debug_macro   0x00000000       0x34 ./src/sysinit.o
+ .debug_macro   0x00000000       0x58 ./src/sysinit.o
+ .debug_macro   0x00000000      0x236 ./src/sysinit.o
+ .debug_macro   0x00000000      0x572 ./src/sysinit.o
+ .debug_macro   0x00000000       0x16 ./src/sysinit.o
+ .debug_macro   0x00000000      0x18a ./src/sysinit.o
+ .debug_macro   0x00000000       0x88 ./src/sysinit.o
+ .debug_macro   0x00000000      0x1b9 ./src/sysinit.o
+ .debug_macro   0x00000000      0x1da ./src/sysinit.o
+ .debug_macro   0x00000000       0x40 ./src/sysinit.o
+ .debug_macro   0x00000000       0x1c ./src/sysinit.o
+ .debug_macro   0x00000000       0x2e ./src/sysinit.o
+ .debug_macro   0x00000000       0x2e ./src/sysinit.o
+ .debug_macro   0x00000000       0x22 ./src/sysinit.o
+ .debug_macro   0x00000000      0x201 ./src/sysinit.o
+ .debug_macro   0x00000000       0xe0 ./src/sysinit.o
+ .debug_macro   0x00000000      0x34c ./src/sysinit.o
+ .debug_macro   0x00000000       0xdc ./src/sysinit.o
+ .debug_macro   0x00000000       0x94 ./src/sysinit.o
+ .debug_macro   0x00000000       0xb8 ./src/sysinit.o
+ .debug_macro   0x00000000       0x4c ./src/sysinit.o
+ .debug_macro   0x00000000       0x16 ./src/sysinit.o
+ .debug_macro   0x00000000      0x328 ./src/sysinit.o
+ .debug_macro   0x00000000       0x3a ./src/sysinit.o
+ .debug_macro   0x00000000       0xd0 ./src/sysinit.o
+ .debug_macro   0x00000000       0x18 ./src/sysinit.o
+ .debug_macro   0x00000000       0x22 ./src/sysinit.o
+ .debug_macro   0x00000000       0x40 ./src/sysinit.o
+ .debug_macro   0x00000000       0x5e ./src/sysinit.o
+ .debug_macro   0x00000000       0x9a ./src/sysinit.o
+ .debug_macro   0x00000000       0x20 ./src/sysinit.o
+ .group         0x00000000        0x8 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_board_nxp_lpclink2_4370\HARD\liblpc_board_nxp_lpclink2_4370_HARD.a(board_sysinit.o)
+ .group         0x00000000        0x8 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_board_nxp_lpclink2_4370\HARD\liblpc_board_nxp_lpclink2_4370_HARD.a(board_sysinit.o)
+ .group         0x00000000        0x8 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_board_nxp_lpclink2_4370\HARD\liblpc_board_nxp_lpclink2_4370_HARD.a(board_sysinit.o)
+ .group         0x00000000        0x8 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_board_nxp_lpclink2_4370\HARD\liblpc_board_nxp_lpclink2_4370_HARD.a(board_sysinit.o)
+ .group         0x00000000        0x8 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_board_nxp_lpclink2_4370\HARD\liblpc_board_nxp_lpclink2_4370_HARD.a(board_sysinit.o)
+ .group         0x00000000        0x8 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_board_nxp_lpclink2_4370\HARD\liblpc_board_nxp_lpclink2_4370_HARD.a(board_sysinit.o)
+ .group         0x00000000        0x8 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_board_nxp_lpclink2_4370\HARD\liblpc_board_nxp_lpclink2_4370_HARD.a(board_sysinit.o)
+ .group         0x00000000        0x8 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_board_nxp_lpclink2_4370\HARD\liblpc_board_nxp_lpclink2_4370_HARD.a(board_sysinit.o)
+ .group         0x00000000        0x8 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_board_nxp_lpclink2_4370\HARD\liblpc_board_nxp_lpclink2_4370_HARD.a(board_sysinit.o)
+ .group         0x00000000        0x8 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_board_nxp_lpclink2_4370\HARD\liblpc_board_nxp_lpclink2_4370_HARD.a(board_sysinit.o)
+ .group         0x00000000        0x8 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_board_nxp_lpclink2_4370\HARD\liblpc_board_nxp_lpclink2_4370_HARD.a(board_sysinit.o)
+ .group         0x00000000        0x8 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_board_nxp_lpclink2_4370\HARD\liblpc_board_nxp_lpclink2_4370_HARD.a(board_sysinit.o)
+ .group         0x00000000        0x8 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_board_nxp_lpclink2_4370\HARD\liblpc_board_nxp_lpclink2_4370_HARD.a(board_sysinit.o)
+ .group         0x00000000        0x8 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_board_nxp_lpclink2_4370\HARD\liblpc_board_nxp_lpclink2_4370_HARD.a(board_sysinit.o)
+ .group         0x00000000        0x8 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_board_nxp_lpclink2_4370\HARD\liblpc_board_nxp_lpclink2_4370_HARD.a(board_sysinit.o)
+ .group         0x00000000        0x8 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_board_nxp_lpclink2_4370\HARD\liblpc_board_nxp_lpclink2_4370_HARD.a(board_sysinit.o)
+ .group         0x00000000        0x8 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_board_nxp_lpclink2_4370\HARD\liblpc_board_nxp_lpclink2_4370_HARD.a(board_sysinit.o)
+ .group         0x00000000        0x8 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_board_nxp_lpclink2_4370\HARD\liblpc_board_nxp_lpclink2_4370_HARD.a(board_sysinit.o)
+ .group         0x00000000        0x8 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_board_nxp_lpclink2_4370\HARD\liblpc_board_nxp_lpclink2_4370_HARD.a(board_sysinit.o)
+ .group         0x00000000        0x8 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_board_nxp_lpclink2_4370\HARD\liblpc_board_nxp_lpclink2_4370_HARD.a(board_sysinit.o)
+ .group         0x00000000        0x8 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_board_nxp_lpclink2_4370\HARD\liblpc_board_nxp_lpclink2_4370_HARD.a(board_sysinit.o)
+ .group         0x00000000        0x8 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_board_nxp_lpclink2_4370\HARD\liblpc_board_nxp_lpclink2_4370_HARD.a(board_sysinit.o)
+ .group         0x00000000        0x8 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_board_nxp_lpclink2_4370\HARD\liblpc_board_nxp_lpclink2_4370_HARD.a(board_sysinit.o)
+ .group         0x00000000        0x8 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_board_nxp_lpclink2_4370\HARD\liblpc_board_nxp_lpclink2_4370_HARD.a(board_sysinit.o)
+ .group         0x00000000        0x8 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_board_nxp_lpclink2_4370\HARD\liblpc_board_nxp_lpclink2_4370_HARD.a(board_sysinit.o)
+ .group         0x00000000        0x8 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_board_nxp_lpclink2_4370\HARD\liblpc_board_nxp_lpclink2_4370_HARD.a(board_sysinit.o)
+ .group         0x00000000        0x8 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_board_nxp_lpclink2_4370\HARD\liblpc_board_nxp_lpclink2_4370_HARD.a(board_sysinit.o)
+ .group         0x00000000        0x8 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_board_nxp_lpclink2_4370\HARD\liblpc_board_nxp_lpclink2_4370_HARD.a(board_sysinit.o)
+ .group         0x00000000        0x8 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_board_nxp_lpclink2_4370\HARD\liblpc_board_nxp_lpclink2_4370_HARD.a(board_sysinit.o)
+ .group         0x00000000        0x8 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_board_nxp_lpclink2_4370\HARD\liblpc_board_nxp_lpclink2_4370_HARD.a(board_sysinit.o)
+ .group         0x00000000        0x8 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_board_nxp_lpclink2_4370\HARD\liblpc_board_nxp_lpclink2_4370_HARD.a(board_sysinit.o)
+ .group         0x00000000        0x8 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_board_nxp_lpclink2_4370\HARD\liblpc_board_nxp_lpclink2_4370_HARD.a(board_sysinit.o)
+ .group         0x00000000        0x8 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_board_nxp_lpclink2_4370\HARD\liblpc_board_nxp_lpclink2_4370_HARD.a(board_sysinit.o)
+ .group         0x00000000        0x8 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_board_nxp_lpclink2_4370\HARD\liblpc_board_nxp_lpclink2_4370_HARD.a(board_sysinit.o)
+ .group         0x00000000        0x8 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_board_nxp_lpclink2_4370\HARD\liblpc_board_nxp_lpclink2_4370_HARD.a(board_sysinit.o)
+ .group         0x00000000        0x8 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_board_nxp_lpclink2_4370\HARD\liblpc_board_nxp_lpclink2_4370_HARD.a(board_sysinit.o)
+ .group         0x00000000        0x8 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_board_nxp_lpclink2_4370\HARD\liblpc_board_nxp_lpclink2_4370_HARD.a(board_sysinit.o)
+ .group         0x00000000        0x8 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_board_nxp_lpclink2_4370\HARD\liblpc_board_nxp_lpclink2_4370_HARD.a(board_sysinit.o)
+ .group         0x00000000        0x8 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_board_nxp_lpclink2_4370\HARD\liblpc_board_nxp_lpclink2_4370_HARD.a(board_sysinit.o)
+ .group         0x00000000        0x8 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_board_nxp_lpclink2_4370\HARD\liblpc_board_nxp_lpclink2_4370_HARD.a(board_sysinit.o)
+ .group         0x00000000        0x8 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_board_nxp_lpclink2_4370\HARD\liblpc_board_nxp_lpclink2_4370_HARD.a(board_sysinit.o)
+ .group         0x00000000        0x8 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_board_nxp_lpclink2_4370\HARD\liblpc_board_nxp_lpclink2_4370_HARD.a(board_sysinit.o)
+ .group         0x00000000        0x8 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_board_nxp_lpclink2_4370\HARD\liblpc_board_nxp_lpclink2_4370_HARD.a(board_sysinit.o)
+ .group         0x00000000        0x8 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_board_nxp_lpclink2_4370\HARD\liblpc_board_nxp_lpclink2_4370_HARD.a(board_sysinit.o)
+ .group         0x00000000        0x8 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_board_nxp_lpclink2_4370\HARD\liblpc_board_nxp_lpclink2_4370_HARD.a(board_sysinit.o)
+ .group         0x00000000        0x8 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_board_nxp_lpclink2_4370\HARD\liblpc_board_nxp_lpclink2_4370_HARD.a(board_sysinit.o)
+ .group         0x00000000        0x8 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_board_nxp_lpclink2_4370\HARD\liblpc_board_nxp_lpclink2_4370_HARD.a(board_sysinit.o)
+ .group         0x00000000        0x8 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_board_nxp_lpclink2_4370\HARD\liblpc_board_nxp_lpclink2_4370_HARD.a(board_sysinit.o)
+ .group         0x00000000        0x8 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_board_nxp_lpclink2_4370\HARD\liblpc_board_nxp_lpclink2_4370_HARD.a(board_sysinit.o)
+ .group         0x00000000        0x8 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_board_nxp_lpclink2_4370\HARD\liblpc_board_nxp_lpclink2_4370_HARD.a(board_sysinit.o)
+ .group         0x00000000        0x8 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_board_nxp_lpclink2_4370\HARD\liblpc_board_nxp_lpclink2_4370_HARD.a(board_sysinit.o)
+ .group         0x00000000        0x8 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_board_nxp_lpclink2_4370\HARD\liblpc_board_nxp_lpclink2_4370_HARD.a(board_sysinit.o)
+ .text          0x00000000        0x0 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_board_nxp_lpclink2_4370\HARD\liblpc_board_nxp_lpclink2_4370_HARD.a(board_sysinit.o)
+ .data          0x00000000        0x0 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_board_nxp_lpclink2_4370\HARD\liblpc_board_nxp_lpclink2_4370_HARD.a(board_sysinit.o)
+ .bss           0x00000000        0x0 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_board_nxp_lpclink2_4370\HARD\liblpc_board_nxp_lpclink2_4370_HARD.a(board_sysinit.o)
+ .debug_macro   0x00000000       0x10 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_board_nxp_lpclink2_4370\HARD\liblpc_board_nxp_lpclink2_4370_HARD.a(board_sysinit.o)
+ .debug_macro   0x00000000       0x10 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_board_nxp_lpclink2_4370\HARD\liblpc_board_nxp_lpclink2_4370_HARD.a(board_sysinit.o)
+ .debug_macro   0x00000000      0x12d C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_board_nxp_lpclink2_4370\HARD\liblpc_board_nxp_lpclink2_4370_HARD.a(board_sysinit.o)
+ .debug_macro   0x00000000      0x5b2 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_board_nxp_lpclink2_4370\HARD\liblpc_board_nxp_lpclink2_4370_HARD.a(board_sysinit.o)
+ .debug_macro   0x00000000       0x22 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_board_nxp_lpclink2_4370\HARD\liblpc_board_nxp_lpclink2_4370_HARD.a(board_sysinit.o)
+ .debug_macro   0x00000000       0x7b C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_board_nxp_lpclink2_4370\HARD\liblpc_board_nxp_lpclink2_4370_HARD.a(board_sysinit.o)
+ .debug_macro   0x00000000       0x28 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_board_nxp_lpclink2_4370\HARD\liblpc_board_nxp_lpclink2_4370_HARD.a(board_sysinit.o)
+ .debug_macro   0x00000000       0x3b C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_board_nxp_lpclink2_4370\HARD\liblpc_board_nxp_lpclink2_4370_HARD.a(board_sysinit.o)
+ .debug_macro   0x00000000       0x42 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_board_nxp_lpclink2_4370\HARD\liblpc_board_nxp_lpclink2_4370_HARD.a(board_sysinit.o)
+ .debug_macro   0x00000000      0xd39 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_board_nxp_lpclink2_4370\HARD\liblpc_board_nxp_lpclink2_4370_HARD.a(board_sysinit.o)
+ .debug_macro   0x00000000      0x2bc C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_board_nxp_lpclink2_4370\HARD\liblpc_board_nxp_lpclink2_4370_HARD.a(board_sysinit.o)
+ .debug_macro   0x00000000      0x112 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_board_nxp_lpclink2_4370\HARD\liblpc_board_nxp_lpclink2_4370_HARD.a(board_sysinit.o)
+ .debug_macro   0x00000000       0x11 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_board_nxp_lpclink2_4370\HARD\liblpc_board_nxp_lpclink2_4370_HARD.a(board_sysinit.o)
+ .debug_macro   0x00000000       0x1e C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_board_nxp_lpclink2_4370\HARD\liblpc_board_nxp_lpclink2_4370_HARD.a(board_sysinit.o)
+ .debug_macro   0x00000000       0x16 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_board_nxp_lpclink2_4370\HARD\liblpc_board_nxp_lpclink2_4370_HARD.a(board_sysinit.o)
+ .debug_macro   0x00000000      0x2e6 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_board_nxp_lpclink2_4370\HARD\liblpc_board_nxp_lpclink2_4370_HARD.a(board_sysinit.o)
+ .debug_macro   0x00000000       0x82 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_board_nxp_lpclink2_4370\HARD\liblpc_board_nxp_lpclink2_4370_HARD.a(board_sysinit.o)
+ .debug_macro   0x00000000      0x13d C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_board_nxp_lpclink2_4370\HARD\liblpc_board_nxp_lpclink2_4370_HARD.a(board_sysinit.o)
+ .debug_macro   0x00000000      0x198 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_board_nxp_lpclink2_4370\HARD\liblpc_board_nxp_lpclink2_4370_HARD.a(board_sysinit.o)
+ .debug_macro   0x00000000       0x34 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_board_nxp_lpclink2_4370\HARD\liblpc_board_nxp_lpclink2_4370_HARD.a(board_sysinit.o)
+ .debug_macro   0x00000000       0x58 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_board_nxp_lpclink2_4370\HARD\liblpc_board_nxp_lpclink2_4370_HARD.a(board_sysinit.o)
+ .debug_macro   0x00000000      0x236 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_board_nxp_lpclink2_4370\HARD\liblpc_board_nxp_lpclink2_4370_HARD.a(board_sysinit.o)
+ .debug_macro   0x00000000      0x572 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_board_nxp_lpclink2_4370\HARD\liblpc_board_nxp_lpclink2_4370_HARD.a(board_sysinit.o)
+ .debug_macro   0x00000000       0x16 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_board_nxp_lpclink2_4370\HARD\liblpc_board_nxp_lpclink2_4370_HARD.a(board_sysinit.o)
+ .debug_macro   0x00000000      0x18a C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_board_nxp_lpclink2_4370\HARD\liblpc_board_nxp_lpclink2_4370_HARD.a(board_sysinit.o)
+ .debug_macro   0x00000000       0x88 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_board_nxp_lpclink2_4370\HARD\liblpc_board_nxp_lpclink2_4370_HARD.a(board_sysinit.o)
+ .debug_macro   0x00000000      0x1b9 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_board_nxp_lpclink2_4370\HARD\liblpc_board_nxp_lpclink2_4370_HARD.a(board_sysinit.o)
+ .debug_macro   0x00000000      0x1da C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_board_nxp_lpclink2_4370\HARD\liblpc_board_nxp_lpclink2_4370_HARD.a(board_sysinit.o)
+ .debug_macro   0x00000000       0x40 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_board_nxp_lpclink2_4370\HARD\liblpc_board_nxp_lpclink2_4370_HARD.a(board_sysinit.o)
+ .debug_macro   0x00000000       0x1c C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_board_nxp_lpclink2_4370\HARD\liblpc_board_nxp_lpclink2_4370_HARD.a(board_sysinit.o)
+ .debug_macro   0x00000000       0x2e C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_board_nxp_lpclink2_4370\HARD\liblpc_board_nxp_lpclink2_4370_HARD.a(board_sysinit.o)
+ .debug_macro   0x00000000       0x2e C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_board_nxp_lpclink2_4370\HARD\liblpc_board_nxp_lpclink2_4370_HARD.a(board_sysinit.o)
+ .debug_macro   0x00000000       0x22 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_board_nxp_lpclink2_4370\HARD\liblpc_board_nxp_lpclink2_4370_HARD.a(board_sysinit.o)
+ .debug_macro   0x00000000      0x201 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_board_nxp_lpclink2_4370\HARD\liblpc_board_nxp_lpclink2_4370_HARD.a(board_sysinit.o)
+ .debug_macro   0x00000000       0xe0 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_board_nxp_lpclink2_4370\HARD\liblpc_board_nxp_lpclink2_4370_HARD.a(board_sysinit.o)
+ .debug_macro   0x00000000      0x34c C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_board_nxp_lpclink2_4370\HARD\liblpc_board_nxp_lpclink2_4370_HARD.a(board_sysinit.o)
+ .debug_macro   0x00000000       0xdc C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_board_nxp_lpclink2_4370\HARD\liblpc_board_nxp_lpclink2_4370_HARD.a(board_sysinit.o)
+ .debug_macro   0x00000000       0x94 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_board_nxp_lpclink2_4370\HARD\liblpc_board_nxp_lpclink2_4370_HARD.a(board_sysinit.o)
+ .debug_macro   0x00000000       0xb8 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_board_nxp_lpclink2_4370\HARD\liblpc_board_nxp_lpclink2_4370_HARD.a(board_sysinit.o)
+ .debug_macro   0x00000000       0x4c C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_board_nxp_lpclink2_4370\HARD\liblpc_board_nxp_lpclink2_4370_HARD.a(board_sysinit.o)
+ .debug_macro   0x00000000       0x16 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_board_nxp_lpclink2_4370\HARD\liblpc_board_nxp_lpclink2_4370_HARD.a(board_sysinit.o)
+ .debug_macro   0x00000000      0x328 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_board_nxp_lpclink2_4370\HARD\liblpc_board_nxp_lpclink2_4370_HARD.a(board_sysinit.o)
+ .debug_macro   0x00000000       0x3a C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_board_nxp_lpclink2_4370\HARD\liblpc_board_nxp_lpclink2_4370_HARD.a(board_sysinit.o)
+ .debug_macro   0x00000000       0xd0 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_board_nxp_lpclink2_4370\HARD\liblpc_board_nxp_lpclink2_4370_HARD.a(board_sysinit.o)
+ .debug_macro   0x00000000       0x18 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_board_nxp_lpclink2_4370\HARD\liblpc_board_nxp_lpclink2_4370_HARD.a(board_sysinit.o)
+ .debug_macro   0x00000000       0x22 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_board_nxp_lpclink2_4370\HARD\liblpc_board_nxp_lpclink2_4370_HARD.a(board_sysinit.o)
+ .debug_macro   0x00000000       0x40 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_board_nxp_lpclink2_4370\HARD\liblpc_board_nxp_lpclink2_4370_HARD.a(board_sysinit.o)
+ .debug_macro   0x00000000       0x5e C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_board_nxp_lpclink2_4370\HARD\liblpc_board_nxp_lpclink2_4370_HARD.a(board_sysinit.o)
+ .debug_macro   0x00000000       0x9a C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_board_nxp_lpclink2_4370\HARD\liblpc_board_nxp_lpclink2_4370_HARD.a(board_sysinit.o)
+ .debug_macro   0x00000000       0x20 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_board_nxp_lpclink2_4370\HARD\liblpc_board_nxp_lpclink2_4370_HARD.a(board_sysinit.o)
+ .group         0x00000000        0x8 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(clock_18xx_43xx.o)
+ .group         0x00000000        0x8 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(clock_18xx_43xx.o)
+ .group         0x00000000        0x8 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(clock_18xx_43xx.o)
+ .group         0x00000000        0x8 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(clock_18xx_43xx.o)
+ .group         0x00000000        0x8 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(clock_18xx_43xx.o)
+ .group         0x00000000        0x8 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(clock_18xx_43xx.o)
+ .group         0x00000000        0x8 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(clock_18xx_43xx.o)
+ .group         0x00000000        0x8 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(clock_18xx_43xx.o)
+ .group         0x00000000        0x8 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(clock_18xx_43xx.o)
+ .group         0x00000000        0x8 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(clock_18xx_43xx.o)
+ .group         0x00000000        0x8 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(clock_18xx_43xx.o)
+ .group         0x00000000        0x8 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(clock_18xx_43xx.o)
+ .group         0x00000000        0x8 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(clock_18xx_43xx.o)
+ .group         0x00000000        0x8 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(clock_18xx_43xx.o)
+ .group         0x00000000        0x8 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(clock_18xx_43xx.o)
+ .group         0x00000000        0x8 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(clock_18xx_43xx.o)
+ .group         0x00000000        0x8 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(clock_18xx_43xx.o)
+ .group         0x00000000        0x8 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(clock_18xx_43xx.o)
+ .group         0x00000000        0x8 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(clock_18xx_43xx.o)
+ .group         0x00000000        0x8 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(clock_18xx_43xx.o)
+ .group         0x00000000        0x8 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(clock_18xx_43xx.o)
+ .group         0x00000000        0x8 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(clock_18xx_43xx.o)
+ .group         0x00000000        0x8 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(clock_18xx_43xx.o)
+ .group         0x00000000        0x8 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(clock_18xx_43xx.o)
+ .group         0x00000000        0x8 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(clock_18xx_43xx.o)
+ .group         0x00000000        0x8 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(clock_18xx_43xx.o)
+ .group         0x00000000        0x8 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(clock_18xx_43xx.o)
+ .group         0x00000000        0x8 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(clock_18xx_43xx.o)
+ .group         0x00000000        0x8 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(clock_18xx_43xx.o)
+ .group         0x00000000        0x8 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(clock_18xx_43xx.o)
+ .group         0x00000000        0x8 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(clock_18xx_43xx.o)
+ .group         0x00000000        0x8 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(clock_18xx_43xx.o)
+ .group         0x00000000        0x8 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(clock_18xx_43xx.o)
+ .group         0x00000000        0x8 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(clock_18xx_43xx.o)
+ .group         0x00000000        0x8 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(clock_18xx_43xx.o)
+ .group         0x00000000        0x8 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(clock_18xx_43xx.o)
+ .group         0x00000000        0x8 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(clock_18xx_43xx.o)
+ .group         0x00000000        0x8 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(clock_18xx_43xx.o)
+ .group         0x00000000        0x8 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(clock_18xx_43xx.o)
+ .group         0x00000000        0x8 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(clock_18xx_43xx.o)
+ .group         0x00000000        0x8 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(clock_18xx_43xx.o)
+ .group         0x00000000        0x8 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(clock_18xx_43xx.o)
+ .group         0x00000000        0x8 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(clock_18xx_43xx.o)
+ .group         0x00000000        0x8 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(clock_18xx_43xx.o)
+ .group         0x00000000        0x8 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(clock_18xx_43xx.o)
+ .group         0x00000000        0x8 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(clock_18xx_43xx.o)
+ .group         0x00000000        0x8 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(clock_18xx_43xx.o)
+ .group         0x00000000        0x8 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(clock_18xx_43xx.o)
+ .group         0x00000000        0x8 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(clock_18xx_43xx.o)
+ .text          0x00000000        0x0 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(clock_18xx_43xx.o)
+ .data          0x00000000        0x0 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(clock_18xx_43xx.o)
+ .bss           0x00000000        0x0 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(clock_18xx_43xx.o)
+ .rodata.periph_to_base
+                0x00000000       0x6c C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(clock_18xx_43xx.o)
+ .text.Chip_Clock_FindBaseClock
+                0x00000000       0x88 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(clock_18xx_43xx.o)
+ .text.Chip_Clock_DisableCrystal
+                0x00000000       0x1c C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(clock_18xx_43xx.o)
+ .text.Chip_Clock_EnableMainPLL
+                0x00000000       0x1c C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(clock_18xx_43xx.o)
+ .text.Chip_Clock_MainPLLLocked
+                0x00000000       0x24 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(clock_18xx_43xx.o)
+ .text.Chip_Clock_GetBaseClocktHz
+                0x00000000       0x24 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(clock_18xx_43xx.o)
+ .text.Chip_Clock_GetBaseClockOpts
+                0x00000000       0x80 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(clock_18xx_43xx.o)
+ .text.Chip_Clock_EnableBaseClock
+                0x00000000       0x3c C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(clock_18xx_43xx.o)
+ .text.Chip_Clock_DisableBaseClock
+                0x00000000       0x3c C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(clock_18xx_43xx.o)
+ .text.Chip_Clock_IsBaseClockEnabled
+                0x00000000       0x44 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(clock_18xx_43xx.o)
+ .text.Chip_Clock_GetBaseClock
+                0x00000000       0x4c C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(clock_18xx_43xx.o)
+ .text.Chip_Clock_EnableOpts
+                0x00000000       0x7c C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(clock_18xx_43xx.o)
+ .text.Chip_Clock_Enable
+                0x00000000       0x60 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(clock_18xx_43xx.o)
+ .text.Chip_Clock_RTCEnable
+                0x00000000       0x28 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(clock_18xx_43xx.o)
+ .text.Chip_Clock_Disable
+                0x00000000       0x60 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(clock_18xx_43xx.o)
+ .text.Chip_Clock_StartPowerDown
+                0x00000000       0x20 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(clock_18xx_43xx.o)
+ .text.Chip_Clock_ClearPowerDown
+                0x00000000       0x20 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(clock_18xx_43xx.o)
+ .text.Chip_Clock_GetRate
+                0x00000000       0x88 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(clock_18xx_43xx.o)
+ .text.Chip_Clock_GetEMCRate
+                0x00000000       0x48 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(clock_18xx_43xx.o)
+ .text.Chip_Clock_SetupPLL
+                0x00000000       0x78 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(clock_18xx_43xx.o)
+ .text.Chip_Clock_EnablePLL
+                0x00000000       0x34 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(clock_18xx_43xx.o)
+ .text.Chip_Clock_DisablePLL
+                0x00000000       0x34 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(clock_18xx_43xx.o)
+ .text.Chip_Clock_GetPLLStatus
+                0x00000000       0x28 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(clock_18xx_43xx.o)
+ .debug_macro   0x00000000      0x88c C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(clock_18xx_43xx.o)
+ .debug_macro   0x00000000       0x10 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(clock_18xx_43xx.o)
+ .debug_macro   0x00000000       0x10 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(clock_18xx_43xx.o)
+ .debug_macro   0x00000000      0x12d C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(clock_18xx_43xx.o)
+ .debug_macro   0x00000000      0x5b2 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(clock_18xx_43xx.o)
+ .debug_macro   0x00000000       0x22 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(clock_18xx_43xx.o)
+ .debug_macro   0x00000000       0x7b C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(clock_18xx_43xx.o)
+ .debug_macro   0x00000000       0x28 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(clock_18xx_43xx.o)
+ .debug_macro   0x00000000       0x3b C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(clock_18xx_43xx.o)
+ .debug_macro   0x00000000       0x2d C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(clock_18xx_43xx.o)
+ .debug_macro   0x00000000       0x42 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(clock_18xx_43xx.o)
+ .debug_macro   0x00000000      0xd39 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(clock_18xx_43xx.o)
+ .debug_macro   0x00000000      0x2bc C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(clock_18xx_43xx.o)
+ .debug_macro   0x00000000      0x112 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(clock_18xx_43xx.o)
+ .debug_macro   0x00000000       0x11 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(clock_18xx_43xx.o)
+ .debug_macro   0x00000000       0x1e C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(clock_18xx_43xx.o)
+ .debug_macro   0x00000000       0x16 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(clock_18xx_43xx.o)
+ .debug_macro   0x00000000      0x2e6 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(clock_18xx_43xx.o)
+ .debug_macro   0x00000000       0x82 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(clock_18xx_43xx.o)
+ .debug_macro   0x00000000      0x13d C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(clock_18xx_43xx.o)
+ .debug_macro   0x00000000      0x198 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(clock_18xx_43xx.o)
+ .debug_macro   0x00000000       0x34 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(clock_18xx_43xx.o)
+ .debug_macro   0x00000000       0x58 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(clock_18xx_43xx.o)
+ .debug_macro   0x00000000      0x236 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(clock_18xx_43xx.o)
+ .debug_macro   0x00000000      0x572 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(clock_18xx_43xx.o)
+ .debug_macro   0x00000000       0x16 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(clock_18xx_43xx.o)
+ .debug_macro   0x00000000      0x18a C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(clock_18xx_43xx.o)
+ .debug_macro   0x00000000       0x88 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(clock_18xx_43xx.o)
+ .debug_macro   0x00000000      0x1b9 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(clock_18xx_43xx.o)
+ .debug_macro   0x00000000      0x1da C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(clock_18xx_43xx.o)
+ .debug_macro   0x00000000       0x40 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(clock_18xx_43xx.o)
+ .debug_macro   0x00000000       0x1c C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(clock_18xx_43xx.o)
+ .debug_macro   0x00000000       0x2e C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(clock_18xx_43xx.o)
+ .debug_macro   0x00000000       0x2e C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(clock_18xx_43xx.o)
+ .debug_macro   0x00000000       0x22 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(clock_18xx_43xx.o)
+ .debug_macro   0x00000000      0x201 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(clock_18xx_43xx.o)
+ .debug_macro   0x00000000       0xe0 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(clock_18xx_43xx.o)
+ .debug_macro   0x00000000      0x34c C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(clock_18xx_43xx.o)
+ .debug_macro   0x00000000       0xdc C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(clock_18xx_43xx.o)
+ .debug_macro   0x00000000       0x94 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(clock_18xx_43xx.o)
+ .debug_macro   0x00000000       0xb8 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(clock_18xx_43xx.o)
+ .debug_macro   0x00000000       0x4c C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(clock_18xx_43xx.o)
+ .debug_macro   0x00000000       0x16 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(clock_18xx_43xx.o)
+ .debug_macro   0x00000000      0x328 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(clock_18xx_43xx.o)
+ .debug_macro   0x00000000       0x3a C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(clock_18xx_43xx.o)
+ .debug_macro   0x00000000       0xd0 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(clock_18xx_43xx.o)
+ .debug_macro   0x00000000       0x18 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(clock_18xx_43xx.o)
+ .debug_macro   0x00000000       0x22 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(clock_18xx_43xx.o)
+ .debug_macro   0x00000000       0x40 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(clock_18xx_43xx.o)
+ .group         0x00000000        0x8 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(fpu_init.o)
+ .group         0x00000000        0x8 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(fpu_init.o)
+ .group         0x00000000        0x8 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(fpu_init.o)
+ .group         0x00000000        0x8 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(fpu_init.o)
+ .group         0x00000000        0x8 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(fpu_init.o)
+ .group         0x00000000        0x8 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(fpu_init.o)
+ .group         0x00000000        0x8 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(fpu_init.o)
+ .group         0x00000000        0x8 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(fpu_init.o)
+ .group         0x00000000        0x8 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(fpu_init.o)
+ .group         0x00000000        0x8 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(fpu_init.o)
+ .group         0x00000000        0x8 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(fpu_init.o)
+ .group         0x00000000        0x8 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(fpu_init.o)
+ .text          0x00000000        0x0 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(fpu_init.o)
+ .data          0x00000000        0x0 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(fpu_init.o)
+ .bss           0x00000000        0x0 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(fpu_init.o)
+ .debug_macro   0x00000000      0x88c C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(fpu_init.o)
+ .debug_macro   0x00000000       0x10 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(fpu_init.o)
+ .debug_macro   0x00000000       0x10 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(fpu_init.o)
+ .debug_macro   0x00000000      0x12d C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(fpu_init.o)
+ .debug_macro   0x00000000      0x5b2 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(fpu_init.o)
+ .debug_macro   0x00000000       0x22 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(fpu_init.o)
+ .debug_macro   0x00000000       0x7b C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(fpu_init.o)
+ .debug_macro   0x00000000       0x28 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(fpu_init.o)
+ .debug_macro   0x00000000       0x3b C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(fpu_init.o)
+ .debug_macro   0x00000000       0x2d C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(fpu_init.o)
+ .debug_macro   0x00000000       0x42 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(fpu_init.o)
+ .debug_macro   0x00000000      0xd39 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(fpu_init.o)
+ .group         0x00000000        0x8 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(sysinit_18xx_43xx.o)
+ .group         0x00000000        0x8 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(sysinit_18xx_43xx.o)
+ .group         0x00000000        0x8 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(sysinit_18xx_43xx.o)
+ .group         0x00000000        0x8 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(sysinit_18xx_43xx.o)
+ .group         0x00000000        0x8 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(sysinit_18xx_43xx.o)
+ .group         0x00000000        0x8 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(sysinit_18xx_43xx.o)
+ .group         0x00000000        0x8 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(sysinit_18xx_43xx.o)
+ .group         0x00000000        0x8 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(sysinit_18xx_43xx.o)
+ .group         0x00000000        0x8 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(sysinit_18xx_43xx.o)
+ .group         0x00000000        0x8 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(sysinit_18xx_43xx.o)
+ .group         0x00000000        0x8 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(sysinit_18xx_43xx.o)
+ .group         0x00000000        0x8 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(sysinit_18xx_43xx.o)
+ .group         0x00000000        0x8 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(sysinit_18xx_43xx.o)
+ .group         0x00000000        0x8 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(sysinit_18xx_43xx.o)
+ .group         0x00000000        0x8 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(sysinit_18xx_43xx.o)
+ .group         0x00000000        0x8 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(sysinit_18xx_43xx.o)
+ .group         0x00000000        0x8 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(sysinit_18xx_43xx.o)
+ .group         0x00000000        0x8 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(sysinit_18xx_43xx.o)
+ .group         0x00000000        0x8 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(sysinit_18xx_43xx.o)
+ .group         0x00000000        0x8 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(sysinit_18xx_43xx.o)
+ .group         0x00000000        0x8 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(sysinit_18xx_43xx.o)
+ .group         0x00000000        0x8 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(sysinit_18xx_43xx.o)
+ .group         0x00000000        0x8 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(sysinit_18xx_43xx.o)
+ .group         0x00000000        0x8 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(sysinit_18xx_43xx.o)
+ .group         0x00000000        0x8 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(sysinit_18xx_43xx.o)
+ .group         0x00000000        0x8 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(sysinit_18xx_43xx.o)
+ .group         0x00000000        0x8 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(sysinit_18xx_43xx.o)
+ .group         0x00000000        0x8 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(sysinit_18xx_43xx.o)
+ .group         0x00000000        0x8 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(sysinit_18xx_43xx.o)
+ .group         0x00000000        0x8 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(sysinit_18xx_43xx.o)
+ .group         0x00000000        0x8 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(sysinit_18xx_43xx.o)
+ .group         0x00000000        0x8 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(sysinit_18xx_43xx.o)
+ .group         0x00000000        0x8 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(sysinit_18xx_43xx.o)
+ .group         0x00000000        0x8 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(sysinit_18xx_43xx.o)
+ .group         0x00000000        0x8 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(sysinit_18xx_43xx.o)
+ .group         0x00000000        0x8 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(sysinit_18xx_43xx.o)
+ .group         0x00000000        0x8 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(sysinit_18xx_43xx.o)
+ .group         0x00000000        0x8 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(sysinit_18xx_43xx.o)
+ .group         0x00000000        0x8 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(sysinit_18xx_43xx.o)
+ .group         0x00000000        0x8 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(sysinit_18xx_43xx.o)
+ .group         0x00000000        0x8 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(sysinit_18xx_43xx.o)
+ .group         0x00000000        0x8 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(sysinit_18xx_43xx.o)
+ .group         0x00000000        0x8 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(sysinit_18xx_43xx.o)
+ .group         0x00000000        0x8 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(sysinit_18xx_43xx.o)
+ .group         0x00000000        0x8 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(sysinit_18xx_43xx.o)
+ .group         0x00000000        0x8 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(sysinit_18xx_43xx.o)
+ .group         0x00000000        0x8 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(sysinit_18xx_43xx.o)
+ .group         0x00000000        0x8 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(sysinit_18xx_43xx.o)
+ .group         0x00000000        0x8 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(sysinit_18xx_43xx.o)
+ .text          0x00000000        0x0 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(sysinit_18xx_43xx.o)
+ .data          0x00000000        0x0 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(sysinit_18xx_43xx.o)
+ .bss           0x00000000        0x0 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(sysinit_18xx_43xx.o)
+ .text.Chip_SetupXtalClocking
+                0x00000000       0x14 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(sysinit_18xx_43xx.o)
+ .text.Chip_SetupIrcClocking
+                0x00000000       0x14 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(sysinit_18xx_43xx.o)
+ .text.Chip_SystemInit
+                0x00000000        0xc C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(sysinit_18xx_43xx.o)
+ .debug_macro   0x00000000      0x88c C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(sysinit_18xx_43xx.o)
+ .debug_macro   0x00000000       0x10 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(sysinit_18xx_43xx.o)
+ .debug_macro   0x00000000       0x10 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(sysinit_18xx_43xx.o)
+ .debug_macro   0x00000000      0x12d C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(sysinit_18xx_43xx.o)
+ .debug_macro   0x00000000      0x5b2 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(sysinit_18xx_43xx.o)
+ .debug_macro   0x00000000       0x22 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(sysinit_18xx_43xx.o)
+ .debug_macro   0x00000000       0x7b C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(sysinit_18xx_43xx.o)
+ .debug_macro   0x00000000       0x28 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(sysinit_18xx_43xx.o)
+ .debug_macro   0x00000000       0x3b C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(sysinit_18xx_43xx.o)
+ .debug_macro   0x00000000       0x2d C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(sysinit_18xx_43xx.o)
+ .debug_macro   0x00000000       0x42 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(sysinit_18xx_43xx.o)
+ .debug_macro   0x00000000      0xd39 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(sysinit_18xx_43xx.o)
+ .debug_macro   0x00000000      0x2bc C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(sysinit_18xx_43xx.o)
+ .debug_macro   0x00000000      0x112 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(sysinit_18xx_43xx.o)
+ .debug_macro   0x00000000       0x11 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(sysinit_18xx_43xx.o)
+ .debug_macro   0x00000000       0x1e C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(sysinit_18xx_43xx.o)
+ .debug_macro   0x00000000       0x16 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(sysinit_18xx_43xx.o)
+ .debug_macro   0x00000000      0x2e6 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(sysinit_18xx_43xx.o)
+ .debug_macro   0x00000000       0x82 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(sysinit_18xx_43xx.o)
+ .debug_macro   0x00000000      0x13d C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(sysinit_18xx_43xx.o)
+ .debug_macro   0x00000000      0x198 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(sysinit_18xx_43xx.o)
+ .debug_macro   0x00000000       0x34 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(sysinit_18xx_43xx.o)
+ .debug_macro   0x00000000       0x58 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(sysinit_18xx_43xx.o)
+ .debug_macro   0x00000000      0x236 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(sysinit_18xx_43xx.o)
+ .debug_macro   0x00000000      0x572 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(sysinit_18xx_43xx.o)
+ .debug_macro   0x00000000       0x16 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(sysinit_18xx_43xx.o)
+ .debug_macro   0x00000000      0x18a C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(sysinit_18xx_43xx.o)
+ .debug_macro   0x00000000       0x88 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(sysinit_18xx_43xx.o)
+ .debug_macro   0x00000000      0x1b9 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(sysinit_18xx_43xx.o)
+ .debug_macro   0x00000000      0x1da C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(sysinit_18xx_43xx.o)
+ .debug_macro   0x00000000       0x40 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(sysinit_18xx_43xx.o)
+ .debug_macro   0x00000000       0x1c C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(sysinit_18xx_43xx.o)
+ .debug_macro   0x00000000       0x2e C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(sysinit_18xx_43xx.o)
+ .debug_macro   0x00000000       0x2e C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(sysinit_18xx_43xx.o)
+ .debug_macro   0x00000000       0x22 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(sysinit_18xx_43xx.o)
+ .debug_macro   0x00000000      0x201 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(sysinit_18xx_43xx.o)
+ .debug_macro   0x00000000       0xe0 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(sysinit_18xx_43xx.o)
+ .debug_macro   0x00000000      0x34c C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(sysinit_18xx_43xx.o)
+ .debug_macro   0x00000000       0xdc C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(sysinit_18xx_43xx.o)
+ .debug_macro   0x00000000       0x94 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(sysinit_18xx_43xx.o)
+ .debug_macro   0x00000000       0xb8 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(sysinit_18xx_43xx.o)
+ .debug_macro   0x00000000       0x4c C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(sysinit_18xx_43xx.o)
+ .debug_macro   0x00000000       0x16 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(sysinit_18xx_43xx.o)
+ .debug_macro   0x00000000      0x328 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(sysinit_18xx_43xx.o)
+ .debug_macro   0x00000000       0x3a C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(sysinit_18xx_43xx.o)
+ .debug_macro   0x00000000       0xd0 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(sysinit_18xx_43xx.o)
+ .debug_macro   0x00000000       0x18 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(sysinit_18xx_43xx.o)
+ .debug_macro   0x00000000       0x22 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(sysinit_18xx_43xx.o)
+ .debug_macro   0x00000000       0x40 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(sysinit_18xx_43xx.o)
+ .text          0x00000000        0x0 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_semihost.a(_cr__main.o)
+ .data          0x00000000        0x0 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_semihost.a(_cr__main.o)
+ .bss           0x00000000        0x0 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_semihost.a(_cr__main.o)
+ .text          0x00000000        0x0 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(cos.o)
+ .data          0x00000000        0x0 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(cos.o)
+ .bss           0x00000000        0x0 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(cos.o)
+ .text.cos      0x00000000       0xa8 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(cos.o)
+ .comment       0x00000000       0x71 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(cos.o)
+ .ARM.attributes
+                0x00000000       0x39 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(cos.o)
+ .text          0x00000000        0x0 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(initio.o)
+ .data          0x00000000        0x0 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(initio.o)
+ .bss           0x00000000        0x0 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(initio.o)
+ .text._terminateio
+                0x00000000       0x6c c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(initio.o)
+ .text          0x00000000        0x0 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(pow.o)
+ .data          0x00000000        0x0 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(pow.o)
+ .bss           0x00000000        0x0 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(pow.o)
+ .text.pow      0x00000000      0x880 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(pow.o)
+ .rodata.a1.3937
+                0x00000000       0x88 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(pow.o)
+ .rodata.a2.3938
+                0x00000000       0x40 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(pow.o)
+ .comment       0x00000000       0x71 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(pow.o)
+ .ARM.attributes
+                0x00000000       0x39 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(pow.o)
+ .text          0x00000000        0x0 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(setvbuf.o)
+ .data          0x00000000        0x0 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(setvbuf.o)
+ .bss           0x00000000        0x0 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(setvbuf.o)
+ .text          0x00000000        0x0 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(sin.o)
+ .data          0x00000000        0x0 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(sin.o)
+ .bss           0x00000000        0x0 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(sin.o)
+ .text.sin      0x00000000       0x78 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(sin.o)
+ .comment       0x00000000       0x71 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(sin.o)
+ .ARM.attributes
+                0x00000000       0x39 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(sin.o)
+ .text          0x00000000        0x0 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(sqrt.o)
+ .data          0x00000000        0x0 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(sqrt.o)
+ .bss           0x00000000        0x0 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(sqrt.o)
+ .text.sqrt     0x00000000      0x1e0 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(sqrt.o)
+ .comment       0x00000000       0x71 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(sqrt.o)
+ .ARM.attributes
+                0x00000000       0x39 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(sqrt.o)
+ .text          0x00000000        0x0 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(stdio.o)
+ .data          0x00000000        0x0 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(stdio.o)
+ .bss           0x00000000        0x0 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(stdio.o)
+ .text.fgetc    0x00000000       0x38 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(stdio.o)
+ .text.fputc    0x00000000       0x44 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(stdio.o)
+ .text.getc     0x00000000       0x38 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(stdio.o)
+ .text.getchar  0x00000000       0x34 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(stdio.o)
+ .text.putc     0x00000000       0x44 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(stdio.o)
+ .text.putchar  0x00000000       0x48 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(stdio.o)
+ .text.feof     0x00000000       0x1c c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(stdio.o)
+ .text.ferror   0x00000000       0x1c c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(stdio.o)
+ .text.clearerr
+                0x00000000       0x24 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(stdio.o)
+ .text          0x00000000        0x0 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(memset.o)
+ .data          0x00000000        0x0 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(memset.o)
+ .bss           0x00000000        0x0 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(memset.o)
+ .text          0x00000000        0x0 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(__fillbuf.o)
+ .data          0x00000000        0x0 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(__fillbuf.o)
+ .bss           0x00000000        0x0 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(__fillbuf.o)
+ .text._Csys_read_
+                0x00000000       0x40 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(__fillbuf.o)
+ .text.__filbuf
+                0x00000000      0x2c0 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(__fillbuf.o)
+ .text._fillb2  0x00000000       0x3c c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(__fillbuf.o)
+ .comment       0x00000000       0x71 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(__fillbuf.o)
+ .ARM.attributes
+                0x00000000       0x39 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(__fillbuf.o)
+ .text          0x00000000        0x0 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(_deferredlazyseek.o)
+ .data          0x00000000        0x0 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(_deferredlazyseek.o)
+ .bss           0x00000000        0x0 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(_deferredlazyseek.o)
+ .text.__flsbuf
+                0x00000000      0x258 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(_deferredlazyseek.o)
+ .text          0x00000000        0x0 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(_fdopen.o)
+ .data          0x00000000        0x0 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(_fdopen.o)
+ .bss           0x00000000        0x0 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(_fdopen.o)
+ .text          0x00000000        0x0 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(_fflush.o)
+ .data          0x00000000        0x0 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(_fflush.o)
+ .bss           0x00000000        0x0 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(_fflush.o)
+ .text          0x00000000        0x0 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(_hugeval.o)
+ .data          0x00000000        0x0 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(_hugeval.o)
+ .bss           0x00000000        0x0 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(_hugeval.o)
+ .rodata.__huge_val
+                0x00000000        0x8 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(_hugeval.o)
+ .rodata.__huge_vall
+                0x00000000        0x8 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(_hugeval.o)
+ .comment       0x00000000       0x71 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(_hugeval.o)
+ .ARM.attributes
+                0x00000000       0x39 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(_hugeval.o)
+ .text          0x00000000        0x0 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(_sincos.o)
+ .data          0x00000000        0x0 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(_sincos.o)
+ .bss           0x00000000        0x0 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(_sincos.o)
+ .text._sincos  0x00000000      0x2f0 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(_sincos.o)
+ .comment       0x00000000       0x71 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(_sincos.o)
+ .ARM.attributes
+                0x00000000       0x39 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(_sincos.o)
+ .text          0x00000000        0x0 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(_writebuf.o)
+ .data          0x00000000        0x0 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(_writebuf.o)
+ .bss           0x00000000        0x0 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(_writebuf.o)
+ .text          0x00000000        0x0 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(alloc.o)
+ .data          0x00000000        0x0 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(alloc.o)
+ .bss           0x00000000        0x0 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(alloc.o)
+ .text.calloc   0x00000000       0xa8 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(alloc.o)
+ .text.realloc  0x00000000       0x40 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(alloc.o)
+ .text          0x00000000        0x0 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(errno.o)
+ .data          0x00000000        0x0 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(errno.o)
+ .bss           0x00000000        0x0 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(errno.o)
+ .text          0x00000000        0x0 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(fabs.o)
+ .data          0x00000000        0x0 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(fabs.o)
+ .bss           0x00000000        0x0 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(fabs.o)
+ .text.fabs     0x00000000       0x40 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(fabs.o)
+ .comment       0x00000000       0x71 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(fabs.o)
+ .ARM.attributes
+                0x00000000       0x39 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(fabs.o)
+ .text          0x00000000        0x0 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(fclose.o)
+ .data          0x00000000        0x0 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(fclose.o)
+ .bss           0x00000000        0x0 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(fclose.o)
+ .text          0x00000000        0x0 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(fflush.o)
+ .data          0x00000000        0x0 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(fflush.o)
+ .bss           0x00000000        0x0 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(fflush.o)
+ .text          0x00000000        0x0 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(frexp.o)
+ .data          0x00000000        0x0 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(frexp.o)
+ .bss           0x00000000        0x0 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(frexp.o)
+ .text.frexp    0x00000000       0xbc c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(frexp.o)
+ .comment       0x00000000       0x71 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(frexp.o)
+ .ARM.attributes
+                0x00000000       0x39 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(frexp.o)
+ .text          0x00000000        0x0 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(fseek.o)
+ .data          0x00000000        0x0 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(fseek.o)
+ .bss           0x00000000        0x0 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(fseek.o)
+ .text          0x00000000        0x0 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(ftell.o)
+ .data          0x00000000        0x0 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(ftell.o)
+ .bss           0x00000000        0x0 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(ftell.o)
+ .text          0x00000000        0x0 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(ldexp.o)
+ .data          0x00000000        0x0 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(ldexp.o)
+ .bss           0x00000000        0x0 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(ldexp.o)
+ .text.ldexp    0x00000000       0x9c c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(ldexp.o)
+ .comment       0x00000000       0x71 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(ldexp.o)
+ .ARM.attributes
+                0x00000000       0x39 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(ldexp.o)
+ .text          0x00000000        0x0 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(remove.o)
+ .data          0x00000000        0x0 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(remove.o)
+ .bss           0x00000000        0x0 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(remove.o)
+ .text.rename   0x00000000       0x40 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(remove.o)
+ .text          0x00000000        0x0 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(strlen.o)
+ .data          0x00000000        0x0 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(strlen.o)
+ .bss           0x00000000        0x0 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(strlen.o)
+ .text          0x00000000        0x0 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(memcpy.o)
+ .data          0x00000000        0x0 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(memcpy.o)
+ .bss           0x00000000        0x0 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(memcpy.o)
+ .text.memcpy   0x00000000       0x20 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(memcpy.o)
+ .comment       0x00000000       0x71 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(memcpy.o)
+ .ARM.attributes
+                0x00000000       0x39 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(memcpy.o)
+ .text          0x00000000        0x0 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(__init_alloc.o)
+ .data          0x00000000        0x0 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(__init_alloc.o)
+ .bss           0x00000000        0x0 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(__init_alloc.o)
+ .text._init_alloc
+                0x00000000       0x20 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(__init_alloc.o)
+ .text          0x00000000        0x0 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(_cr_sbrk.o)
+ .data          0x00000000        0x0 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(_cr_sbrk.o)
+ .bss           0x00000000        0x0 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(_cr_sbrk.o)
+ .text          0x00000000        0x0 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(_do_fflush.o)
+ .data          0x00000000        0x0 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(_do_fflush.o)
+ .bss           0x00000000        0x0 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(_do_fflush.o)
+ .text          0x00000000        0x0 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(_cr_check_heap.o)
+ .data          0x00000000        0x0 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(_cr_check_heap.o)
+ .bss           0x00000000        0x0 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(_cr_check_heap.o)
+ .text          0x00000000        0x0 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/fpu\libcr_eabihelpers.a(double.o)
+ .data          0x00000000        0x0 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/fpu\libcr_eabihelpers.a(double.o)
+ .bss           0x00000000        0x0 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/fpu\libcr_eabihelpers.a(double.o)
+ .text.__aeabi_dmul
+                0x00000000      0x110 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/fpu\libcr_eabihelpers.a(double.o)
+ .text.__aeabi_ddiv
+                0x00000000      0x140 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/fpu\libcr_eabihelpers.a(double.o)
+ .text.__aeabi_dsub
+                0x00000000      0x1b8 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/fpu\libcr_eabihelpers.a(double.o)
+ .text.__aeabi_dadd
+                0x00000000      0x128 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/fpu\libcr_eabihelpers.a(double.o)
+ .text.__aeabi_drsub
+                0x00000000       0x1e c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/fpu\libcr_eabihelpers.a(double.o)
+ .text.__aeabi_dneg
+                0x00000000        0xc c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/fpu\libcr_eabihelpers.a(double.o)
+ .text.__aeabi_d2f
+                0x00000000       0x58 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/fpu\libcr_eabihelpers.a(double.o)
+ .text.__aeabi_d2iz
+                0x00000000       0x40 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/fpu\libcr_eabihelpers.a(double.o)
+ .text.__aeabi_d2uiz
+                0x00000000       0x30 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/fpu\libcr_eabihelpers.a(double.o)
+ .text.__aeabi_d2lz
+                0x00000000       0x68 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/fpu\libcr_eabihelpers.a(double.o)
+ .text.__aeabi_d2ulz
+                0x00000000       0x52 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/fpu\libcr_eabihelpers.a(double.o)
+ .text.__bhs_ui2d
+                0x00000000       0x46 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/fpu\libcr_eabihelpers.a(double.o)
+ .text.__bhs_ul2d
+                0x00000000       0x88 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/fpu\libcr_eabihelpers.a(double.o)
+ .text.__aeabi_i2d
+                0x00000000       0x10 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/fpu\libcr_eabihelpers.a(double.o)
+ .text.__aeabi_ui2d
+                0x00000000        0x8 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/fpu\libcr_eabihelpers.a(double.o)
+ .text.__aeabi_l2d
+                0x00000000       0x18 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/fpu\libcr_eabihelpers.a(double.o)
+ .text.__aeabi_ul2d
+                0x00000000        0x8 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/fpu\libcr_eabihelpers.a(double.o)
+ .text.__aeabi_dcmpeq
+                0x00000000       0x30 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/fpu\libcr_eabihelpers.a(double.o)
+ .text.__aeabi_dcmplt
+                0x00000000       0x52 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/fpu\libcr_eabihelpers.a(double.o)
+ .text.__aeabi_dcmpgt
+                0x00000000       0x52 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/fpu\libcr_eabihelpers.a(double.o)
+ .text.__aeabi_dcmple
+                0x00000000       0x54 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/fpu\libcr_eabihelpers.a(double.o)
+ .text.__aeabi_dcmpge
+                0x00000000       0x54 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/fpu\libcr_eabihelpers.a(double.o)
+ .text.__aeabi_dcmpun
+                0x00000000       0x1a c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/fpu\libcr_eabihelpers.a(double.o)
+ .text.__aeabi_cdcmple
+                0x00000000       0x30 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/fpu\libcr_eabihelpers.a(double.o)
+ .text.__aeabi_cdrcmple
+                0x00000000       0x16 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/fpu\libcr_eabihelpers.a(double.o)
+ .comment       0x00000000       0x71 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/fpu\libcr_eabihelpers.a(double.o)
+ .ARM.attributes
+                0x00000000       0x39 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/fpu\libcr_eabihelpers.a(double.o)
+ .text          0x00000000        0x0 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/fpu\libcr_eabihelpers.a(float.o)
+ .data          0x00000000        0x0 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/fpu\libcr_eabihelpers.a(float.o)
+ .bss           0x00000000        0x0 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/fpu\libcr_eabihelpers.a(float.o)
+ .text.__aeabi_fmul
+                0x00000000       0xb0 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/fpu\libcr_eabihelpers.a(float.o)
+ .text.__aeabi_fdiv
+                0x00000000       0xcc c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/fpu\libcr_eabihelpers.a(float.o)
+ .text.__aeabi_fsub
+                0x00000000       0xf0 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/fpu\libcr_eabihelpers.a(float.o)
+ .text.__aeabi_fadd
+                0x00000000       0xbc c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/fpu\libcr_eabihelpers.a(float.o)
+ .text.__aeabi_frsub
+                0x00000000        0xc c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/fpu\libcr_eabihelpers.a(float.o)
+ .text.__aeabi_fneg
+                0x00000000        0x6 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/fpu\libcr_eabihelpers.a(float.o)
+ .text.__aeabi_f2iz
+                0x00000000       0x32 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/fpu\libcr_eabihelpers.a(float.o)
+ .text.__aeabi_f2uiz
+                0x00000000       0x28 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/fpu\libcr_eabihelpers.a(float.o)
+ .text.__aeabi_f2lz
+                0x00000000       0x5a c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/fpu\libcr_eabihelpers.a(float.o)
+ .text.__aeabi_f2ulz
+                0x00000000       0x3e c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/fpu\libcr_eabihelpers.a(float.o)
+ .text.__bhs_ui2f
+                0x00000000       0x26 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/fpu\libcr_eabihelpers.a(float.o)
+ .text.__bhs_ul2f
+                0x00000000       0x46 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/fpu\libcr_eabihelpers.a(float.o)
+ .text.__aeabi_i2f
+                0x00000000       0x10 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/fpu\libcr_eabihelpers.a(float.o)
+ .text.__aeabi_ui2f
+                0x00000000        0x8 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/fpu\libcr_eabihelpers.a(float.o)
+ .text.__aeabi_l2f
+                0x00000000       0x18 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/fpu\libcr_eabihelpers.a(float.o)
+ .text.__aeabi_ul2f
+                0x00000000        0x8 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/fpu\libcr_eabihelpers.a(float.o)
+ .text.__aeabi_f2d
+                0x00000000       0x38 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/fpu\libcr_eabihelpers.a(float.o)
+ .text.__aeabi_fcmpeq
+                0x00000000       0x1e c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/fpu\libcr_eabihelpers.a(float.o)
+ .text.__aeabi_fcmplt
+                0x00000000       0x3a c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/fpu\libcr_eabihelpers.a(float.o)
+ .text.__aeabi_fcmpgt
+                0x00000000       0x3a c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/fpu\libcr_eabihelpers.a(float.o)
+ .text.__aeabi_fcmple
+                0x00000000       0x3e c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/fpu\libcr_eabihelpers.a(float.o)
+ .text.__aeabi_fcmpge
+                0x00000000       0x3e c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/fpu\libcr_eabihelpers.a(float.o)
+ .text.__aeabi_fcmpun
+                0x00000000       0x1a c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/fpu\libcr_eabihelpers.a(float.o)
+ .text.__aeabi_cfcmple
+                0x00000000       0x24 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/fpu\libcr_eabihelpers.a(float.o)
+ .text.__aeabi_cfrcmple
+                0x00000000        0xa c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/fpu\libcr_eabihelpers.a(float.o)
+ .comment       0x00000000       0x71 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/fpu\libcr_eabihelpers.a(float.o)
+ .ARM.attributes
+                0x00000000       0x39 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/fpu\libcr_eabihelpers.a(float.o)
+ .text          0x00000000        0x0 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/fpu\libcr_eabihelpers.a(llong.o)
+ .data          0x00000000        0x0 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/fpu\libcr_eabihelpers.a(llong.o)
+ .bss           0x00000000        0x0 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/fpu\libcr_eabihelpers.a(llong.o)
+ .text.__aeabi_llong_lmul
+                0x00000000       0x10 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/fpu\libcr_eabihelpers.a(llong.o)
+ .text.__aeabi_llong_llsl
+                0x00000000       0x18 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/fpu\libcr_eabihelpers.a(llong.o)
+ .text.__aeabi_llong_llsr
+                0x00000000       0x18 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/fpu\libcr_eabihelpers.a(llong.o)
+ .text.__aeabi_llong_lasr
+                0x00000000       0x18 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/fpu\libcr_eabihelpers.a(llong.o)
+ .text.__aeabi_llong_lcmp
+                0x00000000       0x14 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/fpu\libcr_eabihelpers.a(llong.o)
+ .text.__aeabi_llong_ulcmp
+                0x00000000       0x10 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/fpu\libcr_eabihelpers.a(llong.o)
+ .ARM.attributes
+                0x00000000       0x25 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/fpu\libcr_eabihelpers.a(llong.o)
+ .text          0x00000000        0x0 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/fpu\libcr_eabihelpers.a(memcpy.o)
+ .data          0x00000000        0x0 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/fpu\libcr_eabihelpers.a(memcpy.o)
+ .bss           0x00000000        0x0 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/fpu\libcr_eabihelpers.a(memcpy.o)
+ .text.__aeabi_memcpy
+                0x00000000       0x34 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/fpu\libcr_eabihelpers.a(memcpy.o)
+ .text.__aeabi_memmove
+                0x00000000       0x1c c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/fpu\libcr_eabihelpers.a(memcpy.o)
+ .text.__aeabi_memclr
+                0x00000000        0x8 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/fpu\libcr_eabihelpers.a(memcpy.o)
+ .text.__aeabi_memset
+                0x00000000        0xa c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/fpu\libcr_eabihelpers.a(memcpy.o)
+ .text          0x00000000        0x0 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_semihost.a(__sys_appexit.o)
+ .data          0x00000000        0x0 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_semihost.a(__sys_appexit.o)
+ .bss           0x00000000        0x0 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_semihost.a(__sys_appexit.o)
+ .text          0x00000000        0x0 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_semihost.a(__sys_close.o)
+ .data          0x00000000        0x0 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_semihost.a(__sys_close.o)
+ .bss           0x00000000        0x0 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_semihost.a(__sys_close.o)
+ .text          0x00000000        0x0 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_semihost.a(__sys_flen.o)
+ .data          0x00000000        0x0 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_semihost.a(__sys_flen.o)
+ .bss           0x00000000        0x0 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_semihost.a(__sys_flen.o)
+ .text          0x00000000        0x0 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_semihost.a(__sys_istty.o)
+ .data          0x00000000        0x0 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_semihost.a(__sys_istty.o)
+ .bss           0x00000000        0x0 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_semihost.a(__sys_istty.o)
+ .text          0x00000000        0x0 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_semihost.a(__sys_read.o)
+ .data          0x00000000        0x0 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_semihost.a(__sys_read.o)
+ .bss           0x00000000        0x0 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_semihost.a(__sys_read.o)
+ .text.__sys_read
+                0x00000000        0xc c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_semihost.a(__sys_read.o)
+ .ARM.attributes
+                0x00000000       0x25 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_semihost.a(__sys_read.o)
+ .text          0x00000000        0x0 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_semihost.a(__sys_readc.o)
+ .data          0x00000000        0x0 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_semihost.a(__sys_readc.o)
+ .bss           0x00000000        0x0 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_semihost.a(__sys_readc.o)
+ .text.__sys_readc
+                0x00000000        0x8 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_semihost.a(__sys_readc.o)
+ .ARM.attributes
+                0x00000000       0x25 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_semihost.a(__sys_readc.o)
+ .text          0x00000000        0x0 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_semihost.a(__sys_remove.o)
+ .data          0x00000000        0x0 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_semihost.a(__sys_remove.o)
+ .bss           0x00000000        0x0 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_semihost.a(__sys_remove.o)
+ .text          0x00000000        0x0 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_semihost.a(__sys_rename.o)
+ .data          0x00000000        0x0 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_semihost.a(__sys_rename.o)
+ .bss           0x00000000        0x0 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_semihost.a(__sys_rename.o)
+ .text.__sys_rename
+                0x00000000        0xc c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_semihost.a(__sys_rename.o)
+ .ARM.attributes
+                0x00000000       0x25 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_semihost.a(__sys_rename.o)
+ .text          0x00000000        0x0 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_semihost.a(__sys_seek.o)
+ .data          0x00000000        0x0 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_semihost.a(__sys_seek.o)
+ .bss           0x00000000        0x0 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_semihost.a(__sys_seek.o)
+ .text          0x00000000        0x0 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_semihost.a(__sys_tmpnam.o)
+ .data          0x00000000        0x0 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_semihost.a(__sys_tmpnam.o)
+ .bss           0x00000000        0x0 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_semihost.a(__sys_tmpnam.o)
+ .text          0x00000000        0x0 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_semihost.a(__sys_write.o)
+ .data          0x00000000        0x0 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_semihost.a(__sys_write.o)
+ .bss           0x00000000        0x0 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_semihost.a(__sys_write.o)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+RamLoc128        0x10000000         0x00020000         xrw
+RamLoc72         0x10080000         0x00012000         xrw
+RamAHB32         0x20000000         0x00008000         xrw
+RamAHB16         0x20008000         0x00004000         xrw
+RamAHB_ETB16     0x2000c000         0x00004000         xrw
+RamM0Sub16       0x18000000         0x00004000         xrw
+RamM0Sub2        0x18004000         0x00000800         xrw
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD ./src/CM4_TEST.o
+LOAD ./src/IIR.o
+LOAD ./src/cr_startup_lpc43xx.o
+LOAD ./src/crp.o
+LOAD ./src/sysinit.o
+LOAD C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_board_nxp_lpclink2_4370\HARD\liblpc_board_nxp_lpclink2_4370_HARD.a
+LOAD C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\CMSIS_DSP_4_3_0\-Os HARD\libCMSIS_DSP_4_3_0_Os_HARD.a
+LOAD C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a
+START GROUP
+LOAD c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_semihost.a
+LOAD c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a
+LOAD c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/fpu\libcr_eabihelpers.a
+END GROUP
+                0x10020000                __top_RamLoc128 = 0x10020000
+                0x10092000                __top_RamLoc72 = 0x10092000
+                0x20008000                __top_RamAHB32 = 0x20008000
+                0x2000c000                __top_RamAHB16 = 0x2000c000
+                0x20010000                __top_RamAHB_ETB16 = 0x20010000
+                0x18004000                __top_RamM0Sub16 = 0x18004000
+                0x18004800                __top_RamM0Sub2 = 0x18004800
+
+.text           0x10000000     0x19c4
+ FILL mask 0xff
+                0x10000000                __vectors_start__ = ABSOLUTE (.)
+ *(.isr_vector)
+ .isr_vector    0x10000000      0x114 ./src/cr_startup_lpc43xx.o
+                0x10000000                g_pfnVectors
+                0x10000114                . = ALIGN (0x4)
+                0x10000114                __section_table_start = .
+                0x10000114                __data_section_table = .
+                0x10000114        0x4 LONG 0x100019c4 LOADADDR (.data)
+                0x10000118        0x4 LONG 0x100019c4 ADDR (.data)
+                0x1000011c        0x4 LONG 0x0 SIZEOF (.data)
+                0x10000120        0x4 LONG 0x100019c4 LOADADDR (.data_RAM2)
+                0x10000124        0x4 LONG 0x10080000 ADDR (.data_RAM2)
+                0x10000128        0x4 LONG 0x0 SIZEOF (.data_RAM2)
+                0x1000012c        0x4 LONG 0x100019c4 LOADADDR (.data_RAM3)
+                0x10000130        0x4 LONG 0x20000000 ADDR (.data_RAM3)
+                0x10000134        0x4 LONG 0x0 SIZEOF (.data_RAM3)
+                0x10000138        0x4 LONG 0x100019c4 LOADADDR (.data_RAM4)
+                0x1000013c        0x4 LONG 0x20008000 ADDR (.data_RAM4)
+                0x10000140        0x4 LONG 0x0 SIZEOF (.data_RAM4)
+                0x10000144        0x4 LONG 0x100019c4 LOADADDR (.data_RAM5)
+                0x10000148        0x4 LONG 0x2000c000 ADDR (.data_RAM5)
+                0x1000014c        0x4 LONG 0x0 SIZEOF (.data_RAM5)
+                0x10000150        0x4 LONG 0x100019c4 LOADADDR (.data_RAM6)
+                0x10000154        0x4 LONG 0x18000000 ADDR (.data_RAM6)
+                0x10000158        0x4 LONG 0x0 SIZEOF (.data_RAM6)
+                0x1000015c        0x4 LONG 0x100019c4 LOADADDR (.data_RAM7)
+                0x10000160        0x4 LONG 0x18004000 ADDR (.data_RAM7)
+                0x10000164        0x4 LONG 0x0 SIZEOF (.data_RAM7)
+                0x10000168                __data_section_table_end = .
+                0x10000168                __bss_section_table = .
+                0x10000168        0x4 LONG 0x100019c4 ADDR (.bss)
+                0x1000016c        0x4 LONG 0x158 SIZEOF (.bss)
+                0x10000170        0x4 LONG 0x10080000 ADDR (.bss_RAM2)
+                0x10000174        0x4 LONG 0x0 SIZEOF (.bss_RAM2)
+                0x10000178        0x4 LONG 0x20000000 ADDR (.bss_RAM3)
+                0x1000017c        0x4 LONG 0x0 SIZEOF (.bss_RAM3)
+                0x10000180        0x4 LONG 0x20008000 ADDR (.bss_RAM4)
+                0x10000184        0x4 LONG 0x0 SIZEOF (.bss_RAM4)
+                0x10000188        0x4 LONG 0x2000c000 ADDR (.bss_RAM5)
+                0x1000018c        0x4 LONG 0x0 SIZEOF (.bss_RAM5)
+                0x10000190        0x4 LONG 0x18000000 ADDR (.bss_RAM6)
+                0x10000194        0x4 LONG 0x0 SIZEOF (.bss_RAM6)
+                0x10000198        0x4 LONG 0x18004000 ADDR (.bss_RAM7)
+                0x1000019c        0x4 LONG 0x0 SIZEOF (.bss_RAM7)
+                0x100001a0                __bss_section_table_end = .
+                0x100001a0                __section_table_end = .
+ *(.after_vectors*)
+ .after_vectors
+                0x100001a0       0x3c ./src/cr_startup_lpc43xx.o
+                0x100001a0                NMI_Handler
+                0x100001a2                HardFault_Handler
+                0x100001a4                MemManage_Handler
+                0x100001a6                BusFault_Handler
+                0x100001a8                UsageFault_Handler
+                0x100001aa                SVC_Handler
+                0x100001ac                DebugMon_Handler
+                0x100001ae                PendSV_Handler
+                0x100001b0                SysTick_Handler
+                0x100001b2                ATIMER_IRQHandler
+                0x100001b2                I2C0_IRQHandler
+                0x100001b2                I2C1_IRQHandler
+                0x100001b2                UART1_IRQHandler
+                0x100001b2                GPIO5_IRQHandler
+                0x100001b2                CAN1_IRQHandler
+                0x100001b2                USB1_IRQHandler
+                0x100001b2                I2S0_IRQHandler
+                0x100001b2                TIMER3_IRQHandler
+                0x100001b2                UART0_IRQHandler
+                0x100001b2                GINT1_IRQHandler
+                0x100001b2                SGPIO_IRQHandler
+                0x100001b2                ADC0_IRQHandler
+                0x100001b2                ADCHS_IRQHandler
+                0x100001b2                RIT_IRQHandler
+                0x100001b2                SDIO_IRQHandler
+                0x100001b2                GPIO1_IRQHandler
+                0x100001b2                SSP0_IRQHandler
+                0x100001b2                ADC1_IRQHandler
+                0x100001b2                FLASHEEPROM_IRQHandler
+                0x100001b2                RTC_IRQHandler
+                0x100001b2                TIMER0_IRQHandler
+                0x100001b2                SPI_IRQHandler
+                0x100001b2                LCD_IRQHandler
+                0x100001b2                MCPWM_IRQHandler
+                0x100001b2                TIMER1_IRQHandler
+                0x100001b2                UART2_IRQHandler
+                0x100001b2                GPIO2_IRQHandler
+                0x100001b2                I2S1_IRQHandler
+                0x100001b2                SSP1_IRQHandler
+                0x100001b2                USB0_IRQHandler
+                0x100001b2                GPIO3_IRQHandler
+                0x100001b2                SCT_IRQHandler
+                0x100001b2                IntDefaultHandler
+                0x100001b2                MX_CORE_IRQHandler
+                0x100001b2                WDT_IRQHandler
+                0x100001b2                GPIO6_IRQHandler
+                0x100001b2                GPIO7_IRQHandler
+                0x100001b2                SPIFI_IRQHandler
+                0x100001b2                QEI_IRQHandler
+                0x100001b2                ETH_IRQHandler
+                0x100001b2                CAN0_IRQHandler
+                0x100001b2                GINT0_IRQHandler
+                0x100001b2                DAC_IRQHandler
+                0x100001b2                M0SUB_IRQHandler
+                0x100001b2                GPIO0_IRQHandler
+                0x100001b2                DMA_IRQHandler
+                0x100001b2                EVRT_IRQHandler
+                0x100001b2                TIMER2_IRQHandler
+                0x100001b2                UART3_IRQHandler
+                0x100001b2                GPIO4_IRQHandler
+                0x100001b4                data_init
+                0x100001ca                bss_init
+                0x000002fc                . = 0x2fc
+ *fill*         0x100001dc      0x120 ff
+                0x100002fc                PROVIDE (__CRP_WORD_START__, .)
+ *(.crp)
+ .crp           0x100002fc        0x4 ./src/crp.o
+                0x100002fc                CRP_WORD
+                0x10000300                PROVIDE (__CRP_WORD_END__, .)
+                0x00000001                ASSERT (! ((__CRP_WORD_START__ == __CRP_WORD_END__)), Linker CRP Enabled, but no CRP_WORD provided within application)
+ *(.text*)
+ .text.startup.main
+                0x10000300        0xe ./src/CM4_TEST.o
+                0x10000300                main
+ *fill*         0x1000030e        0x2 
+ .text.ResetISR
+                0x10000310       0x78 ./src/cr_startup_lpc43xx.o
+                0x10000310                ResetISR
+ .text.SystemInit
+                0x10000388       0x1c ./src/sysinit.o
+                0x10000388                SystemInit
+ .text.Chip_SCU_PinMuxSet
+                0x100003a4       0x30 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_board_nxp_lpclink2_4370\HARD\liblpc_board_nxp_lpclink2_4370_HARD.a(board_sysinit.o)
+ .text.Chip_SCU_SetPinMuxing
+                0x100003d4       0x48 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_board_nxp_lpclink2_4370\HARD\liblpc_board_nxp_lpclink2_4370_HARD.a(board_sysinit.o)
+ .text.Board_SetupMuxing
+                0x1000041c       0x20 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_board_nxp_lpclink2_4370\HARD\liblpc_board_nxp_lpclink2_4370_HARD.a(board_sysinit.o)
+                0x1000041c                Board_SetupMuxing
+ .text.Board_SetupClocking
+                0x1000043c       0x98 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_board_nxp_lpclink2_4370\HARD\liblpc_board_nxp_lpclink2_4370_HARD.a(board_sysinit.o)
+                0x1000043c                Board_SetupClocking
+ .text.Board_SystemInit
+                0x100004d4       0x10 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_board_nxp_lpclink2_4370\HARD\liblpc_board_nxp_lpclink2_4370_HARD.a(board_sysinit.o)
+                0x100004d4                Board_SystemInit
+ .text.Chip_Clock_TestMainPLLMultiplier
+                0x100004e4       0x48 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(clock_18xx_43xx.o)
+ .text.Chip_Clock_GetDivRate
+                0x1000052c       0x40 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(clock_18xx_43xx.o)
+ .text.Chip_Clock_EnableCrystal
+                0x1000056c       0x6c C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(clock_18xx_43xx.o)
+                0x1000056c                Chip_Clock_EnableCrystal
+ .text.Chip_Clock_SetupMainPLLHz
+                0x100005d8      0x128 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(clock_18xx_43xx.o)
+                0x100005d8                Chip_Clock_SetupMainPLLHz
+ .text.Chip_Clock_SetupMainPLLMult
+                0x10000700       0xfc C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(clock_18xx_43xx.o)
+                0x10000700                Chip_Clock_SetupMainPLLMult
+ .text.Chip_Clock_GetMainPLLHz
+                0x100007fc       0xc0 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(clock_18xx_43xx.o)
+                0x100007fc                Chip_Clock_GetMainPLLHz
+ .text.Chip_Clock_DisableMainPLL
+                0x100008bc       0x1c C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(clock_18xx_43xx.o)
+                0x100008bc                Chip_Clock_DisableMainPLL
+ .text.Chip_Clock_SetDivider
+                0x100008d8       0x84 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(clock_18xx_43xx.o)
+                0x100008d8                Chip_Clock_SetDivider
+ .text.Chip_Clock_GetDividerSource
+                0x1000095c       0x40 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(clock_18xx_43xx.o)
+                0x1000095c                Chip_Clock_GetDividerSource
+ .text.Chip_Clock_GetDividerDivisor
+                0x1000099c       0x38 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(clock_18xx_43xx.o)
+                0x1000099c                Chip_Clock_GetDividerDivisor
+ .text.Chip_Clock_GetClockInputHz
+                0x100009d4      0x140 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(clock_18xx_43xx.o)
+                0x100009d4                Chip_Clock_GetClockInputHz
+ .text.Chip_Clock_SetBaseClock
+                0x10000b14       0x9c C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(clock_18xx_43xx.o)
+                0x10000b14                Chip_Clock_SetBaseClock
+ .text.fpuInit  0x10000bb0       0x74 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(fpu_init.o)
+                0x10000bb0                fpuInit
+ .text.Chip_SetupCoreClock
+                0x10000c24       0xb8 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(sysinit_18xx_43xx.o)
+                0x10000c24                Chip_SetupCoreClock
+ .text.__main   0x10000cdc       0x14 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_semihost.a(_cr__main.o)
+                0x10000cdc                __CR_SEMIHOST
+                0x10000cdc                __main
+ .text._initio  0x10000cf0       0xd4 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(initio.o)
+                0x10000cf0                _initio
+ .text.setvbuf  0x10000dc4       0x8c c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(setvbuf.o)
+                0x10000dc4                setvbuf
+ .text.memset   0x10000e50       0x20 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(memset.o)
+                0x10000e50                memset
+ .text._deferredlazyseek
+                0x10000e70       0x6c c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(_deferredlazyseek.o)
+                0x10000e70                _deferredlazyseek
+ .text._fdopen  0x10000edc       0xb0 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(_fdopen.o)
+                0x10000edc                _fdopen
+ .text._fflush  0x10000f8c       0x9c c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(_fflush.o)
+                0x10000f8c                _fflush
+ .text._Cwritebuf
+                0x10001028       0xcc c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(_writebuf.o)
+                0x10001028                _Cwritebuf
+ .text.malloc   0x100010f4      0x1b8 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(alloc.o)
+                0x100010f4                malloc
+ .text.free     0x100012ac       0x70 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(alloc.o)
+                0x100012ac                free
+ .text._Csys_alloc
+                0x1000131c       0x38 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(alloc.o)
+                0x1000131c                _Csys_alloc
+ .text.fclose   0x10001354       0xa8 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(fclose.o)
+                0x10001354                fclose
+ .text.fflush   0x100013fc       0x5c c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(fflush.o)
+                0x100013fc                fflush
+ .text.fseek    0x10001458      0x1d4 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(fseek.o)
+                0x10001458                fseek
+ .text.ftell    0x1000162c       0x90 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(ftell.o)
+                0x1000162c                ftell
+ .text.remove   0x100016bc       0x24 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(remove.o)
+                0x100016bc                remove
+ .text.strlen   0x100016e0       0xa8 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(strlen.o)
+                0x100016e0                strlen
+ .text._sbrk    0x10001788       0x60 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(_cr_sbrk.o)
+                0x10001788                _sbrk
+ .text._do_fflush
+                0x100017e8       0x7c c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(_do_fflush.o)
+                0x100017e8                _do_fflush
+ .text.__check_heap_overflow
+                0x10001864       0x2c c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(_cr_check_heap.o)
+                0x10001864                __check_heap_overflow
+ .text.__aeabi_memset_lowlevel
+                0x10001890       0x32 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/fpu\libcr_eabihelpers.a(memcpy.o)
+                0x10001890                __aeabi_lowlevel_memset
+ *fill*         0x100018c2        0x2 
+ .text.__sys_appexit
+                0x100018c4        0xc c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_semihost.a(__sys_appexit.o)
+                0x100018c4                __sys_appexit
+                0x100018c4                __exit
+ .text.__sys_close
+                0x100018d0        0xc c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_semihost.a(__sys_close.o)
+                0x100018d0                __sys_close
+ .text.__sys_flen
+                0x100018dc        0xc c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_semihost.a(__sys_flen.o)
+                0x100018dc                __sys_flen
+ .text.__sys_istty
+                0x100018e8        0xc c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_semihost.a(__sys_istty.o)
+                0x100018e8                __sys_istty
+ .text.__sys_remove
+                0x100018f4        0xc c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_semihost.a(__sys_remove.o)
+                0x100018f4                __sys_remove
+ .text.__sys_seek
+                0x10001900        0xc c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_semihost.a(__sys_seek.o)
+                0x10001900                __sys_seek
+ .text.__sys_tmpnam
+                0x1000190c        0xc c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_semihost.a(__sys_tmpnam.o)
+                0x1000190c                __sys_tmpnam
+ .text.__sys_write
+                0x10001918        0xc c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_semihost.a(__sys_write.o)
+                0x10001918                __sys_write
+                0x10001918                __write
+ *(.rodata .rodata.* .constdata .constdata.*)
+ .rodata.InitClkStates
+                0x10001924       0x10 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_board_nxp_lpclink2_4370\HARD\liblpc_board_nxp_lpclink2_4370_HARD.a(board_sysinit.o)
+ .rodata.spifipinmuxing
+                0x10001934       0x18 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_board_nxp_lpclink2_4370\HARD\liblpc_board_nxp_lpclink2_4370_HARD.a(board_sysinit.o)
+ .rodata.pinmuxing
+                0x1000194c        0x4 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_board_nxp_lpclink2_4370\HARD\liblpc_board_nxp_lpclink2_4370_HARD.a(board_sysinit.o)
+ .rodata        0x10001950        0xc C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(clock_18xx_43xx.o)
+ .rodata.InitClkStates
+                0x1000195c       0x48 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(sysinit_18xx_43xx.o)
+ .rodata        0x100019a4        0x8 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(initio.o)
+ .rodata        0x100019ac       0x18 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(alloc.o)
+                0x100019c4                . = ALIGN (0x4)
+
+.glue_7         0x100019c4        0x0
+ .glue_7        0x00000000        0x0 linker stubs
+
+.glue_7t        0x100019c4        0x0
+ .glue_7t       0x00000000        0x0 linker stubs
+
+.vfp11_veneer   0x100019c4        0x0
+ .vfp11_veneer  0x00000000        0x0 linker stubs
+
+.v4_bx          0x100019c4        0x0
+ .v4_bx         0x00000000        0x0 linker stubs
+
+.iplt           0x100019c4        0x0
+ .iplt          0x00000000        0x0 ./src/CM4_TEST.o
+
+.rel.dyn        0x100019c4        0x0
+ .rel.iplt      0x00000000        0x0 ./src/CM4_TEST.o
+
+.ARM.extab
+ *(.ARM.extab* .gnu.linkonce.armextab.*)
+                0x100019c4                __exidx_start = .
+
+.ARM.exidx
+ *(.ARM.exidx* .gnu.linkonce.armexidx.*)
+                0x100019c4                __exidx_end = .
+                0x100019c4                _etext = .
+
+.data_RAM2      0x10080000        0x0 load address 0x100019c4
+ FILL mask 0xff
+                0x10080000                PROVIDE (__start_data_RAM2, .)
+ *(.ramfunc.$RAM2)
+ *(.ramfunc.$RamLoc72)
+ *(.data.$RAM2*)
+ *(.data.$RamLoc72*)
+                0x10080000                . = ALIGN (0x4)
+                0x10080000                PROVIDE (__end_data_RAM2, .)
+
+.data_RAM3      0x20000000        0x0 load address 0x100019c4
+ FILL mask 0xff
+                0x20000000                PROVIDE (__start_data_RAM3, .)
+ *(.ramfunc.$RAM3)
+ *(.ramfunc.$RamAHB32)
+ *(.data.$RAM3*)
+ *(.data.$RamAHB32*)
+                0x20000000                . = ALIGN (0x4)
+                0x20000000                PROVIDE (__end_data_RAM3, .)
+
+.data_RAM4      0x20008000        0x0 load address 0x100019c4
+ FILL mask 0xff
+                0x20008000                PROVIDE (__start_data_RAM4, .)
+ *(.ramfunc.$RAM4)
+ *(.ramfunc.$RamAHB16)
+ *(.data.$RAM4*)
+ *(.data.$RamAHB16*)
+                0x20008000                . = ALIGN (0x4)
+                0x20008000                PROVIDE (__end_data_RAM4, .)
+
+.data_RAM5      0x2000c000        0x0 load address 0x100019c4
+ FILL mask 0xff
+                0x2000c000                PROVIDE (__start_data_RAM5, .)
+ *(.ramfunc.$RAM5)
+ *(.ramfunc.$RamAHB_ETB16)
+ *(.data.$RAM5*)
+ *(.data.$RamAHB_ETB16*)
+                0x2000c000                . = ALIGN (0x4)
+                0x2000c000                PROVIDE (__end_data_RAM5, .)
+
+.data_RAM6      0x18000000        0x0 load address 0x100019c4
+ FILL mask 0xff
+                0x18000000                PROVIDE (__start_data_RAM6, .)
+ *(.ramfunc.$RAM6)
+ *(.ramfunc.$RamM0Sub16)
+ *(.data.$RAM6*)
+ *(.data.$RamM0Sub16*)
+                0x18000000                . = ALIGN (0x4)
+                0x18000000                PROVIDE (__end_data_RAM6, .)
+
+.data_RAM7      0x18004000        0x0 load address 0x100019c4
+ FILL mask 0xff
+                0x18004000                PROVIDE (__start_data_RAM7, .)
+ *(.ramfunc.$RAM7)
+ *(.ramfunc.$RamM0Sub2)
+ *(.data.$RAM7*)
+ *(.data.$RamM0Sub2*)
+                0x18004000                . = ALIGN (0x4)
+                0x18004000                PROVIDE (__end_data_RAM7, .)
+
+.uninit_RESERVED
+                0x100019c4        0x0
+ *(.bss.$RESERVED*)
+                0x100019c4                . = ALIGN (0x4)
+                0x100019c4                _end_uninit_RESERVED = .
+
+.data           0x100019c4        0x0
+ FILL mask 0xff
+                0x100019c4                _data = .
+ *(vtable)
+ *(.ramfunc*)
+ *(.data*)
+                0x100019c4                . = ALIGN (0x4)
+                0x100019c4                _edata = .
+
+.igot.plt       0x100019c4        0x0
+ .igot.plt      0x00000000        0x0 ./src/CM4_TEST.o
+
+.bss_RAM2       0x10080000        0x0
+                0x10080000                PROVIDE (__start_bss_RAM2, .)
+ *(.bss.$RAM2*)
+ *(.bss.$RamLoc72*)
+                0x10080000                . = ALIGN (0x4)
+                0x10080000                PROVIDE (__end_bss_RAM2, .)
+
+.bss_RAM3       0x20000000        0x0
+                0x20000000                PROVIDE (__start_bss_RAM3, .)
+ *(.bss.$RAM3*)
+ *(.bss.$RamAHB32*)
+                0x20000000                . = ALIGN (0x4)
+                0x20000000                PROVIDE (__end_bss_RAM3, .)
+
+.bss_RAM4       0x20008000        0x0
+                0x20008000                PROVIDE (__start_bss_RAM4, .)
+ *(.bss.$RAM4*)
+ *(.bss.$RamAHB16*)
+                0x20008000                . = ALIGN (0x4)
+                0x20008000                PROVIDE (__end_bss_RAM4, .)
+
+.bss_RAM5       0x2000c000        0x0
+                0x2000c000                PROVIDE (__start_bss_RAM5, .)
+ *(.bss.$RAM5*)
+ *(.bss.$RamAHB_ETB16*)
+                0x2000c000                . = ALIGN (0x4)
+                0x2000c000                PROVIDE (__end_bss_RAM5, .)
+
+.bss_RAM6       0x18000000        0x0
+                0x18000000                PROVIDE (__start_bss_RAM6, .)
+ *(.bss.$RAM6*)
+ *(.bss.$RamM0Sub16*)
+                0x18000000                . = ALIGN (0x4)
+                0x18000000                PROVIDE (__end_bss_RAM6, .)
+
+.bss_RAM7       0x18004000        0x0
+                0x18004000                PROVIDE (__start_bss_RAM7, .)
+ *(.bss.$RAM7*)
+ *(.bss.$RamM0Sub2*)
+                0x18004000                . = ALIGN (0x4)
+                0x18004000                PROVIDE (__end_bss_RAM7, .)
+
+.bss            0x100019c4      0x158
+                0x100019c4                _bss = .
+ *(.bss*)
+ .bss.audio_usb_pll_freq
+                0x100019c4        0x8 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(clock_18xx_43xx.o)
+ .bss.errno     0x100019cc        0x4 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(errno.o)
+                0x100019cc                errno
+ *(COMMON)
+ COMMON         0x100019d0        0x4 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(initio.o)
+                0x100019d0                _extra
+ COMMON         0x100019d4      0x140 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(stdio.o)
+                0x100019d4                __Ciob
+ COMMON         0x10001b14        0x8 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(__init_alloc.o)
+                0x10001b14                __heaps
+                0x10001b18                __end_of_heap
+                0x10001b1c                . = ALIGN (0x4)
+                0x10001b1c                _ebss = .
+                0x10001b1c                PROVIDE (end, .)
+
+.noinit_RAM2    0x10080000        0x0
+ *(.noinit.$RAM2*)
+ *(.noinit.$RamLoc72*)
+                0x10080000                . = ALIGN (0x4)
+
+.noinit_RAM3    0x20000000        0x0
+ *(.noinit.$RAM3*)
+ *(.noinit.$RamAHB32*)
+                0x20000000                . = ALIGN (0x4)
+
+.noinit_RAM4    0x20008000        0x0
+ *(.noinit.$RAM4*)
+ *(.noinit.$RamAHB16*)
+                0x20008000                . = ALIGN (0x4)
+
+.noinit_RAM5    0x2000c000        0x0
+ *(.noinit.$RAM5*)
+ *(.noinit.$RamAHB_ETB16*)
+                0x2000c000                . = ALIGN (0x4)
+
+.noinit_RAM6    0x18000000        0x0
+ *(.noinit.$RAM6*)
+ *(.noinit.$RamM0Sub16*)
+                0x18000000                . = ALIGN (0x4)
+
+.noinit_RAM7    0x18004000        0x0
+ *(.noinit.$RAM7*)
+ *(.noinit.$RamM0Sub2*)
+                0x18004000                . = ALIGN (0x4)
+
+.noinit         0x10001b1c        0x0
+                0x10001b1c                _noinit = .
+ *(.noinit*)
+                0x10001b1c                . = ALIGN (0x4)
+                0x10001b1c                _end_noinit = .
+                0x10001b1c                PROVIDE (_pvHeapStart, DEFINED (__user_heap_base)?__user_heap_base:.)
+                0x10020000                PROVIDE (_vStackTop, DEFINED (__user_stack_top)?__user_stack_top:(__top_RamLoc128 - 0x0))
+OUTPUT(CM4_TEST_LPC4370_RAM_Os_HARD.axf elf32-littlearm)
+
+.debug_info     0x00000000     0x3b14
+ .debug_info    0x00000000     0x100d ./src/CM4_TEST.o
+ .debug_info    0x0000100d      0x2ca ./src/cr_startup_lpc43xx.o
+ .debug_info    0x000012d7       0x3f ./src/crp.o
+ .debug_info    0x00001316      0x10c ./src/sysinit.o
+ .debug_info    0x00001422      0xb42 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_board_nxp_lpclink2_4370\HARD\liblpc_board_nxp_lpclink2_4370_HARD.a(board_sysinit.o)
+ .debug_info    0x00001f64     0x13ae C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(clock_18xx_43xx.o)
+ .debug_info    0x00003312      0x128 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(fpu_init.o)
+ .debug_info    0x0000343a      0x6da C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(sysinit_18xx_43xx.o)
+
+.debug_abbrev   0x00000000      0x9f1
+ .debug_abbrev  0x00000000      0x1fa ./src/CM4_TEST.o
+ .debug_abbrev  0x000001fa      0x11c ./src/cr_startup_lpc43xx.o
+ .debug_abbrev  0x00000316       0x36 ./src/crp.o
+ .debug_abbrev  0x0000034c       0xc6 ./src/sysinit.o
+ .debug_abbrev  0x00000412      0x18d C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_board_nxp_lpclink2_4370\HARD\liblpc_board_nxp_lpclink2_4370_HARD.a(board_sysinit.o)
+ .debug_abbrev  0x0000059f      0x2a1 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(clock_18xx_43xx.o)
+ .debug_abbrev  0x00000840       0x84 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(fpu_init.o)
+ .debug_abbrev  0x000008c4      0x12d C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(sysinit_18xx_43xx.o)
+
+.debug_aranges  0x00000000      0x298
+ .debug_aranges
+                0x00000000       0x20 ./src/CM4_TEST.o
+ .debug_aranges
+                0x00000020       0x80 ./src/cr_startup_lpc43xx.o
+ .debug_aranges
+                0x000000a0       0x18 ./src/crp.o
+ .debug_aranges
+                0x000000b8       0x20 ./src/sysinit.o
+ .debug_aranges
+                0x000000d8       0x40 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_board_nxp_lpclink2_4370\HARD\liblpc_board_nxp_lpclink2_4370_HARD.a(board_sysinit.o)
+ .debug_aranges
+                0x00000118      0x128 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(clock_18xx_43xx.o)
+ .debug_aranges
+                0x00000240       0x20 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(fpu_init.o)
+ .debug_aranges
+                0x00000260       0x38 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(sysinit_18xx_43xx.o)
+
+.debug_ranges   0x00000000      0x210
+ .debug_ranges  0x00000000       0x10 ./src/CM4_TEST.o
+ .debug_ranges  0x00000010       0x70 ./src/cr_startup_lpc43xx.o
+ .debug_ranges  0x00000080       0x10 ./src/sysinit.o
+ .debug_ranges  0x00000090       0x30 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_board_nxp_lpclink2_4370\HARD\liblpc_board_nxp_lpclink2_4370_HARD.a(board_sysinit.o)
+ .debug_ranges  0x000000c0      0x118 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(clock_18xx_43xx.o)
+ .debug_ranges  0x000001d8       0x10 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(fpu_init.o)
+ .debug_ranges  0x000001e8       0x28 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(sysinit_18xx_43xx.o)
+
+.debug_macro    0x00000000     0x6256
+ .debug_macro   0x00000000      0x3b7 ./src/CM4_TEST.o
+ .debug_macro   0x000003b7      0x8c2 ./src/CM4_TEST.o
+ .debug_macro   0x00000c79       0x10 ./src/CM4_TEST.o
+ .debug_macro   0x00000c89       0x10 ./src/CM4_TEST.o
+ .debug_macro   0x00000c99      0x12d ./src/CM4_TEST.o
+ .debug_macro   0x00000dc6      0x5b2 ./src/CM4_TEST.o
+ .debug_macro   0x00001378       0x22 ./src/CM4_TEST.o
+ .debug_macro   0x0000139a       0x7b ./src/CM4_TEST.o
+ .debug_macro   0x00001415       0x28 ./src/CM4_TEST.o
+ .debug_macro   0x0000143d       0x3b ./src/CM4_TEST.o
+ .debug_macro   0x00001478       0x2d ./src/CM4_TEST.o
+ .debug_macro   0x000014a5       0x42 ./src/CM4_TEST.o
+ .debug_macro   0x000014e7      0xd39 ./src/CM4_TEST.o
+ .debug_macro   0x00002220      0x2bc ./src/CM4_TEST.o
+ .debug_macro   0x000024dc      0x112 ./src/CM4_TEST.o
+ .debug_macro   0x000025ee       0x11 ./src/CM4_TEST.o
+ .debug_macro   0x000025ff       0x1e ./src/CM4_TEST.o
+ .debug_macro   0x0000261d       0x16 ./src/CM4_TEST.o
+ .debug_macro   0x00002633      0x2e6 ./src/CM4_TEST.o
+ .debug_macro   0x00002919       0x82 ./src/CM4_TEST.o
+ .debug_macro   0x0000299b      0x13d ./src/CM4_TEST.o
+ .debug_macro   0x00002ad8      0x198 ./src/CM4_TEST.o
+ .debug_macro   0x00002c70       0x34 ./src/CM4_TEST.o
+ .debug_macro   0x00002ca4       0x58 ./src/CM4_TEST.o
+ .debug_macro   0x00002cfc      0x236 ./src/CM4_TEST.o
+ .debug_macro   0x00002f32      0x572 ./src/CM4_TEST.o
+ .debug_macro   0x000034a4       0x16 ./src/CM4_TEST.o
+ .debug_macro   0x000034ba      0x18a ./src/CM4_TEST.o
+ .debug_macro   0x00003644       0x88 ./src/CM4_TEST.o
+ .debug_macro   0x000036cc      0x1b9 ./src/CM4_TEST.o
+ .debug_macro   0x00003885      0x1da ./src/CM4_TEST.o
+ .debug_macro   0x00003a5f       0x40 ./src/CM4_TEST.o
+ .debug_macro   0x00003a9f       0x1c ./src/CM4_TEST.o
+ .debug_macro   0x00003abb       0x2e ./src/CM4_TEST.o
+ .debug_macro   0x00003ae9       0x2e ./src/CM4_TEST.o
+ .debug_macro   0x00003b17       0x22 ./src/CM4_TEST.o
+ .debug_macro   0x00003b39      0x201 ./src/CM4_TEST.o
+ .debug_macro   0x00003d3a       0xe0 ./src/CM4_TEST.o
+ .debug_macro   0x00003e1a      0x34c ./src/CM4_TEST.o
+ .debug_macro   0x00004166       0xdc ./src/CM4_TEST.o
+ .debug_macro   0x00004242       0x94 ./src/CM4_TEST.o
+ .debug_macro   0x000042d6       0xb8 ./src/CM4_TEST.o
+ .debug_macro   0x0000438e       0x4c ./src/CM4_TEST.o
+ .debug_macro   0x000043da       0x16 ./src/CM4_TEST.o
+ .debug_macro   0x000043f0      0x328 ./src/CM4_TEST.o
+ .debug_macro   0x00004718       0x3a ./src/CM4_TEST.o
+ .debug_macro   0x00004752       0xd0 ./src/CM4_TEST.o
+ .debug_macro   0x00004822       0x18 ./src/CM4_TEST.o
+ .debug_macro   0x0000483a       0x22 ./src/CM4_TEST.o
+ .debug_macro   0x0000485c       0x40 ./src/CM4_TEST.o
+ .debug_macro   0x0000489c       0x5e ./src/CM4_TEST.o
+ .debug_macro   0x000048fa       0x9a ./src/CM4_TEST.o
+ .debug_macro   0x00004994       0x20 ./src/CM4_TEST.o
+ .debug_macro   0x000049b4       0x82 ./src/CM4_TEST.o
+ .debug_macro   0x00004a36       0x12 ./src/CM4_TEST.o
+ .debug_macro   0x00004a48       0xc4 ./src/CM4_TEST.o
+ .debug_macro   0x00004b0c       0xd6 ./src/CM4_TEST.o
+ .debug_macro   0x00004be2       0x22 ./src/CM4_TEST.o
+ .debug_macro   0x00004c04       0x7c ./src/CM4_TEST.o
+ .debug_macro   0x00004c80       0x40 ./src/CM4_TEST.o
+ .debug_macro   0x00004cc0       0x1d ./src/cr_startup_lpc43xx.o
+ .debug_macro   0x00004cdd       0x1a ./src/crp.o
+ .debug_macro   0x00004cf7       0x34 ./src/crp.o
+ .debug_macro   0x00004d2b      0x306 ./src/sysinit.o
+ .debug_macro   0x00005031      0x306 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_board_nxp_lpclink2_4370\HARD\liblpc_board_nxp_lpclink2_4370_HARD.a(board_sysinit.o)
+ .debug_macro   0x00005337      0x88c C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_board_nxp_lpclink2_4370\HARD\liblpc_board_nxp_lpclink2_4370_HARD.a(board_sysinit.o)
+ .debug_macro   0x00005bc3       0x2d C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_board_nxp_lpclink2_4370\HARD\liblpc_board_nxp_lpclink2_4370_HARD.a(board_sysinit.o)
+ .debug_macro   0x00005bf0      0x2d6 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(clock_18xx_43xx.o)
+ .debug_macro   0x00005ec6       0xc0 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(fpu_init.o)
+ .debug_macro   0x00005f86      0x2d0 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(sysinit_18xx_43xx.o)
+
+.debug_line     0x00000000     0x282b
+ .debug_line    0x00000000      0x7be ./src/CM4_TEST.o
+ .debug_line    0x000007be       0xd6 ./src/cr_startup_lpc43xx.o
+ .debug_line    0x00000894       0x78 ./src/crp.o
+ .debug_line    0x0000090c      0x6bc ./src/sysinit.o
+ .debug_line    0x00000fc8      0x6e0 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_board_nxp_lpclink2_4370\HARD\liblpc_board_nxp_lpclink2_4370_HARD.a(board_sysinit.o)
+ .debug_line    0x000016a8      0x94a C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(clock_18xx_43xx.o)
+ .debug_line    0x00001ff2      0x207 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(fpu_init.o)
+ .debug_line    0x000021f9      0x632 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(sysinit_18xx_43xx.o)
+
+.debug_str      0x00000000    0x183ea
+ .debug_str     0x00000000    0x174c3 ./src/CM4_TEST.o
+                              0x175f5 (size before relaxing)
+ .debug_str     0x000174c3      0x1e5 ./src/cr_startup_lpc43xx.o
+                               0x2792 (size before relaxing)
+ .debug_str     0x000176a8       0xe9 ./src/crp.o
+                               0x2677 (size before relaxing)
+ .debug_str     0x00017791       0x2c ./src/sysinit.o
+                              0x15128 (size before relaxing)
+ .debug_str     0x000177bd      0x4a3 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_board_nxp_lpclink2_4370\HARD\liblpc_board_nxp_lpclink2_4370_HARD.a(board_sysinit.o)
+                              0x15e47 (size before relaxing)
+ .debug_str     0x00017c60      0x65f C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(clock_18xx_43xx.o)
+                              0x15f73 (size before relaxing)
+ .debug_str     0x000182bf       0xad C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(fpu_init.o)
+                               0x991f (size before relaxing)
+ .debug_str     0x0001836c       0x7e C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(sysinit_18xx_43xx.o)
+                              0x158d2 (size before relaxing)
+
+.comment        0x00000000       0x70
+ .comment       0x00000000       0x70 ./src/CM4_TEST.o
+                                 0x71 (size before relaxing)
+ .comment       0x00000000       0x71 ./src/cr_startup_lpc43xx.o
+ .comment       0x00000000       0x71 ./src/crp.o
+ .comment       0x00000000       0x71 ./src/sysinit.o
+ .comment       0x00000000       0x71 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_board_nxp_lpclink2_4370\HARD\liblpc_board_nxp_lpclink2_4370_HARD.a(board_sysinit.o)
+ .comment       0x00000000       0x71 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(clock_18xx_43xx.o)
+ .comment       0x00000000       0x71 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(fpu_init.o)
+ .comment       0x00000000       0x71 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(sysinit_18xx_43xx.o)
+ .comment       0x00000000       0x71 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_semihost.a(_cr__main.o)
+ .comment       0x00000000       0x71 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(initio.o)
+ .comment       0x00000000       0x71 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(setvbuf.o)
+ .comment       0x00000000       0x71 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(stdio.o)
+ .comment       0x00000000       0x71 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(memset.o)
+ .comment       0x00000000       0x71 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(_deferredlazyseek.o)
+ .comment       0x00000000       0x71 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(_fdopen.o)
+ .comment       0x00000000       0x71 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(_fflush.o)
+ .comment       0x00000000       0x71 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(_writebuf.o)
+ .comment       0x00000000       0x71 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(alloc.o)
+ .comment       0x00000000       0x71 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(errno.o)
+ .comment       0x00000000       0x71 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(fclose.o)
+ .comment       0x00000000       0x71 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(fflush.o)
+ .comment       0x00000000       0x71 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(fseek.o)
+ .comment       0x00000000       0x71 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(ftell.o)
+ .comment       0x00000000       0x71 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(remove.o)
+ .comment       0x00000000       0x71 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(strlen.o)
+ .comment       0x00000000       0x71 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(__init_alloc.o)
+ .comment       0x00000000       0x71 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(_cr_sbrk.o)
+ .comment       0x00000000       0x71 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(_do_fflush.o)
+ .comment       0x00000000       0x71 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(_cr_check_heap.o)
+
+.ARM.attributes
+                0x00000000       0x37
+ .ARM.attributes
+                0x00000000       0x39 ./src/CM4_TEST.o
+ .ARM.attributes
+                0x00000039       0x39 ./src/cr_startup_lpc43xx.o
+ .ARM.attributes
+                0x00000072       0x39 ./src/crp.o
+ .ARM.attributes
+                0x000000ab       0x39 ./src/sysinit.o
+ .ARM.attributes
+                0x000000e4       0x39 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_board_nxp_lpclink2_4370\HARD\liblpc_board_nxp_lpclink2_4370_HARD.a(board_sysinit.o)
+ .ARM.attributes
+                0x0000011d       0x39 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(clock_18xx_43xx.o)
+ .ARM.attributes
+                0x00000156       0x39 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(fpu_init.o)
+ .ARM.attributes
+                0x0000018f       0x39 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(sysinit_18xx_43xx.o)
+ .ARM.attributes
+                0x000001c8       0x39 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_semihost.a(_cr__main.o)
+ .ARM.attributes
+                0x00000201       0x39 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(initio.o)
+ .ARM.attributes
+                0x0000023a       0x39 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(setvbuf.o)
+ .ARM.attributes
+                0x00000273       0x39 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(stdio.o)
+ .ARM.attributes
+                0x000002ac       0x39 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(memset.o)
+ .ARM.attributes
+                0x000002e5       0x39 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(_deferredlazyseek.o)
+ .ARM.attributes
+                0x0000031e       0x39 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(_fdopen.o)
+ .ARM.attributes
+                0x00000357       0x39 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(_fflush.o)
+ .ARM.attributes
+                0x00000390       0x39 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(_writebuf.o)
+ .ARM.attributes
+                0x000003c9       0x39 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(alloc.o)
+ .ARM.attributes
+                0x00000402       0x39 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(errno.o)
+ .ARM.attributes
+                0x0000043b       0x39 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(fclose.o)
+ .ARM.attributes
+                0x00000474       0x39 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(fflush.o)
+ .ARM.attributes
+                0x000004ad       0x39 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(fseek.o)
+ .ARM.attributes
+                0x000004e6       0x39 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(ftell.o)
+ .ARM.attributes
+                0x0000051f       0x39 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(remove.o)
+ .ARM.attributes
+                0x00000558       0x39 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(strlen.o)
+ .ARM.attributes
+                0x00000591       0x39 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(__init_alloc.o)
+ .ARM.attributes
+                0x000005ca       0x39 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(_cr_sbrk.o)
+ .ARM.attributes
+                0x00000603       0x39 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(_do_fflush.o)
+ .ARM.attributes
+                0x0000063c       0x39 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(_cr_check_heap.o)
+ .ARM.attributes
+                0x00000675       0x25 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/fpu\libcr_eabihelpers.a(memcpy.o)
+ .ARM.attributes
+                0x0000069a       0x25 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_semihost.a(__sys_appexit.o)
+ .ARM.attributes
+                0x000006bf       0x25 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_semihost.a(__sys_close.o)
+ .ARM.attributes
+                0x000006e4       0x25 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_semihost.a(__sys_flen.o)
+ .ARM.attributes
+                0x00000709       0x25 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_semihost.a(__sys_istty.o)
+ .ARM.attributes
+                0x0000072e       0x25 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_semihost.a(__sys_remove.o)
+ .ARM.attributes
+                0x00000753       0x25 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_semihost.a(__sys_seek.o)
+ .ARM.attributes
+                0x00000778       0x25 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_semihost.a(__sys_tmpnam.o)
+ .ARM.attributes
+                0x0000079d       0x25 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_semihost.a(__sys_write.o)
+
+.debug_frame    0x00000000      0x7d0
+ .debug_frame   0x00000000       0x28 ./src/CM4_TEST.o
+ .debug_frame   0x00000028       0xf0 ./src/cr_startup_lpc43xx.o
+ .debug_frame   0x00000118       0x2c ./src/sysinit.o
+ .debug_frame   0x00000144       0xbc C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_board_nxp_lpclink2_4370\HARD\liblpc_board_nxp_lpclink2_4370_HARD.a(board_sysinit.o)
+ .debug_frame   0x00000200      0x50c C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(clock_18xx_43xx.o)
+ .debug_frame   0x0000070c       0x38 C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(fpu_init.o)
+ .debug_frame   0x00000744       0x8c C:\Users\emh203\Dropbox\Embedded System Conference\CM4_TEST\COMMON\lpc_chip_43xx\HARD\liblpc_chip_43xx_HARD.a(sysinit_18xx_43xx.o)
+
+.debug_loc      0x00000000      0x232
+ .debug_loc     0x00000000      0x232 ./src/cr_startup_lpc43xx.o
