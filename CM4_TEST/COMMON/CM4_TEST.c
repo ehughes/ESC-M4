@@ -163,20 +163,22 @@ int main(void)
      volatile float r=1;
      uint32_t CycleTimer = 0;
      uint32_t CycleOffset = 0;
-     q31_t ta,tb;
-     q63_t ts;
+
+	#if defined (__USE_LPCOPEN)
+			#if !defined(NO_BOARD_LIB)
+				// Read clock settings and update SystemCoreClock variable
+				SystemCoreClockUpdate();
+				// Set up and initialize all required blocks and
+				// functions related to the board hardware
+				Board_Init();
+				// Set the LED to the state of "On"
+				Board_LED_Set(0, true);
+			#endif
+		#endif
 
 
- 	fpuInit();
 
-
- 	//To see when SMMULL is generated
-     ts = 0;
-
-     for(ta=0;i<4;ta++)
-        {
-         	ts = (q63_t)ta * IIR_Coef_q31[i];
-        }
+ 	 fpuInit();
 
 
 
@@ -188,17 +190,6 @@ int main(void)
      }
 
 
-		#if defined (__USE_LPCOPEN)
-			#if !defined(NO_BOARD_LIB)
-				// Read clock settings and update SystemCoreClock variable
-				SystemCoreClockUpdate();
-				// Set up and initialize all required blocks and
-				// functions related to the board hardware
-				Board_Init();
-				// Set the LED to the state of "On"
-				Board_LED_Set(0, true);
-			#endif
-		#endif
 
 
 
