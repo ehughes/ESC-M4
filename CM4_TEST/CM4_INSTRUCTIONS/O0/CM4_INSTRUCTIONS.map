@@ -904,12 +904,12 @@ OUTPUT(CM4_INSTRUCTIONS.axf elf32-littlearm)
  .debug_line    0x00000230      0x103 ./src/cr_startup_lpc43xx.o
  .debug_line    0x00000333       0x78 ./src/crp.o
 
-.debug_str      0x00000000     0x55f8
- .debug_str     0x00000000     0x5327 ./src/CM4_INSTRUCTIONS.o
-                               0x53d1 (size before relaxing)
- .debug_str     0x00005327      0x1e8 ./src/cr_startup_lpc43xx.o
+.debug_str      0x00000000     0x563a
+ .debug_str     0x00000000     0x5318 ./src/CM4_INSTRUCTIONS.o
+                               0x53c2 (size before relaxing)
+ .debug_str     0x00005318      0x239 ./src/cr_startup_lpc43xx.o
                                0x271e (size before relaxing)
- .debug_str     0x0000550f       0xe9 ./src/crp.o
+ .debug_str     0x00005551       0xe9 ./src/crp.o
                                0x260b (size before relaxing)
 
 .comment        0x00000000       0x70

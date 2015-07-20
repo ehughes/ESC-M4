@@ -26,7 +26,7 @@ int main(void)
 		q63_t c=0;
 
 		a = rand();
-		b=rand();
+		b= rand();
 		c = 0xDEADBEEF00000000;
 
 		c+= (q63_t)a*b;
@@ -37,5 +37,7 @@ int main(void)
     while(1)
     {
     }
+
+
     return 0 ;
 }

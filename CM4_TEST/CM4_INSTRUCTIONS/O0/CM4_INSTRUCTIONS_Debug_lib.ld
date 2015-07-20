@@ -4,7 +4,7 @@
  * (c) NXP Semiconductors 2013-2015
  * Generated linker script file for LPC4357
  * Created from LibIncTemplate.ld (7.7.2 ())
- * By LPCXpresso v7.7.2 [Build 379] [2015-03-31]  on Fri Jul 17 22:23:02 EDT 2015
+ * By LPCXpresso v7.7.2 [Build 379] [2015-03-31]  on Mon Jul 20 08:50:57 PDT 2015
  */
 
 
