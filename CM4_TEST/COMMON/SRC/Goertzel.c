@@ -1,5 +1,7 @@
 #include "math.h"
 #include "arm_math.h"
+#include <cr_section_macros.h>
+
 
 typedef struct
 {
@@ -22,7 +24,7 @@ void InitGoertzel_f32(Goertzel_f32_t * G,float Frequency,float SampleRate, uint3
 }
 
 
-float ProcessGoertzel_f32_Power(Goertzel_f32_t * G, float *x)
+ float ProcessGoertzel_f32_Power(Goertzel_f32_t * G, float *x)
 {
 	float sn = 0;
 	float sn_1 = 0;
