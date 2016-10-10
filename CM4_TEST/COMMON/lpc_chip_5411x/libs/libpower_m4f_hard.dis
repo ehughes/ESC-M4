@@ -1,0 +1,482 @@
+In archive C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\lpc_chip_5411x\libs\libpower_m4f_hard.a:
+
+power_library.o:     file format elf32-littlearm
+rw-rw-rw- 0/0   3180 Feb 08 19:35 2016 power_library.o
+architecture: arm, flags 0x00000011:
+HAS_RELOC, HAS_SYMS
+start address 0x00000000
+private flags = 5000000: [Version5 EABI]
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .text         00000000  00000000  00000000  00000034  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  1 .data         00000000  00000000  00000000  00000034  2**0
+                  CONTENTS, ALLOC, LOAD, DATA
+  2 .bss          00000000  00000000  00000000  00000034  2**0
+                  ALLOC
+  3 .text.deepSleepReloc 00000074  00000000  00000000  00000034  2**2
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  4 .text.Chip_POWER_SetFROHFRate 0000004c  00000000  00000000  000000a8  2**2
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  5 .text.Chip_POWER_SetPLL 00000010  00000000  00000000  000000f4  2**2
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  6 .text.Chip_POWER_SetVoltage 00000118  00000000  00000000  00000104  2**2
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  7 .text.Chip_POWER_EnterPowerMode 00000048  00000000  00000000  0000021c  2**2
+                  CONTENTS, ALLOC, LOAD, RELOC, READONLY, CODE
+  8 .text.Chip_POWER_SetLowPowerVoltage 0000005c  00000000  00000000  00000264  2**2
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  9 .text.Chip_POWER_GetFWVersion 00000010  00000000  00000000  000002c0  2**2
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 10 .text.Chip_POWER_GetROMVersion 00000020  00000000  00000000  000002d0  2**2
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 11 .text.Chip_CPU_IsMasterCore 00000028  00000000  00000000  000002f0  2**2
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 12 .text.Chip_CPU_CM0Boot 0000002c  00000000  00000000  00000318  2**2
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 13 .text.Chip_CPU_CM4Boot 0000002c  00000000  00000000  00000344  2**2
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 14 .text.Chip_CPU_SelectMasterCore 00000030  00000000  00000000  00000370  2**2
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 15 .comment      00000071  00000000  00000000  000003a0  2**0
+                  CONTENTS, READONLY
+ 16 .ARM.attributes 00000039  00000000  00000000  00000411  2**0
+                  CONTENTS, READONLY
+SYMBOL TABLE:
+00000000 l     F .text.deepSleepReloc	00000074 deepSleepReloc
+00000000 l    d  .text	00000000 .text
+00000000 l    d  .data	00000000 .data
+00000000 l    d  .bss	00000000 .bss
+00000000 l    d  .text.deepSleepReloc	00000000 .text.deepSleepReloc
+00000000 l    d  .text.Chip_POWER_SetFROHFRate	00000000 .text.Chip_POWER_SetFROHFRate
+00000000 l    d  .text.Chip_POWER_SetPLL	00000000 .text.Chip_POWER_SetPLL
+00000000 l    d  .text.Chip_POWER_SetVoltage	00000000 .text.Chip_POWER_SetVoltage
+00000000 l    d  .text.Chip_POWER_EnterPowerMode	00000000 .text.Chip_POWER_EnterPowerMode
+00000000 l    d  .text.Chip_POWER_SetLowPowerVoltage	00000000 .text.Chip_POWER_SetLowPowerVoltage
+00000000 l    d  .text.Chip_POWER_GetFWVersion	00000000 .text.Chip_POWER_GetFWVersion
+00000000 l    d  .text.Chip_POWER_GetROMVersion	00000000 .text.Chip_POWER_GetROMVersion
+00000000 l    d  .text.Chip_CPU_IsMasterCore	00000000 .text.Chip_CPU_IsMasterCore
+00000000 l    d  .text.Chip_CPU_CM0Boot	00000000 .text.Chip_CPU_CM0Boot
+00000000 l    d  .text.Chip_CPU_CM4Boot	00000000 .text.Chip_CPU_CM4Boot
+00000000 l    d  .text.Chip_CPU_SelectMasterCore	00000000 .text.Chip_CPU_SelectMasterCore
+00000000 l    d  .comment	00000000 .comment
+00000000 l    d  .ARM.attributes	00000000 .ARM.attributes
+00000000 g     F .text.Chip_POWER_SetFROHFRate	0000004c Chip_POWER_SetFROHFRate
+00000000 g     F .text.Chip_POWER_SetPLL	00000010 Chip_POWER_SetPLL
+00000000 g     F .text.Chip_POWER_SetVoltage	00000118 Chip_POWER_SetVoltage
+00000000 g     F .text.Chip_POWER_EnterPowerMode	00000048 Chip_POWER_EnterPowerMode
+00000000         *UND*	00000000 memcpy
+00000000 g     F .text.Chip_POWER_SetLowPowerVoltage	0000005c Chip_POWER_SetLowPowerVoltage
+00000000 g     F .text.Chip_POWER_GetFWVersion	00000010 Chip_POWER_GetFWVersion
+00000000 g     F .text.Chip_POWER_GetROMVersion	00000020 Chip_POWER_GetROMVersion
+00000000 g     F .text.Chip_CPU_IsMasterCore	00000028 Chip_CPU_IsMasterCore
+00000000 g     F .text.Chip_CPU_CM0Boot	0000002c Chip_CPU_CM0Boot
+00000000 g     F .text.Chip_CPU_CM4Boot	0000002c Chip_CPU_CM4Boot
+00000000 g     F .text.Chip_CPU_SelectMasterCore	00000030 Chip_CPU_SelectMasterCore
+
+
+
+Disassembly of section .text.deepSleepReloc:
+
+00000000 <deepSleepReloc>:
+   0:	b573      	push	{r0, r1, r4, r5, r6, lr}
+   2:	f3ef 8610 	mrs	r6, PRIMASK
+   6:	b672      	cpsid	i
+   8:	4b17      	ldr	r3, [pc, #92]	; (68 <deepSleepReloc+0x68>)
+   a:	4d18      	ldr	r5, [pc, #96]	; (6c <deepSleepReloc+0x6c>)
+   c:	691a      	ldr	r2, [r3, #16]
+   e:	4818      	ldr	r0, [pc, #96]	; (70 <deepSleepReloc+0x70>)
+  10:	f042 0204 	orr.w	r2, r2, #4
+  14:	611a      	str	r2, [r3, #16]
+  16:	f04f 4280 	mov.w	r2, #1073741824	; 0x40000000
+  1a:	400d      	ands	r5, r1
+  1c:	f8d2 4610 	ldr.w	r4, [r2, #1552]	; 0x610
+  20:	f024 0408 	bic.w	r4, r4, #8
+  24:	4320      	orrs	r0, r4
+  26:	ea20 0005 	bic.w	r0, r0, r5
+  2a:	f8c2 0600 	str.w	r0, [r2, #1536]	; 0x600
+  2e:	f04f 5040 	mov.w	r0, #805306368	; 0x30000000
+  32:	f8c2 0624 	str.w	r0, [r2, #1572]	; 0x624
+  36:	bf30      	wfi
+  38:	f04f 5000 	mov.w	r0, #536870912	; 0x20000000
+  3c:	f8c2 0634 	str.w	r0, [r2, #1588]	; 0x634
+  40:	f8c2 4610 	str.w	r4, [r2, #1552]	; 0x610
+  44:	06ca      	lsls	r2, r1, #27
+  46:	d407      	bmi.n	58 <deepSleepReloc+0x58>
+  48:	691a      	ldr	r2, [r3, #16]
+  4a:	f022 0204 	bic.w	r2, r2, #4
+  4e:	611a      	str	r2, [r3, #16]
+  50:	f386 8810 	msr	PRIMASK, r6
+  54:	b002      	add	sp, #8
+  56:	bd70      	pop	{r4, r5, r6, pc}
+  58:	2200      	movs	r2, #0
+  5a:	9201      	str	r2, [sp, #4]
+  5c:	9a01      	ldr	r2, [sp, #4]
+  5e:	2a23      	cmp	r2, #35	; 0x23
+  60:	d8f2      	bhi.n	48 <deepSleepReloc+0x48>
+  62:	9a01      	ldr	r2, [sp, #4]
+  64:	3201      	adds	r2, #1
+  66:	e7f8      	b.n	5a <deepSleepReloc+0x5a>
+  68:	ed00 e000 	stc	0, cr14, [r0, #-0]
+  6c:	e110      	b.n	290 <deepSleepReloc+0x290>
+  6e:	0011      	movs	r1, r2
+  70:	d7f5      	bvc.n	5e <deepSleepReloc+0x5e>
+  72:	Address 0x00000072 is out of bounds.
+
+
+Disassembly of section .text.Chip_POWER_SetFROHFRate:
+
+00000000 <Chip_POWER_SetFROHFRate>:
+   0:	4b0e      	ldr	r3, [pc, #56]	; (3c <Chip_POWER_SetFROHFRate+0x3c>)
+   2:	4298      	cmp	r0, r3
+   4:	d108      	bne.n	18 <Chip_POWER_SetFROHFRate+0x18>
+   6:	4b0e      	ldr	r3, [pc, #56]	; (40 <Chip_POWER_SetFROHFRate+0x40>)
+   8:	681b      	ldr	r3, [r3, #0]
+   a:	f023 437c 	bic.w	r3, r3, #4227858432	; 0xfc000000
+   e:	f423 4340 	bic.w	r3, r3, #49152	; 0xc000
+  12:	f043 4340 	orr.w	r3, r3, #3221225472	; 0xc0000000
+  16:	e00c      	b.n	32 <Chip_POWER_SetFROHFRate+0x32>
+  18:	4b0a      	ldr	r3, [pc, #40]	; (44 <Chip_POWER_SetFROHFRate+0x44>)
+  1a:	4298      	cmp	r0, r3
+  1c:	d10d      	bne.n	3a <Chip_POWER_SetFROHFRate+0x3a>
+  1e:	4b0a      	ldr	r3, [pc, #40]	; (48 <Chip_POWER_SetFROHFRate+0x48>)
+  20:	681b      	ldr	r3, [r3, #0]
+  22:	f023 437c 	bic.w	r3, r3, #4227858432	; 0xfc000000
+  26:	f423 4340 	bic.w	r3, r3, #49152	; 0xc000
+  2a:	f043 4340 	orr.w	r3, r3, #3221225472	; 0xc0000000
+  2e:	f443 4380 	orr.w	r3, r3, #16384	; 0x4000
+  32:	f04f 4280 	mov.w	r2, #1073741824	; 0x40000000
+  36:	f8c2 3500 	str.w	r3, [r2, #1280]	; 0x500
+  3a:	4770      	bx	lr
+  3c:	6c00      	ldr	r0, [r0, #64]	; 0x40
+  3e:	02dc      	lsls	r4, r3, #11
+  40:	0444      	lsls	r4, r0, #17
+  42:	0100      	lsls	r0, r0, #4
+  44:	d800      	bhi.n	48 <Chip_POWER_SetFROHFRate+0x48>
+  46:	05b8      	lsls	r0, r7, #22
+  48:	0430      	lsls	r0, r6, #16
+  4a:	0100      	lsls	r0, r0, #4
+
+Disassembly of section .text.Chip_POWER_SetPLL:
+
+00000000 <Chip_POWER_SetPLL>:
+   0:	4b02      	ldr	r3, [pc, #8]	; (c <Chip_POWER_SetPLL+0xc>)
+   2:	681b      	ldr	r3, [r3, #0]
+   4:	689b      	ldr	r3, [r3, #8]
+   6:	681b      	ldr	r3, [r3, #0]
+   8:	4718      	bx	r3
+   a:	bf00      	nop
+   c:	0200      	lsls	r0, r0, #8
+   e:	0300      	lsls	r0, r0, #12
+
+Disassembly of section .text.Chip_POWER_SetVoltage:
+
+00000000 <Chip_POWER_SetVoltage>:
+   0:	4b33      	ldr	r3, [pc, #204]	; (d0 <Chip_POWER_SetVoltage+0xd0>)
+   2:	4298      	cmp	r0, r3
+   4:	b570      	push	{r4, r5, r6, lr}
+   6:	d860      	bhi.n	ca <Chip_POWER_SetVoltage+0xca>
+   8:	f04f 4380 	mov.w	r3, #1073741824	; 0x40000000
+   c:	4a31      	ldr	r2, [pc, #196]	; (d4 <Chip_POWER_SetVoltage+0xd4>)
+   e:	f8c3 2630 	str.w	r2, [r3, #1584]	; 0x630
+  12:	f8d3 5400 	ldr.w	r5, [r3, #1024]	; 0x400
+  16:	4b30      	ldr	r3, [pc, #192]	; (d8 <Chip_POWER_SetVoltage+0xd8>)
+  18:	4298      	cmp	r0, r3
+  1a:	f425 4570 	bic.w	r5, r5, #61440	; 0xf000
+  1e:	d922      	bls.n	66 <Chip_POWER_SetVoltage+0x66>
+  20:	4b2e      	ldr	r3, [pc, #184]	; (dc <Chip_POWER_SetVoltage+0xdc>)
+  22:	4298      	cmp	r0, r3
+  24:	d921      	bls.n	6a <Chip_POWER_SetVoltage+0x6a>
+  26:	f503 0337 	add.w	r3, r3, #11993088	; 0xb70000
+  2a:	f503 53d8 	add.w	r3, r3, #6912	; 0x1b00
+  2e:	4298      	cmp	r0, r3
+  30:	d91d      	bls.n	6e <Chip_POWER_SetVoltage+0x6e>
+  32:	4b2b      	ldr	r3, [pc, #172]	; (e0 <Chip_POWER_SetVoltage+0xe0>)
+  34:	4298      	cmp	r0, r3
+  36:	d91c      	bls.n	72 <Chip_POWER_SetVoltage+0x72>
+  38:	4b2a      	ldr	r3, [pc, #168]	; (e4 <Chip_POWER_SetVoltage+0xe4>)
+  3a:	4298      	cmp	r0, r3
+  3c:	d91b      	bls.n	76 <Chip_POWER_SetVoltage+0x76>
+  3e:	f503 0337 	add.w	r3, r3, #11993088	; 0xb70000
+  42:	f503 53d8 	add.w	r3, r3, #6912	; 0x1b00
+  46:	4298      	cmp	r0, r3
+  48:	d917      	bls.n	7a <Chip_POWER_SetVoltage+0x7a>
+  4a:	f503 0337 	add.w	r3, r3, #11993088	; 0xb70000
+  4e:	f503 53d8 	add.w	r3, r3, #6912	; 0x1b00
+  52:	4298      	cmp	r0, r3
+  54:	d913      	bls.n	7e <Chip_POWER_SetVoltage+0x7e>
+  56:	4b24      	ldr	r3, [pc, #144]	; (e8 <Chip_POWER_SetVoltage+0xe8>)
+  58:	4a24      	ldr	r2, [pc, #144]	; (ec <Chip_POWER_SetVoltage+0xec>)
+  5a:	4c25      	ldr	r4, [pc, #148]	; (f0 <Chip_POWER_SetVoltage+0xf0>)
+  5c:	42a0      	cmp	r0, r4
+  5e:	bf94      	ite	ls
+  60:	4614      	movls	r4, r2
+  62:	461c      	movhi	r4, r3
+  64:	e00c      	b.n	80 <Chip_POWER_SetVoltage+0x80>
+  66:	4c23      	ldr	r4, [pc, #140]	; (f4 <Chip_POWER_SetVoltage+0xf4>)
+  68:	e00a      	b.n	80 <Chip_POWER_SetVoltage+0x80>
+  6a:	4c23      	ldr	r4, [pc, #140]	; (f8 <Chip_POWER_SetVoltage+0xf8>)
+  6c:	e008      	b.n	80 <Chip_POWER_SetVoltage+0x80>
+  6e:	4c23      	ldr	r4, [pc, #140]	; (fc <Chip_POWER_SetVoltage+0xfc>)
+  70:	e006      	b.n	80 <Chip_POWER_SetVoltage+0x80>
+  72:	4c23      	ldr	r4, [pc, #140]	; (100 <Chip_POWER_SetVoltage+0x100>)
+  74:	e004      	b.n	80 <Chip_POWER_SetVoltage+0x80>
+  76:	4c23      	ldr	r4, [pc, #140]	; (104 <Chip_POWER_SetVoltage+0x104>)
+  78:	e002      	b.n	80 <Chip_POWER_SetVoltage+0x80>
+  7a:	4c23      	ldr	r4, [pc, #140]	; (108 <Chip_POWER_SetVoltage+0x108>)
+  7c:	e000      	b.n	80 <Chip_POWER_SetVoltage+0x80>
+  7e:	4c23      	ldr	r4, [pc, #140]	; (10c <Chip_POWER_SetVoltage+0x10c>)
+  80:	4e23      	ldr	r6, [pc, #140]	; (110 <Chip_POWER_SetVoltage+0x110>)
+  82:	6833      	ldr	r3, [r6, #0]
+  84:	689b      	ldr	r3, [r3, #8]
+  86:	f004 010f 	and.w	r1, r4, #15
+  8a:	691b      	ldr	r3, [r3, #16]
+  8c:	2000      	movs	r0, #0
+  8e:	4798      	blx	r3
+  90:	6833      	ldr	r3, [r6, #0]
+  92:	689b      	ldr	r3, [r3, #8]
+  94:	2001      	movs	r0, #1
+  96:	691b      	ldr	r3, [r3, #16]
+  98:	210b      	movs	r1, #11
+  9a:	4798      	blx	r3
+  9c:	6833      	ldr	r3, [r6, #0]
+  9e:	689b      	ldr	r3, [r3, #8]
+  a0:	f3c4 3103 	ubfx	r1, r4, #12, #4
+  a4:	691b      	ldr	r3, [r3, #16]
+  a6:	2002      	movs	r0, #2
+  a8:	4798      	blx	r3
+  aa:	6833      	ldr	r3, [r6, #0]
+  ac:	689b      	ldr	r3, [r3, #8]
+  ae:	f3c4 4183 	ubfx	r1, r4, #18, #4
+  b2:	691b      	ldr	r3, [r3, #16]
+  b4:	2003      	movs	r0, #3
+  b6:	4798      	blx	r3
+  b8:	0e24      	lsrs	r4, r4, #24
+  ba:	f04f 4380 	mov.w	r3, #1073741824	; 0x40000000
+  be:	ea45 3404 	orr.w	r4, r5, r4, lsl #12
+  c2:	f8c3 4400 	str.w	r4, [r3, #1024]	; 0x400
+  c6:	2000      	movs	r0, #0
+  c8:	bd70      	pop	{r4, r5, r6, pc}
+  ca:	4812      	ldr	r0, [pc, #72]	; (114 <Chip_POWER_SetVoltage+0x114>)
+  cc:	bd70      	pop	{r4, r5, r6, pc}
+  ce:	bf00      	nop
+  d0:	e4e7      	b.n	fffffaa2 <Chip_POWER_SetVoltage+0xfffffaa2>
+  d2:	05f5      	lsls	r5, r6, #23
+  d4:	0004      	movs	r4, r0
+  d6:	3800      	subs	r0, #0
+  d8:	1b00      	subs	r0, r0, r4
+  da:	00b7      	lsls	r7, r6, #2
+  dc:	3600      	adds	r6, #0
+  de:	016e      	lsls	r6, r5, #5
+  e0:	6c00      	ldr	r0, [r0, #64]	; 0x40
+  e2:	02dc      	lsls	r4, r3, #11
+  e4:	8700      	strh	r0, [r0, #56]	; 0x38
+  e6:	0393      	lsls	r3, r2, #14
+  e8:	d2cd      	bcs.n	86 <Chip_POWER_SetVoltage+0x86>
+  ea:	0534      	lsls	r4, r6, #20
+  ec:	c2cc      	stmia	r2!, {r2, r3, r6, r7}
+  ee:	0530      	lsls	r0, r6, #20
+  f0:	d800      	bhi.n	f4 <Chip_POWER_SetVoltage+0xf4>
+  f2:	05b8      	lsls	r0, r7, #22
+  f4:	b2c6      	uxtb	r6, r0
+  f6:	0018      	movs	r0, r3
+  f8:	b2c7      	uxtb	r7, r0
+  fa:	011c      	lsls	r4, r3, #4
+  fc:	b2c8      	uxtb	r0, r1
+  fe:	0220      	lsls	r0, r4, #8
+ 100:	b2c9      	uxtb	r1, r1
+ 102:	0224      	lsls	r4, r4, #8
+ 104:	b2ca      	uxtb	r2, r1
+ 106:	0328      	lsls	r0, r5, #12
+ 108:	b2cb      	uxtb	r3, r1
+ 10a:	032c      	lsls	r4, r5, #12
+ 10c:	b2cb      	uxtb	r3, r1
+ 10e:	042c      	lsls	r4, r5, #16
+ 110:	0200      	lsls	r0, r0, #8
+ 112:	0300      	lsls	r0, r0, #12
+ 114:	0002      	movs	r2, r0
+ 116:	000b      	movs	r3, r1
+
+Disassembly of section .text.Chip_POWER_EnterPowerMode:
+
+00000000 <Chip_POWER_EnterPowerMode>:
+   0:	b570      	push	{r4, r5, r6, lr}
+   2:	2801      	cmp	r0, #1
+   4:	b0e4      	sub	sp, #400	; 0x190
+   6:	4605      	mov	r5, r0
+   8:	460e      	mov	r6, r1
+   a:	d10e      	bne.n	2a <Chip_POWER_EnterPowerMode+0x2a>
+   c:	490c      	ldr	r1, [pc, #48]	; (40 <Chip_POWER_EnterPowerMode+0x40>)
+   e:	466c      	mov	r4, sp
+  10:	4668      	mov	r0, sp
+  12:	f021 0101 	bic.w	r1, r1, #1
+  16:	f44f 72c8 	mov.w	r2, #400	; 0x190
+  1a:	f7ff fffe 	bl	0 <memcpy>
+			1a: R_ARM_THM_CALL	memcpy
+  1e:	f044 0401 	orr.w	r4, r4, #1
+  22:	4628      	mov	r0, r5
+  24:	4631      	mov	r1, r6
+  26:	47a0      	blx	r4
+  28:	e007      	b.n	3a <Chip_POWER_EnterPowerMode+0x3a>
+  2a:	4b06      	ldr	r3, [pc, #24]	; (44 <Chip_POWER_EnterPowerMode+0x44>)
+  2c:	681b      	ldr	r3, [r3, #0]
+  2e:	689b      	ldr	r3, [r3, #8]
+  30:	2802      	cmp	r0, #2
+  32:	689b      	ldr	r3, [r3, #8]
+  34:	bf08      	it	eq
+  36:	2003      	moveq	r0, #3
+  38:	4798      	blx	r3
+  3a:	b064      	add	sp, #400	; 0x190
+  3c:	bd70      	pop	{r4, r5, r6, pc}
+  3e:	bf00      	nop
+  40:	0000      	movs	r0, r0
+			40: R_ARM_ABS32	deepSleepReloc
+  42:	0000      	movs	r0, r0
+  44:	0200      	lsls	r0, r0, #8
+  46:	0300      	lsls	r0, r0, #12
+
+Disassembly of section .text.Chip_POWER_SetLowPowerVoltage:
+
+00000000 <Chip_POWER_SetLowPowerVoltage>:
+   0:	4b12      	ldr	r3, [pc, #72]	; (4c <Chip_POWER_SetLowPowerVoltage+0x4c>)
+   2:	4a13      	ldr	r2, [pc, #76]	; (50 <Chip_POWER_SetLowPowerVoltage+0x50>)
+   4:	4298      	cmp	r0, r3
+   6:	f04f 4380 	mov.w	r3, #1073741824	; 0x40000000
+   a:	d00f      	beq.n	2c <Chip_POWER_SetLowPowerVoltage+0x2c>
+   c:	4911      	ldr	r1, [pc, #68]	; (54 <Chip_POWER_SetLowPowerVoltage+0x54>)
+   e:	4288      	cmp	r0, r1
+  10:	d119      	bne.n	46 <Chip_POWER_SetLowPowerVoltage+0x46>
+  12:	4911      	ldr	r1, [pc, #68]	; (58 <Chip_POWER_SetLowPowerVoltage+0x58>)
+  14:	f640 5054 	movw	r0, #3412	; 0xd54
+  18:	6008      	str	r0, [r1, #0]
+  1a:	f8c3 2620 	str.w	r2, [r3, #1568]	; 0x620
+  1e:	f8d3 2400 	ldr.w	r2, [r3, #1024]	; 0x400
+  22:	f422 4270 	bic.w	r2, r2, #61440	; 0xf000
+  26:	f442 5200 	orr.w	r2, r2, #8192	; 0x2000
+  2a:	e009      	b.n	40 <Chip_POWER_SetLowPowerVoltage+0x40>
+  2c:	490a      	ldr	r1, [pc, #40]	; (58 <Chip_POWER_SetLowPowerVoltage+0x58>)
+  2e:	f640 1054 	movw	r0, #2388	; 0x954
+  32:	6008      	str	r0, [r1, #0]
+  34:	f8c3 2620 	str.w	r2, [r3, #1568]	; 0x620
+  38:	f8d3 2400 	ldr.w	r2, [r3, #1024]	; 0x400
+  3c:	f422 4270 	bic.w	r2, r2, #61440	; 0xf000
+  40:	f8c3 2400 	str.w	r2, [r3, #1024]	; 0x400
+  44:	4770      	bx	lr
+  46:	f8c3 2630 	str.w	r2, [r3, #1584]	; 0x630
+  4a:	4770      	bx	lr
+  4c:	1b00      	subs	r0, r0, r4
+  4e:	00b7      	lsls	r7, r6, #2
+  50:	1004      	asrs	r4, r0, #32
+  52:	3800      	subs	r0, #0
+  54:	6c00      	ldr	r0, [r0, #64]	; 0x40
+  56:	02dc      	lsls	r4, r3, #11
+  58:	0040      	lsls	r0, r0, #1
+  5a:	4002      	ands	r2, r0
+
+Disassembly of section .text.Chip_POWER_GetFWVersion:
+
+00000000 <Chip_POWER_GetFWVersion>:
+   0:	4b02      	ldr	r3, [pc, #8]	; (c <Chip_POWER_GetFWVersion+0xc>)
+   2:	681b      	ldr	r3, [r3, #0]
+   4:	689b      	ldr	r3, [r3, #8]
+   6:	6b5b      	ldr	r3, [r3, #52]	; 0x34
+   8:	4718      	bx	r3
+   a:	bf00      	nop
+   c:	0200      	lsls	r0, r0, #8
+   e:	0300      	lsls	r0, r0, #12
+
+Disassembly of section .text.Chip_POWER_GetROMVersion:
+
+00000000 <Chip_POWER_GetROMVersion>:
+   0:	b500      	push	{lr}
+   2:	b08b      	sub	sp, #44	; 0x2c
+   4:	a80a      	add	r0, sp, #40	; 0x28
+   6:	2337      	movs	r3, #55	; 0x37
+   8:	f840 3d14 	str.w	r3, [r0, #-20]!
+   c:	a901      	add	r1, sp, #4
+   e:	4b03      	ldr	r3, [pc, #12]	; (1c <Chip_POWER_GetROMVersion+0x1c>)
+  10:	4798      	blx	r3
+  12:	9802      	ldr	r0, [sp, #8]
+  14:	b00b      	add	sp, #44	; 0x2c
+  16:	f85d fb04 	ldr.w	pc, [sp], #4
+  1a:	bf00      	nop
+  1c:	0205      	lsls	r5, r0, #8
+  1e:	0300      	lsls	r0, r0, #12
+
+Disassembly of section .text.Chip_CPU_IsMasterCore:
+
+00000000 <Chip_CPU_IsMasterCore>:
+   0:	4b08      	ldr	r3, [pc, #32]	; (24 <Chip_CPU_IsMasterCore+0x24>)
+   2:	681b      	ldr	r3, [r3, #0]
+   4:	f640 4224 	movw	r2, #3108	; 0xc24
+   8:	f3c3 130b 	ubfx	r3, r3, #4, #12
+   c:	4293      	cmp	r3, r2
+   e:	f04f 4380 	mov.w	r3, #1073741824	; 0x40000000
+  12:	f8d3 0800 	ldr.w	r0, [r3, #2048]	; 0x800
+  16:	f000 0001 	and.w	r0, r0, #1
+  1a:	bf18      	it	ne
+  1c:	f080 0001 	eorne.w	r0, r0, #1
+  20:	4770      	bx	lr
+  22:	bf00      	nop
+  24:	ed00 e000 	stc	0, cr14, [r0, #-0]
+
+Disassembly of section .text.Chip_CPU_CM0Boot:
+
+00000000 <Chip_CPU_CM0Boot>:
+   0:	f04f 4380 	mov.w	r3, #1073741824	; 0x40000000
+   4:	4a07      	ldr	r2, [pc, #28]	; (24 <Chip_CPU_CM0Boot+0x24>)
+   6:	f8c3 1808 	str.w	r1, [r3, #2056]	; 0x808
+   a:	f8c3 0804 	str.w	r0, [r3, #2052]	; 0x804
+   e:	f8d3 0800 	ldr.w	r0, [r3, #2048]	; 0x800
+  12:	4905      	ldr	r1, [pc, #20]	; (28 <Chip_CPU_CM0Boot+0x28>)
+  14:	4302      	orrs	r2, r0
+  16:	4301      	orrs	r1, r0
+  18:	f8c3 1800 	str.w	r1, [r3, #2048]	; 0x800
+  1c:	f8c3 2800 	str.w	r2, [r3, #2048]	; 0x800
+  20:	4770      	bx	lr
+  22:	bf00      	nop
+  24:	0008      	movs	r0, r1
+  26:	c0c4      	stmia	r0!, {r2, r6, r7}
+  28:	0028      	movs	r0, r5
+  2a:	c0c4      	stmia	r0!, {r2, r6, r7}
+
+Disassembly of section .text.Chip_CPU_CM4Boot:
+
+00000000 <Chip_CPU_CM4Boot>:
+   0:	f04f 4380 	mov.w	r3, #1073741824	; 0x40000000
+   4:	4a07      	ldr	r2, [pc, #28]	; (24 <Chip_CPU_CM4Boot+0x24>)
+   6:	f8c3 1808 	str.w	r1, [r3, #2056]	; 0x808
+   a:	f8c3 0804 	str.w	r0, [r3, #2052]	; 0x804
+   e:	f8d3 0800 	ldr.w	r0, [r3, #2048]	; 0x800
+  12:	4905      	ldr	r1, [pc, #20]	; (28 <Chip_CPU_CM4Boot+0x28>)
+  14:	4302      	orrs	r2, r0
+  16:	4301      	orrs	r1, r0
+  18:	f8c3 1800 	str.w	r1, [r3, #2048]	; 0x800
+  1c:	f8c3 2800 	str.w	r2, [r3, #2048]	; 0x800
+  20:	4770      	bx	lr
+  22:	bf00      	nop
+  24:	0004      	movs	r4, r0
+  26:	c0c4      	stmia	r0!, {r2, r6, r7}
+  28:	0014      	movs	r4, r2
+  2a:	c0c4      	stmia	r0!, {r2, r6, r7}
+
+Disassembly of section .text.Chip_CPU_SelectMasterCore:
+
+00000000 <Chip_CPU_SelectMasterCore>:
+   0:	f04f 4380 	mov.w	r3, #1073741824	; 0x40000000
+   4:	f8d3 2800 	ldr.w	r2, [r3, #2048]	; 0x800
+   8:	f022 0241 	bic.w	r2, r2, #65	; 0x41
+   c:	b920      	cbnz	r0, 18 <Chip_CPU_SelectMasterCore+0x18>
+   e:	f042 4340 	orr.w	r3, r2, #3221225472	; 0xc0000000
+  12:	f443 0344 	orr.w	r3, r3, #12845056	; 0xc40000
+  16:	e001      	b.n	1c <Chip_CPU_SelectMasterCore+0x1c>
+  18:	4b04      	ldr	r3, [pc, #16]	; (2c <Chip_CPU_SelectMasterCore+0x2c>)
+  1a:	4313      	orrs	r3, r2
+  1c:	b109      	cbz	r1, 22 <Chip_CPU_SelectMasterCore+0x22>
+  1e:	f043 0340 	orr.w	r3, r3, #64	; 0x40
+  22:	f04f 4280 	mov.w	r2, #1073741824	; 0x40000000
+  26:	f8c2 3800 	str.w	r3, [r2, #2048]	; 0x800
+  2a:	4770      	bx	lr
+  2c:	0001      	movs	r1, r0
+  2e:	c0c4      	stmia	r0!, {r2, r6, r7}
