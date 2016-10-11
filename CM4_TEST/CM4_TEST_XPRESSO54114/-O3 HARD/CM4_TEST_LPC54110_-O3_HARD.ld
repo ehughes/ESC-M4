@@ -5,7 +5,7 @@
  * Generated linker script file for LPC54114J256
  * Created from linkscript.ldt by FMCreateLinkLibraries
  * Using Freemarker v2.3.23
- * LPCXpresso v8.2.2 [Build 650] [2016-09-09]  on Oct 9, 2016 10:05:59 PM
+ * LPCXpresso v8.2.2 [Build 650] [2016-09-09]  on Oct 11, 2016 2:55:40 PM
  */
 
 INCLUDE "CM4_TEST_LPC54110_-O3_HARD_library.ld"
@@ -28,10 +28,15 @@ SECTIONS
         LONG(LOADADDR(.data));
         LONG(    ADDR(.data));
         LONG(  SIZEOF(.data));
+        LONG(LOADADDR(.data_RAM2));
+        LONG(    ADDR(.data_RAM2));
+        LONG(  SIZEOF(.data_RAM2));
         __data_section_table_end = .;
         __bss_section_table = .;
         LONG(    ADDR(.bss));
         LONG(  SIZEOF(.bss));
+        LONG(    ADDR(.bss_RAM2));
+        LONG(  SIZEOF(.bss_RAM2));
         __bss_section_table_end = .;
         __section_table_end = . ;
 	    /* End of Global Section Table */
@@ -45,14 +50,14 @@ SECTIONS
         PROVIDE(__CRP_WORD_END__ = .) ;
         ASSERT(!(__CRP_WORD_START__ == __CRP_WORD_END__), "Linker CRP Enabled, but no CRP_WORD provided within application");
         /* End of Code Read Protection */
-    } >MFlash256
+    } >Ram0_64
 
     .text : ALIGN(4)    
     {
         *(.text*)
         *(.rodata .rodata.* .constdata .constdata.*)
         . = ALIGN(4);
-    } > MFlash256
+    } > Ram0_64
     /*
      * for exception handling/unwind - some Newlib functions (in common
      * with C++ and STDC++) use this. 
@@ -60,25 +65,38 @@ SECTIONS
     .ARM.extab : ALIGN(4) 
     {
         *(.ARM.extab* .gnu.linkonce.armextab.*)
-    } > MFlash256
+    } > Ram0_64
     __exidx_start = .;
 
     .ARM.exidx : ALIGN(4)
     {
         *(.ARM.exidx* .gnu.linkonce.armexidx.*)
-    } > MFlash256
+    } > Ram0_64
     __exidx_end = .;
 
     _etext = .;
         
+    /* DATA section for RamX_32 */
+    .data_RAM2 : ALIGN(4)
+    {
+        FILL(0xff)
+        PROVIDE(__start_data_RAM2 = .) ;
+        *(.ramfunc.$RAM2)
+        *(.ramfunc.$RamX_32)
+        *(.data.$RAM2*)
+        *(.data.$RamX_32*)
+        . = ALIGN(4) ;
+        PROVIDE(__end_data_RAM2 = .) ;
+     } > RamX_32 AT>Ram0_64
+
     /* MAIN DATA SECTION */
     .uninit_RESERVED : ALIGN(4)
     {
         KEEP(*(.bss.$RESERVED*))
         . = ALIGN(4) ;
         _end_uninit_RESERVED = .;
-    } > Ram0_160
-    /* Main DATA section (Ram0_160) */
+    } > Ram0_64
+    /* Main DATA section (Ram0_64) */
     .data : ALIGN(4)
     {
        FILL(0xff)
@@ -88,7 +106,16 @@ SECTIONS
        *(.data*)
        . = ALIGN(4) ;
        _edata = . ;
-    } > Ram0_160 AT>MFlash256
+    } > Ram0_64 AT>Ram0_64
+    /* BSS section for RamX_32 */
+    .bss_RAM2 : ALIGN(4)
+    {
+       PROVIDE(__start_bss_RAM2 = .) ;
+       *(.bss.$RAM2*)
+       *(.bss.$RamX_32*)
+       . = ALIGN (. != 0 ? 4 : 1) ; /* avoid empty segment */
+       PROVIDE(__end_bss_RAM2 = .) ;
+    } > RamX_32 
     /* MAIN BSS SECTION */
     .bss : ALIGN(4)
     {
@@ -98,7 +125,14 @@ SECTIONS
         . = ALIGN(4) ;
         _ebss = .;
         PROVIDE(end = .);
-    } > Ram0_160
+    } > Ram0_64
+    /* NOINIT section for RamX_32 */
+    .noinit_RAM2 (NOLOAD) : ALIGN(4)
+    {
+       *(.noinit.$RAM2*)
+       *(.noinit.$RamX_32*)
+       . = ALIGN(4) ;
+    } > RamX_32 
     /* DEFAULT NOINIT SECTION */
     .noinit (NOLOAD): ALIGN(4)
     {
@@ -106,10 +140,10 @@ SECTIONS
         *(.noinit*) 
          . = ALIGN(4) ;
         _end_noinit = .;
-    } > Ram0_160
+    } > Ram0_64
 
     PROVIDE(_pvHeapStart = DEFINED(__user_heap_base) ? __user_heap_base : .);
-    PROVIDE(_vStackTop = DEFINED(__user_stack_top) ? __user_stack_top : __top_Ram0_160 - 0);
+    PROVIDE(_vStackTop = DEFINED(__user_stack_top) ? __user_stack_top : __top_Ram0_64 - 0);
 
     /* ## Create checksum value (used in startup) ## */
     PROVIDE(__valid_user_code_checksum = 0 - 

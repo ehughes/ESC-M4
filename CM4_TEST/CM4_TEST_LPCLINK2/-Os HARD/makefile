@@ -29,14 +29,14 @@ all: CM4_TEST_LPC4370_RAM_Os_HARD.axf
 CM4_TEST_LPC4370_RAM_Os_HARD.axf: $(OBJS) $(USER_OBJS)
 	@echo 'Building target: $@'
 	@echo 'Invoking: MCU Linker'
-	arm-none-eabi-gcc -nostdlib -L"C:\Users\Eli\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\CMSIS_DSP_4_3_0\-O0 HARD" -L"C:\Users\Eli\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\CMSIS_DSP_4_3_0\-O0 SOFT" -L"C:\Users\Eli\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\CMSIS_DSP_4_3_0\-O1 SOFT" -L"C:\Users\Eli\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\CMSIS_DSP_4_3_0\-O2 SOFT" -L"C:\Users\Eli\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\CMSIS_DSP_4_3_0\-O3 SOFT" -L"C:\Users\Eli\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\CMSIS_DSP_4_3_0\-Os SOFT" -L"C:\Users\Eli\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\CMSIS_DSP_4_3_0\-Og SOFT" -L"C:\Users\Eli\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\CMSIS_DSP_4_3_0\-O1 HARD" -L"C:\Users\Eli\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\CMSIS_DSP_4_3_0\-O2 HARD" -L"C:\Users\Eli\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\CMSIS_DSP_4_3_0\-O3 HARD" -L"C:\Users\Eli\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\CMSIS_DSP_4_3_0\-Os HARD" -L"C:\Users\Eli\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\CMSIS_DSP_4_3_0\-Og HARD" -L"C:\Users\Eli\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\lpc_board_nxp_lpclink2_4370\HARD" -L"C:\Users\Eli\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\lpc_chip_43xx\HARD" -Xlinker -Map="CM4_TEST_LPC4370_RAM_Os_HARD.map" -Xlinker --gc-sections -flto -Os -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -T "CM4_TEST_LPC4370_RAM_-Os_HARD.ld" -o "CM4_TEST_LPC4370_RAM_Os_HARD.axf" $(OBJS) $(USER_OBJS) $(LIBS)
+	arm-none-eabi-gcc -nostdlib -L"C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\CMSIS_DSP_4_5_0\-O0 HARD" -L"C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\CMSIS_DSP_4_5_0\-O0 SOFT" -L"C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\CMSIS_DSP_4_5_0\-O1 SOFT" -L"C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\CMSIS_DSP_4_5_0\-O2 SOFT" -L"C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\CMSIS_DSP_4_5_0\-O3 SOFT" -L"C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\CMSIS_DSP_4_5_0\-Os SOFT" -L"C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\CMSIS_DSP_4_5_0\-Og SOFT" -L"C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\CMSIS_DSP_4_5_0\-O1 HARD" -L"C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\CMSIS_DSP_4_5_0\-O2 HARD" -L"C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\CMSIS_DSP_4_5_0\-O3 HARD" -L"C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\CMSIS_DSP_4_5_0\-Os HARD" -L"C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\CMSIS_DSP_4_5_0\-Og HARD" -L"C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\lpc_board_nxp_lpclink2_4370\HARD" -L"C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\lpc_chip_43xx\HARD" -Xlinker -Map="CM4_TEST_LPC4370_RAM_Os_HARD.map" -Xlinker --gc-sections -flto -Os -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -T "CM4_TEST_LPC4370_RAM_-Os_HARD.ld" -o "CM4_TEST_LPC4370_RAM_Os_HARD.axf" $(OBJS) $(USER_OBJS) $(LIBS)
 	@echo 'Finished building target: $@'
 	@echo ' '
 	$(MAKE) --no-print-directory post-build
 
 # Other Targets
 clean:
-	-$(RM) $(OBJS)$(C_DEPS)$(EXECUTABLES) CM4_TEST_LPC4370_RAM_Os_HARD.axf
+	-$(RM) $(EXECUTABLES)$(OBJS)$(C_DEPS) CM4_TEST_LPC4370_RAM_Os_HARD.axf
 	-@echo ' '
 
 post-build:

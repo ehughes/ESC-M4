@@ -36,7 +36,7 @@ liblpc_chip_43xx_SOFT.a: $(OBJS) $(USER_OBJS)
 
 # Other Targets
 clean:
-	-$(RM) $(OBJS)$(C_DEPS)$(ARCHIVES) liblpc_chip_43xx_SOFT.a
+	-$(RM) $(OBJS)$(ARCHIVES)$(C_DEPS) liblpc_chip_43xx_SOFT.a
 	-@echo ' '
 
 post-build:

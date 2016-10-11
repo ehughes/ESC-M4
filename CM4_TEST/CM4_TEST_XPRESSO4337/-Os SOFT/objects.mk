@@ -4,5 +4,5 @@
 
 USER_OBJS :=
 
-LIBS := -llpc_board_nxp_lpcxpresso_4337_SOFT -lCMSIS_DSP_4_3_0_Os_SOFT -llpc_chip_43xx_SOFT
+LIBS := -llpc_board_nxp_lpcxpresso_4337_SOFT -lCMSIS_DSP_4_5_0_Os_SOFT -llpc_chip_43xx_SOFT
 

@@ -28,22 +28,27 @@
 //so I have these to enable/disable different pieces.
 
 #define _f32
-#define _q31
-#define _q15
+//#define _q31
+//#define _q15
 
-#define ENABLE_FFT
+//#define ENABLE_FFT
 #define ENABLE_GOERTZEL
 
 #define MAX_INPUT_SIZE	4096
 
 #define FIR_TAP_SIZE	32
 
-#define INIT_CYCLE_TIMER					Chip_TIMER_Init(LPC_TIMER0);Chip_TIMER_Reset(LPC_TIMER0);LPC_TIMER0->TCR = 0; //Stop The Timer
-#define START_CYCLE_TIMER					Chip_TIMER_Reset(LPC_TIMER0);LPC_TIMER0->TCR = 1; //Start The Timer
-#define STOP_AND_GRAB_CYCLE_TIMER(x)	   	LPC_TIMER0->TCR = 0; x = LPC_TIMER0->TC 		  //Stop The Timer
-#define REPORT_CYCLE_TIMER			   		LPC_TIMER0->TCR = 0; CycleTimer = LPC_TIMER0->TC;printf("%i",CycleTimer - CycleOffset)
-#define TAB									printf(",");
 
+#if (BOARD==0 || BOARD==1 || BOARD==2)
+
+
+	#define INIT_CYCLE_TIMER					Chip_TIMER_Init(LPC_TIMER0);Chip_TIMER_Reset(LPC_TIMER0);LPC_TIMER0->TCR = 0; //Stop The Timer
+	#define START_CYCLE_TIMER					Chip_TIMER_Reset(LPC_TIMER0);LPC_TIMER0->TCR = 1; //Start The Timer
+	#define STOP_AND_GRAB_CYCLE_TIMER(x)	   	LPC_TIMER0->TCR = 0; x = LPC_TIMER0->TC 		  //Stop The Timer
+	#define REPORT_CYCLE_TIMER			   		LPC_TIMER0->TCR = 0; CycleTimer = LPC_TIMER0->TC;printf("%i",CycleTimer - CycleOffset)
+	#define TAB									printf(",");
+
+#endif
 
 #if BUILD_CONFIG == 0
 
@@ -100,6 +105,16 @@
 
 #endif
 
+
+#if BOARD == 0
+__BSS(RAM2)
+#endif
+#if BOARD == 1
+__BSS(RAM2)
+#endif
+#if BOARD == 2
+__BSS(RAM2)
+#endif
 union
 {
 	 q15_t 		q15[MAX_INPUT_SIZE];
@@ -107,6 +122,15 @@ union
 	 float32_t	f32[MAX_INPUT_SIZE];
 } InputData;
 
+#if BOARD == 0
+__BSS(RAM2)
+#endif
+#if BOARD == 1
+__BSS(RAM2)
+#endif
+#if BOARD == 2
+__BSS(RAM2)
+#endif
 union
 {
 	 q15_t 		q15[MAX_INPUT_SIZE];
@@ -153,9 +177,9 @@ q15_t IIR_State_q15 [4] = {0,0,0,0};
 
 union
 		{
-			float32_t f32[2048+FIR_TAP_SIZE];
-			q31_t	  q31[2048+FIR_TAP_SIZE];
-			q15_t	  q15[2048+FIR_TAP_SIZE];
+			float32_t f32[2048+FIR_TAP_SIZE+1];
+			q31_t	  q31[2048+FIR_TAP_SIZE+1];
+			q15_t	  q15[2048+FIR_TAP_SIZE+1];
 		}FIR_State;
 
 
@@ -240,11 +264,10 @@ int main(void)
 
 		#ifdef _f32
 
-			#ifdef ENABLE_FFT
 
 					printf("\r\n");
 					printf("\r\nCFFT-f32-BitReverse,");
-					START_CYCLE_TIMER; arm_cfft_f32(&arm_cfft_sR_f32_len16,   &InputData.f32[0], 0, 1);REPORT_CYCLE_TIMER;TAB;
+					START_CYCLE_TIMER; arm_cfft_f32(&arm_cfft_sR_f32_len16,  &InputData.f32[0], 0, 1);REPORT_CYCLE_TIMER;TAB;
 					START_CYCLE_TIMER;arm_cfft_f32(&arm_cfft_sR_f32_len32,   &InputData.f32[0], 0, 1);REPORT_CYCLE_TIMER;TAB;
 					START_CYCLE_TIMER;arm_cfft_f32(&arm_cfft_sR_f32_len64,   &InputData.f32[0], 0, 1);REPORT_CYCLE_TIMER;TAB;
 					START_CYCLE_TIMER;arm_cfft_f32(&arm_cfft_sR_f32_len128,  &InputData.f32[0], 0, 1);REPORT_CYCLE_TIMER;TAB;
@@ -289,7 +312,7 @@ int main(void)
 					START_CYCLE_TIMER;arm_cmplx_mag_squared_f32(&InputData.f32[0],&OutputData.f32[0],1024);REPORT_CYCLE_TIMER;TAB;
 					START_CYCLE_TIMER;arm_cmplx_mag_squared_f32(&InputData.f32[0],&OutputData.f32[0],2048);REPORT_CYCLE_TIMER;TAB;
 					START_CYCLE_TIMER;arm_cmplx_mag_squared_f32(&InputData.f32[0],&OutputData.f32[0],4096);REPORT_CYCLE_TIMER;TAB;
-			#endif
+
 
 
 			#ifdef ENABLE_GOERTZEL
@@ -396,6 +419,8 @@ int main(void)
     	 *         | |
     	 *         |_|
     	 */
+
+
 
 		#ifdef _q31
      	printf("\r\n");

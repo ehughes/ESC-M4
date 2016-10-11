@@ -36,7 +36,7 @@ liblpc_board_nxp_lpclink2_4370_SOFT.a: $(OBJS) $(USER_OBJS)
 
 # Other Targets
 clean:
-	-$(RM) $(OBJS)$(C_DEPS)$(ARCHIVES) liblpc_board_nxp_lpclink2_4370_SOFT.a
+	-$(RM) $(OBJS)$(ARCHIVES)$(C_DEPS) liblpc_board_nxp_lpclink2_4370_SOFT.a
 	-@echo ' '
 
 post-build:

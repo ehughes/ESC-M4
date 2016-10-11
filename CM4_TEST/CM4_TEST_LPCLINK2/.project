@@ -29,17 +29,27 @@
 		<link>
 			<name>src/CM4_TEST.c</name>
 			<type>1</type>
-			<locationURI>PARENT-1-PROJECT_LOC/COMMON/CM4_TEST.c</locationURI>
+			<locationURI>PARENT-1-PROJECT_LOC/COMMON/SRC/CM4_TEST.c</locationURI>
+		</link>
+		<link>
+			<name>src/Goertzel.c</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/COMMON/SRC/Goertzel.c</locationURI>
+		</link>
+		<link>
+			<name>src/Goertzel.h</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/COMMON/SRC/Goertzel.h</locationURI>
 		</link>
 		<link>
 			<name>src/IIR.c</name>
 			<type>1</type>
-			<locationURI>PARENT-1-PROJECT_LOC/COMMON/IIR.c</locationURI>
+			<locationURI>PARENT-1-PROJECT_LOC/COMMON/SRC/IIR.c</locationURI>
 		</link>
 		<link>
 			<name>src/IIR.h</name>
 			<type>1</type>
-			<locationURI>PARENT-1-PROJECT_LOC/COMMON/IIR.h</locationURI>
+			<locationURI>PARENT-1-PROJECT_LOC/COMMON/SRC/IIR.h</locationURI>
 		</link>
 	</linkedResources>
 </projectDescription>

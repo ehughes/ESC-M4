@@ -4,5 +4,5 @@
 
 USER_OBJS :=
 
-LIBS := -llpc_board_nxp_lpclink2_4370_HARD -lCMSIS_DSP_4_3_0_Og_HARD -llpc_chip_43xx_HARD
+LIBS := -llpc_board_nxp_lpclink2_4370_HARD -lCMSIS_DSP_4_5_0_Og_HARD -llpc_chip_43xx_HARD
 
