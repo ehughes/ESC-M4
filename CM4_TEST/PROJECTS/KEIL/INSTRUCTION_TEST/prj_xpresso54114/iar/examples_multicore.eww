@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<workspace>
+  <project>
+    <path>$WS_DIR$\lib_chip_5411x\lib_chip_5411x.ewp</path>
+  </project>
+  <project>
+    <path>$WS_DIR$\lib_board_lpcxpresso_54114\lib_board_lpcxpresso_54114.ewp</path>
+  </project> 
+  <project>
+    <path>$WS_DIR$\lib_chip_5411x_m0\lib_chip_5411x_m0.ewp</path>
+  </project>
+  <project>
+    <path>$WS_DIR$\lib_board_lpcxpresso_54114_m0\lib_board_lpcxpresso_54114_m0.ewp</path>
+  </project> 
+  <project>
+    <path>$WS_DIR$\multicore_m4_blinky\multicore_m4_blinky.ewp</path>
+  </project>
+  <project>
+    <path>$WS_DIR$\multicore_m0_blinky\multicore_m0_blinky.ewp</path>
+  </project>
+  <batchBuild/>
+</workspace>
+

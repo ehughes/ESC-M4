@@ -5,7 +5,7 @@
  * Generated linker script file for LPC4370
  * Created from linkscript.ldt by FMCreateLinkLibraries
  * Using Freemarker v2.3.23
- * LPCXpresso v8.2.2 [Build 650] [2016-09-09]  on Oct 11, 2016 2:55:16 PM
+ * LPCXpresso v8.2.2 [Build 650] [2016-09-09]  on Nov 10, 2016 10:41:03 AM
  */
 
 INCLUDE "CM4_TEST_LPC4370_RAM_-O1_HARD_library.ld"

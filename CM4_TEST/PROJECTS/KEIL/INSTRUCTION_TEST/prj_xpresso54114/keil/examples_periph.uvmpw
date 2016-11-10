@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<ProjectWorkspace xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="project_mpw.xsd">
+
+  <SchemaVersion>1.0</SchemaVersion>
+
+  <Header>### uVision Project, (C) Keil Software</Header>
+
+  <WorkspaceName>Peripheral examples</WorkspaceName>
+
+  <project>
+    <PathAndName>.\lib_chip_5411x\lib_chip_5411x.uvprojx</PathAndName>
+    <NodeIsActive>1</NodeIsActive>
+  </project>
+
+  <project>
+    <PathAndName>.\lib_board_lpcxpresso_54114\lib_board_lpcxpresso_54114.uvprojx</PathAndName>
+  </project>
+
+  <project>
+    <PathAndName>.\periph_adc\periph_adc.uvprojx</PathAndName>
+  </project>
+
+  <project>
+    <PathAndName>.\periph_blinky\periph_blinky.uvprojx</PathAndName>
+  </project>
+
+  <project>
+    <PathAndName>.\periph_blinky_color\periph_blinky_color.uvprojx</PathAndName>
+  </project>
+
+  <project>
+    <PathAndName>.\periph_bod\periph_bod.uvprojx</PathAndName>
+  </project>
+
+  <project>
+    <PathAndName>.\periph_clkout\periph_clkout.uvprojx</PathAndName>
+  </project>
+
+  <project>
+    <PathAndName>.\periph_crc\periph_crc.uvprojx</PathAndName>
+  </project>
+
+  <project>
+    <PathAndName>.\periph_dma\periph_dma.uvprojx</PathAndName>
+  </project>
+
+  <project>
+    <PathAndName>.\periph_dmic\periph_dmic.uvprojx</PathAndName>
+  </project>
+
+  <project>
+    <PathAndName>.\periph_flashiap\periph_flashiap.uvprojx</PathAndName>
+  </project>
+
+  <project>
+    <PathAndName>.\periph_freqmeasure\periph_freqmeasure.uvprojx</PathAndName>
+  </project>
+
+  <project>
+    <PathAndName>.\periph_gint\periph_gint.uvprojx</PathAndName>
+  </project>
+
+  <project>
+    <PathAndName>.\periph_i2cm\periph_i2cm.uvprojx</PathAndName>
+  </project>
+
+  <project>
+    <PathAndName>.\periph_i2cs_interrupt_dma\periph_i2cs_interrupt_dma.uvprojx</PathAndName>
+  </project>
+
+  <project>
+    <PathAndName>.\periph_i2cs_interrupt\periph_i2cs_interrupt.uvprojx</PathAndName>
+  </project>
+
+  <project>
+    <PathAndName>.\periph_i2s\periph_i2s.uvprojx</PathAndName>
+  </project>
+
+  <project>
+    <PathAndName>.\periph_i2s_dmic\periph_i2s_dmic.uvprojx</PathAndName>
+  </project>
+
+  <project>
+    <PathAndName>.\periph_mrt\periph_mrt.uvprojx</PathAndName>
+  </project>
+
+  <project>
+    <PathAndName>.\periph_pinint\periph_pinint.uvprojx</PathAndName>
+  </project>
+
+  <project>
+    <PathAndName>.\periph_pmu\periph_pmu.uvprojx</PathAndName>
+  </project>
+
+  <project>
+    <PathAndName>.\periph_pllfract\periph_pllfract.uvprojx</PathAndName>
+  </project>
+
+  <project>
+    <PathAndName>.\periph_rtc\periph_rtc.uvprojx</PathAndName>
+  </project>
+
+  <project>
+    <PathAndName>.\periph_rtcut\periph_rtcut.uvprojx</PathAndName>
+  </project>
+
+  <project>
+    <PathAndName>.\periph_sct\periph_sct.uvprojx</PathAndName>
+  </project>
+
+  <project>
+    <PathAndName>.\periph_sct_pwm\periph_sct_pwm.uvprojx</PathAndName>
+  </project>
+
+  <project>
+    <PathAndName>.\periph_spi_sm_dma\periph_spi_sm_dma.uvprojx</PathAndName>
+  </project>
+
+  <project>
+    <PathAndName>.\periph_spi_sm_int\periph_spi_sm_int.uvprojx</PathAndName>
+  </project>
+
+  <project>
+    <PathAndName>.\periph_spi_sm_poll\periph_spi_sm_poll.uvprojx</PathAndName>
+  </project>
+
+  <project>
+    <PathAndName>.\periph_uart_dma\periph_uart_dma.uvprojx</PathAndName>
+  </project>
+
+  <project>
+    <PathAndName>.\periph_uart_rb\periph_uart_rb.uvprojx</PathAndName>
+  </project>
+
+  <project>
+    <PathAndName>.\periph_utick\periph_utick.uvprojx</PathAndName>
+  </project>
+
+  <project>
+    <PathAndName>.\periph_wwdt\periph_wwdt.uvprojx</PathAndName>
+  </project>
+
+</ProjectWorkspace>

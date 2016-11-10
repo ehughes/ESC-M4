@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<workspace>
+  <project>
+    <path>$WS_DIR$\lib_chip_5411x\lib_chip_5411x.ewp</path>
+  </project>
+  <project>
+    <path>$WS_DIR$\lib_board_lpcxpresso_54114\lib_board_lpcxpresso_54114.ewp</path>
+  </project> 
+  <project>
+    <path>$WS_DIR$\freertos_blinky\freertos_blinky.ewp</path>
+  </project>
+  <batchBuild/>
+</workspace>
+

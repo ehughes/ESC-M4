@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<workspace>
+  <project>
+    <path>$WS_DIR$\FlashNXPLPC54xxx.ewp</path>
+  </project>
+  <batchBuild>
+    <batchDefinition>
+      <name>All</name>
+      <member>
+        <project>FlashNXPLPC54xxx</project>
+        <configuration>FlashNXPLPC54xxM0PL_RAM64K</configuration>
+      </member>
+      <member>
+        <project>FlashNXPLPC54xxx</project>
+        <configuration>FlashNXPLPC54xxM4F_RAM64K</configuration>
+      </member>
+    </batchDefinition>
+  </batchBuild>
+</workspace>
+
+

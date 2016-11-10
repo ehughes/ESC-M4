@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<ProjectWorkspace xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="project_mpw.xsd">
+
+  <SchemaVersion>1.0</SchemaVersion>
+
+  <Header>### uVision Project, (C) Keil Software</Header>
+
+  <WorkspaceName>Multi-core examples</WorkspaceName>
+
+  <project>
+    <PathAndName>.\lib_chip_5411x\lib_chip_5411x.uvprojx</PathAndName>
+    <NodeIsActive>1</NodeIsActive>
+  </project>
+
+  <project>
+    <PathAndName>.\lib_board_lpcxpresso_54114\lib_board_lpcxpresso_54114.uvprojx</PathAndName>
+  </project>
+
+  <project>
+    <PathAndName>.\lib_chip_5411x_m0\lib_chip_5411x_m0.uvprojx</PathAndName>
+  </project>
+
+  <project>
+    <PathAndName>.\lib_board_lpcxpresso_54114_m0\lib_board_lpcxpresso_54114_m0.uvprojx</PathAndName>
+  </project>
+
+  <project>
+    <PathAndName>.\multicore_m4_blinky\multicore_m4_blinky.uvprojx</PathAndName>
+  </project>
+
+  <project>
+    <PathAndName>.\multicore_m0_blinky\multicore_m0_blinky.uvprojx</PathAndName>
+  </project>
+
+</ProjectWorkspace>

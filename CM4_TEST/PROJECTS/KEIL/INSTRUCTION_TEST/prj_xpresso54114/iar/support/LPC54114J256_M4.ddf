@@ -1,0 +1,37 @@
+
+;; Architecture extensions
+#include weak "ARM\ARMv7-M-ETM.ddf"
+#include weak "ARM\ARMv7-M-TPIU.ddf"
+#include weak "ARM\ARMv7-M-MPU.ddf"
+
+;; Memory information ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; 
+;; Used to define address zones within the ARM address space (Memory). 
+;;
+;;   Name      may be almost anything
+;;   AdrSpace  must be Memory
+;;   StartAdr  start of memory block
+;;   EndAdr    end of memory block
+;;   AccType   type of access, read-only (R), read-write (RW) or SFR (W)
+
+[Memory]
+;;         Name             AdrSpace    StartAdr    EndAdr      AccType   Width
+Memory =  Mailbox          Memory      0x1C02C000  0x1C02FFFF  W  
+Memory =  PeriphFIFOs      Memory      0x1C038000  0x1C03BFFF  W  
+Memory =  PeriphAPB0       Memory      0x40000000  0x4001FFFF  W  
+Memory =  PeriphAPB1       Memory      0x40020000  0x4003FFFF  W  
+Memory =  AsyncAPB         Memory      0x40040000  0x4005FFFF  W
+Memory =  PeriphAHB        Memory      0x40080000  0x400A0FFF  W  
+Memory =  Periph-Bitband   Memory      0x42000000  0x43FFFFFF  W  
+Memory =  SystemSFR        Memory      0xE0000000  0xE00FFFFF  W  
+Memory =  Flash            Memory      0x00000000  0x0003FFFF  R  
+Memory =  SPIFI            Memory      0x10000000  0x17FFFFFF  R
+Memory =  RAM1             Memory      0x20000000  0x20027FFF  RW 
+Memory =  ROM              Memory      0x03000000  0x0301FFFF  R  
+Memory =  RAM2             Memory      0x04000000  0x04007FFF  RW 
+
+TrustedRanges = true
+UseSfrFilter = true
+
+[SfrInclude]
+File = LPC5411x.svd

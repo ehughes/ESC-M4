@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<flash_device>
+  <exe>$PROJ_DIR$\..\support\FlashNXPLPC54xxxM0PL_RAM64K.out</exe>
+  <flash_base>0x00000000</flash_base>
+  <page>256</page>
+  <block>8  0x8000</block>
+  <macro>$PROJ_DIR$\..\support\FlashNXPLPC54xxxM0PL.mac</macro>
+  <aggregate>1</aggregate>
+  <args_doc>
+[--clock] Passes the clock frequency to the flash loader; 
+value is the CPU clock speed in kHz. The default clock 
+frequency value is 12MHz.
+  </args_doc>
+</flash_device>

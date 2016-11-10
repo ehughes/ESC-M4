@@ -1,0 +1,18 @@
+__setup ()
+{
+__var Reg;
+		// MAP flash at 0
+    __writeMemory32(2, 0x40000000, "Memory");
+}
+
+execUserFlashInit()
+{
+    __message "------- Prepare for flashloader -------";
+    __setup();
+}
+
+execUserPreload()
+{
+    __message "------- Prepare for debug -------";
+    __setup();
+}

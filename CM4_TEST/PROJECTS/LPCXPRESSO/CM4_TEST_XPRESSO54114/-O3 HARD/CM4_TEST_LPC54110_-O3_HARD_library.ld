@@ -5,7 +5,7 @@
  * Generated linker script file for LPC54114J256
  * Created from library.ldt by FMCreateLinkLibraries
  * Using Freemarker v2.3.23
- * LPCXpresso v8.2.2 [Build 650] [2016-09-09]  on Oct 12, 2016 10:24:53 PM
+ * LPCXpresso v8.2.2 [Build 650] [2016-09-09]  on Nov 10, 2016 10:41:02 AM
  */
 
 GROUP (

@@ -25,9 +25,9 @@
 	</natures>
 	<linkedResources>
 		<link>
-			<name>src/CM_TEST.c</name>
+			<name>src/INSTRUCTION_OPT_TEST.c</name>
 			<type>1</type>
-			<locationURI>PARENT-3-PROJECT_LOC/COMMON/SRC/TEST/CM_TEST.c</locationURI>
+			<locationURI>PARENT-3-PROJECT_LOC/COMMON/SRC/TEST/INSTRUCTION_OPT_TEST.c</locationURI>
 		</link>
 	</linkedResources>
 </projectDescription>

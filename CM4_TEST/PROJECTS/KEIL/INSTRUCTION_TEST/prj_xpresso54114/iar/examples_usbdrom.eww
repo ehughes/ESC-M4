@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<workspace>
+  <project>
+    <path>$WS_DIR$\lib_chip_5411x\lib_chip_5411x.ewp</path>
+  </project>
+  <project>
+    <path>$WS_DIR$\lib_board_lpcxpresso_54114\lib_board_lpcxpresso_54114.ewp</path>
+  </project>
+  <project>
+    <path>$WS_DIR$\usbdrom_audio\usbdrom_audio.ewp</path>
+  </project>
+  <project>
+    <path>$WS_DIR$\usbdrom_cdc\usbdrom_cdc.ewp</path>
+  </project>
+  <project>
+    <path>$WS_DIR$\usbdrom_msc_ram\usbdrom_msc_ram.ewp</path>
+  </project>
+  <batchBuild>
+    <batchDefinition>
+      <name>all</name>
+      <member>
+        <project>lib_chip_5411x</project>
+        <configuration>chip_5411x_lib</configuration>
+      </member>
+      <member>
+        <project>lib_board_lpcxpresso_54114</project>
+        <configuration>brd_xpresso54114</configuration>
+      </member>
+      <member>
+        <project>usbdrom_audio</project>
+        <configuration>iflash_nxp_lpcxpresso_54114</configuration>
+      </member>
+      <member>
+        <project>usbdrom_cdc</project>
+        <configuration>iflash_nxp_lpcxpresso_54114</configuration>
+      </member>
+      <member>
+        <project>usbdrom_msc_ram</project>
+        <configuration>iflash_nxp_lpcxpresso_54114</configuration>
+      </member>
+    </batchDefinition>
+  </batchBuild>
+</workspace>
+
+

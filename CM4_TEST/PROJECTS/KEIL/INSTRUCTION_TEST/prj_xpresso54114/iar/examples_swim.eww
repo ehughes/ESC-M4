@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<workspace>
+  <project>
+    <path>$WS_DIR$\lib_chip_5411x\lib_chip_5411x.ewp</path>
+  </project>
+  <project>
+    <path>$WS_DIR$\lib_board_lpcxpresso_54114\lib_board_lpcxpresso_54114.ewp</path>
+  </project>
+  <project>
+    <path>$WS_DIR$\lib_swim\lib_swim.ewp</path>
+  </project>
+  <project>
+    <path>$WS_DIR$\swim_oled_demo\swim_oled_demo.ewp</path>
+  </project>
+  <batchBuild>
+    <batchDefinition>
+      <name>all</name>
+      <member>
+        <project>lib_chip_5411x</project>
+        <configuration>chip_5411x_lib</configuration>
+      </member>
+      <member>
+        <project>lib_board_lpcxpresso_54114</project>
+        <configuration>brd_xpresso54114</configuration>
+      </member>
+      <member>
+        <project>lib_swim</project>
+        <configuration>swim</configuration>
+      </member>
+      <member>
+        <project>swim_oled_demo</project>
+        <configuration>iflash_nxp_lpcxpresso_54114</configuration>
+      </member>
+    </batchDefinition>
+  </batchBuild>
+</workspace>
+
+
