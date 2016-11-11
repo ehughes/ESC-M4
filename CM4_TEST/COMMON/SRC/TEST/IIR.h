@@ -6,7 +6,6 @@
  */
 
 #include "arm_math.h"
-#include "cr_section_macros.h"
 
 #ifndef IIR_H_
 #define IIR_H_

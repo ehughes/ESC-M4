@@ -1,6 +1,5 @@
 #include "math.h"
 #include "arm_math.h"
-#include <cr_section_macros.h>
 
 
 typedef struct

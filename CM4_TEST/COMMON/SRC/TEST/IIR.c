@@ -1,7 +1,7 @@
 #include "arm_math.h"
 #include "IIR.h"
 #include "math.h"
-#include "cr_section_macros.h"
+
 //an Fixed Point IIR filter implementation for ARM Cortex M4.... i like it better than the libraries provided.
 
 //Computes IIR filter in Direct Form I

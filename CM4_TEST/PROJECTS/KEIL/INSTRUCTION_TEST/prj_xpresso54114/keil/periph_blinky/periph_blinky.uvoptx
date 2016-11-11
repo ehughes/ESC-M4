@@ -73,7 +73,7 @@
         <LExpSel>0</LExpSel>
       </OPTXL>
       <OPTFL>
-        <tvExp>0</tvExp>
+        <tvExp>1</tvExp>
         <tvExpOptDlg>0</tvExpOptDlg>
         <IsCurrentTarget>1</IsCurrentTarget>
       </OPTFL>
@@ -81,18 +81,18 @@
       <Books>
         <Book>
           <Number>0</Number>
-          <Title>LPCXpresso54102 Schematics (LPCXpresso54102)</Title>
-          <Path>C:\Keil_v5\ARM\PACK\Keil\LPC54000_DFP\1.2.0-dev2\Boards\NXP\LPCXpresso54102\Documents\LPCX54102_Schematic_RevA.pdf</Path>
+          <Title>LPCXpresso54114 Schematics (LPCXpresso54114)</Title>
+          <Path>C:\Keil_v5\ARM\PACK\Keil\LPC54000_DFP\2.0.0\Boards\NXP\LPCXpresso54114\Documents\LPCX5411x_Schematic_Rev_A1.pdf</Path>
         </Book>
         <Book>
           <Number>1</Number>
-          <Title>LPCXpresso54102 User Manual (LPCXpresso54102)</Title>
-          <Path>C:\Keil_v5\ARM\PACK\Keil\LPC54000_DFP\1.2.0-dev2\Boards\NXP\LPCXpresso54102\Documents\UM10855-om13077.pdf</Path>
+          <Title>LPCXpresso54114 User Manual (LPCXpresso54114)</Title>
+          <Path>C:\Keil_v5\ARM\PACK\Keil\LPC54000_DFP\2.0.0\Boards\NXP\LPCXpresso54114\Documents\UM10973.pdf</Path>
         </Book>
         <Book>
           <Number>2</Number>
-          <Title>LPCXpresso Board for the LPC54100 family of MCUs (LPCXpresso54102)</Title>
-          <Path>http://www.nxp.com/demoboard/OM13077.html</Path>
+          <Title>LPCXpresso Board for the LPC54110 family of MCUs (LPCXpresso54114)</Title>
+          <Path>http://www.nxp.com/demoboard/OM13089.html</Path>
         </Book>
       </Books>
       <DebugOpt>
@@ -206,12 +206,18 @@
       <Lin2Executable></Lin2Executable>
       <Lin2ConfigFile></Lin2ConfigFile>
       <bLin2Auto>0</bLin2Auto>
+      <DebugDescription>
+        <Enable>1</Enable>
+        <EnableLog>0</EnableLog>
+        <Protocol>2</Protocol>
+        <DbgClock>10000000</DbgClock>
+      </DebugDescription>
     </TargetOption>
   </Target>
 
   <Group>
     <GroupName>src</GroupName>
-    <tvExp>0</tvExp>
+    <tvExp>1</tvExp>
     <tvExpOptDlg>0</tvExpOptDlg>
     <cbSel>0</cbSel>
     <RteFlg>0</RteFlg>

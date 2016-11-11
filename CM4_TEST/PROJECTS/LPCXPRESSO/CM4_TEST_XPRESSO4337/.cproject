@@ -112,15 +112,6 @@
 							</tool>
 						</toolChain>
 					</folderInfo>
-					<folderInfo id="com.crt.advproject.config.exe.debug.1934579924.740506441.1495599781.1605834580" name="/" resourcePath="-O0 SOFT">
-						<toolChain id="com.crt.advproject.toolchain.exe.debug.1532923616" name="Code Red MCU Tools" superClass="com.crt.advproject.toolchain.exe.debug" unusedChildren="">
-							<tool id="com.crt.advproject.cpp.exe.debug.1032545185" name="MCU C++ Compiler" superClass="com.crt.advproject.cpp.exe.debug.1263101480"/>
-							<tool id="com.crt.advproject.gcc.exe.debug.2092014811" name="MCU C Compiler" superClass="com.crt.advproject.gcc.exe.debug.422489502"/>
-							<tool id="com.crt.advproject.gas.exe.debug.58886138" name="MCU Assembler" superClass="com.crt.advproject.gas.exe.debug.506384169"/>
-							<tool id="com.crt.advproject.link.cpp.exe.debug.1833864884" name="MCU C++ Linker" superClass="com.crt.advproject.link.cpp.exe.debug.580100543"/>
-							<tool id="com.crt.advproject.link.exe.debug.81795750" name="MCU Linker" superClass="com.crt.advproject.link.exe.debug.2135640616"/>
-						</toolChain>
-					</folderInfo>
 					<sourceEntries>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="-O0 SOFT"/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="src"/>
@@ -703,15 +694,6 @@
 									<additionalInput kind="additionalinput" paths="$(LIBS)"/>
 								</inputType>
 							</tool>
-						</toolChain>
-					</folderInfo>
-					<folderInfo id="com.crt.advproject.config.exe.debug.1934579924.740506441.2031919182.1043117186" name="/" resourcePath="-O0 SOFT">
-						<toolChain id="com.crt.advproject.toolchain.exe.debug.490381" name="Code Red MCU Tools" superClass="com.crt.advproject.toolchain.exe.debug" unusedChildren="">
-							<tool id="com.crt.advproject.cpp.exe.debug.833301616" name="MCU C++ Compiler" superClass="com.crt.advproject.cpp.exe.debug.1404065698"/>
-							<tool id="com.crt.advproject.gcc.exe.debug.853202878" name="MCU C Compiler" superClass="com.crt.advproject.gcc.exe.debug.1644430736"/>
-							<tool id="com.crt.advproject.gas.exe.debug.879144381" name="MCU Assembler" superClass="com.crt.advproject.gas.exe.debug.1714634929"/>
-							<tool id="com.crt.advproject.link.cpp.exe.debug.1335099411" name="MCU C++ Linker" superClass="com.crt.advproject.link.cpp.exe.debug.605186980"/>
-							<tool id="com.crt.advproject.link.exe.debug.561351575" name="MCU Linker" superClass="com.crt.advproject.link.exe.debug.613387934"/>
 						</toolChain>
 					</folderInfo>
 					<sourceEntries>

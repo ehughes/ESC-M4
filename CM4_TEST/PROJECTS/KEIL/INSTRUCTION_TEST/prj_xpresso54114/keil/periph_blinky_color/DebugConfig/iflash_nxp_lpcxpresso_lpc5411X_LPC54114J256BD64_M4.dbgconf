@@ -1,0 +1,10 @@
+// <<< Use Configuration Wizard in Context Menu >>>
+
+// <o0> SWO pin
+// <i> The SWO (Serial Wire Output) pin optionally provides data from the ITM
+// <i> for an external debug tool to evaluate.
+//      <0=> PIO0_15
+//      <1=> PIO1_1
+LPC541xx_SWO_Pin = 0;
+
+// <<< end of configuration section >>>

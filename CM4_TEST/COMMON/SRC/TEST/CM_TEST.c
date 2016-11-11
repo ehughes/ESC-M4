@@ -12,16 +12,37 @@
 #if defined(NO_BOARD_LIB)
 #include "chip.h"
 #else
-#include "board.h"
+
 #endif
 #endif
 
-#include <cr_section_macros.h>
+
 #include "arm_math.h"
 #include "stdlib.h"
 #include "arm_const_structs.h"
 #include "IIR.h"
 #include "Goertzel.h"
+
+#if BOARD == 0
+
+	#define CPU_NAME "LPC4337"
+
+#elif BOARD == 1
+
+	#define CPU_NAME "LPC4370"
+
+#elif BOARD == 2
+
+	#define CPU_NAME "LPC54114"
+
+#else
+
+	#define CPU_NAME "MKV58F24"
+
+#endif
+
+
+
 
 //These symbols are to select the different datatypes to operate on.
 //When using the LPC4370,  I could not fit all 3 configurations at one time
@@ -41,12 +62,23 @@
 
 #if (BOARD==0 || BOARD==1 || BOARD==2)
 
-
-	#define INIT_CYCLE_TIMER					Chip_TIMER_Init(LPC_TIMER0);Chip_TIMER_Reset(LPC_TIMER0);LPC_TIMER0->TCR = 0; //Stop The Timer
-	#define START_CYCLE_TIMER					Chip_TIMER_Reset(LPC_TIMER0);LPC_TIMER0->TCR = 1; //Start The Timer
-	#define STOP_AND_GRAB_CYCLE_TIMER(x)	   	LPC_TIMER0->TCR = 0; x = LPC_TIMER0->TC 		  //Stop The Timer
-	#define REPORT_CYCLE_TIMER			   		LPC_TIMER0->TCR = 0; CycleTimer = LPC_TIMER0->TC;printf("%i",CycleTimer - CycleOffset)
+	#include "board.h"
+	#include <cr_section_macros.h>
+	#define INIT_CYCLE_TIMER			        SysTick->CTRL = 0;SysTick->LOAD = 0;SysTick->VAL = 0;
+	#define START_CYCLE_TIMER					SysTick->VAL = 0;SysTick->CTRL = 1;
+	#define STOP_AND_GRAB_CYCLE_TIMER(x)	   	SysTick->CTRL = 0;	 x = SysTick->VAL; x = 0xFFFFFFF - x + 1;
+	#define REPORT_CYCLE_TIMER			   		SysTick->CTRL = 0;	 CycleTimer = SysTick->VAL; CycleTimer = 0xFFFFFFF - CycleTimer + 1;printf("%i",CycleTimer - CycleOffset)
 	#define TAB									printf(",");
+
+
+
+
+
+//	#define INIT_CYCLE_TIMER					Chip_TIMER_Init(LPC_TIMER0);Chip_TIMER_Reset(LPC_TIMER0);LPC_TIMER0->TCR = 0; //Stop The Timer
+//	#define START_CYCLE_TIMER					Chip_TIMER_Reset(LPC_TIMER0);LPC_TIMER0->TCR = 1; //Start The Timer
+//	#define STOP_AND_GRAB_CYCLE_TIMER(x)	   	LPC_TIMER0->TCR = 0; x = LPC_TIMER0->TC 		  //Stop The Timer
+//	#define REPORT_CYCLE_TIMER			   		LPC_TIMER0->TCR = 0; CycleTimer = LPC_TIMER0->TC;printf("%i",CycleTimer - CycleOffset)
+//	#define TAB									printf(",");
 
 #endif
 
@@ -88,20 +120,6 @@
 #else
 
 	#define ABI_TYPE "HardABI"
-
-#endif
-
-#if BOARD == 0
-
-	#define CPU_NAME "LPC4337"
-
-#elif BOARD == 1
-
-	#define CPU_NAME "LPC4370"
-
-#else
-
-	#define CPU_NAME "LPC54114"
 
 #endif
 
