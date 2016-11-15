@@ -1,0 +1,9 @@
+.\objects\arm_q15_to_float.o: ..\..\SRC\CMSIS_DSP_4_5\src\SupportFunctions\arm_q15_to_float.c
+.\objects\arm_q15_to_float.o: ..\..\SRC\CMSIS_DSP_4_5\inc\arm_math.h
+.\objects\arm_q15_to_float.o: ..\..\SRC\CMSIS_DSP_4_5\inc\core_cm4.h
+.\objects\arm_q15_to_float.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\arm_q15_to_float.o: ..\..\SRC\CMSIS_DSP_4_5\inc\core_cmInstr.h
+.\objects\arm_q15_to_float.o: ..\..\SRC\CMSIS_DSP_4_5\inc\core_cmFunc.h
+.\objects\arm_q15_to_float.o: ..\..\SRC\CMSIS_DSP_4_5\inc\core_cmSimd.h
+.\objects\arm_q15_to_float.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+.\objects\arm_q15_to_float.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\math.h

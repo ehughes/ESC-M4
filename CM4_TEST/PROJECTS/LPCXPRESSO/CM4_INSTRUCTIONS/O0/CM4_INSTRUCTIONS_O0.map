@@ -912,10 +912,10 @@ OUTPUT(CM4_INSTRUCTIONS_O0.axf elf32-littlearm)
  .debug_macro   0x00001378       0x1a ./src/crp.o
  .debug_macro   0x00001392       0x34 ./src/crp.o
 
-.debug_line     0x00000000      0x3ae
- .debug_line    0x00000000      0x233 ./src/INSTRUCTION_OPT_TEST.o
- .debug_line    0x00000233      0x103 ./src/cr_startup_lpc43xx.o
- .debug_line    0x00000336       0x78 ./src/crp.o
+.debug_line     0x00000000      0x3ac
+ .debug_line    0x00000000      0x231 ./src/INSTRUCTION_OPT_TEST.o
+ .debug_line    0x00000231      0x103 ./src/cr_startup_lpc43xx.o
+ .debug_line    0x00000334       0x78 ./src/crp.o
 
 .debug_str      0x00000000     0x5253
  .debug_str     0x00000000     0x4f82 ./src/INSTRUCTION_OPT_TEST.o

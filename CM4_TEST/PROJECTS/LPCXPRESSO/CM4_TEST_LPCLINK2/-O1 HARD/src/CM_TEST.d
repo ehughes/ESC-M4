@@ -1,15 +1,5 @@
 src/CM_TEST.o src/CM_TEST.d: \
  C:/Users/emh203/Documents/GitHub/ESC-M4/CM4_TEST/COMMON/SRC/TEST/CM_TEST.c \
- C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\SRC\CMSIS_DSP_4_5\inc/arm_math.h \
- C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\SRC\CMSIS_DSP_4_5\inc/core_cm4.h \
- C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\SRC\CMSIS_DSP_4_5\inc/core_cmInstr.h \
- C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\SRC\CMSIS_DSP_4_5\inc/core_cmFunc.h \
- C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\SRC\CMSIS_DSP_4_5\inc/core_cmSimd.h \
- C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\SRC\CMSIS_DSP_4_5\inc/arm_const_structs.h \
- C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\SRC\CMSIS_DSP_4_5\inc/arm_math.h \
- C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\SRC\CMSIS_DSP_4_5\inc/arm_common_tables.h \
- C:/Users/emh203/Documents/GitHub/ESC-M4/CM4_TEST/COMMON/SRC/TEST/IIR.h \
- C:/Users/emh203/Documents/GitHub/ESC-M4/CM4_TEST/COMMON/SRC/TEST/Goertzel.h \
  C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_board_nxp_lpclink2_4370\inc/board.h \
  C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_43xx\inc/chip.h \
  C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_43xx\inc/sys_config.h \
@@ -17,6 +7,9 @@ src/CM_TEST.o src/CM_TEST.d: \
  C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_43xx\inc/lpc_types.h \
  C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_43xx\inc/cmsis_43xx.h \
  C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_43xx\inc/core_cm4.h \
+ C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\SRC\CMSIS_DSP_4_5\inc/core_cmInstr.h \
+ C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\SRC\CMSIS_DSP_4_5\inc/core_cmFunc.h \
+ C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_43xx\inc/core_cm4_simd.h \
  C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_43xx\inc/chip_lpc43xx.h \
  C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_43xx\inc/scu_18xx_43xx.h \
  C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_43xx\inc/clock_18xx_43xx.h \
@@ -69,27 +62,14 @@ src/CM_TEST.o src/CM_TEST.d: \
  C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_43xx\inc/i2cm_18xx_43xx.h \
  C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_43xx\inc/fpu_init.h \
  C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_board_nxp_lpclink2_4370\inc/board_api.h \
- C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_43xx\inc/lpc_types.h
-
-C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\SRC\CMSIS_DSP_4_5\inc/arm_math.h:
-
-C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\SRC\CMSIS_DSP_4_5\inc/core_cm4.h:
-
-C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\SRC\CMSIS_DSP_4_5\inc/core_cmInstr.h:
-
-C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\SRC\CMSIS_DSP_4_5\inc/core_cmFunc.h:
-
-C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\SRC\CMSIS_DSP_4_5\inc/core_cmSimd.h:
-
-C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\SRC\CMSIS_DSP_4_5\inc/arm_const_structs.h:
-
-C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\SRC\CMSIS_DSP_4_5\inc/arm_math.h:
-
-C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\SRC\CMSIS_DSP_4_5\inc/arm_common_tables.h:
-
-C:/Users/emh203/Documents/GitHub/ESC-M4/CM4_TEST/COMMON/SRC/TEST/IIR.h:
-
-C:/Users/emh203/Documents/GitHub/ESC-M4/CM4_TEST/COMMON/SRC/TEST/Goertzel.h:
+ C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_43xx\inc/lpc_types.h \
+ C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\SRC\CMSIS_DSP_4_5\inc/arm_math.h \
+ C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\SRC\CMSIS_DSP_4_5\inc/core_cm4.h \
+ C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\SRC\CMSIS_DSP_4_5\inc/arm_const_structs.h \
+ C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\SRC\CMSIS_DSP_4_5\inc/arm_math.h \
+ C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\SRC\CMSIS_DSP_4_5\inc/arm_common_tables.h \
+ C:/Users/emh203/Documents/GitHub/ESC-M4/CM4_TEST/COMMON/SRC/TEST/IIR.h \
+ C:/Users/emh203/Documents/GitHub/ESC-M4/CM4_TEST/COMMON/SRC/TEST/Goertzel.h
 
 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_board_nxp_lpclink2_4370\inc/board.h:
 
@@ -104,6 +84,12 @@ C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_
 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_43xx\inc/cmsis_43xx.h:
 
 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_43xx\inc/core_cm4.h:
+
+C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\SRC\CMSIS_DSP_4_5\inc/core_cmInstr.h:
+
+C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\SRC\CMSIS_DSP_4_5\inc/core_cmFunc.h:
+
+C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_43xx\inc/core_cm4_simd.h:
 
 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_43xx\inc/chip_lpc43xx.h:
 
@@ -210,3 +196,17 @@ C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_
 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_board_nxp_lpclink2_4370\inc/board_api.h:
 
 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_43xx\inc/lpc_types.h:
+
+C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\SRC\CMSIS_DSP_4_5\inc/arm_math.h:
+
+C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\SRC\CMSIS_DSP_4_5\inc/core_cm4.h:
+
+C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\SRC\CMSIS_DSP_4_5\inc/arm_const_structs.h:
+
+C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\SRC\CMSIS_DSP_4_5\inc/arm_math.h:
+
+C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\SRC\CMSIS_DSP_4_5\inc/arm_common_tables.h:
+
+C:/Users/emh203/Documents/GitHub/ESC-M4/CM4_TEST/COMMON/SRC/TEST/IIR.h:
+
+C:/Users/emh203/Documents/GitHub/ESC-M4/CM4_TEST/COMMON/SRC/TEST/Goertzel.h:

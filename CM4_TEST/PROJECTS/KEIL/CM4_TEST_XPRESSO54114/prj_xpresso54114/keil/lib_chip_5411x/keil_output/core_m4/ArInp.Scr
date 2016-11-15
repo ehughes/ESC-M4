@@ -1,0 +1,26 @@
+--create .\keil_output\core_m4\lib_chip_5411x.lib
+.\keil_output\core_m4\timer_5411x.o
+.\keil_output\core_m4\sysinit_5411x.o
+.\keil_output\core_m4\syscon_5411x.o
+.\keil_output\core_m4\stopwatch_5411x.o
+.\keil_output\core_m4\sct_pwm_5411x.o
+.\keil_output\core_m4\sct_5411x.o
+.\keil_output\core_m4\rtc_ut.o
+.\keil_output\core_m4\ring_buffer.o
+.\keil_output\core_m4\pll_5411x.o
+.\keil_output\core_m4\iap.o
+.\keil_output\core_m4\fpu_init.o
+.\keil_output\core_m4\clock_5411x.o
+.\keil_output\core_m4\chip_5411x.o
+.\keil_output\core_m4\adc_5411x.o
+.\keil_output\core_m4\dma_5411x.o
+.\keil_output\core_m4\i2cm_5411x.o
+.\keil_output\core_m4\i2cs_5411x.o
+.\keil_output\core_m4\spi_common_5411x.o
+.\keil_output\core_m4\spim_5411x.o
+.\keil_output\core_m4\spis_5411x.o
+.\keil_output\core_m4\uart_5411x.o
+.\keil_output\core_m4\flexcomm_5411x.o
+.\keil_output\core_m4\dma_service_5411x.o
+.\keil_output\core_m4\dmic_5411x.o
+.\keil_output\core_m4\i2s_5411x.o

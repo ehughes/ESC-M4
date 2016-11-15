@@ -1,0 +1,10 @@
+.\keil_output\core_m4\fpu_init.o: ..\..\..\chip_5411x\src\fpu_init.c
+.\keil_output\core_m4\fpu_init.o: ..\..\..\chip_5411x\inc\cmsis.h
+.\keil_output\core_m4\fpu_init.o: ..\..\..\chip_5411x\inc\lpc_types.h
+.\keil_output\core_m4\fpu_init.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\keil_output\core_m4\fpu_init.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
+.\keil_output\core_m4\fpu_init.o: ..\..\..\chip_5411x\inc\cmsis_5411x.h
+.\keil_output\core_m4\fpu_init.o: ..\..\..\chip_5411x\inc\core_cm4.h
+.\keil_output\core_m4\fpu_init.o: ..\..\..\chip_5411x\inc\core_cmInstr.h
+.\keil_output\core_m4\fpu_init.o: ..\..\..\chip_5411x\inc\core_cmFunc.h
+.\keil_output\core_m4\fpu_init.o: ..\..\..\chip_5411x\inc\core_cm4_simd.h

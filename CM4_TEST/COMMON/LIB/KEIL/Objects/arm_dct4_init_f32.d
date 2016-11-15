@@ -1,0 +1,9 @@
+.\objects\arm_dct4_init_f32.o: ..\..\SRC\CMSIS_DSP_4_5\src\TransformFunctions\arm_dct4_init_f32.c
+.\objects\arm_dct4_init_f32.o: ..\..\SRC\CMSIS_DSP_4_5\inc\arm_math.h
+.\objects\arm_dct4_init_f32.o: ..\..\SRC\CMSIS_DSP_4_5\inc\core_cm4.h
+.\objects\arm_dct4_init_f32.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\arm_dct4_init_f32.o: ..\..\SRC\CMSIS_DSP_4_5\inc\core_cmInstr.h
+.\objects\arm_dct4_init_f32.o: ..\..\SRC\CMSIS_DSP_4_5\inc\core_cmFunc.h
+.\objects\arm_dct4_init_f32.o: ..\..\SRC\CMSIS_DSP_4_5\inc\core_cmSimd.h
+.\objects\arm_dct4_init_f32.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+.\objects\arm_dct4_init_f32.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\math.h

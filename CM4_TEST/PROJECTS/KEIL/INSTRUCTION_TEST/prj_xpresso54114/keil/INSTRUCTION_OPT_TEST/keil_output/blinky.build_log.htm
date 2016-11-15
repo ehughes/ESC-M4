@@ -1,0 +1,61 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.21.1.0
+Copyright (C) 2016 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Eli Hughes Penn State Flex license: MDK-ARM Professional: 10 user(s) (mdk_pro) Operation stops: 2 Aug 2017
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Professional: 10 user(s)  Version: 5.21a
+Toolchain Path:  C:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 3 (build 300)
+Assembler:       Armasm.exe V5.06 update 3 (build 300)
+Linker/Locator:  ArmLink.exe V5.06 update 3 (build 300)
+Library Manager: ArmAr.exe V5.06 update 3 (build 300)
+Hex Converter:   FromElf.exe V5.06 update 3 (build 300)
+CPU DLL:         SARMCM3.DLL V5.21a
+Dialog DLL:      DCM.DLL V1.13.8.0
+Target DLL:      CMSIS_AGDI.dll V1.26.5.0
+Dialog DLL:      TCM.DLL V1.14.14.0
+ 
+<h2>Project:</h2>
+C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\PROJECTS\KEIL\INSTRUCTION_TEST\prj_xpresso54114\keil\periph_blinky\periph_blinky.uvprojx
+Project File Date:  11/11/2016
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 3 (build 300)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
+Rebuild Project 'periph_blinky' - Target 'iflash_nxp_lpcxpresso_lpc5411X'
+creating preprocessor file for sysinit.c...
+C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\PROJECTS\KEIL\INSTRUCTION_TEST\chip_5411x\inc\cmsis_5411x.h(47): warning:  #2525-D: #pragma push with no matching #pragma pop
+    #pragma push
+..\..\..\chip_5411x\startup\sysinit.c: 1 warning, 0 errors
+assembling keil_startup_lpc5411x.s...
+creating preprocessor file for INSTRUCTION_OPT_TEST.c...
+C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\PROJECTS\KEIL\INSTRUCTION_TEST\chip_5411x\inc\cmsis_5411x.h(47): warning:  #2525-D: #pragma push with no matching #pragma pop
+    #pragma push
+..\..\..\..\..\..\COMMON\SRC\TEST\INSTRUCTION_OPT_TEST.c: 1 warning, 0 errors
+compiling sysinit.c...
+compiling INSTRUCTION_OPT_TEST.c...
+C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\SRC\TEST\INSTRUCTION_OPT_TEST.c(23): warning:  #226-D: invalid format string conversion
+  	printf("%ll",a);
+..\..\..\..\..\..\COMMON\SRC\TEST\INSTRUCTION_OPT_TEST.c: 1 warning, 0 errors
+linking...
+Program Size: Code=2016 RO-data=308 RW-data=4 ZI-data=1092  
+After Build - User command #1: C:\Keil_v5\\ARM\BIN\ELFDWT.EXE .\keil_output\blinky.axf BASEADDRESS(0x00000000)
+ELFDWT - Signature Creator V1.2.0.0
+COPYRIGHT Copyright (C) 2014-2016, ARM Ldt. and  ARM Germany GmbH
+*** Updated Signature over Range[32] (0x00000000 - 0x00000018): @0x0000001C = 0xDFFFEF6A
+*** Processing completed, no Errors.
+".\keil_output\blinky.axf" - 0 Error(s), 3 Warning(s).
+
+<h2>Collection of Component include folders:</h2>
+  C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\PROJECTS\KEIL\INSTRUCTION_TEST\prj_xpresso54114\keil\periph_blinky\RTE
+  C:\Keil_v5\ARM\PACK\Keil\LPC54000_DFP\2.0.0\LPCOpen\lpc5411x\chip_5411x\inc
+
+<h2>Collection of Component Files used:</h2>
+Build Time Elapsed:  00:00:01
+</pre>
+</body>
+</html>
