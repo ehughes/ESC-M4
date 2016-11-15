@@ -42,7 +42,7 @@
 							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.warnings.allwarn.964032116" name="Enable all common warnings (-Wall)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.warnings.allwarn" value="true" valueType="boolean"/>
 							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.arm.target.fpu.unit.1421923670" name="FPU Type" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.arm.target.fpu.unit" value="ilg.gnuarmeclipse.managedbuild.cross.option.arm.target.fpu.unit.fpv4spd16" valueType="enumerated"/>
 							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.arm.target.fpu.abi.2009789650" name="Float ABI" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.arm.target.fpu.abi" value="ilg.gnuarmeclipse.managedbuild.cross.option.arm.target.fpu.abi.hard" valueType="enumerated"/>
-							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.optimization.lto.177631267" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.optimization.lto" value="true" valueType="boolean"/>
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.optimization.lto.177631267" name="Link-time optimizer (-flto)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.optimization.lto" value="true" valueType="boolean"/>
 							<targetPlatform archList="all" binaryParser="org.eclipse.cdt.core.ELF" id="ilg.gnuarmeclipse.managedbuild.cross.targetPlatform.1357768748" isAbstract="false" osList="all" superClass="ilg.gnuarmeclipse.managedbuild.cross.targetPlatform"/>
 							<builder buildPath="${workspace_loc:/CM7_TEST}/Debug" errorParsers="org.eclipse.cdt.core.GmakeErrorParser;org.eclipse.cdt.core.CWDLocator" id="ilg.gnuarmeclipse.managedbuild.cross.builder.208222565" keepEnvironmentInBuildfile="false" managedBuildOn="true" name="Gnu Make Builder" parallelBuildOn="true" parallelizationNumber="optimal" superClass="ilg.gnuarmeclipse.managedbuild.cross.builder"/>
 							<tool command="${cross_prefix}${cross_c}${cross_suffix}" commandLinePattern="${COMMAND} ${cross_toolchain_flags} ${FLAGS} -c ${OUTPUT_FLAG} ${OUTPUT_PREFIX}${OUTPUT} ${INPUTS}" errorParsers="org.eclipse.cdt.core.GCCErrorParser;org.eclipse.cdt.core.GASErrorParser" id="ilg.gnuarmeclipse.managedbuild.cross.tool.assembler.639459384" name="Cross ARM GNU Assembler" superClass="ilg.gnuarmeclipse.managedbuild.cross.tool.assembler">
@@ -52,6 +52,7 @@
 							<tool command="${cross_prefix}${cross_c}${cross_suffix}" commandLinePattern="${COMMAND} ${cross_toolchain_flags} ${FLAGS} -c ${OUTPUT_FLAG} ${OUTPUT_PREFIX}${OUTPUT} ${INPUTS}" errorParsers="org.eclipse.cdt.core.GCCErrorParser;org.eclipse.cdt.core.GLDErrorParser" id="ilg.gnuarmeclipse.managedbuild.cross.tool.c.compiler.2041443522" name="Cross ARM C Compiler" superClass="ilg.gnuarmeclipse.managedbuild.cross.tool.c.compiler">
 								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.c.compiler.defs.568957450" name="Defined symbols (-D)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.c.compiler.defs" useByScannerDiscovery="false" valueType="definedSymbols">
 									<listOptionValue builtIn="false" value="&quot;CPU_MKV58F1M0VLQ24&quot;"/>
+									<listOptionValue builtIn="false" value="__FPU_USED=1"/>
 									<listOptionValue builtIn="false" value="ABI=1"/>
 									<listOptionValue builtIn="false" value="__FPU_PRESENT=1"/>
 									<listOptionValue builtIn="false" value="ARM_MATH_CM7"/>
@@ -61,7 +62,7 @@
 								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.c.compiler.std.1422079036" name="Language standard" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.c.compiler.std" useByScannerDiscovery="true" value="ilg.gnuarmeclipse.managedbuild.cross.option.c.compiler.std.gnu99" valueType="enumerated"/>
 								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.c.compiler.include.paths.474185631" name="Include paths (-I)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.c.compiler.include.paths" useByScannerDiscovery="false" valueType="includePath">
 									<listOptionValue builtIn="false" value="../startup"/>
-									<listOptionValue builtIn="false" value="&quot;${PROJECT_LOC}../../../../COMMON/SRC/CMSIS_DSP_4_5/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;../../../../../COMMON/SRC/CMSIS_DSP_4_5/inc&quot;"/>
 									<listOptionValue builtIn="false" value="../board"/>
 									<listOptionValue builtIn="false" value="../utilities"/>
 									<listOptionValue builtIn="false" value="../CMSIS"/>
@@ -102,6 +103,12 @@
 								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.cpp.linker.usenewlibnano.1579539365" name="Use newlib-nano (--specs=nano.specs)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.cpp.linker.usenewlibnano" value="true" valueType="boolean"/>
 								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.cpp.linker.scriptfile.154984548" name="Script files (-T)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.cpp.linker.scriptfile" valueType="stringList">
 									<listOptionValue builtIn="false" value="&quot;../MKV58F1M0xxx24_flash.ld&quot;"/>
+								</option>
+								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.cpp.linker.libs.766470338" name="Libraries (-l)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.cpp.linker.libs" valueType="libs">
+									<listOptionValue builtIn="false" value="CMSIS_DSP_4_5_0_O3_HARD"/>
+								</option>
+								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.cpp.linker.paths.572615912" name="Library search path (-L)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.cpp.linker.paths" valueType="libPaths">
+									<listOptionValue builtIn="false" value="&quot;../../../../../COMMON/LIB/LPCXPRESSO/CMSIS_DSP_4_5_0/-O3 HARD&quot;"/>
 								</option>
 								<inputType id="ilg.gnuarmeclipse.managedbuild.cross.tool.cpp.linker.input.1377990400" superClass="ilg.gnuarmeclipse.managedbuild.cross.tool.cpp.linker.input">
 									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>

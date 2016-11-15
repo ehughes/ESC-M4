@@ -1,21 +1,19 @@
-/*
-===============================================================================
- Name        : CM4_TEST.c
- Author      : $(author)
- Version     :
- Copyright   : $(copyright)
- Description : main definition
-===============================================================================
-*/
+#if (BOARD==0 || BOARD==1 || BOARD==2)
+	#include "board.h"
+	#include <cr_section_macros.h>
 
-#if defined (__USE_LPCOPEN)
-#if defined(NO_BOARD_LIB)
-#include "chip.h"
-#else
+    #define	CM_PRINTF printf
 
 #endif
-#endif
 
+#if (BOARD==3)
+	#include "board.h"
+	#include "pin_mux.h"
+	#include "clock_config.h"
+	#include "fsl_debug_console.h"
+
+	#define	CM_PRINTF DbgConsole_Printf
+#endif
 
 #include "arm_math.h"
 #include "stdlib.h"
@@ -41,9 +39,6 @@
 
 #endif
 
-
-
-
 //These symbols are to select the different datatypes to operate on.
 //When using the LPC4370,  I could not fit all 3 configurations at one time
 //so I have these to enable/disable different pieces.
@@ -60,25 +55,20 @@
 #define FIR_TAP_SIZE	32
 
 
-#if (BOARD==0 || BOARD==1 || BOARD==2)
+#if (BOARD==0 || BOARD==1 || BOARD==2 || BOARD==3)
 
-	#include "board.h"
-	#include <cr_section_macros.h>
+
 	#define INIT_CYCLE_TIMER			        SysTick->CTRL = 0;SysTick->LOAD = 0;SysTick->VAL = 0;
 	#define START_CYCLE_TIMER					SysTick->VAL = 0;SysTick->CTRL = 1;
 	#define STOP_AND_GRAB_CYCLE_TIMER(x)	   	SysTick->CTRL = 0;	 x = SysTick->VAL; x = 0xFFFFFFF - x + 1;
-	#define REPORT_CYCLE_TIMER			   		SysTick->CTRL = 0;	 CycleTimer = SysTick->VAL; CycleTimer = 0xFFFFFFF - CycleTimer + 1;printf("%i",CycleTimer - CycleOffset)
-	#define TAB									printf(",");
-
-
-
-
+	#define REPORT_CYCLE_TIMER			   		SysTick->CTRL = 0;	 CycleTimer = SysTick->VAL; CycleTimer = 0xFFFFFFF - CycleTimer + 1;CM_PRINTF("%i",CycleTimer - CycleOffset)
+	#define TAB									CM_PRINTF(",");
 
 //	#define INIT_CYCLE_TIMER					Chip_TIMER_Init(LPC_TIMER0);Chip_TIMER_Reset(LPC_TIMER0);LPC_TIMER0->TCR = 0; //Stop The Timer
 //	#define START_CYCLE_TIMER					Chip_TIMER_Reset(LPC_TIMER0);LPC_TIMER0->TCR = 1; //Start The Timer
 //	#define STOP_AND_GRAB_CYCLE_TIMER(x)	   	LPC_TIMER0->TCR = 0; x = LPC_TIMER0->TC 		  //Stop The Timer
-//	#define REPORT_CYCLE_TIMER			   		LPC_TIMER0->TCR = 0; CycleTimer = LPC_TIMER0->TC;printf("%i",CycleTimer - CycleOffset)
-//	#define TAB									printf(",");
+//	#define REPORT_CYCLE_TIMER			   		LPC_TIMER0->TCR = 0; CycleTimer = LPC_TIMER0->TC;CM_PRINTF("%i",CycleTimer - CycleOffset)
+//	#define TAB									CM_PRINTF(",");
 
 #endif
 
@@ -215,21 +205,19 @@ int main(void)
      uint32_t CycleTimer = 0;
      uint32_t CycleOffset = 0;
 
-	#if defined (__USE_LPCOPEN)
-			#if !defined(NO_BOARD_LIB)
-				// Read clock settings and update SystemCoreClock variable
-				SystemCoreClockUpdate();
-				// Set up and initialize all required blocks and
-				// functions related to the board hardware
-				Board_Init();
-				// Set the LED to the state of "On"
-				Board_LED_Set(0, true);
-			#endif
-		#endif
+	#if(BOARD==0 || BOARD==2 || BOARD==2)
+		SystemCoreClockUpdate();
+		 fpuInit();
+		Board_Init();
+	#endif
 
 
-
- 	 fpuInit();
+	#if (BOARD==3)
+	  BOARD_InitPins();
+	  BOARD_BootClockRUN();
+	  BOARD_InitDebugConsole();
+	  SystemCoreClockUpdate();
+	#endif
 
      for(i=0;i<32;i++)
      {
@@ -246,14 +234,14 @@ int main(void)
     	InputData.q31[i] = rand();
     }
 
-    printf("Cortex M4/7 Performance Test.\r\n");
-    printf("GCC Version: %d.%d.%d\r\n",__GNUC__,__GNUC_MINOR__,__GNUC_PATCHLEVEL__);
-    printf("%s %s %s\r\n",CPU_NAME,OPT_LEVEL,ABI_TYPE);
+    CM_PRINTF("Cortex M4/7 Performance Test.\r\n");
+    CM_PRINTF("GCC Version: %d.%d.%d\r\n",__GNUC__,__GNUC_MINOR__,__GNUC_PATCHLEVEL__);
+    CM_PRINTF("%s %s %s\r\n",CPU_NAME,OPT_LEVEL,ABI_TYPE);
 
 
    	START_CYCLE_TIMER;
    	STOP_AND_GRAB_CYCLE_TIMER(CycleOffset);
-   	printf("Cycle Offset: %d\r\n",CycleOffset);
+   	CM_PRINTF("Cycle Offset: %d\r\n",CycleOffset);
 
    	/***
    	 *      ____  _      ____   _____ _  __  _____  _____   ____   _____ ______  _____ _____ _____ _   _  _____
@@ -266,9 +254,9 @@ int main(void)
    	 *
    	 */
 
-   	printf("\r\nBlock Processing Functions\r\n",CycleOffset);
+   	CM_PRINTF("\r\nBlock Processing Functions\r\n");
 
-   	printf("Length,16,32,64,128,256,512,1024,2048,4096");
+   	CM_PRINTF("Length,16,32,64,128,256,512,1024,2048,4096");
 
 	   /***
 	    *       __ ____ ___
@@ -284,8 +272,8 @@ int main(void)
 		#ifdef _f32
 
 
-					printf("\r\n");
-					printf("\r\nCFFT-f32-BitReverse,");
+					CM_PRINTF("\r\n");
+					CM_PRINTF("\r\nCFFT-f32-BitReverse,");
 					START_CYCLE_TIMER; arm_cfft_f32(&arm_cfft_sR_f32_len16,  &InputData.f32[0], 0, 1);REPORT_CYCLE_TIMER;TAB;
 					START_CYCLE_TIMER;arm_cfft_f32(&arm_cfft_sR_f32_len32,   &InputData.f32[0], 0, 1);REPORT_CYCLE_TIMER;TAB;
 					START_CYCLE_TIMER;arm_cfft_f32(&arm_cfft_sR_f32_len64,   &InputData.f32[0], 0, 1);REPORT_CYCLE_TIMER;TAB;
@@ -296,8 +284,8 @@ int main(void)
 					START_CYCLE_TIMER;arm_cfft_f32(&arm_cfft_sR_f32_len2048, &InputData.f32[0], 0, 1);REPORT_CYCLE_TIMER;TAB;
 					START_CYCLE_TIMER;arm_cfft_f32(&arm_cfft_sR_f32_len4096, &InputData.f32[0], 0, 1);REPORT_CYCLE_TIMER;TAB;
 
-					printf("\r\n");
-					printf("CFFT-f32-NoBitReverse,");
+					CM_PRINTF("\r\n");
+					CM_PRINTF("CFFT-f32-NoBitReverse,");
 					START_CYCLE_TIMER;arm_cfft_f32(&arm_cfft_sR_f32_len16,   &InputData.f32[0], 0, 0);REPORT_CYCLE_TIMER;TAB;
 					START_CYCLE_TIMER;arm_cfft_f32(&arm_cfft_sR_f32_len32,   &InputData.f32[0], 0, 0);REPORT_CYCLE_TIMER;TAB;
 					START_CYCLE_TIMER;arm_cfft_f32(&arm_cfft_sR_f32_len64,   &InputData.f32[0], 0, 0);REPORT_CYCLE_TIMER;TAB;
@@ -308,8 +296,8 @@ int main(void)
 					START_CYCLE_TIMER;arm_cfft_f32(&arm_cfft_sR_f32_len2048, &InputData.f32[0], 0, 0);REPORT_CYCLE_TIMER;TAB;
 					START_CYCLE_TIMER;arm_cfft_f32(&arm_cfft_sR_f32_len4096, &InputData.f32[0], 0, 0);REPORT_CYCLE_TIMER;TAB;
 
-					printf("\r\n");
-					printf("ComplexMag-f32,");
+					CM_PRINTF("\r\n");
+					CM_PRINTF("ComplexMag-f32,");
 					START_CYCLE_TIMER;arm_cmplx_mag_f32(&InputData.f32[0],&OutputData.f32[0],16);REPORT_CYCLE_TIMER;TAB;
 					START_CYCLE_TIMER;arm_cmplx_mag_f32(&InputData.f32[0],&OutputData.f32[0],32);REPORT_CYCLE_TIMER;TAB;
 					START_CYCLE_TIMER;arm_cmplx_mag_f32(&InputData.f32[0],&OutputData.f32[0],64);REPORT_CYCLE_TIMER;TAB;
@@ -320,8 +308,8 @@ int main(void)
 					START_CYCLE_TIMER;arm_cmplx_mag_f32(&InputData.f32[0],&OutputData.f32[0],2048);REPORT_CYCLE_TIMER;TAB;
 					START_CYCLE_TIMER;arm_cmplx_mag_f32(&InputData.f32[0],&OutputData.f32[0],4096);REPORT_CYCLE_TIMER;TAB;
 
-					printf("\r\n");
-					printf("ComplexMagSquared-f32,");
+					CM_PRINTF("\r\n");
+					CM_PRINTF("ComplexMagSquared-f32,");
 					START_CYCLE_TIMER;arm_cmplx_mag_squared_f32(&InputData.f32[0],&OutputData.f32[0],16);REPORT_CYCLE_TIMER;TAB;
 					START_CYCLE_TIMER;arm_cmplx_mag_squared_f32(&InputData.f32[0],&OutputData.f32[0],32);REPORT_CYCLE_TIMER;TAB;
 					START_CYCLE_TIMER;arm_cmplx_mag_squared_f32(&InputData.f32[0],&OutputData.f32[0],64);REPORT_CYCLE_TIMER;TAB;
@@ -336,9 +324,9 @@ int main(void)
 
 			#ifdef ENABLE_GOERTZEL
 
-					printf("\r\n");
+					CM_PRINTF("\r\n");
 					InitGoertzel_f32(&G,180000.0f,1000000.0f,32);
-					printf("Goertzel_f32_,");
+					CM_PRINTF("Goertzel_f32_,");
 
 					G.BlockSize = 16; START_CYCLE_TIMER;r=ProcessGoertzel_f32_Power(&G,&InputData.f32[0]);REPORT_CYCLE_TIMER;TAB;r*=2;//To Get rid of the warning
 					G.BlockSize = 32; START_CYCLE_TIMER;r=ProcessGoertzel_f32_Power(&G,&InputData.f32[0]);REPORT_CYCLE_TIMER;TAB;r*=2;//To Get rid of the warning
@@ -354,8 +342,8 @@ int main(void)
 
 
 
-     	printf("\r\n");
-      	printf("IIR-f32_df1-1Stage,");
+     	CM_PRINTF("\r\n");
+      	CM_PRINTF("IIR-f32_df1-1Stage,");
 
       	arm_biquad_cascade_df1_init_f32(&IIR_Inst.f32_df1,1,&IIR_Coef_f32[0],&IIR_State_f32[0]);
 
@@ -369,8 +357,8 @@ int main(void)
     	START_CYCLE_TIMER;arm_biquad_cascade_df1_f32(&IIR_Inst.f32_df1,&InputData.f32[0],&OutputData.f32[0],2048);REPORT_CYCLE_TIMER;TAB;
     	START_CYCLE_TIMER;arm_biquad_cascade_df1_f32(&IIR_Inst.f32_df1,&InputData.f32[0],&OutputData.f32[0],4096);REPORT_CYCLE_TIMER;TAB;
 
-    	printf("\r\n");
-        printf("IIR-f32_df2T-1Stage,");
+    	CM_PRINTF("\r\n");
+        CM_PRINTF("IIR-f32_df2T-1Stage,");
 
       	arm_biquad_cascade_df2T_init_f32(&IIR_Inst.f32_df2T,1,&IIR_Coef_f32[0],&IIR_State_f32[0]);
 
@@ -385,8 +373,8 @@ int main(void)
     	START_CYCLE_TIMER;arm_biquad_cascade_df2T_f32(&IIR_Inst.f32_df2T,&InputData.f32[0],&OutputData.f32[0],4096);REPORT_CYCLE_TIMER;TAB;
 
 
-    	printf("\r\n");
-        printf("FIR-f32_8tap,");
+    	CM_PRINTF("\r\n");
+        CM_PRINTF("FIR-f32_8tap,");
     	arm_fir_init_f32(&FIR_Inst.f32,8,&FIR_Coef_f32[0],&FIR_State.f32[0],2048);
     	START_CYCLE_TIMER;arm_fir_f32(&FIR_Inst.f32,&InputData.f32[0],&OutputData.f32[0],16);REPORT_CYCLE_TIMER;TAB;
     	START_CYCLE_TIMER;arm_fir_f32(&FIR_Inst.f32,&InputData.f32[0],&OutputData.f32[0],32);REPORT_CYCLE_TIMER;TAB;
@@ -396,10 +384,10 @@ int main(void)
     	START_CYCLE_TIMER;arm_fir_f32(&FIR_Inst.f32,&InputData.f32[0],&OutputData.f32[0],512);REPORT_CYCLE_TIMER;TAB;
     	START_CYCLE_TIMER;arm_fir_f32(&FIR_Inst.f32,&InputData.f32[0],&OutputData.f32[0],1024);REPORT_CYCLE_TIMER;TAB;
     	START_CYCLE_TIMER;arm_fir_f32(&FIR_Inst.f32,&InputData.f32[0],&OutputData.f32[0],2048);REPORT_CYCLE_TIMER;TAB;
-    	printf("n/a"); // Not enough memory to do the 4096 case
+    	CM_PRINTF("n/a"); // Not enough memory to do the 4096 case
 
-    	printf("\r\n");
-        printf("FIR-f32_16tap,");
+    	CM_PRINTF("\r\n");
+        CM_PRINTF("FIR-f32_16tap,");
 
     	arm_fir_init_f32(&FIR_Inst.f32,16,&FIR_Coef_f32[0],&FIR_State.f32[0],2048);
     	START_CYCLE_TIMER;arm_fir_f32(&FIR_Inst.f32,&InputData.f32[0],&OutputData.f32[0],16);REPORT_CYCLE_TIMER;TAB;
@@ -410,10 +398,10 @@ int main(void)
     	START_CYCLE_TIMER;arm_fir_f32(&FIR_Inst.f32,&InputData.f32[0],&OutputData.f32[0],512);REPORT_CYCLE_TIMER;TAB;
     	START_CYCLE_TIMER;arm_fir_f32(&FIR_Inst.f32,&InputData.f32[0],&OutputData.f32[0],1024);REPORT_CYCLE_TIMER;TAB;
     	START_CYCLE_TIMER;arm_fir_f32(&FIR_Inst.f32,&InputData.f32[0],&OutputData.f32[0],2048);REPORT_CYCLE_TIMER;TAB;
-    	printf("n/a"); // Not enough memory to do the 4096 case
+    	CM_PRINTF("n/a"); // Not enough memory to do the 4096 case
 
-    	printf("\r\n");
-    	printf("FIR-f32_32tap,");
+    	CM_PRINTF("\r\n");
+    	CM_PRINTF("FIR-f32_32tap,");
 
     	arm_fir_init_f32(&FIR_Inst.f32,32,&FIR_Coef_f32[0],&FIR_State.f32[0],2048);
     	START_CYCLE_TIMER;arm_fir_f32(&FIR_Inst.f32,&InputData.f32[0],&OutputData.f32[0],16);REPORT_CYCLE_TIMER;TAB;
@@ -424,7 +412,7 @@ int main(void)
         START_CYCLE_TIMER;arm_fir_f32(&FIR_Inst.f32,&InputData.f32[0],&OutputData.f32[0],512);REPORT_CYCLE_TIMER;TAB;
     	START_CYCLE_TIMER;arm_fir_f32(&FIR_Inst.f32,&InputData.f32[0],&OutputData.f32[0],1024);REPORT_CYCLE_TIMER;TAB;
     	START_CYCLE_TIMER;arm_fir_f32(&FIR_Inst.f32,&InputData.f32[0],&OutputData.f32[0],2048);REPORT_CYCLE_TIMER;TAB;
-    	printf("n/a"); // Not enough memory to do the 4096 case
+    	CM_PRINTF("n/a"); // Not enough memory to do the 4096 case
 
       	#endif
 
@@ -442,8 +430,8 @@ int main(void)
 
 
 		#ifdef _q31
-     	printf("\r\n");
-    	printf("CFFT-q31-BitReverse,");
+     	CM_PRINTF("\r\n");
+    	CM_PRINTF("CFFT-q31-BitReverse,");
 		START_CYCLE_TIMER;arm_cfft_q31(&arm_cfft_sR_q31_len16,   &InputData.q31[0], 0, 1);REPORT_CYCLE_TIMER;TAB;
      	START_CYCLE_TIMER;arm_cfft_q31(&arm_cfft_sR_q31_len32,   &InputData.q31[0], 0, 1);REPORT_CYCLE_TIMER;TAB;
      	START_CYCLE_TIMER;arm_cfft_q31(&arm_cfft_sR_q31_len64,   &InputData.q31[0], 0, 1);REPORT_CYCLE_TIMER;TAB;
@@ -454,8 +442,8 @@ int main(void)
        	START_CYCLE_TIMER;arm_cfft_q31(&arm_cfft_sR_q31_len2048, &InputData.q31[0], 0, 1);REPORT_CYCLE_TIMER;TAB;
     	START_CYCLE_TIMER;arm_cfft_q31(&arm_cfft_sR_q31_len4096, &InputData.q31[0], 0, 1);REPORT_CYCLE_TIMER;TAB;
 
-       	printf("\r\n");
-      	printf("CFFT-q31-NoBitReverse,");
+       	CM_PRINTF("\r\n");
+      	CM_PRINTF("CFFT-q31-NoBitReverse,");
       	START_CYCLE_TIMER;arm_cfft_q31(&arm_cfft_sR_q31_len16,   &InputData.q31[0], 0, 0);REPORT_CYCLE_TIMER;TAB;
         START_CYCLE_TIMER;arm_cfft_q31(&arm_cfft_sR_q31_len32,   &InputData.q31[0], 0, 0);REPORT_CYCLE_TIMER;TAB;
         START_CYCLE_TIMER;arm_cfft_q31(&arm_cfft_sR_q31_len64,   &InputData.q31[0], 0, 0);REPORT_CYCLE_TIMER;TAB;
@@ -466,8 +454,8 @@ int main(void)
     	START_CYCLE_TIMER;arm_cfft_q31(&arm_cfft_sR_q31_len2048, &InputData.q31[0], 0, 0);REPORT_CYCLE_TIMER;TAB;
         START_CYCLE_TIMER;arm_cfft_q31(&arm_cfft_sR_q31_len4096, &InputData.q31[0], 0, 0);REPORT_CYCLE_TIMER;TAB;
 
-    	printf("\r\n");
-        printf("ComplexMag-q31,");
+    	CM_PRINTF("\r\n");
+        CM_PRINTF("ComplexMag-q31,");
     	START_CYCLE_TIMER;arm_cmplx_mag_q31(&InputData.q31[0],&OutputData.q31[0],16);REPORT_CYCLE_TIMER;TAB;
     	START_CYCLE_TIMER;arm_cmplx_mag_q31(&InputData.q31[0],&OutputData.q31[0],32);REPORT_CYCLE_TIMER;TAB;
     	START_CYCLE_TIMER;arm_cmplx_mag_q31(&InputData.q31[0],&OutputData.q31[0],64);REPORT_CYCLE_TIMER;TAB;
@@ -478,8 +466,8 @@ int main(void)
     	START_CYCLE_TIMER;arm_cmplx_mag_q31(&InputData.q31[0],&OutputData.q31[0],2048);REPORT_CYCLE_TIMER;TAB;
     	START_CYCLE_TIMER;arm_cmplx_mag_q31(&InputData.q31[0],&OutputData.q31[0],4096);REPORT_CYCLE_TIMER;TAB;
 
-    	printf("\r\n");
-        printf("ComplexMagSquared-q31,");
+    	CM_PRINTF("\r\n");
+        CM_PRINTF("ComplexMagSquared-q31,");
     	START_CYCLE_TIMER;arm_cmplx_mag_squared_q31(&InputData.q31[0],&OutputData.q31[0],16);REPORT_CYCLE_TIMER;TAB;
     	START_CYCLE_TIMER;arm_cmplx_mag_squared_q31(&InputData.q31[0],&OutputData.q31[0],32);REPORT_CYCLE_TIMER;TAB;
     	START_CYCLE_TIMER;arm_cmplx_mag_squared_q31(&InputData.q31[0],&OutputData.q31[0],64);REPORT_CYCLE_TIMER;TAB;
@@ -492,8 +480,8 @@ int main(void)
 
 
 
-		printf("\r\n");
-      	printf("IIR-q31_df1-1Stage,");
+		CM_PRINTF("\r\n");
+      	CM_PRINTF("IIR-q31_df1-1Stage,");
 
       	arm_biquad_cascade_df1_init_q31(&IIR_Inst.q31_df1,1,&IIR_Coef_q31[0],&IIR_State_q31[0],1);
 
@@ -508,8 +496,8 @@ int main(void)
       	START_CYCLE_TIMER;arm_biquad_cascade_df1_q31(&IIR_Inst.q31_df1,&InputData.q31[0],&OutputData.q31[0],4096);REPORT_CYCLE_TIMER;TAB;
 
 
-		printf("\r\n");
-      	printf("IIR-q31_df1-1Stage-fast,");
+		CM_PRINTF("\r\n");
+      	CM_PRINTF("IIR-q31_df1-1Stage-fast,");
 
       	arm_biquad_cascade_df1_init_q31(&IIR_Inst.q31_df1,1,&IIR_Coef_q31[0],&IIR_State_q31[0],1);
 
@@ -523,8 +511,8 @@ int main(void)
     	START_CYCLE_TIMER;arm_biquad_cascade_df1_fast_q31(&IIR_Inst.q31_df1,&InputData.q31[0],&OutputData.q31[0],2048);REPORT_CYCLE_TIMER;TAB;
     	START_CYCLE_TIMER;arm_biquad_cascade_df1_fast_q31(&IIR_Inst.q31_df1,&InputData.q31[0],&OutputData.q31[0],4096);REPORT_CYCLE_TIMER;TAB;
 
-    	printf("\r\n");
-        printf("IIR-q31_64_df1-1Staget,");
+    	CM_PRINTF("\r\n");
+        CM_PRINTF("IIR-q31_64_df1-1Staget,");
         arm_biquad_cas_df1_32x64_init_q31(&IIR_Inst.q31_64_df1,1,&IIR_Coef_q31[0],&IIR_State_q63[0],1);
        	START_CYCLE_TIMER;arm_biquad_cas_df1_32x64_q31(&IIR_Inst.q31_64_df1,&InputData.q31[0],&OutputData.q31[0],16);REPORT_CYCLE_TIMER;TAB;
 
@@ -538,8 +526,8 @@ int main(void)
     	START_CYCLE_TIMER;arm_biquad_cas_df1_32x64_q31(&IIR_Inst.q31_64_df1,&InputData.q31[0],&OutputData.q31[0],4096);REPORT_CYCLE_TIMER;TAB;
 
 
-    	printf("\r\n");
-    	        printf("FIR-q31_8tap,");
+    	CM_PRINTF("\r\n");
+    	        CM_PRINTF("FIR-q31_8tap,");
     	    	arm_fir_init_q31(&FIR_Inst.q31,8,&FIR_Coef_q31[0],&FIR_State.q31[0],2048);
     	    	START_CYCLE_TIMER;arm_fir_q31(&FIR_Inst.q31,&InputData.q31[0],&OutputData.q31[0],16);REPORT_CYCLE_TIMER;TAB;
     	    	START_CYCLE_TIMER;arm_fir_q31(&FIR_Inst.q31,&InputData.q31[0],&OutputData.q31[0],32);REPORT_CYCLE_TIMER;TAB;
@@ -549,10 +537,10 @@ int main(void)
     	    	START_CYCLE_TIMER;arm_fir_q31(&FIR_Inst.q31,&InputData.q31[0],&OutputData.q31[0],512);REPORT_CYCLE_TIMER;TAB;
     	    	START_CYCLE_TIMER;arm_fir_q31(&FIR_Inst.q31,&InputData.q31[0],&OutputData.q31[0],1024);REPORT_CYCLE_TIMER;TAB;
     	    	START_CYCLE_TIMER;arm_fir_q31(&FIR_Inst.q31,&InputData.q31[0],&OutputData.q31[0],2048);REPORT_CYCLE_TIMER;TAB;
-    	    	printf("n/a"); // Not enough memory to do the 4096 case
+    	    	CM_PRINTF("n/a"); // Not enough memory to do the 4096 case
 
-    	    	printf("\r\n");
-    	        printf("FIR-q31_16tap,");
+    	    	CM_PRINTF("\r\n");
+    	        CM_PRINTF("FIR-q31_16tap,");
 
     	    	arm_fir_init_q31(&FIR_Inst.q31,16,&FIR_Coef_q31[0],&FIR_State.q31[0],2048);
     	    	START_CYCLE_TIMER;arm_fir_q31(&FIR_Inst.q31,&InputData.q31[0],&OutputData.q31[0],16);REPORT_CYCLE_TIMER;TAB;
@@ -563,10 +551,10 @@ int main(void)
     	    	START_CYCLE_TIMER;arm_fir_q31(&FIR_Inst.q31,&InputData.q31[0],&OutputData.q31[0],512);REPORT_CYCLE_TIMER;TAB;
     	    	START_CYCLE_TIMER;arm_fir_q31(&FIR_Inst.q31,&InputData.q31[0],&OutputData.q31[0],1024);REPORT_CYCLE_TIMER;TAB;
     	    	START_CYCLE_TIMER;arm_fir_q31(&FIR_Inst.q31,&InputData.q31[0],&OutputData.q31[0],2048);REPORT_CYCLE_TIMER;TAB;
-    	    	printf("n/a"); // Not enough memory to do the 4096 case
+    	    	CM_PRINTF("n/a"); // Not enough memory to do the 4096 case
 
-    	    	printf("\r\n");
-    	    	printf("FIR-q31_32tap,");
+    	    	CM_PRINTF("\r\n");
+    	    	CM_PRINTF("FIR-q31_32tap,");
 
     	    	arm_fir_init_q31(&FIR_Inst.q31,32,&FIR_Coef_q31[0],&FIR_State.q31[0],2048);
     	    	START_CYCLE_TIMER;arm_fir_q31(&FIR_Inst.q31,&InputData.q31[0],&OutputData.q31[0],16);REPORT_CYCLE_TIMER;TAB;
@@ -577,7 +565,7 @@ int main(void)
     	        START_CYCLE_TIMER;arm_fir_q31(&FIR_Inst.q31,&InputData.q31[0],&OutputData.q31[0],512);REPORT_CYCLE_TIMER;TAB;
     	    	START_CYCLE_TIMER;arm_fir_q31(&FIR_Inst.q31,&InputData.q31[0],&OutputData.q31[0],1024);REPORT_CYCLE_TIMER;TAB;
     	    	START_CYCLE_TIMER;arm_fir_q31(&FIR_Inst.q31,&InputData.q31[0],&OutputData.q31[0],2048);REPORT_CYCLE_TIMER;TAB;
-    	    	printf("n/a"); // Not enough memory to do the 4096 case
+    	    	CM_PRINTF("n/a"); // Not enough memory to do the 4096 case
 
 		#endif
 
@@ -593,8 +581,8 @@ int main(void)
     	 */
 
 		#ifdef _q15
-    	printf("\r\n");
-    	printf("CFFT-q15-BitReverse,");
+    	CM_PRINTF("\r\n");
+    	CM_PRINTF("CFFT-q15-BitReverse,");
 		START_CYCLE_TIMER;arm_cfft_q15(&arm_cfft_sR_q15_len16,   &InputData.q15[0], 0, 1);REPORT_CYCLE_TIMER;TAB;
      	START_CYCLE_TIMER;arm_cfft_q15(&arm_cfft_sR_q15_len32,   &InputData.q15[0], 0, 1);REPORT_CYCLE_TIMER;TAB;
      	START_CYCLE_TIMER;arm_cfft_q15(&arm_cfft_sR_q15_len64,   &InputData.q15[0], 0, 1);REPORT_CYCLE_TIMER;TAB;
@@ -605,8 +593,8 @@ int main(void)
 		START_CYCLE_TIMER;arm_cfft_q15(&arm_cfft_sR_q15_len2048, &InputData.q15[0], 0, 1);REPORT_CYCLE_TIMER;TAB;
     	START_CYCLE_TIMER;arm_cfft_q31(&arm_cfft_sR_q31_len4096, &InputData.q31[0], 0, 1);REPORT_CYCLE_TIMER;TAB;
 
-       	printf("\r\n");
-        printf("CFFT-q15-NoBitReverse,");
+       	CM_PRINTF("\r\n");
+        CM_PRINTF("CFFT-q15-NoBitReverse,");
     	START_CYCLE_TIMER;arm_cfft_q15(&arm_cfft_sR_q15_len16,   &InputData.q15[0], 0, 0);REPORT_CYCLE_TIMER;TAB;
            	START_CYCLE_TIMER;arm_cfft_q15(&arm_cfft_sR_q15_len32,   &InputData.q15[0], 0, 0);REPORT_CYCLE_TIMER;TAB;
            	START_CYCLE_TIMER;arm_cfft_q15(&arm_cfft_sR_q15_len64,   &InputData.q15[0], 0, 0);REPORT_CYCLE_TIMER;TAB;
@@ -617,8 +605,8 @@ int main(void)
          	START_CYCLE_TIMER;arm_cfft_q15(&arm_cfft_sR_q15_len2048, &InputData.q15[0], 0, 0);REPORT_CYCLE_TIMER;TAB;
            	START_CYCLE_TIMER;arm_cfft_q31(&arm_cfft_sR_q31_len4096, &InputData.q31[0], 0, 0);REPORT_CYCLE_TIMER;TAB;
 
-        	printf("\r\n");
-            printf("ComplexMag-q15,");
+        	CM_PRINTF("\r\n");
+            CM_PRINTF("ComplexMag-q15,");
         	START_CYCLE_TIMER;arm_cmplx_mag_q15(&InputData.q15[0],&OutputData.q15[0],16);REPORT_CYCLE_TIMER;TAB;
         	START_CYCLE_TIMER;arm_cmplx_mag_q15(&InputData.q15[0],&OutputData.q15[0],32);REPORT_CYCLE_TIMER;TAB;
         	START_CYCLE_TIMER;arm_cmplx_mag_q15(&InputData.q15[0],&OutputData.q15[0],64);REPORT_CYCLE_TIMER;TAB;
@@ -629,8 +617,8 @@ int main(void)
         	START_CYCLE_TIMER;arm_cmplx_mag_q15(&InputData.q15[0],&OutputData.q15[0],2048);REPORT_CYCLE_TIMER;TAB;
         	START_CYCLE_TIMER;arm_cmplx_mag_q15(&InputData.q15[0],&OutputData.q15[0],4096);REPORT_CYCLE_TIMER;TAB;
 
-        	printf("\r\n");
-            printf("ComplexMagSquared-q15,");
+        	CM_PRINTF("\r\n");
+            CM_PRINTF("ComplexMagSquared-q15,");
         	START_CYCLE_TIMER;arm_cmplx_mag_squared_q15(&InputData.q15[0],&OutputData.q15[0],16);REPORT_CYCLE_TIMER;TAB;
         	START_CYCLE_TIMER;arm_cmplx_mag_squared_q15(&InputData.q15[0],&OutputData.q15[0],32);REPORT_CYCLE_TIMER;TAB;
         	START_CYCLE_TIMER;arm_cmplx_mag_squared_q15(&InputData.q15[0],&OutputData.q15[0],64);REPORT_CYCLE_TIMER;TAB;
@@ -642,8 +630,8 @@ int main(void)
         	START_CYCLE_TIMER;arm_cmplx_mag_squared_q15(&InputData.q15[0],&OutputData.q15[0],4096);REPORT_CYCLE_TIMER;TAB;
 
 
-    		printf("\r\n");
-          	printf("IIR-q15_df1-1Stage,");
+    		CM_PRINTF("\r\n");
+          	CM_PRINTF("IIR-q15_df1-1Stage,");
 
           	arm_biquad_cascade_df1_init_q15(&IIR_Inst.q15_df1,1,&IIR_Coef_q15[0],&IIR_State_q15[0],1);
 
@@ -658,8 +646,8 @@ int main(void)
           	START_CYCLE_TIMER;arm_biquad_cascade_df1_q15(&IIR_Inst.q15_df1,&InputData.q15[0],&OutputData.q15[0],4096);REPORT_CYCLE_TIMER;TAB;
 
 
-    		printf("\r\n");
-          	printf("IIR-q15_df1-1Stage-fast,");
+    		CM_PRINTF("\r\n");
+          	CM_PRINTF("IIR-q15_df1-1Stage-fast,");
 
           	arm_biquad_cascade_df1_init_q15(&IIR_Inst.q15_df1,1,&IIR_Coef_q15[0],&IIR_State_q15[0],1);
 
@@ -673,8 +661,8 @@ int main(void)
         	START_CYCLE_TIMER;arm_biquad_cascade_df1_fast_q15(&IIR_Inst.q15_df1,&InputData.q15[0],&OutputData.q15[0],2048);REPORT_CYCLE_TIMER;TAB;
         	START_CYCLE_TIMER;arm_biquad_cascade_df1_fast_q15(&IIR_Inst.q15_df1,&InputData.q15[0],&OutputData.q15[0],4096);REPORT_CYCLE_TIMER;TAB;
 
-        	printf("\r\n");
-        	        printf("FIR-q15_8tap,");
+        	CM_PRINTF("\r\n");
+        	        CM_PRINTF("FIR-q15_8tap,");
         	    	arm_fir_init_q15(&FIR_Inst.q15,8,&FIR_Coef_q15[0],&FIR_State.q15[0],2048);
         	    	START_CYCLE_TIMER;arm_fir_q15(&FIR_Inst.q15,&InputData.q15[0],&OutputData.q15[0],16);REPORT_CYCLE_TIMER;TAB;
         	    	START_CYCLE_TIMER;arm_fir_q15(&FIR_Inst.q15,&InputData.q15[0],&OutputData.q15[0],32);REPORT_CYCLE_TIMER;TAB;
@@ -684,10 +672,10 @@ int main(void)
         	    	START_CYCLE_TIMER;arm_fir_q15(&FIR_Inst.q15,&InputData.q15[0],&OutputData.q15[0],512);REPORT_CYCLE_TIMER;TAB;
         	    	START_CYCLE_TIMER;arm_fir_q15(&FIR_Inst.q15,&InputData.q15[0],&OutputData.q15[0],1024);REPORT_CYCLE_TIMER;TAB;
         	    	START_CYCLE_TIMER;arm_fir_q15(&FIR_Inst.q15,&InputData.q15[0],&OutputData.q15[0],2048);REPORT_CYCLE_TIMER;TAB;
-        	    	printf("n/a"); // Not enough memory to do the 4096 case
+        	    	CM_PRINTF("n/a"); // Not enough memory to do the 4096 case
 
-        	    	printf("\r\n");
-        	        printf("FIR-q15_16tap,");
+        	    	CM_PRINTF("\r\n");
+        	        CM_PRINTF("FIR-q15_16tap,");
 
         	    	arm_fir_init_q15(&FIR_Inst.q15,16,&FIR_Coef_q15[0],&FIR_State.q15[0],2048);
         	    	START_CYCLE_TIMER;arm_fir_q15(&FIR_Inst.q15,&InputData.q15[0],&OutputData.q15[0],16);REPORT_CYCLE_TIMER;TAB;
@@ -698,10 +686,10 @@ int main(void)
         	    	START_CYCLE_TIMER;arm_fir_q15(&FIR_Inst.q15,&InputData.q15[0],&OutputData.q15[0],512);REPORT_CYCLE_TIMER;TAB;
         	    	START_CYCLE_TIMER;arm_fir_q15(&FIR_Inst.q15,&InputData.q15[0],&OutputData.q15[0],1024);REPORT_CYCLE_TIMER;TAB;
         	    	START_CYCLE_TIMER;arm_fir_q15(&FIR_Inst.q15,&InputData.q15[0],&OutputData.q15[0],2048);REPORT_CYCLE_TIMER;TAB;
-        	    	printf("n/a"); // Not enough memory to do the 4096 case
+        	    	CM_PRINTF("n/a"); // Not enough memory to do the 4096 case
 
-        	    	printf("\r\n");
-        	    	printf("FIR-q15_32tap,");
+        	    	CM_PRINTF("\r\n");
+        	    	CM_PRINTF("FIR-q15_32tap,");
 
         	    	arm_fir_init_q15(&FIR_Inst.q15,32,&FIR_Coef_q15[0],&FIR_State.q15[0],2048);
         	    	START_CYCLE_TIMER;arm_fir_q15(&FIR_Inst.q15,&InputData.q15[0],&OutputData.q15[0],16);REPORT_CYCLE_TIMER;TAB;
@@ -712,7 +700,7 @@ int main(void)
         	        START_CYCLE_TIMER;arm_fir_q15(&FIR_Inst.q15,&InputData.q15[0],&OutputData.q15[0],512);REPORT_CYCLE_TIMER;TAB;
         	    	START_CYCLE_TIMER;arm_fir_q15(&FIR_Inst.q15,&InputData.q15[0],&OutputData.q15[0],1024);REPORT_CYCLE_TIMER;TAB;
         	    	START_CYCLE_TIMER;arm_fir_q15(&FIR_Inst.q15,&InputData.q15[0],&OutputData.q15[0],2048);REPORT_CYCLE_TIMER;TAB;
-        	    	printf("n/a"); // Not enough memory to do the 4096 case
+        	    	CM_PRINTF("n/a"); // Not enough memory to do the 4096 case
 
 
 		#endif
@@ -730,14 +718,14 @@ int main(void)
         	 *
         	 */
 
-      	printf("\r\nSample by Sample Tests");
+      	CM_PRINTF("\r\nSample by Sample Tests");
 
-        printf("\r\nIteration,0,1,2,3,4,5,6,7\r\n");
+        CM_PRINTF("\r\nIteration,0,1,2,3,4,5,6,7\r\n");
 
 		#ifdef _f32
 
-    	printf("\r\n");
-       	printf("PID-f32,");
+    	CM_PRINTF("\r\n");
+       	CM_PRINTF("PID-f32,");
 
         PID_Inst.f32.Kp = 0.5;
         PID_Inst.f32.Ki = 0.1;
@@ -750,10 +738,10 @@ int main(void)
         	r*=2;//To Get rid of the warning
         }
 
-    	printf("\r\n");
+    	CM_PRINTF("\r\n");
 
 
-    	        printf("E-IIR-f32_df1-1Stage,");
+    	        CM_PRINTF("E-IIR-f32_df1-1Stage,");
 
 
     	       	E_IIRf.Coef.a[0] = -0.4;
@@ -773,8 +761,8 @@ int main(void)
 
 		#ifdef _q31
 
-    	printf("\r\n");
-       	printf("PID-q31,");
+    	CM_PRINTF("\r\n");
+       	CM_PRINTF("PID-q31,");
 
         PID_Inst.q31.Kp = (q31_t)(0.5 * 0x7fffffff);
         PID_Inst.q31.Ki = (q31_t)(0.1 * 0x7fffffff);
@@ -787,8 +775,8 @@ int main(void)
         	r*=2;//To Get rid of the warning
         }
 
-        printf("\r\n");
-        printf("IIR-q31_64_df1-1Stage,");
+        CM_PRINTF("\r\n");
+        CM_PRINTF("IIR-q31_64_df1-1Stage,");
         arm_biquad_cas_df1_32x64_init_q31(&IIR_Inst.q31_64_df1,1,&IIR_Coef_q31[0],&IIR_State_q63[0],1);
 
         for(i=0;i<8;i++)
@@ -796,8 +784,8 @@ int main(void)
         	START_CYCLE_TIMER;arm_biquad_cas_df1_32x64_q31(&IIR_Inst.q31_64_df1,&InputData.q31[0],&OutputData.q31[0],1);REPORT_CYCLE_TIMER;TAB;
         }
 
-        printf("\r\n");
-        printf("E-IIR-q31_64_df1-1Stage,");
+        CM_PRINTF("\r\n");
+        CM_PRINTF("E-IIR-q31_64_df1-1Stage,");
 
        	E_IIR.Coef.PostShift = 1;
        	E_IIR.Coef.a[0] = -0.4;
@@ -817,8 +805,8 @@ int main(void)
 
 		#ifdef _q15
 
-    	printf("\r\n");
-       	printf("PID-q15,");
+    	CM_PRINTF("\r\n");
+       	CM_PRINTF("PID-q15,");
 
         PID_Inst.q15.Kp = (q31_t)(0.5 * 0x7fff);
         PID_Inst.q15.Ki = (q31_t)(0.1 * 0x7fff);
@@ -834,7 +822,7 @@ int main(void)
 		#endif
 
 
-        printf("\r\n");
+        CM_PRINTF("\r\n");
 
 
 

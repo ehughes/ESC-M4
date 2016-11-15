@@ -60,7 +60,7 @@ all: CM7_TEST.elf secondary-outputs
 CM7_TEST.elf: $(OBJS) $(USER_OBJS)
 	@echo 'Building target: $@'
 	@echo 'Invoking: Cross ARM C++ Linker'
-	arm-none-eabi-g++ -mcpu=cortex-m7 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -Wall  -g3 -T "../MKV58F1M0xxx24_flash.ld" -Xlinker --gc-sections -Wl,-Map,"CM7_TEST.map" --specs=nano.specs -specs=nosys.specs -Xlinker -z -Xlinker muldefs -o "CM7_TEST.elf" $(OBJS) $(USER_OBJS) $(LIBS)
+	arm-none-eabi-g++ -mcpu=cortex-m7 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -O3 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -flto -Wall  -g3 -T "../MKV58F1M0xxx24_flash.ld" -Xlinker --gc-sections -L"../../../../../COMMON/LIB/LPCXPRESSO/CMSIS_DSP_4_5_0/-O3 HARD" -Wl,-Map,"CM7_TEST.map" --specs=nano.specs -specs=nosys.specs -Xlinker -z -Xlinker muldefs -o "CM7_TEST.elf" $(OBJS) $(USER_OBJS) $(LIBS)
 	@echo 'Finished building target: $@'
 	@echo ' '
 

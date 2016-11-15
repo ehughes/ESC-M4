@@ -23,7 +23,7 @@ C_DEPS += \
 board/%.o: ../board/%.c
 	@echo 'Building file: $<'
 	@echo 'Invoking: Cross ARM C Compiler'
-	arm-none-eabi-gcc -mcpu=cortex-m7 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -Wall  -g3 -D"CPU_MKV58F1M0VLQ24" -D__FPU_PRESENT=1 -DARM_MATH_CM7 -DBUILD_CONFIG=3 -DBOARD=3 -I../startup -I"../../../../COMMON/SRC/CMSIS_DSP_4_5/inc" -I../board -I../utilities -I../CMSIS -I../drivers -std=gnu99 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" -c -o "$@" "$<"
+	arm-none-eabi-gcc -mcpu=cortex-m7 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -O3 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -flto -Wall  -g3 -D"CPU_MKV58F1M0VLQ24" -D__FPU_USED=1 -DABI=1 -D__FPU_PRESENT=1 -DARM_MATH_CM7 -DBUILD_CONFIG=3 -DBOARD=3 -I../startup -I"../../../../../COMMON/SRC/CMSIS_DSP_4_5/inc" -I../board -I../utilities -I../CMSIS -I../drivers -std=gnu99 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" -c -o "$@" "$<"
 	@echo 'Finished building: $<'
 	@echo ' '
 

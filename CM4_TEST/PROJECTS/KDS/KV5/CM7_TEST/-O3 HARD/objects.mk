@@ -4,5 +4,5 @@
 
 USER_OBJS :=
 
-LIBS :=
+LIBS := -lCMSIS_DSP_4_5_0_O3_HARD
 

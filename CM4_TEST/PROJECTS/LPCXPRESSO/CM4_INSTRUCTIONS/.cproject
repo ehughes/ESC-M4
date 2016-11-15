@@ -76,9 +76,6 @@
 							</tool>
 						</toolChain>
 					</folderInfo>
-					<fileInfo id="com.crt.advproject.config.exe.debug.1579091339.974943158.1701066431" name="INSTRUCTION_OPT_TEST.c" rcbsApplicability="disable" resourcePath="src/INSTRUCTION_OPT_TEST.c" toolsToInvoke="com.crt.advproject.gcc.exe.debug.343960479.1469684582">
-						<tool id="com.crt.advproject.gcc.exe.debug.343960479.1469684582" name="MCU C Compiler" superClass="com.crt.advproject.gcc.exe.debug.343960479"/>
-					</fileInfo>
 					<sourceEntries>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="src"/>
 					</sourceEntries>
