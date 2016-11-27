@@ -364,6 +364,19 @@ Reset_Handler:
 .LC1:
 #endif
 
+ ldr r1, =__DATA_END
+ ldr r2, =__itcm_start__
+ ldr r3, =__itcm_end__
+
+/* New loop implementation */
+.LC2:
+ cmp r2, r3
+ ittt lt
+ ldrlt r0, [r1], #4
+ strlt r0, [r2], #4
+ blt .LC2
+
+
 #ifdef __STARTUP_CLEAR_BSS
 /*     This part of work usually is done in C library startup code. Otherwise,
  *     define this macro to enable it in this startup.

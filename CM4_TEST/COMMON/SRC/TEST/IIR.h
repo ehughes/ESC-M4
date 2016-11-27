@@ -4,7 +4,7 @@
  *  Created on: Mar 1, 2014
  *      Author: emh203
  */
-
+#include "CM_TEST_CONFIG.h"
 #include "arm_math.h"
 
 #ifndef IIR_H_
@@ -69,11 +69,15 @@ typedef struct
 
 
 void Init_q31_t_IIR(q31_t_IIR *MyIIR);
-
+#ifdef KV5_TCM_TEST
+__attribute__((section (".itcm")))
+#endif
 void Compute_q31_t_IIR(q31_t_IIR *MyIIR,q31_t Input,q31_t *Output);
 
 void Init_f32_IIR(f32_IIR *MyIIR);
-
+#ifdef KV5_TCM_TEST
+__attribute__((section (".itcm")))
+#endif
 void Compute_f32_IIR(f32_IIR *MyIIR,float Input,float *Output);
 
 

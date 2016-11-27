@@ -1,3 +1,4 @@
+#include "CM_TEST_CONFIG.h"
 #include "math.h"
 #include "arm_math.h"
 
@@ -22,7 +23,9 @@ void InitGoertzel_f32(Goertzel_f32_t * G,float Frequency,float SampleRate, uint3
 	G->BlockSize = BlockSize;
 }
 
-
+#ifdef KV5_TCM_TEST
+__attribute__((section (".itcm")))
+#endif
  float ProcessGoertzel_f32_Power(Goertzel_f32_t * G, float *x)
 {
 	float sn = 0;

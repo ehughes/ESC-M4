@@ -1,6 +1,8 @@
+#include "CM_TEST_CONFIG.h"
 #include "arm_math.h"
 #include "IIR.h"
 #include "math.h"
+
 
 //an Fixed Point IIR filter implementation for ARM Cortex M4.... i like it better than the libraries provided.
 
@@ -36,6 +38,9 @@ void Init_f32_IIR(f32_IIR *MyIIR)
 
 
 //__RAMFUNC(RAM2)
+#ifdef KV5_TCM_TEST
+__attribute__((section (".itcm2")))
+#endif
  void Compute_q31_t_IIR(q31_t_IIR *MyIIR,q31_t Input,q31_t *Output)
 {
     q63_t acc = 0;
@@ -59,6 +64,9 @@ void Init_f32_IIR(f32_IIR *MyIIR)
     *Output = acc>>31;
 }
 
+#ifdef KV5_TCM_TEST
+__attribute__((section (".itcm3")))
+#endif
  void Compute_f32_IIR(f32_IIR *MyIIR,float Input,float *Output)
 {
     float acc;

@@ -5084,8 +5084,8 @@ void arm_rfft_fast_f32(
    * @return out processed output sample.
    */
 
-
-  static __INLINE float32_t arm_pid_f32(
+  static __INLINE float32_t arm_pid_f32
+  (
   arm_pid_instance_f32 * S,
   float32_t in)
   {

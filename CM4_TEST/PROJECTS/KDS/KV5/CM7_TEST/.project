@@ -31,6 +31,11 @@
 			<locationURI>PARENT-4-PROJECT_LOC/COMMON/SRC/TEST/CM_TEST.c</locationURI>
 		</link>
 		<link>
+			<name>source/CM_TEST_CONFIG.h</name>
+			<type>1</type>
+			<locationURI>PARENT-4-PROJECT_LOC/COMMON/SRC/TEST/CM_TEST_CONFIG.h</locationURI>
+		</link>
+		<link>
 			<name>source/Goertzel.c</name>
 			<type>1</type>
 			<locationURI>PARENT-4-PROJECT_LOC/COMMON/SRC/TEST/Goertzel.c</locationURI>

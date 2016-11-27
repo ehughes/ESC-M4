@@ -61,6 +61,7 @@ MEMORY
   m_text                (RX)  : ORIGIN = 0x10000410, LENGTH = 0x000FFBF0
   m_data                (RW)  : ORIGIN = 0x20000000, LENGTH = 0x00020000
   m_data_2              (RW)  : ORIGIN = 0x2F000000, LENGTH = 0x00010000
+  m_itcm				(RWX) : ORIGIN = 0x00000000, LENGTH = 0x00010000
 }
 
 /* Define output sections */
@@ -197,9 +198,27 @@ SECTIONS
     __data_end__ = .;        /* define a global symbol at data end */
   } > m_data
 
+
+ /* Section created to relocate code in specific RAM address */
+.itcm : AT(__DATA_ROM + SIZEOF(.data))
+ {
+ __itcm_start__ = .;
+ . = ALIGN(4);
+ _itcmSection = .; /* create a global symbol at myRAM */
+ *(.itcm)
+ . = ALIGN(4);
+ __itcm_end__ = .;
+ } > m_itcm
+
+
   __DATA_END = __DATA_ROM + (__data_end__ - __data_start__);
+
+  __DATA_END2 =  __DATA_END  + (__itcm_end__ - __itcm_start__);
+  
   text_end = ORIGIN(m_text) + LENGTH(m_text);
-  ASSERT(__DATA_END <= text_end, "region m_text overflowed with text and data")
+
+  ASSERT(__DATA_END2 <= text_end, "region m_text overflowed with text and data")
+
 
   /* Uninitialized data section */
   .bss :
@@ -232,6 +251,7 @@ SECTIONS
     . = ALIGN(8);
     . += STACK_SIZE;
   } > m_data_2
+
 
 
   /* Initializes stack on the end of block */
