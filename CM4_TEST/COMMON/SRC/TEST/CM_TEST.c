@@ -46,7 +46,7 @@
 #endif
 
 
-#define MAX_INPUT_SIZE	4096
+#define MAX_INPUT_SIZE	8192
 
 #define FIR_TAP_SIZE	32
 
@@ -333,9 +333,9 @@ INIT_CYCLE_TIMER;
 
 #ifdef ENABLE_BLOCK_PROCESSING
 
-   	CM_PRINTF("\r\nBlock Processing Functions\r\n");
-
-   	CM_PRINTF("Length,16,32,64,128,256,512,1024,2048,4096");
+   	CM_PRINTF("\r\nBlock Processing Functions");
+  	CM_PRINTF("\r\n---------------------------------------------------------------\r\n");
+   	CM_PRINTF("\r\nLength,16,32,64,128,256,512,1024,2048,4096");
 
 	   /***
 	    *       __ ____ ___
