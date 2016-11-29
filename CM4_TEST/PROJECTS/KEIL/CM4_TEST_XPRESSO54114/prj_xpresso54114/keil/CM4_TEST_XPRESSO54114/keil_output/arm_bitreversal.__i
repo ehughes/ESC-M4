@@ -1,0 +1,6 @@
+--c99 -c --cpu Cortex-M4.fp -D__EVAL -g -O3 --apcs=interwork --split_sections -I ..\..\..\chip_5411x\inc -I ..\..\..\brd_xpresso54114\inc -I ..\..\..\..\..\..\COMMON\SRC\CMSIS_DSP_4_5\inc
+-IC:\Users\ehughes\Documents\GitHub\ESC-M4\CM4_TEST\PROJECTS\KEIL\CM4_TEST_XPRESSO54114\prj_xpresso54114\keil\CM4_TEST_XPRESSO54114\RTE\_iflash_nxp_lpcxpresso_lpc5411X
+-IC:\Keil_v5\ARM\PACK\Keil\LPC54000_DFP\2.1.0\LPCOpen\lpc5411x\chip_5411x\inc
+-IC:\Keil_v5\ARM\CMSIS\Include
+-D__UVISION_VERSION="522" -DCHIP_LPC5411X -DCHIP_LPC5411X -DCORE_M4 -DARM_MATH_CM4 -D__FPU_PRESENT="1" -DBOARD="2" -DABI="1" -DBUILD_CONFIG="3" -DCORE_M4
+-o .\keil_output\arm_bitreversal.o --list_dir ".\\keil_output\\" --list --omf_browse .\keil_output\arm_bitreversal.crf --depend .\keil_output\arm_bitreversal.d "..\..\..\..\..\..\COMMON\SRC\CMSIS_DSP_4_5\src\TransformFunctions\arm_bitreversal.c"

@@ -912,18 +912,18 @@ OUTPUT(CM4_INSTRUCTIONS_O0.axf elf32-littlearm)
  .debug_macro   0x00001378       0x1a ./src/crp.o
  .debug_macro   0x00001392       0x34 ./src/crp.o
 
-.debug_line     0x00000000      0x3ac
- .debug_line    0x00000000      0x231 ./src/INSTRUCTION_OPT_TEST.o
- .debug_line    0x00000231      0x103 ./src/cr_startup_lpc43xx.o
- .debug_line    0x00000334       0x78 ./src/crp.o
+.debug_line     0x00000000      0x3ae
+ .debug_line    0x00000000      0x233 ./src/INSTRUCTION_OPT_TEST.o
+ .debug_line    0x00000233      0x103 ./src/cr_startup_lpc43xx.o
+ .debug_line    0x00000336       0x78 ./src/crp.o
 
-.debug_str      0x00000000     0x5253
- .debug_str     0x00000000     0x4f82 ./src/INSTRUCTION_OPT_TEST.o
-                               0x502c (size before relaxing)
- .debug_str     0x00004f82      0x1e8 ./src/cr_startup_lpc43xx.o
-                               0x2790 (size before relaxing)
- .debug_str     0x0000516a       0xe9 ./src/crp.o
-                               0x267d (size before relaxing)
+.debug_str      0x00000000     0x5255
+ .debug_str     0x00000000     0x4f84 ./src/INSTRUCTION_OPT_TEST.o
+                               0x502e (size before relaxing)
+ .debug_str     0x00004f84      0x1e8 ./src/cr_startup_lpc43xx.o
+                               0x2791 (size before relaxing)
+ .debug_str     0x0000516c       0xe9 ./src/crp.o
+                               0x267e (size before relaxing)
 
 .comment        0x00000000       0xdc
  .comment       0x00000000       0x6e ./src/INSTRUCTION_OPT_TEST.o

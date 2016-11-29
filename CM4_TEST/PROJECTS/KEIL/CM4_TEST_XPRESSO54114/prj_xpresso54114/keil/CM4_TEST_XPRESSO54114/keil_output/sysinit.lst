@@ -155,7 +155,7 @@ N */
 N
 N#ifndef __stdint_h
 N#define __stdint_h
-N#define __ARMCLIB_VERSION 5060016
+N#define __ARMCLIB_VERSION 5060019
 N
 N  #ifdef __INT64_TYPE__
 S    /* armclang predefines '__INT64_TYPE__' and '__INT64_C_SUFFIX__' */
@@ -487,7 +487,7 @@ N */
 N
 N#ifndef __bool_true_false_are_defined
 N#define __bool_true_false_are_defined 1
-N#define __ARMCLIB_VERSION 5060016
+N#define __ARMCLIB_VERSION 5060019
 N
 N  #ifndef __cplusplus /* In C++, 'bool', 'true' and 'false' and keywords */
 N    #define bool _Bool
@@ -1164,7 +1164,7 @@ X#if   1L
 N/* ARM armcc specific functions */
 N
 N#if (__ARMCC_VERSION < 400677)
-X#if (5060300 < 400677)
+X#if (5060422 < 400677)
 S  #error "Please use ARM Compiler Toolchain V4.0.677 or later!"
 N#endif
 N
@@ -1862,7 +1862,7 @@ X#if   1L
 N/* ARM armcc specific functions */
 N
 N#if (__ARMCC_VERSION < 400677)
-X#if (5060300 < 400677)
+X#if (5060422 < 400677)
 S  #error "Please use ARM Compiler Toolchain V4.0.677 or later!"
 N#endif
 N
@@ -5145,10 +5145,10 @@ N
 N#if defined(__CC_ARM)
 X#if 1L
 N	#if (__OPTIMISE_LEVEL > 0)
-X	#if (0 > 0)
-S		#define LPC_ASSERT(cond,file,line) if(!(cond)){} /* Required to avoid unused variable warning */
+X	#if (3 > 0)
+N		#define LPC_ASSERT(cond,file,line) if(!(cond)){} /* Required to avoid unused variable warning */
 N	#else
-N		#define LPC_ASSERT(cond,file,line) if(!(cond)){__BKPT(line & 0xFF);}
+S		#define LPC_ASSERT(cond,file,line) if(!(cond)){__BKPT(line & 0xFF);}
 N	#endif
 N#elif defined(__ICCARM__)
 S	#if defined(NDEBUG)
@@ -19897,7 +19897,7 @@ N */
 N
 N#ifndef __stdio_h
 N#define __stdio_h
-N#define __ARMCLIB_VERSION 5060016
+N#define __ARMCLIB_VERSION 5060019
 N
 N/*
 N * Depending on compiler version __int64 or __INT64_TYPE__ should be defined.

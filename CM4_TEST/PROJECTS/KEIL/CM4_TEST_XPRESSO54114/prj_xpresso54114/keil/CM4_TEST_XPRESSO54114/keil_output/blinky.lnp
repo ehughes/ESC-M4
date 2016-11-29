@@ -1,10 +1,13 @@
---cpu Cortex-M4.fp
+--cpu=Cortex-M4.fp
 ".\keil_output\sysinit.o"
 ".\keil_output\keil_startup_lpc5411x.o"
-".\keil_output\instruction_opt_test.o"
+".\keil_output\cm_test.o"
+".\keil_output\iir.o"
+".\keil_output\goertzel.o"
 "..\lib_chip_5411x\keil_output\core_m4\lib_chip_5411x.lib"
 "..\lib_board_lpcxpresso_54114\keil_output\core_m4\lib_board_lpcxpresso_54114.lib"
 "..\..\..\chip_5411x\libs\keil_lib_power.lib"
+"..\..\..\..\..\..\COMMON\LIB\KEIL\LIB\CMSIS_DSP_4_5_O3.lib"
 --strict --scatter ".\keil_output\blinky.sct"
 --summary_stderr --info summarysizes --map --xref --callgraph --symbols
 --info sizes --info totals --info unused --info veneers

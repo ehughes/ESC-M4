@@ -19,6 +19,10 @@
 
   <project>
     <PathAndName>.\lib_board_lpcxpresso_54114\lib_board_lpcxpresso_54114.uvprojx</PathAndName>
+  </project>
+
+  <project>
+    <PathAndName>..\..\..\..\..\COMMON\LIB\KEIL\CMSIS_DSP_4_5.uvprojx</PathAndName>
     <NodeIsExpanded>1</NodeIsExpanded>
   </project>
 

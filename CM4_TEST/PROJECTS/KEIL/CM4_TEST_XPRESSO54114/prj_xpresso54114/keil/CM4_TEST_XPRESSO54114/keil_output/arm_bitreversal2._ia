@@ -1,0 +1,6 @@
+--cpu Cortex-M4.fp --pd "__EVAL SETA 1" -g --apcs=interwork 
+-IC:\Users\ehughes\Documents\GitHub\ESC-M4\CM4_TEST\PROJECTS\KEIL\CM4_TEST_XPRESSO54114\prj_xpresso54114\keil\CM4_TEST_XPRESSO54114\RTE\_iflash_nxp_lpcxpresso_lpc5411X
+-IC:\Keil_v5\ARM\PACK\Keil\LPC54000_DFP\2.1.0\LPCOpen\lpc5411x\chip_5411x\inc
+-IC:\Keil_v5\ARM\CMSIS\Include
+--pd "__UVISION_VERSION SETA 522" --pd "CHIP_LPC5411X SETA 1" --pd "NO_CRP SETA 1"
+--list .\keil_output\arm_bitreversal2.lst --xref -o .\keil_output\arm_bitreversal2.o --depend .\keil_output\arm_bitreversal2.d "..\..\..\..\..\..\COMMON\SRC\CMSIS_DSP_4_5\src\TransformFunctions\arm_bitreversal2.S"

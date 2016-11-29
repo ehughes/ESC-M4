@@ -1,13 +1,15 @@
 #if (BOARD==0 || BOARD==1 || BOARD==2)
-	#include "board.h"
-	
-	
-	#include <cr_section_macros.h>
+  
+	 #include "board.h"
+	  #include "cr_section_macros.h"
 
     #define	CM_PRINTF printf
 
 #endif
 
+
+
+		
 #if (BOARD==3)
 
 	#include "board.h"
@@ -43,27 +45,31 @@
 
 #endif
 
-//These symbols are to select the different datatypes to operate on.
-//When using the LPC4370,  I could not fit all 3 configurations at one time
-//so I have these to enable/disable different pieces.
 
-
-
-#define MAX_INPUT_SIZE	8192
+#define MAX_INPUT_SIZE	4096
 
 #define FIR_TAP_SIZE	32
 
 
-#if (BOARD==0 || BOARD==1 || BOARD==2 || BOARD==3)
+#if (BOARD==0 || BOARD==1  || BOARD==3)
 
 
 	#define INIT_CYCLE_TIMER			        SysTick->CTRL = 0;SysTick->LOAD = 0xFFFFFF;SysTick->VAL = 0;
-	#define START_CYCLE_TIMER					SysTick->VAL = 0;SysTick->CTRL = 1;
-	#define STOP_AND_GRAB_CYCLE_TIMER(x)	   	SysTick->CTRL = 0;	 x = SysTick->VAL; x = 0x1000000 - x;
+	#define START_CYCLE_TIMER					SysTick->VAL = 0;SysTick->CTRL |= 1;
+	#define STOP_AND_GRAB_CYCLE_TIMER(x)	    SysTick->CTRL &= ~1;	x++; x = SysTick->VAL; x = 0x1000000 - x;
 	#define REPORT_CYCLE_TIMER			   		SysTick->CTRL = 0;	 CycleTimer = SysTick->VAL; CycleTimer = 0x1000000 - CycleTimer;CM_PRINTF("%i",CycleTimer - CycleOffset)
-	#define COMMA									CM_PRINTF(",");
+	#define COMMA													CM_PRINTF(",");
+
+#elif  BOARD==2
+
+	#define INIT_CYCLE_TIMER			        SysTick->CTRL = SysTick_CTRL_CLKSOURCE_Msk;SysTick->LOAD = 0xFFFFFF;SysTick->VAL = 0;
+	#define START_CYCLE_TIMER					SysTick->VAL = 0;SysTick->CTRL = SysTick_CTRL_ENABLE_Msk | SysTick_CTRL_CLKSOURCE_Msk;
+	#define STOP_AND_GRAB_CYCLE_TIMER(x)	    SysTick->CTRL = SysTick_CTRL_CLKSOURCE_Msk;	x++; x = SysTick->VAL; x = 0x1000000 - x;
+	#define REPORT_CYCLE_TIMER			   		SysTick->CTRL = SysTick_CTRL_CLKSOURCE_Msk;	 CycleTimer = SysTick->VAL; CycleTimer = 0x1000000 - CycleTimer;CM_PRINTF("%i",CycleTimer - CycleOffset)
+	#define COMMA								CM_PRINTF(",");
 
 #endif
+
 
 #if BUILD_CONFIG == 0
 
@@ -110,13 +116,19 @@
 #ifdef ENABLE_BLOCK_PROCESSING
 
 	#if BOARD == 0
-	__BSS(RAM2)
+		#ifdef DATA_IN_ALTERNATE_AHB_BANK
+			__BSS(RAM2)
+		#endif
 	#endif
 	#if BOARD == 1
-	__BSS(RAM2)
+		#ifdef DATA_IN_ALTERNATE_AHB_BANK
+			__BSS(RAM2)
+		#endif
 	#endif
 	#if BOARD == 2
-	__BSS(RAM2)
+		#ifdef DATA_IN_ALTERNATE_AHB_BANK
+			__BSS(RAM2)
+		#endif
 	#endif
 	union
 	{
@@ -126,49 +138,56 @@
 	} InputData;
 
 	#if BOARD == 0
-	__BSS(RAM2)
+		#ifdef DATA_IN_ALTERNATE_AHB_BANK
+			__BSS(RAM2)
+		#endif
 	#endif
 	#if BOARD == 1
-	__BSS(RAM2)
+		#ifdef DATA_IN_ALTERNATE_AHB_BANK
+			__BSS(RAM2)
+		#endif
 	#endif
 	#if BOARD == 2
-	__BSS(RAM2)
+		#ifdef DATA_IN_ALTERNATE_AHB_BANK
+			__BSS(RAM2)
+		#endif
 	#endif
 
-	union
-	{
-		 q15_t 		q15[MAX_INPUT_SIZE];
-		 q31_t 		q31[MAX_INPUT_SIZE];
-		 float32_t	f32[MAX_INPUT_SIZE];
-	} OutputData;
+union
+{
+	 q15_t 		q15[MAX_INPUT_SIZE];
+	 q31_t 		q31[MAX_INPUT_SIZE];
+	 float32_t	f32[MAX_INPUT_SIZE];
+} OutputData;
 
 
-		union
-		{
-			arm_biquad_casd_df1_inst_f32 		 f32_df1;
-			arm_biquad_cascade_df2T_instance_f32 f32_df2T;
-			arm_biquad_casd_df1_inst_q15		 q15_df1;
-			arm_biquad_casd_df1_inst_q31		 q31_df1;
-			arm_biquad_cas_df1_32x64_ins_q31     q31_64_df1;
-		} IIR_Inst;
+union
+{
+	arm_biquad_casd_df1_inst_f32 		 f32_df1;
+	arm_biquad_cascade_df2T_instance_f32 f32_df2T;
+	arm_biquad_casd_df1_inst_q15		 q15_df1;
+	arm_biquad_casd_df1_inst_q31		 q31_df1;
+	arm_biquad_cas_df1_32x64_ins_q31     q31_64_df1;
+} IIR_Inst;
 
 
-		#ifdef _f32
-			float32_t IIR_Coef_f32 [5] = {0.1,0.2,0.3,-0.4,-0.4};
-			float32_t IIR_State_f32 [4] = {0,0,0,0};
-		#endif
+#ifdef _f32
+	float32_t IIR_Coef_f32 [5] = {0.1,0.2,0.3,-0.4,-0.4};
+	float32_t IIR_State_f32 [4] = {0,0,0,0};
+#endif
 
-		#ifdef _q31
-			q31_t IIR_Coef_q31 [5] = {0.1*0x7FFFFFFF,0.2*0x7FFFFFFF,0.3*0x7FFFFFFF,-0.4*0x7FFFFFFF,-0.4*0x7FFFFFFF};
-			q31_t IIR_State_q31 [4] = {0,0,0,0};
-			q63_t IIR_State_q63 [4] = {0,0,0,0};
-		#endif
+#ifdef _q31
+	q31_t IIR_Coef_q31 [5] = {0.1*0x7FFFFFFF,0.2*0x7FFFFFFF,0.3*0x7FFFFFFF,-0.4*0x7FFFFFFF,-0.4*0x7FFFFFFF};
+	q31_t IIR_State_q31 [4] = {0,0,0,0};
+	q63_t IIR_State_q63 [4] = {0,0,0,0};
+#endif
 
-		#ifdef _q15
-			q15_t IIR_Coef_q15 [5] = {0.1*0x7FFF,0.2*0x7FFF,0.3*0x7FFF,-0.4*0x7FFF,-0.4*0x7FFF};
-			q15_t IIR_State_q15 [4] = {0,0,0,0};
-		#endif
+#ifdef _q15
+	q15_t IIR_Coef_q15 [5] = {0.1*0x7FFF,0.2*0x7FFF,0.3*0x7FFF,-0.4*0x7FFF,-0.4*0x7FFF};
+	q15_t IIR_State_q15 [4] = {0,0,0,0};
+#endif
 
+#define MAX_FIR_LENGTH
 
 	#ifdef ENABLE_BLOCK_FIR
 		union
@@ -180,9 +199,9 @@
 
 		union
 		{
-			float32_t f32[2048+FIR_TAP_SIZE+1];
-			q31_t	  q31[2048+FIR_TAP_SIZE+1];
-			q15_t	  q15[2048+FIR_TAP_SIZE+1];
+			float32_t f32[MAX_FIR_LENGTH+FIR_TAP_SIZE+1];
+			q31_t	  q31[MAX_FIR_LENGTH+FIR_TAP_SIZE+1];
+			q15_t	  q15[MAX_FIR_LENGTH+FIR_TAP_SIZE+1];
 		}FIR_State;
 
 		#ifdef _f32
@@ -216,8 +235,6 @@ union
 
 #endif
 
-#ifdef ENABLE_FFT
-
 union
 {
 	arm_rfft_fast_instance_f32 rfft_fast_f32;
@@ -225,7 +242,6 @@ union
 	arm_rfft_instance_q15 rfft_q15;
 }FFT_Inst;
 
-#endif
 
 #ifdef ENABLE_GOERTZEL
 
@@ -236,27 +252,27 @@ union
 
 int main(void)
 {
-     int i = 0 ;
-     volatile float r=1;
-     volatile uint32_t CycleTimer = 0;
-     volatile uint32_t CycleOffset = 0;
+int i = 0 ;
+volatile float r=1;
+volatile uint32_t CycleTimer = 0;
+volatile uint32_t CycleOffset = 0;
 
-	#if(BOARD==0 || BOARD==2 || BOARD==2)
-		SystemCoreClockUpdate();
-		 fpuInit();
-		Board_Init();
-	#endif
-
-
-	#if (BOARD==3)
-	  BOARD_InitPins();
-	  BOARD_BootClockRUN();
-	  BOARD_InitDebugConsole();
-	  SystemCoreClockUpdate();
-	#endif
+#if(BOARD==0 || BOARD==1 || BOARD==2)
+	SystemCoreClockUpdate();
+	 fpuInit();
+	Board_Init();
+#endif
 
 
-	INIT_CYCLE_TIMER;
+#if (BOARD==3)
+  BOARD_InitPins();
+  BOARD_BootClockRUN();
+  BOARD_InitDebugConsole();
+  SystemCoreClockUpdate();
+#endif
+
+
+INIT_CYCLE_TIMER;
 
 #ifdef ENABLE_BLOCK_PROCESSING
 
@@ -268,19 +284,37 @@ int main(void)
 	#ifdef ENABLE_BLOCK_FIR
 		for(i=0;i<32;i++)
 		{
-		 FIR_Coef_f32[i] = (float32_t)i/32;
-		 FIR_Coef_q31[i] = i<<26;
-		 FIR_Coef_q15[i] = i<<10;
+		#ifdef _f32
+			FIR_Coef_f32[i] = (float32_t)i/32;
+		#endif
+
+		#ifdef _q31
+			FIR_Coef_q31[i] = i<<26;
+		#endif
+
+		#ifdef _q15
+			 	 FIR_Coef_q15[i] = i<<10;
+		#endif
 		}
 	#endif
 
 #endif
 
     CM_PRINTF("Cortex M4/7 Performance Test.\r\n");
-    CM_PRINTF("GCC Version: %d.%d.%d\r\n",__GNUC__,__GNUC_MINOR__,__GNUC_PATCHLEVEL__);
-    CM_PRINTF("%s %s %s\r\n",CPU_NAME,OPT_LEVEL,ABI_TYPE);
-    CM_PRINTF("NOTES: \r\n");
-
+		
+		#ifdef __ARMCC_VERSION
+		
+			CM_PRINTF("ARMCC Version: %d\r\n",__ARMCC_VERSION);
+			CM_PRINTF("%s %s %s\r\n",CPU_NAME,OPT_LEVEL,ABI_TYPE);
+			CM_PRINTF("NOTES: \r\n");
+		
+		#else
+		
+			CM_PRINTF("GCC Version: %d.%d.%d\r\n",__GNUC__,__GNUC_MINOR__,__GNUC_PATCHLEVEL__);
+			CM_PRINTF("%s %s %s\r\n",CPU_NAME,OPT_LEVEL,ABI_TYPE);
+			CM_PRINTF("NOTES: \r\n");
+	  
+		#endif
 
    	START_CYCLE_TIMER;
    	STOP_AND_GRAB_CYCLE_TIMER(CycleOffset);
@@ -316,7 +350,7 @@ int main(void)
 
 	#ifdef _f32
 
-			#ifdef ENABLE_FFT
+			#ifdef ENABLE_CFFT_BR
 					CM_PRINTF("\r\n");
 					CM_PRINTF("\r\nCFFT-f32-BitReverse,");
 					START_CYCLE_TIMER; arm_cfft_f32(&arm_cfft_sR_f32_len16,  &InputData.f32[0], 0, 1);REPORT_CYCLE_TIMER;COMMA;
@@ -328,7 +362,9 @@ int main(void)
 					START_CYCLE_TIMER;arm_cfft_f32(&arm_cfft_sR_f32_len1024, &InputData.f32[0], 0, 1);REPORT_CYCLE_TIMER;COMMA;
 					START_CYCLE_TIMER;arm_cfft_f32(&arm_cfft_sR_f32_len2048, &InputData.f32[0], 0, 1);REPORT_CYCLE_TIMER;COMMA;
 					START_CYCLE_TIMER;arm_cfft_f32(&arm_cfft_sR_f32_len4096, &InputData.f32[0], 0, 1);REPORT_CYCLE_TIMER;COMMA;
+		    #endif
 
+			#ifdef ENABLE_CFFT_NBR
 					CM_PRINTF("\r\n");
 					CM_PRINTF("CFFT-f32-NoBitReverse,");
 					START_CYCLE_TIMER;arm_cfft_f32(&arm_cfft_sR_f32_len16,   &InputData.f32[0], 0, 0);REPORT_CYCLE_TIMER;COMMA;
@@ -340,7 +376,10 @@ int main(void)
 					START_CYCLE_TIMER;arm_cfft_f32(&arm_cfft_sR_f32_len1024, &InputData.f32[0], 0, 0);REPORT_CYCLE_TIMER;COMMA;
 					START_CYCLE_TIMER;arm_cfft_f32(&arm_cfft_sR_f32_len2048, &InputData.f32[0], 0, 0);REPORT_CYCLE_TIMER;COMMA;
 					START_CYCLE_TIMER;arm_cfft_f32(&arm_cfft_sR_f32_len4096, &InputData.f32[0], 0, 0);REPORT_CYCLE_TIMER;COMMA;
+			#endif
 
+
+			#ifdef ENABLE_RFFT_NBR
 					CM_PRINTF("\r\n");
 					CM_PRINTF("RFFT-f32-NoBitReverse,");
 
@@ -353,7 +392,9 @@ int main(void)
 					arm_rfft_fast_init_f32(&FFT_Inst.rfft_fast_f32,1024);START_CYCLE_TIMER;arm_rfft_fast_f32(&FFT_Inst.rfft_fast_f32,&InputData.f32[0], &OutputData.f32[0], 0);REPORT_CYCLE_TIMER;COMMA;
 					arm_rfft_fast_init_f32(&FFT_Inst.rfft_fast_f32,2048);START_CYCLE_TIMER;arm_rfft_fast_f32(&FFT_Inst.rfft_fast_f32,&InputData.f32[0], &OutputData.f32[0], 0);REPORT_CYCLE_TIMER;COMMA;
 					arm_rfft_fast_init_f32(&FFT_Inst.rfft_fast_f32,4096);START_CYCLE_TIMER;arm_rfft_fast_f32(&FFT_Inst.rfft_fast_f32,&InputData.f32[0], &OutputData.f32[0], 0);REPORT_CYCLE_TIMER;COMMA;
+			#endif
 
+			#ifdef COMPLEX_MAG
 					CM_PRINTF("\r\n");
 					CM_PRINTF("ComplexMag-f32,");
 					START_CYCLE_TIMER;arm_cmplx_mag_f32(&InputData.f32[0],&OutputData.f32[0],16);REPORT_CYCLE_TIMER;COMMA;
@@ -365,7 +406,9 @@ int main(void)
 					START_CYCLE_TIMER;arm_cmplx_mag_f32(&InputData.f32[0],&OutputData.f32[0],1024);REPORT_CYCLE_TIMER;COMMA;
 					START_CYCLE_TIMER;arm_cmplx_mag_f32(&InputData.f32[0],&OutputData.f32[0],2048);REPORT_CYCLE_TIMER;COMMA;
 					START_CYCLE_TIMER;arm_cmplx_mag_f32(&InputData.f32[0],&OutputData.f32[0],4096);REPORT_CYCLE_TIMER;COMMA;
+			#endif
 
+			#ifdef COMPLEX_MAG_SQUARED
 					CM_PRINTF("\r\n");
 					CM_PRINTF("ComplexMagSquared-f32,");
 					START_CYCLE_TIMER;arm_cmplx_mag_squared_f32(&InputData.f32[0],&OutputData.f32[0],16);REPORT_CYCLE_TIMER;COMMA;
@@ -487,7 +530,7 @@ int main(void)
 
 		#ifdef _q31
 
-           #ifdef ENABLE_FFT
+			#ifdef ENABLE_CFFT_BR
 				CM_PRINTF("\r\n");
 				CM_PRINTF("CFFT-q31-BitReverse,");
 				START_CYCLE_TIMER;arm_cfft_q31(&arm_cfft_sR_q31_len16,   &InputData.q31[0], 0, 1);REPORT_CYCLE_TIMER;COMMA;
@@ -499,7 +542,9 @@ int main(void)
 				START_CYCLE_TIMER;arm_cfft_q31(&arm_cfft_sR_q31_len1024, &InputData.q31[0], 0, 1);REPORT_CYCLE_TIMER;COMMA;
 				START_CYCLE_TIMER;arm_cfft_q31(&arm_cfft_sR_q31_len2048, &InputData.q31[0], 0, 1);REPORT_CYCLE_TIMER;COMMA;
 				START_CYCLE_TIMER;arm_cfft_q31(&arm_cfft_sR_q31_len4096, &InputData.q31[0], 0, 1);REPORT_CYCLE_TIMER;COMMA;
+			#endif
 
+			#ifdef ENABLE_CFFT_NBR
 				CM_PRINTF("\r\n");
 				CM_PRINTF("CFFT-q31-NoBitReverse,");
 				START_CYCLE_TIMER;arm_cfft_q31(&arm_cfft_sR_q31_len16,   &InputData.q31[0], 0, 0);REPORT_CYCLE_TIMER;COMMA;
@@ -511,8 +556,9 @@ int main(void)
 				START_CYCLE_TIMER;arm_cfft_q31(&arm_cfft_sR_q31_len1024, &InputData.q31[0], 0, 0);REPORT_CYCLE_TIMER;COMMA;
 				START_CYCLE_TIMER;arm_cfft_q31(&arm_cfft_sR_q31_len2048, &InputData.q31[0], 0, 0);REPORT_CYCLE_TIMER;COMMA;
 				START_CYCLE_TIMER;arm_cfft_q31(&arm_cfft_sR_q31_len4096, &InputData.q31[0], 0, 0);REPORT_CYCLE_TIMER;COMMA;
+			#endif
 
-
+			#ifdef ENABLE_RFFT_BR
 				CM_PRINTF("\r\nRFFT-Q31-BitReverse,");
 				CM_PRINTF("n/a");COMMA;
 				arm_rfft_init_q31(&FFT_Inst.rfft_q31,32,0,1);START_CYCLE_TIMER;arm_rfft_q31(&FFT_Inst.rfft_q31,&InputData.q31[0], &OutputData.q31[0]);REPORT_CYCLE_TIMER;COMMA;
@@ -523,8 +569,9 @@ int main(void)
 				arm_rfft_init_q31(&FFT_Inst.rfft_q31,1024,0,1);START_CYCLE_TIMER;arm_rfft_q31(&FFT_Inst.rfft_q31,&InputData.q31[0], &OutputData.q31[0]);REPORT_CYCLE_TIMER;COMMA;
 				arm_rfft_init_q31(&FFT_Inst.rfft_q31,2048,0,1);START_CYCLE_TIMER;arm_rfft_q31(&FFT_Inst.rfft_q31,&InputData.q31[0], &OutputData.q31[0]);REPORT_CYCLE_TIMER;COMMA;
 				arm_rfft_init_q31(&FFT_Inst.rfft_q31,4096,0,1);START_CYCLE_TIMER;arm_rfft_q31(&FFT_Inst.rfft_q31,&InputData.q31[0], &OutputData.q31[0]);REPORT_CYCLE_TIMER;COMMA;
+			#endif
 
-
+			#ifdef ENABLE_RFFT_NBR
 				CM_PRINTF("\r\nRFFT-Q31-NoBitReverse,");
 				CM_PRINTF("n/a");COMMA;
 				arm_rfft_init_q31(&FFT_Inst.rfft_q31,32,0,0);START_CYCLE_TIMER;arm_rfft_q31(&FFT_Inst.rfft_q31,&InputData.q31[0], &OutputData.q31[0]);REPORT_CYCLE_TIMER;COMMA;
@@ -535,8 +582,9 @@ int main(void)
 				arm_rfft_init_q31(&FFT_Inst.rfft_q31,1024,0,0);START_CYCLE_TIMER;arm_rfft_q31(&FFT_Inst.rfft_q31,&InputData.q31[0], &OutputData.q31[0]);REPORT_CYCLE_TIMER;COMMA;
 				arm_rfft_init_q31(&FFT_Inst.rfft_q31,2048,0,0);START_CYCLE_TIMER;arm_rfft_q31(&FFT_Inst.rfft_q31,&InputData.q31[0], &OutputData.q31[0]);REPORT_CYCLE_TIMER;COMMA;
 				arm_rfft_init_q31(&FFT_Inst.rfft_q31,4096,0,0);START_CYCLE_TIMER;arm_rfft_q31(&FFT_Inst.rfft_q31,&InputData.q31[0], &OutputData.q31[0]);REPORT_CYCLE_TIMER;COMMA;
+			#endif
 
-
+			#ifdef COMPLEX_MAG_SQUARED
 				CM_PRINTF("\r\n");
 				CM_PRINTF("ComplexMag-q31,");
 				START_CYCLE_TIMER;arm_cmplx_mag_q31(&InputData.q31[0],&OutputData.q31[0],16);REPORT_CYCLE_TIMER;COMMA;
@@ -548,7 +596,9 @@ int main(void)
 				START_CYCLE_TIMER;arm_cmplx_mag_q31(&InputData.q31[0],&OutputData.q31[0],1024);REPORT_CYCLE_TIMER;COMMA;
 				START_CYCLE_TIMER;arm_cmplx_mag_q31(&InputData.q31[0],&OutputData.q31[0],2048);REPORT_CYCLE_TIMER;COMMA;
 				START_CYCLE_TIMER;arm_cmplx_mag_q31(&InputData.q31[0],&OutputData.q31[0],4096);REPORT_CYCLE_TIMER;COMMA;
+			#endif
 
+			#ifdef COMPLEX_MAG_SQUARED
 				CM_PRINTF("\r\n");
 				CM_PRINTF("ComplexMagSquared-q31,");
 				START_CYCLE_TIMER;arm_cmplx_mag_squared_q31(&InputData.q31[0],&OutputData.q31[0],16);REPORT_CYCLE_TIMER;COMMA;
@@ -560,7 +610,6 @@ int main(void)
 				START_CYCLE_TIMER;arm_cmplx_mag_squared_q31(&InputData.q31[0],&OutputData.q31[0],1024);REPORT_CYCLE_TIMER;COMMA;
 				START_CYCLE_TIMER;arm_cmplx_mag_squared_q31(&InputData.q31[0],&OutputData.q31[0],2048);REPORT_CYCLE_TIMER;COMMA;
 				START_CYCLE_TIMER;arm_cmplx_mag_squared_q31(&InputData.q31[0],&OutputData.q31[0],4096);REPORT_CYCLE_TIMER;COMMA;
-
             #endif
 
 			#ifdef ENABLE_BLOCK_IIR
@@ -666,7 +715,7 @@ int main(void)
     	 */
 
 		#ifdef _q15
-			#ifdef ENABLE_FFT
+				#ifdef ENABLE_CFFT_BR
 
 				CM_PRINTF("\r\n");
 				CM_PRINTF("CFFT-q15-BitReverse,");
@@ -679,7 +728,9 @@ int main(void)
 				START_CYCLE_TIMER;arm_cfft_q15(&arm_cfft_sR_q15_len1024, &InputData.q15[0], 0, 1);REPORT_CYCLE_TIMER;COMMA;
 				START_CYCLE_TIMER;arm_cfft_q15(&arm_cfft_sR_q15_len2048, &InputData.q15[0], 0, 1);REPORT_CYCLE_TIMER;COMMA;
 				START_CYCLE_TIMER;arm_cfft_q31(&arm_cfft_sR_q31_len4096, &InputData.q31[0], 0, 1);REPORT_CYCLE_TIMER;COMMA;
+				#endif
 
+				#ifdef ENABLE_CFFT_NBR
 				CM_PRINTF("\r\n");
 				CM_PRINTF("CFFT-q15-NoBitReverse,");
 				START_CYCLE_TIMER;arm_cfft_q15(&arm_cfft_sR_q15_len16,   &InputData.q15[0], 0, 0);REPORT_CYCLE_TIMER;COMMA;
@@ -691,7 +742,9 @@ int main(void)
 				START_CYCLE_TIMER;arm_cfft_q15(&arm_cfft_sR_q15_len1024, &InputData.q15[0], 0, 0);REPORT_CYCLE_TIMER;COMMA;
 				START_CYCLE_TIMER;arm_cfft_q15(&arm_cfft_sR_q15_len2048, &InputData.q15[0], 0, 0);REPORT_CYCLE_TIMER;COMMA;
 				START_CYCLE_TIMER;arm_cfft_q31(&arm_cfft_sR_q31_len4096, &InputData.q31[0], 0, 0);REPORT_CYCLE_TIMER;COMMA;
+				#endif
 
+				#ifdef ENABLE_RFFT_BR
 				CM_PRINTF("\r\nRFFT-Q15-BitReverse,");
 				CM_PRINTF("n/a");COMMA;
 				arm_rfft_init_q15(&FFT_Inst.rfft_q15,32,0,1);START_CYCLE_TIMER  ;arm_rfft_q15(&FFT_Inst.rfft_q15,&InputData.q15[0], &OutputData.q15[0]);REPORT_CYCLE_TIMER;COMMA;
@@ -702,8 +755,9 @@ int main(void)
 				arm_rfft_init_q15(&FFT_Inst.rfft_q15,1024,0,1);START_CYCLE_TIMER;arm_rfft_q15(&FFT_Inst.rfft_q15,&InputData.q15[0], &OutputData.q15[0]);REPORT_CYCLE_TIMER;COMMA;
 				arm_rfft_init_q15(&FFT_Inst.rfft_q15,2048,0,1);START_CYCLE_TIMER;arm_rfft_q15(&FFT_Inst.rfft_q15,&InputData.q15[0], &OutputData.q15[0]);REPORT_CYCLE_TIMER;COMMA;
 				arm_rfft_init_q15(&FFT_Inst.rfft_q15,4096,0,1);START_CYCLE_TIMER;arm_rfft_q15(&FFT_Inst.rfft_q15,&InputData.q15[0], &OutputData.q15[0]);REPORT_CYCLE_TIMER;COMMA;
+				#endif
 
-
+				#ifdef ENABLE_RFFT_NBR
 				CM_PRINTF("\r\nRFFT-Q15-NoBitReverse,");
 				CM_PRINTF("n/a");COMMA;
 				arm_rfft_init_q15(&FFT_Inst.rfft_q15,32,0,0);START_CYCLE_TIMER  ;arm_rfft_q15(&FFT_Inst.rfft_q15,&InputData.q15[0], &OutputData.q15[0]);REPORT_CYCLE_TIMER;COMMA;
@@ -714,7 +768,9 @@ int main(void)
 				arm_rfft_init_q15(&FFT_Inst.rfft_q15,1024,0,0);START_CYCLE_TIMER;arm_rfft_q15(&FFT_Inst.rfft_q15,&InputData.q15[0], &OutputData.q15[0]);REPORT_CYCLE_TIMER;COMMA;
 				arm_rfft_init_q15(&FFT_Inst.rfft_q15,2048,0,0);START_CYCLE_TIMER;arm_rfft_q15(&FFT_Inst.rfft_q15,&InputData.q15[0], &OutputData.q15[0]);REPORT_CYCLE_TIMER;COMMA;
 				arm_rfft_init_q15(&FFT_Inst.rfft_q15,4096,0,0);START_CYCLE_TIMER;arm_rfft_q15(&FFT_Inst.rfft_q15,&InputData.q15[0], &OutputData.q15[0]);REPORT_CYCLE_TIMER;COMMA;
+				#endif
 
+				#ifdef COMPLEX_MAG
 				CM_PRINTF("\r\n");
 				CM_PRINTF("ComplexMag-q15,");
 				START_CYCLE_TIMER;arm_cmplx_mag_q15(&InputData.q15[0],&OutputData.q15[0],16);REPORT_CYCLE_TIMER;COMMA;
@@ -726,7 +782,9 @@ int main(void)
 				START_CYCLE_TIMER;arm_cmplx_mag_q15(&InputData.q15[0],&OutputData.q15[0],1024);REPORT_CYCLE_TIMER;COMMA;
 				START_CYCLE_TIMER;arm_cmplx_mag_q15(&InputData.q15[0],&OutputData.q15[0],2048);REPORT_CYCLE_TIMER;COMMA;
 				START_CYCLE_TIMER;arm_cmplx_mag_q15(&InputData.q15[0],&OutputData.q15[0],4096);REPORT_CYCLE_TIMER;COMMA;
+				#endif
 
+				#ifdef COMPLEX_MAG_SQUARED
 				CM_PRINTF("\r\n");
 				CM_PRINTF("ComplexMagSquared-q15,");
 				START_CYCLE_TIMER;arm_cmplx_mag_squared_q15(&InputData.q15[0],&OutputData.q15[0],16);REPORT_CYCLE_TIMER;COMMA;
@@ -738,7 +796,7 @@ int main(void)
 				START_CYCLE_TIMER;arm_cmplx_mag_squared_q15(&InputData.q15[0],&OutputData.q15[0],1024);REPORT_CYCLE_TIMER;COMMA;
 				START_CYCLE_TIMER;arm_cmplx_mag_squared_q15(&InputData.q15[0],&OutputData.q15[0],2048);REPORT_CYCLE_TIMER;COMMA;
 				START_CYCLE_TIMER;arm_cmplx_mag_squared_q15(&InputData.q15[0],&OutputData.q15[0],4096);REPORT_CYCLE_TIMER;COMMA;
-			#endif
+				#endif
 
 			#ifdef ENABLE_BLOCK_IIR
 				CM_PRINTF("\r\n");

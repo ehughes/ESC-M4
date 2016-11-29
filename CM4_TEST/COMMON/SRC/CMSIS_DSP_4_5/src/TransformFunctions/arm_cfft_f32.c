@@ -51,6 +51,8 @@ extern void arm_bitreversal_32(
     uint32_t * pSrc,
     const uint16_t bitRevLen,
     const uint16_t * pBitRevTable);
+		
+		
 
 /**   
 * @ingroup groupTransforms   

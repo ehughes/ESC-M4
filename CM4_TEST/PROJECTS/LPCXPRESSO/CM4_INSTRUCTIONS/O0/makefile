@@ -29,7 +29,7 @@ all: CM4_INSTRUCTIONS_O0.axf
 CM4_INSTRUCTIONS_O0.axf: $(OBJS) $(USER_OBJS)
 	@echo 'Building target: $@'
 	@echo 'Invoking: MCU Linker'
-	arm-none-eabi-gcc -nostdlib -Xlinker -Map="CM4_INSTRUCTIONS_O0.map" -Xlinker --gc-sections -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=softfp -mthumb -T "CM4_INSTRUCTIONS_Multiple_configurations.ld" -o "CM4_INSTRUCTIONS_O0.axf" $(OBJS) $(USER_OBJS) $(LIBS)
+	arm-none-eabi-gcc -nostdlib -Xlinker -Map="CM4_INSTRUCTIONS_O0.map" -Xlinker --gc-sections -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=softfp -mthumb -T "CM4_INSTRUCTIONS_O0.ld" -o "CM4_INSTRUCTIONS_O0.axf" $(OBJS) $(USER_OBJS) $(LIBS)
 	@echo 'Finished building target: $@'
 	@echo ' '
 	$(MAKE) --no-print-directory post-build

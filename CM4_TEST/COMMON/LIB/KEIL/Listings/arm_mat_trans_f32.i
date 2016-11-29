@@ -2002,34 +2002,34 @@ extern __declspec(__nothrow) __attribute__((__pcs__("aapcs"))) int __ARM_fpclass
      
      
 
-__inline __declspec(__nothrow) __attribute__((__pcs__("aapcs"))) int __ARM_isfinitef(float __x)
+static inline __declspec(__nothrow) __attribute__((__pcs__("aapcs"))) int __ARM_isfinitef(float __x)
 {
     return (((*(unsigned *)&(__x)) >> 23) & 0xff) != 0xff;
 }
-__inline __declspec(__nothrow) __attribute__((__pcs__("aapcs"))) int __ARM_isfinite(double __x)
+static inline __declspec(__nothrow) __attribute__((__pcs__("aapcs"))) int __ARM_isfinite(double __x)
 {
     return (((*(1 + (unsigned *)&(__x))) >> 20) & 0x7ff) != 0x7ff;
 }
      
      
 
-__inline __declspec(__nothrow) __attribute__((__pcs__("aapcs"))) int __ARM_isinff(float __x)
+static inline __declspec(__nothrow) __attribute__((__pcs__("aapcs"))) int __ARM_isinff(float __x)
 {
     return ((*(unsigned *)&(__x)) << 1) == 0xff000000;
 }
-__inline __declspec(__nothrow) __attribute__((__pcs__("aapcs"))) int __ARM_isinf(double __x)
+static inline __declspec(__nothrow) __attribute__((__pcs__("aapcs"))) int __ARM_isinf(double __x)
 {
     return (((*(1 + (unsigned *)&(__x))) << 1) == 0xffe00000) && ((*(unsigned *)&(__x)) == 0);
 }
      
      
 
-__inline __declspec(__nothrow) __attribute__((__pcs__("aapcs"))) int __ARM_islessgreaterf(float __x, float __y)
+static inline __declspec(__nothrow) __attribute__((__pcs__("aapcs"))) int __ARM_islessgreaterf(float __x, float __y)
 {
     unsigned __f = __ARM_fcmp4(__x, __y) >> 28;
     return (__f == 8) || (__f == 2);  
 }
-__inline __declspec(__nothrow) __attribute__((__pcs__("aapcs"))) int __ARM_islessgreater(double __x, double __y)
+static inline __declspec(__nothrow) __attribute__((__pcs__("aapcs"))) int __ARM_islessgreater(double __x, double __y)
 {
     unsigned __f = __ARM_dcmp4(__x, __y) >> 28;
     return (__f == 8) || (__f == 2);  
@@ -2039,11 +2039,11 @@ __inline __declspec(__nothrow) __attribute__((__pcs__("aapcs"))) int __ARM_isles
 
  
 
-__inline __declspec(__nothrow) __attribute__((__pcs__("aapcs"))) int __ARM_isnanf(float __x)
+static inline __declspec(__nothrow) __attribute__((__pcs__("aapcs"))) int __ARM_isnanf(float __x)
 {
     return (0x7f800000 - ((*(unsigned *)&(__x)) & 0x7fffffff)) >> 31;
 }
-__inline __declspec(__nothrow) __attribute__((__pcs__("aapcs"))) int __ARM_isnan(double __x)
+static inline __declspec(__nothrow) __attribute__((__pcs__("aapcs"))) int __ARM_isnan(double __x)
 {
     unsigned __xf = (*(1 + (unsigned *)&(__x))) | (((*(unsigned *)&(__x)) == 0) ? 0 : 1);
     return (0x7ff00000 - (__xf & 0x7fffffff)) >> 31;
@@ -2051,12 +2051,12 @@ __inline __declspec(__nothrow) __attribute__((__pcs__("aapcs"))) int __ARM_isnan
      
      
 
-__inline __declspec(__nothrow) __attribute__((__pcs__("aapcs"))) int __ARM_isnormalf(float __x)
+static inline __declspec(__nothrow) __attribute__((__pcs__("aapcs"))) int __ARM_isnormalf(float __x)
 {
     unsigned __xe = ((*(unsigned *)&(__x)) >> 23) & 0xff;
     return (__xe != 0xff) && (__xe != 0);
 }
-__inline __declspec(__nothrow) __attribute__((__pcs__("aapcs"))) int __ARM_isnormal(double __x)
+static inline __declspec(__nothrow) __attribute__((__pcs__("aapcs"))) int __ARM_isnormal(double __x)
 {
     unsigned __xe = ((*(1 + (unsigned *)&(__x))) >> 20) & 0x7ff;
     return (__xe != 0x7ff) && (__xe != 0);
@@ -2064,11 +2064,11 @@ __inline __declspec(__nothrow) __attribute__((__pcs__("aapcs"))) int __ARM_isnor
      
      
 
-__inline __declspec(__nothrow) __attribute__((__pcs__("aapcs"))) int __ARM_signbitf(float __x)
+static inline __declspec(__nothrow) __attribute__((__pcs__("aapcs"))) int __ARM_signbitf(float __x)
 {
     return (*(unsigned *)&(__x)) >> 31;
 }
-__inline __declspec(__nothrow) __attribute__((__pcs__("aapcs"))) int __ARM_signbit(double __x)
+static inline __declspec(__nothrow) __attribute__((__pcs__("aapcs"))) int __ARM_signbit(double __x)
 {
     return (*(1 + (unsigned *)&(__x))) >> 31;
 }
@@ -2208,10 +2208,10 @@ extern __declspec(__nothrow) double sqrt(double  );
 
 
 
-    __inline double _sqrt(double __x) { return sqrt(__x); }
+    inline double _sqrt(double __x) { return sqrt(__x); }
 
 
-    __inline float _sqrtf(float __x) { return __sqrtf(__x); }
+    inline float _sqrtf(float __x) { return __sqrtf(__x); }
 
 
 
@@ -2269,7 +2269,7 @@ extern __declspec(__nothrow) double cbrt(double  );
     
 
  
-__inline __declspec(__nothrow) __attribute__((const)) double copysign(double __x, double __y)
+inline __declspec(__nothrow) __attribute__((const)) double copysign(double __x, double __y)
     
 
  
@@ -2277,7 +2277,7 @@ __inline __declspec(__nothrow) __attribute__((const)) double copysign(double __x
     (*(1 + (unsigned *)&(__x))) = ((*(1 + (unsigned *)&(__x))) & 0x7fffffff) | ((*(1 + (unsigned *)&(__y))) & 0x80000000);
     return __x;
 }
-__inline __declspec(__nothrow) __attribute__((const)) float copysignf(float __x, float __y)
+inline __declspec(__nothrow) __attribute__((const)) float copysignf(float __x, float __y)
     
 
  
@@ -2520,7 +2520,7 @@ extern __declspec(__nothrow) long double scalbnl(long double  , int  );
 
  
 extern __declspec(__nothrow) __attribute__((const)) float _fabsf(float);  
-__inline __declspec(__nothrow) __attribute__((const)) float fabsf(float __f) { return _fabsf(__f); }
+inline __declspec(__nothrow) __attribute__((const)) float fabsf(float __f) { return _fabsf(__f); }
 extern __declspec(__nothrow) float sinf(float  );
 extern __declspec(__nothrow) float cosf(float  );
 extern __declspec(__nothrow) float tanf(float  );
@@ -2615,7 +2615,80 @@ __declspec(__nothrow) long double rintl(long double );
 
 
 
-#line 875 "C:\\Keil_v5\\ARM\\ARMCC\\Bin\\..\\include\\math.h"
+
+
+
+ 
+extern __declspec(__nothrow) double exp2(double  );  
+extern __declspec(__nothrow) float exp2f(float  );
+__declspec(__nothrow) long double exp2l(long double );
+extern __declspec(__nothrow) double fdim(double  , double  );
+extern __declspec(__nothrow) float fdimf(float  , float  );
+__declspec(__nothrow) long double fdiml(long double , long double );
+#line 803 "C:\\Keil_v5\\ARM\\ARMCC\\Bin\\..\\include\\math.h"
+extern __declspec(__nothrow) double fma(double  , double  , double  );
+extern __declspec(__nothrow) float fmaf(float  , float  , float  );
+
+inline __declspec(__nothrow) long double fmal(long double __x, long double __y, long double __z)     { return (long double)fma((double)__x, (double)__y, (double)__z); }
+
+
+extern __declspec(__nothrow) __attribute__((const)) double fmax(double  , double  );
+extern __declspec(__nothrow) __attribute__((const)) float fmaxf(float  , float  );
+__declspec(__nothrow) long double fmaxl(long double , long double );
+extern __declspec(__nothrow) __attribute__((const)) double fmin(double  , double  );
+extern __declspec(__nothrow) __attribute__((const)) float fminf(float  , float  );
+__declspec(__nothrow) long double fminl(long double , long double );
+extern __declspec(__nothrow) double log2(double  );  
+extern __declspec(__nothrow) float log2f(float  );
+__declspec(__nothrow) long double log2l(long double );
+extern __declspec(__nothrow) long lrint(double  );
+extern __declspec(__nothrow) long lrintf(float  );
+
+inline __declspec(__nothrow) long lrintl(long double __x)     { return lrint((double)__x); }
+
+
+extern __declspec(__nothrow) long long llrint(double  );
+extern __declspec(__nothrow) long long llrintf(float  );
+
+inline __declspec(__nothrow) long long llrintl(long double __x)     { return llrint((double)__x); }
+
+
+extern __declspec(__nothrow) long lround(double  );
+extern __declspec(__nothrow) long lroundf(float  );
+
+inline __declspec(__nothrow) long lroundl(long double __x)     { return lround((double)__x); }
+
+
+extern __declspec(__nothrow) long long llround(double  );
+extern __declspec(__nothrow) long long llroundf(float  );
+
+inline __declspec(__nothrow) long long llroundl(long double __x)     { return llround((double)__x); }
+
+
+extern __declspec(__nothrow) __attribute__((const)) double nan(const char * );
+extern __declspec(__nothrow) __attribute__((const)) float nanf(const char * );
+
+inline __declspec(__nothrow) __attribute__((const)) long double nanl(const char *__t)     { return (long double)nan(__t); }
+#line 856 "C:\\Keil_v5\\ARM\\ARMCC\\Bin\\..\\include\\math.h"
+extern __declspec(__nothrow) __attribute__((const)) double nearbyint(double  );
+extern __declspec(__nothrow) __attribute__((const)) float nearbyintf(float  );
+__declspec(__nothrow) long double nearbyintl(long double );
+extern  double remquo(double  , double  , int * );
+extern  float remquof(float  , float  , int * );
+
+inline long double remquol(long double __x, long double __y, int *__q)     { return (long double)remquo((double)__x, (double)__y, __q); }
+
+
+extern __declspec(__nothrow) __attribute__((const)) double round(double  );
+extern __declspec(__nothrow) __attribute__((const)) float roundf(float  );
+__declspec(__nothrow) long double roundl(long double );
+extern __declspec(__nothrow) double tgamma(double  );  
+extern __declspec(__nothrow) float tgammaf(float  );
+__declspec(__nothrow) long double tgammal(long double );
+extern __declspec(__nothrow) __attribute__((const)) double trunc(double  );
+extern __declspec(__nothrow) __attribute__((const)) float truncf(float  );
+__declspec(__nothrow) long double truncl(long double );
+
 
 
 
@@ -6936,8 +7009,8 @@ void arm_rfft_fast_f32(
 
  
 
-
-  static __inline float32_t arm_pid_f32(
+  static __inline float32_t arm_pid_f32
+  (
   arm_pid_instance_f32 * S,
   float32_t in)
   {
@@ -9315,6 +9388,13 @@ void arm_rfft_fast_f32(
 
 
 #line 7526 "..\\..\\SRC\\CMSIS_DSP_4_5\\inc\\arm_math.h"
+
+extern void arm_bitreversal_32(
+    uint32_t * pSrc,
+    const uint16_t bitRevLen,
+    const uint16_t * pBitRevTable);
+
+
 
 
 

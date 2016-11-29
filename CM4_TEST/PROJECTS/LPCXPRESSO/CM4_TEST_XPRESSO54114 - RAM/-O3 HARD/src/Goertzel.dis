@@ -1,0 +1,192 @@
+
+C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\CM4_TEST_XPRESSO54114\-O3 HARD\src\Goertzel.o:     file format elf32-littlearm
+C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\CM4_TEST_XPRESSO54114\-O3 HARD\src\Goertzel.o
+architecture: arm, flags 0x00000011:
+HAS_RELOC, HAS_SYMS
+start address 0x00000000
+private flags = 5000000: [Version5 EABI]
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .group        00000008  00000000  00000000  00000034  2**2
+                  CONTENTS, READONLY, EXCLUDE, GROUP, LINK_ONCE_DISCARD
+  1 .group        00000008  00000000  00000000  0000003c  2**2
+                  CONTENTS, READONLY, EXCLUDE, GROUP, LINK_ONCE_DISCARD
+  2 .group        00000008  00000000  00000000  00000044  2**2
+                  CONTENTS, READONLY, EXCLUDE, GROUP, LINK_ONCE_DISCARD
+  3 .group        00000008  00000000  00000000  0000004c  2**2
+                  CONTENTS, READONLY, EXCLUDE, GROUP, LINK_ONCE_DISCARD
+  4 .group        00000008  00000000  00000000  00000054  2**2
+                  CONTENTS, READONLY, EXCLUDE, GROUP, LINK_ONCE_DISCARD
+  5 .group        00000008  00000000  00000000  0000005c  2**2
+                  CONTENTS, READONLY, EXCLUDE, GROUP, LINK_ONCE_DISCARD
+  6 .group        00000008  00000000  00000000  00000064  2**2
+                  CONTENTS, READONLY, EXCLUDE, GROUP, LINK_ONCE_DISCARD
+  7 .group        00000008  00000000  00000000  0000006c  2**2
+                  CONTENTS, READONLY, EXCLUDE, GROUP, LINK_ONCE_DISCARD
+  8 .group        00000008  00000000  00000000  00000074  2**2
+                  CONTENTS, READONLY, EXCLUDE, GROUP, LINK_ONCE_DISCARD
+  9 .group        00000008  00000000  00000000  0000007c  2**2
+                  CONTENTS, READONLY, EXCLUDE, GROUP, LINK_ONCE_DISCARD
+ 10 .text         00000000  00000000  00000000  00000084  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 11 .data         00000000  00000000  00000000  00000084  2**0
+                  CONTENTS, ALLOC, LOAD, DATA
+ 12 .bss          00000000  00000000  00000000  00000084  2**0
+                  ALLOC
+ 13 .text.InitGoertzel_f32 00000040  00000000  00000000  00000084  2**2
+                  CONTENTS, ALLOC, LOAD, RELOC, READONLY, CODE
+ 14 .text.ProcessGoertzel_f32_Power 0000005c  00000000  00000000  000000c4  2**2
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 15 .debug_info   00000201  00000000  00000000  00000120  2**0
+                  CONTENTS, RELOC, READONLY, DEBUGGING
+ 16 .debug_abbrev 0000011c  00000000  00000000  00000321  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 17 .debug_loc    000001f2  00000000  00000000  0000043d  2**0
+                  CONTENTS, RELOC, READONLY, DEBUGGING
+ 18 .debug_aranges 00000028  00000000  00000000  0000062f  2**0
+                  CONTENTS, RELOC, READONLY, DEBUGGING
+ 19 .debug_ranges 00000018  00000000  00000000  00000657  2**0
+                  CONTENTS, RELOC, READONLY, DEBUGGING
+ 20 .debug_macro  00000099  00000000  00000000  0000066f  2**0
+                  CONTENTS, RELOC, READONLY, DEBUGGING
+ 21 .debug_macro  000008d4  00000000  00000000  00000708  2**0
+                  CONTENTS, RELOC, READONLY, DEBUGGING
+ 22 .debug_macro  00000010  00000000  00000000  00000fdc  2**0
+                  CONTENTS, RELOC, READONLY, DEBUGGING
+ 23 .debug_macro  000000c4  00000000  00000000  00000fec  2**0
+                  CONTENTS, RELOC, READONLY, DEBUGGING
+ 24 .debug_macro  00000012  00000000  00000000  000010b0  2**0
+                  CONTENTS, RELOC, READONLY, DEBUGGING
+ 25 .debug_macro  0000003b  00000000  00000000  000010c2  2**0
+                  CONTENTS, RELOC, READONLY, DEBUGGING
+ 26 .debug_macro  0000012d  00000000  00000000  000010fd  2**0
+                  CONTENTS, RELOC, READONLY, DEBUGGING
+ 27 .debug_macro  000005b2  00000000  00000000  0000122a  2**0
+                  CONTENTS, RELOC, READONLY, DEBUGGING
+ 28 .debug_macro  0000002d  00000000  00000000  000017dc  2**0
+                  CONTENTS, RELOC, READONLY, DEBUGGING
+ 29 .debug_macro  00000026  00000000  00000000  00001809  2**0
+                  CONTENTS, RELOC, READONLY, DEBUGGING
+ 30 .debug_macro  000000d6  00000000  00000000  0000182f  2**0
+                  CONTENTS, RELOC, READONLY, DEBUGGING
+ 31 .debug_line   00000223  00000000  00000000  00001905  2**0
+                  CONTENTS, RELOC, READONLY, DEBUGGING
+ 32 .debug_str    00004daf  00000000  00000000  00001b28  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 33 .comment      0000006f  00000000  00000000  000068d7  2**0
+                  CONTENTS, READONLY
+ 34 .debug_frame  0000004c  00000000  00000000  00006948  2**2
+                  CONTENTS, RELOC, READONLY, DEBUGGING
+ 35 .ARM.attributes 00000039  00000000  00000000  00006994  2**0
+                  CONTENTS, READONLY
+SYMBOL TABLE:
+00000000 l    df *ABS*	00000000 Goertzel.c
+00000000 l    d  .text	00000000 .text
+00000000 l    d  .data	00000000 .data
+00000000 l    d  .bss	00000000 .bss
+00000000 l    d  .text.InitGoertzel_f32	00000000 .text.InitGoertzel_f32
+00000000 l    d  .text.ProcessGoertzel_f32_Power	00000000 .text.ProcessGoertzel_f32_Power
+00000000 l    d  .debug_info	00000000 .debug_info
+00000000 l    d  .debug_abbrev	00000000 .debug_abbrev
+00000000 l    d  .debug_loc	00000000 .debug_loc
+00000000 l    d  .debug_aranges	00000000 .debug_aranges
+00000000 l    d  .debug_ranges	00000000 .debug_ranges
+00000000 l    d  .debug_macro	00000000 .debug_macro
+00000000 l    d  .debug_line	00000000 .debug_line
+00000000 l    d  .debug_str	00000000 .debug_str
+00000000 l    d  .debug_macro	00000000 .debug_macro
+00000000 l    d  .debug_macro	00000000 .debug_macro
+00000000 l    d  .debug_macro	00000000 .debug_macro
+00000000 l    d  .debug_macro	00000000 .debug_macro
+00000000 l    d  .debug_macro	00000000 .debug_macro
+00000000 l    d  .debug_macro	00000000 .debug_macro
+00000000 l    d  .debug_macro	00000000 .debug_macro
+00000000 l    d  .debug_macro	00000000 .debug_macro
+00000000 l    d  .debug_macro	00000000 .debug_macro
+00000000 l    d  .debug_macro	00000000 .debug_macro
+00000000 l    d  .debug_frame	00000000 .debug_frame
+00000000 l       .group	00000000 wm4.0.740bed5c2e7aabac81cedbf798839efb
+00000000 l       .group	00000000 wm4.redlib_version.h.14.62abddb5b4efb2dd619a7dca5647eb78
+00000000 l       .group	00000000 wm4.math.h.14.7736d79b6de0774d1ec71923d7e25120
+00000000 l       .group	00000000 wm4.arm_math.h.282.2695082b7813845b5bda21c30b47ad65
+00000000 l       .group	00000000 wm4.core_cm4.h.43.f75e2f71b2e33f7a3db429cd8b0cae9e
+00000000 l       .group	00000000 wm4.libconfigarm.h.18.48d18a57a6aa6fedadbcea02294a713f
+00000000 l       .group	00000000 wm4.stdint.h.30.30f575a65a9bde434c705acf40986e1b
+00000000 l       .group	00000000 wm4.core_cmInstr.h.39.53f0cdf363d7ba01993152fdcb6be5d3
+00000000 l       .group	00000000 wm4.core_cmSimd.h.43.c355993beb49ccd10586af5b1cfe5aee
+00000000 l       .group	00000000 wm4.arm_math.h.315.d478661a60020e7f62b8d7a680951319
+00000000 l    d  .comment	00000000 .comment
+00000000 l    d  .ARM.attributes	00000000 .ARM.attributes
+00000000 l    d  .group	00000000 .group
+00000000 l    d  .group	00000000 .group
+00000000 l    d  .group	00000000 .group
+00000000 l    d  .group	00000000 .group
+00000000 l    d  .group	00000000 .group
+00000000 l    d  .group	00000000 .group
+00000000 l    d  .group	00000000 .group
+00000000 l    d  .group	00000000 .group
+00000000 l    d  .group	00000000 .group
+00000000 l    d  .group	00000000 .group
+00000000 g     F .text.InitGoertzel_f32	0000003e InitGoertzel_f32
+00000000         *UND*	00000000 cosf
+00000000         *UND*	00000000 sinf
+00000000 g     F .text.ProcessGoertzel_f32_Power	0000005c ProcessGoertzel_f32_Power
+
+
+
+Disassembly of section .text.InitGoertzel_f32:
+
+00000000 <InitGoertzel_f32>:
+   0:	ee80 0a20 	vdiv.f32	s0, s0, s1
+   4:	b538      	push	{r3, r4, r5, lr}
+   6:	4604      	mov	r4, r0
+   8:	460d      	mov	r5, r1
+   a:	ed2d 8b02 	vpush	{d8}
+   e:	ee30 8a00 	vadd.f32	s16, s0, s0
+  12:	eef0 8a60 	vmov.f32	s17, s1
+  16:	eeb0 0a48 	vmov.f32	s0, s16
+  1a:	f7ff fffe 	bl	0 <cosf>
+			1a: R_ARM_THM_CALL	cosf
+  1e:	ed84 0a00 	vstr	s0, [r4]
+  22:	eeb0 0a48 	vmov.f32	s0, s16
+  26:	f7ff fffe 	bl	0 <sinf>
+			26: R_ARM_THM_CALL	sinf
+  2a:	edc4 8a03 	vstr	s17, [r4, #12]
+  2e:	ecbd 8b02 	vpop	{d8}
+  32:	eeb1 0a40 	vneg.f32	s0, s0
+  36:	ed84 0a01 	vstr	s0, [r4, #4]
+  3a:	60a5      	str	r5, [r4, #8]
+  3c:	bd38      	pop	{r3, r4, r5, pc}
+  3e:	bf00      	nop
+
+Disassembly of section .text.ProcessGoertzel_f32_Power:
+
+00000000 <ProcessGoertzel_f32_Power>:
+   0:	6883      	ldr	r3, [r0, #8]
+   2:	b30b      	cbz	r3, 48 <ProcessGoertzel_f32_Power+0x48>
+   4:	edd0 5a00 	vldr	s11, [r0]
+   8:	eddf 6a13 	vldr	s13, [pc, #76]	; 58 <ProcessGoertzel_f32_Power+0x58>
+   c:	eb01 0383 	add.w	r3, r1, r3, lsl #2
+  10:	ee35 6aa5 	vadd.f32	s12, s11, s11
+  14:	eeb0 7a66 	vmov.f32	s14, s13
+  18:	e001      	b.n	1e <ProcessGoertzel_f32_Power+0x1e>
+  1a:	eeb0 7a67 	vmov.f32	s14, s15
+  1e:	ecf1 7a01 	vldmia	r1!, {s15}
+  22:	eee7 7a06 	vfma.f32	s15, s14, s12
+  26:	428b      	cmp	r3, r1
+  28:	ee77 7ae6 	vsub.f32	s15, s15, s13
+  2c:	eef0 6a47 	vmov.f32	s13, s14
+  30:	d1f3      	bne.n	1a <ProcessGoertzel_f32_Power+0x1a>
+  32:	ed90 0a01 	vldr	s0, [r0, #4]
+  36:	ee97 7aa5 	vfnms.f32	s14, s15, s11
+  3a:	ee67 7a80 	vmul.f32	s15, s15, s0
+  3e:	ee27 0aa7 	vmul.f32	s0, s15, s15
+  42:	eea7 0a07 	vfma.f32	s0, s14, s14
+  46:	4770      	bx	lr
+  48:	ed9f 7a03 	vldr	s14, [pc, #12]	; 58 <ProcessGoertzel_f32_Power+0x58>
+  4c:	edd0 5a00 	vldr	s11, [r0]
+  50:	eef0 7a47 	vmov.f32	s15, s14
+  54:	e7ed      	b.n	32 <ProcessGoertzel_f32_Power+0x32>
+  56:	bf00      	nop
+  58:	00000000 	.word	0x00000000

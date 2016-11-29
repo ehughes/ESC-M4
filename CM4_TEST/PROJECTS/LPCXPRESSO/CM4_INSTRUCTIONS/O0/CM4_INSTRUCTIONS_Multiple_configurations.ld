@@ -5,7 +5,7 @@
  * Generated linker script file for LPC4357
  * Created from linkscript.ldt by FMCreateLinkLibraries
  * Using Freemarker v2.3.23
- * LPCXpresso v8.2.2 [Build 650] [2016-09-09]  on Nov 15, 2016 4:52:47 PM
+ * LPCXpresso v8.2.2 [Build 650] [2016-09-09]  on Nov 28, 2016 2:32:02 PM
  */
 
 INCLUDE "CM4_INSTRUCTIONS_Multiple_configurations_library.ld"

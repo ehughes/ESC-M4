@@ -49,7 +49,18 @@
 * @param[in]      *pBitRevTab  points to the bit reversal table.   
 * @return none.   
 */
+extern void arm_bitreversal_32(
+    uint32_t * pSrc,
+    const uint16_t bitRevLen,
+    const uint16_t * pBitRevTable);
 
+		
+extern void arm_bitreversal_16(
+    uint16_t * pSrc,
+    const uint16_t bitRevLen,
+    const uint16_t * pBitRevTable);
+    
+		
 void arm_bitreversal_f32(
 float32_t * pSrc,
 uint16_t fftSize,

@@ -1,4 +1,4 @@
---create .\Objects\..\LIB\CMSIS_DSP_4_5_O0.lib
+--create .\Objects\..\LIB\CMSIS_DSP_4_5_O3.lib
 .\objects\arm_abs_f32.o
 .\objects\arm_abs_q7.o
 .\objects\arm_abs_q15.o
@@ -270,3 +270,4 @@
 .\objects\arm_rfft_init_q31.o
 .\objects\arm_rfft_q15.o
 .\objects\arm_rfft_q31.o
+.\objects\arm_bitreversal2.o

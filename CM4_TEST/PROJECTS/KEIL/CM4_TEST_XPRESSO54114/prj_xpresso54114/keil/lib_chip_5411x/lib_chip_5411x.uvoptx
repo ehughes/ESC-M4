@@ -82,12 +82,12 @@
         <Book>
           <Number>0</Number>
           <Title>LPCXpresso54114 Schematics (LPCXpresso54114)</Title>
-          <Path>C:\Keil_v5\ARM\PACK\Keil\LPC54000_DFP\2.0.0\Boards\NXP\LPCXpresso54114\Documents\LPCX5411x_Schematic_Rev_A1.pdf</Path>
+          <Path>C:\Keil_v5\ARM\PACK\Keil\LPC54000_DFP\2.1.0\Boards\NXP\LPCXpresso54114\Documents\LPCX5411x_Schematic_Rev_A1.pdf</Path>
         </Book>
         <Book>
           <Number>1</Number>
           <Title>LPCXpresso54114 User Manual (LPCXpresso54114)</Title>
-          <Path>C:\Keil_v5\ARM\PACK\Keil\LPC54000_DFP\2.0.0\Boards\NXP\LPCXpresso54114\Documents\UM10973.pdf</Path>
+          <Path>C:\Keil_v5\ARM\PACK\Keil\LPC54000_DFP\2.1.0\Boards\NXP\LPCXpresso54114\Documents\UM10973.pdf</Path>
         </Book>
         <Book>
           <Number>2</Number>
@@ -117,6 +117,7 @@
         <tRSysVw>1</tRSysVw>
         <sRunDeb>0</sRunDeb>
         <sLrtime>0</sLrtime>
+        <bEvRecOn>1</bEvRecOn>
         <nTsel>0</nTsel>
         <sDll></sDll>
         <sDllPa></sDllPa>
@@ -173,6 +174,8 @@
       <Lin2Executable></Lin2Executable>
       <Lin2ConfigFile></Lin2ConfigFile>
       <bLin2Auto>0</bLin2Auto>
+      <bAutoGenD>0</bAutoGenD>
+      <bAuto2GenD>0</bAuto2GenD>
       <DebugDescription>
         <Enable>1</Enable>
         <EnableLog>0</EnableLog>

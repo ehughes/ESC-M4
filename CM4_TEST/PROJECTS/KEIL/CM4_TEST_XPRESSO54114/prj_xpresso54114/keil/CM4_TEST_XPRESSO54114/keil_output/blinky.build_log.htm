@@ -3,58 +3,63 @@
 <pre>
 <h1>µVision Build Log</h1>
 <h2>Tool Versions:</h2>
-IDE-Version: µVision V5.21.1.0
+IDE-Version: µVision V5.22.0.0
 Copyright (C) 2016 ARM Ltd and ARM Germany GmbH. All rights reserved.
-License Information: Eli Hughes Penn State Flex license: MDK-ARM Professional: 10 user(s) (mdk_pro) Operation stops: 2 Aug 2017
+License Information: Eli Hughes, Penn State , LIC=----
  
 Tool Versions:
-Toolchain:       MDK-ARM Professional: 10 user(s)  Version: 5.21a
+Toolchain:       MDK-Lite  Version: 5.22
 Toolchain Path:  C:\Keil_v5\ARM\ARMCC\Bin
-C Compiler:      Armcc.exe V5.06 update 3 (build 300)
-Assembler:       Armasm.exe V5.06 update 3 (build 300)
-Linker/Locator:  ArmLink.exe V5.06 update 3 (build 300)
-Library Manager: ArmAr.exe V5.06 update 3 (build 300)
-Hex Converter:   FromElf.exe V5.06 update 3 (build 300)
-CPU DLL:         SARMCM3.DLL V5.21a
-Dialog DLL:      DCM.DLL V1.13.8.0
-Target DLL:      UL2CM3.DLL V1.158.5.0
-Dialog DLL:      TCM.DLL V1.14.14.0
+C Compiler:      Armcc.exe V5.06 update 4 (build 422)
+Assembler:       Armasm.exe V5.06 update 4 (build 422)
+Linker/Locator:  ArmLink.exe V5.06 update 4 (build 422)
+Library Manager: ArmAr.exe V5.06 update 4 (build 422)
+Hex Converter:   FromElf.exe V5.06 update 4 (build 422)
+CPU DLL:         SARMCM3.DLL V5.22
+Dialog DLL:      DCM.DLL V1.13.9.0
+Target DLL:      UL2CM3.DLL V1.159.0.0
+Dialog DLL:      TCM.DLL V1.21.0.0
  
 <h2>Project:</h2>
-C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\PROJECTS\KEIL\CM4_TEST_XPRESSO54114\prj_xpresso54114\keil\CM4_TEST_XPRESSO54114\CM4_TEST_XPRESSO54114.uvprojx
-Project File Date:  11/15/2016
+C:\Users\ehughes\Documents\GitHub\ESC-M4\CM4_TEST\PROJECTS\KEIL\CM4_TEST_XPRESSO54114\prj_xpresso54114\keil\CM4_TEST_XPRESSO54114\CM4_TEST_XPRESSO54114.uvprojx
+Project File Date:  11/28/2016
 
 <h2>Output:</h2>
-*** Using Compiler 'V5.06 update 3 (build 300)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
+*** Using Compiler 'V5.06 update 4 (build 422)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
 Rebuild Project 'CM4_TEST_XPRESSO54114' - Target 'iflash_nxp_lpcxpresso_lpc5411X'
 creating preprocessor file for sysinit.c...
-C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\PROJECTS\KEIL\CM4_TEST_XPRESSO54114\chip_5411x\inc\cmsis_5411x.h(47): warning:  #2525-D: #pragma push with no matching #pragma pop
+C:\Users\ehughes\Documents\GitHub\ESC-M4\CM4_TEST\PROJECTS\KEIL\CM4_TEST_XPRESSO54114\chip_5411x\inc\cmsis_5411x.h(47): warning:  #2525-D: #pragma push with no matching #pragma pop
     #pragma push
 ..\..\..\chip_5411x\startup\sysinit.c: 1 warning, 0 errors
 assembling keil_startup_lpc5411x.s...
-creating preprocessor file for INSTRUCTION_OPT_TEST.c...
-C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\PROJECTS\KEIL\CM4_TEST_XPRESSO54114\chip_5411x\inc\cmsis_5411x.h(47): warning:  #2525-D: #pragma push with no matching #pragma pop
+creating preprocessor file for CM_TEST.c...
+C:\Users\ehughes\Documents\GitHub\ESC-M4\CM4_TEST\PROJECTS\KEIL\CM4_TEST_XPRESSO54114\chip_5411x\inc\cmsis_5411x.h(47): warning:  #2525-D: #pragma push with no matching #pragma pop
     #pragma push
-..\..\..\..\..\..\COMMON\SRC\TEST\INSTRUCTION_OPT_TEST.c: 1 warning, 0 errors
+..\..\..\..\..\..\COMMON\SRC\TEST\CM_TEST.c: 1 warning, 0 errors
+creating preprocessor file for IIR.c...
 compiling sysinit.c...
-compiling INSTRUCTION_OPT_TEST.c...
-C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\SRC\TEST\INSTRUCTION_OPT_TEST.c(23): warning:  #226-D: invalid format string conversion
-  	printf("%ll",a);
-..\..\..\..\..\..\COMMON\SRC\TEST\INSTRUCTION_OPT_TEST.c: 1 warning, 0 errors
+creating preprocessor file for Goertzel.c...
+compiling Goertzel.c...
+compiling CM_TEST.c...
+compiling IIR.c...
+C:\Users\ehughes\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\SRC\TEST\IIR.c(129): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+      alpha = sin(w0)/(2.0 * Q);
+C:\Users\ehughes\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\SRC\TEST\IIR.c(280): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+      alpha = sin(w0)/(2.0 * Q);
+..\..\..\..\..\..\COMMON\SRC\TEST\IIR.c: 2 warnings, 0 errors
 linking...
-Program Size: Code=2016 RO-data=308 RW-data=4 ZI-data=1092  
-After Build - User command #1: C:\Keil_v5\\ARM\BIN\ELFDWT.EXE .\keil_output\blinky.axf BASEADDRESS(0x00000000)
-ELFDWT - Signature Creator V1.2.0.0
-COPYRIGHT Copyright (C) 2014-2016, ARM Ldt. and  ARM Germany GmbH
-*** Updated Signature over Range[32] (0x00000000 - 0x00000018): @0x0000001C = 0xDFFFEF6A
-*** Processing completed, no Errors.
-".\keil_output\blinky.axf" - 0 Error(s), 3 Warning(s).
+.\keil_output\blinky.axf: Error: L6218E: Undefined symbol arm_bitreversal_16 (referred from arm_cfft_q15.o).
+.\keil_output\blinky.axf: Error: L6218E: Undefined symbol arm_bitreversal_32 (referred from arm_cfft_q31.o).
+Not enough information to list image symbols.
+Finished: 1 information, 0 warning and 2 error messages.
+".\keil_output\blinky.axf" - 2 Error(s), 4 Warning(s).
 
 <h2>Collection of Component include folders:</h2>
-  C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\PROJECTS\KEIL\CM4_TEST_XPRESSO54114\prj_xpresso54114\keil\CM4_TEST_XPRESSO54114\RTE
-  C:\Keil_v5\ARM\PACK\Keil\LPC54000_DFP\2.0.0\LPCOpen\lpc5411x\chip_5411x\inc
+  C:\Users\ehughes\Documents\GitHub\ESC-M4\CM4_TEST\PROJECTS\KEIL\CM4_TEST_XPRESSO54114\prj_xpresso54114\keil\CM4_TEST_XPRESSO54114\RTE\_iflash_nxp_lpcxpresso_lpc5411X
+  C:\Keil_v5\ARM\PACK\Keil\LPC54000_DFP\2.1.0\LPCOpen\lpc5411x\chip_5411x\inc
 
 <h2>Collection of Component Files used:</h2>
+Target not created.
 Build Time Elapsed:  00:00:01
 </pre>
 </body>

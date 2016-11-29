@@ -30,4 +30,14 @@
 			<locationURI>PARENT-3-PROJECT_LOC/COMMON/SRC/TEST/INSTRUCTION_OPT_TEST.c</locationURI>
 		</link>
 	</linkedResources>
+	<variableList>
+		<variable>
+			<name>copy_PARENT</name>
+			<value>$%7BPARENT-3-PROJECT_LOC%7D/GitHub/ESC-M4/CM4_TEST</value>
+		</variable>
+		<variable>
+			<name>copy_PARENT1</name>
+			<value>$%7Bcopy_PARENT%7D/GitHub/ESC-M4/CM4_TEST</value>
+		</variable>
+	</variableList>
 </projectDescription>

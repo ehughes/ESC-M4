@@ -10,13 +10,13 @@
       <TargetName>CMSIS_DSP_4_5_O3</TargetName>
       <ToolsetNumber>0x4</ToolsetNumber>
       <ToolsetName>ARM-ADS</ToolsetName>
-      <pArmCC>5060300::V5.06 update 3 (build 300)::ARMCC</pArmCC>
-      <pCCUsed>5060300::V5.06 update 3 (build 300)::ARMCC</pCCUsed>
+      <pArmCC>5060422::V5.06 update 4 (build 422)::ARMCC</pArmCC>
+      <pCCUsed>5060422::V5.06 update 4 (build 422)::ARMCC</pCCUsed>
       <TargetOption>
         <TargetCommonOption>
           <Device>ARMCM4_FP</Device>
           <Vendor>ARM</Vendor>
-          <PackID>ARM.CMSIS.4.5.0</PackID>
+          <PackID>ARM.CMSIS.5.0.0</PackID>
           <PackURL>http://www.keil.com/pack/</PackURL>
           <Cpu>IRAM(0x20000000,0x20000) IROM(0x00000000,0x80000) CPUTYPE("Cortex-M4") FPU2 CLOCK(12000000) ESEL ELITTLE</Cpu>
           <FlashUtilSpec></FlashUtilSpec>
@@ -323,7 +323,7 @@
             <wLevel>2</wLevel>
             <uThumb>0</uThumb>
             <uSurpInc>0</uSurpInc>
-            <uC99>0</uC99>
+            <uC99>1</uC99>
             <useXO>0</useXO>
             <v6Lang>1</v6Lang>
             <v6LangP>1</v6LangP>
@@ -334,7 +334,7 @@
             <v6Rtti>0</v6Rtti>
             <VariousControls>
               <MiscControls></MiscControls>
-              <Define>__FPU_PRESENT=1,ARM_MATH_CM4</Define>
+              <Define>__FPU_PRESENT=1,ARM_MATH_CM4,__CC_ARM</Define>
               <Undefine></Undefine>
               <IncludePath>..\..\SRC\CMSIS_DSP_4_5\inc</IncludePath>
             </VariousControls>
@@ -351,8 +351,8 @@
             <useXO>0</useXO>
             <uClangAs>0</uClangAs>
             <VariousControls>
-              <MiscControls></MiscControls>
-              <Define></Define>
+              <MiscControls>--cpreproc --cpreproc_opts=-D,ARM_MATH_CM4</MiscControls>
+              <Define>__CC_ARM</Define>
               <Undefine></Undefine>
               <IncludePath></IncludePath>
             </VariousControls>
@@ -1780,6 +1780,11 @@
               <FileType>1</FileType>
               <FilePath>..\..\SRC\CMSIS_DSP_4_5\src\TransformFunctions\arm_rfft_q31.c</FilePath>
             </File>
+            <File>
+              <FileName>arm_bitreversal2.S</FileName>
+              <FileType>2</FileType>
+              <FilePath>..\..\SRC\CMSIS_DSP_4_5\src\TransformFunctions\arm_bitreversal2.S</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
@@ -1864,7 +1869,7 @@
         <TargetCommonOption>
           <Device>ARMCM4_FP</Device>
           <Vendor>ARM</Vendor>
-          <PackID>ARM.CMSIS.4.5.0</PackID>
+          <PackID>ARM.CMSIS.5.0.0</PackID>
           <PackURL>http://www.keil.com/pack/</PackURL>
           <Cpu>IRAM(0x20000000,0x20000) IROM(0x00000000,0x80000) CPUTYPE("Cortex-M4") FPU2 CLOCK(12000000) ESEL ELITTLE</Cpu>
           <FlashUtilSpec></FlashUtilSpec>
@@ -3628,6 +3633,11 @@
               <FileType>1</FileType>
               <FilePath>..\..\SRC\CMSIS_DSP_4_5\src\TransformFunctions\arm_rfft_q31.c</FilePath>
             </File>
+            <File>
+              <FileName>arm_bitreversal2.S</FileName>
+              <FileType>2</FileType>
+              <FilePath>..\..\SRC\CMSIS_DSP_4_5\src\TransformFunctions\arm_bitreversal2.S</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
@@ -3712,7 +3722,7 @@
         <TargetCommonOption>
           <Device>ARMCM4_FP</Device>
           <Vendor>ARM</Vendor>
-          <PackID>ARM.CMSIS.4.5.0</PackID>
+          <PackID>ARM.CMSIS.5.0.0</PackID>
           <PackURL>http://www.keil.com/pack/</PackURL>
           <Cpu>IRAM(0x20000000,0x20000) IROM(0x00000000,0x80000) CPUTYPE("Cortex-M4") FPU2 CLOCK(12000000) ESEL ELITTLE</Cpu>
           <FlashUtilSpec></FlashUtilSpec>
@@ -5476,6 +5486,11 @@
               <FileType>1</FileType>
               <FilePath>..\..\SRC\CMSIS_DSP_4_5\src\TransformFunctions\arm_rfft_q31.c</FilePath>
             </File>
+            <File>
+              <FileName>arm_bitreversal2.S</FileName>
+              <FileType>2</FileType>
+              <FilePath>..\..\SRC\CMSIS_DSP_4_5\src\TransformFunctions\arm_bitreversal2.S</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
@@ -5560,7 +5575,7 @@
         <TargetCommonOption>
           <Device>ARMCM4_FP</Device>
           <Vendor>ARM</Vendor>
-          <PackID>ARM.CMSIS.4.5.0</PackID>
+          <PackID>ARM.CMSIS.5.0.0</PackID>
           <PackURL>http://www.keil.com/pack/</PackURL>
           <Cpu>IRAM(0x20000000,0x20000) IROM(0x00000000,0x80000) CPUTYPE("Cortex-M4") FPU2 CLOCK(12000000) ESEL ELITTLE</Cpu>
           <FlashUtilSpec></FlashUtilSpec>
@@ -7323,6 +7338,11 @@
               <FileName>arm_rfft_q31.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\..\SRC\CMSIS_DSP_4_5\src\TransformFunctions\arm_rfft_q31.c</FilePath>
+            </File>
+            <File>
+              <FileName>arm_bitreversal2.S</FileName>
+              <FileType>2</FileType>
+              <FilePath>..\..\SRC\CMSIS_DSP_4_5\src\TransformFunctions\arm_bitreversal2.S</FilePath>
             </File>
           </Files>
         </Group>

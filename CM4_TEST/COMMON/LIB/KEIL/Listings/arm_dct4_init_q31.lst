@@ -539,7 +539,7 @@ N */
 N
 N#ifndef __stdint_h
 N#define __stdint_h
-N#define __ARMCLIB_VERSION 5060016
+N#define __ARMCLIB_VERSION 5060019
 N
 N  #ifdef __INT64_TYPE__
 S    /* armclang predefines '__INT64_TYPE__' and '__INT64_C_SUFFIX__' */
@@ -912,7 +912,7 @@ X#if   1L
 N/* ARM armcc specific functions */
 N
 N#if (__ARMCC_VERSION < 400677)
-X#if (5060300 < 400677)
+X#if (5060422 < 400677)
 S  #error "Please use ARM Compiler Toolchain V4.0.677 or later!"
 N#endif
 N
@@ -1803,7 +1803,7 @@ X#if   1L
 N/* ARM armcc specific functions */
 N
 N#if (__ARMCC_VERSION < 400677)
-X#if (5060300 < 400677)
+X#if (5060422 < 400677)
 S  #error "Please use ARM Compiler Toolchain V4.0.677 or later!"
 N#endif
 N
@@ -4787,7 +4787,7 @@ N */
 N
 N#ifndef __string_h
 N#define __string_h
-N#define __ARMCLIB_VERSION 5060016
+N#define __ARMCLIB_VERSION 5060019
 N
 N#define _ARMABI __declspec(__nothrow)
 N
@@ -5344,7 +5344,7 @@ N */
 N
 N#ifndef __math_h
 N#define __math_h
-N#define __ARMCLIB_VERSION 5060016
+N#define __ARMCLIB_VERSION 5060019
 N
 N#if defined(__clang__) || (defined(__ARMCC_VERSION) && !defined(__STRICT_ANSI__))
 X#if 0L || (1L && !0L)
@@ -5361,8 +5361,8 @@ N * you can use -D__USE_C99_MATH (or -D__USE_C99_ALL).
 N */
 N#ifndef __USE_C99_MATH
 N  #if defined(__USE_C99_ALL) || (defined(__STDC_VERSION__) && 199901L <= __STDC_VERSION__) || (defined(__cplusplus) && 201103L <= __cplusplus)
-X  #if 0L || (1L && 199901L <= 199409L) || (0L && 201103L <= __cplusplus)
-S    #define __USE_C99_MATH 1
+X  #if 0L || (1L && 199901L <= 199901L) || (0L && 201103L <= __cplusplus)
+N    #define __USE_C99_MATH 1
 N  #endif
 N#endif
 N
@@ -5387,13 +5387,13 @@ S#elif defined __GNUC__ || defined _USE_STATIC_INLINE
 X#elif 0L || 0L
 S#define _ARMABI_INLINE static __inline
 S#define _ARMABI_INLINE_DEF static __inline
-S#elif (defined(__STDC_VERSION__) && 199901L <= __STDC_VERSION__)
-X#elif (1L && 199901L <= 199409L)
-S#define _ARMABI_INLINE inline
-S#define _ARMABI_INLINE_DEF static inline
+N#elif (defined(__STDC_VERSION__) && 199901L <= __STDC_VERSION__)
+X#elif (1L && 199901L <= 199901L)
+N#define _ARMABI_INLINE inline
+N#define _ARMABI_INLINE_DEF static inline
 N#else
-N#define _ARMABI_INLINE __inline
-N#define _ARMABI_INLINE_DEF __inline
+S#define _ARMABI_INLINE __inline
+S#define _ARMABI_INLINE_DEF __inline
 N#endif
 N
 N#ifdef __TARGET_ARCH_AARCH64
@@ -5447,7 +5447,7 @@ N * macro #defines are below amongst the standard function declarations.
 N * We only include these if we actually need them later on
 N */
 N#if !defined(__STRICT_ANSI__) || defined(__USE_C99_MATH)
-X#if !0L || 0L
+X#if !0L || 1L
 N#   ifdef __cplusplus
 S      extern "C" {
 N#   endif /* __cplusplus */
@@ -5471,13 +5471,13 @@ N    /* Classify x into NaN, infinite, normal, subnormal, zero */
 N    /* Used by fpclassify macro */
 N
 N_ARMABI_INLINE_DEF _ARMABI_SOFTFP int __ARM_isfinitef(float __x)
-X__inline __declspec(__nothrow) __attribute__((__pcs__("aapcs"))) int __ARM_isfinitef(float __x)
+Xstatic inline __declspec(__nothrow) __attribute__((__pcs__("aapcs"))) int __ARM_isfinitef(float __x)
 N{
 N    return ((__FLT(__x) >> 23) & 0xff) != 0xff;
 X    return (((*(unsigned *)&(__x)) >> 23) & 0xff) != 0xff;
 N}
 N_ARMABI_INLINE_DEF _ARMABI_SOFTFP int __ARM_isfinite(double __x)
-X__inline __declspec(__nothrow) __attribute__((__pcs__("aapcs"))) int __ARM_isfinite(double __x)
+Xstatic inline __declspec(__nothrow) __attribute__((__pcs__("aapcs"))) int __ARM_isfinite(double __x)
 N{
 N    return ((__HI(__x) >> 20) & 0x7ff) != 0x7ff;
 X    return (((*(1 + (unsigned *)&(__x))) >> 20) & 0x7ff) != 0x7ff;
@@ -5486,13 +5486,13 @@ N    /* Return 1 if __x is finite, 0 otherwise */
 N    /* Used by isfinite macro */
 N
 N_ARMABI_INLINE_DEF _ARMABI_SOFTFP int __ARM_isinff(float __x)
-X__inline __declspec(__nothrow) __attribute__((__pcs__("aapcs"))) int __ARM_isinff(float __x)
+Xstatic inline __declspec(__nothrow) __attribute__((__pcs__("aapcs"))) int __ARM_isinff(float __x)
 N{
 N    return (__FLT(__x) << 1) == 0xff000000;
 X    return ((*(unsigned *)&(__x)) << 1) == 0xff000000;
 N}
 N_ARMABI_INLINE_DEF _ARMABI_SOFTFP int __ARM_isinf(double __x)
-X__inline __declspec(__nothrow) __attribute__((__pcs__("aapcs"))) int __ARM_isinf(double __x)
+Xstatic inline __declspec(__nothrow) __attribute__((__pcs__("aapcs"))) int __ARM_isinf(double __x)
 N{
 N    return ((__HI(__x) << 1) == 0xffe00000) && (__LO(__x) == 0);
 X    return (((*(1 + (unsigned *)&(__x))) << 1) == 0xffe00000) && ((*(unsigned *)&(__x)) == 0);
@@ -5501,13 +5501,13 @@ N    /* Return 1 if __x is infinite, 0 otherwise */
 N    /* Used by isinf macro */
 N
 N_ARMABI_INLINE_DEF _ARMABI_SOFTFP int __ARM_islessgreaterf(float __x, float __y)
-X__inline __declspec(__nothrow) __attribute__((__pcs__("aapcs"))) int __ARM_islessgreaterf(float __x, float __y)
+Xstatic inline __declspec(__nothrow) __attribute__((__pcs__("aapcs"))) int __ARM_islessgreaterf(float __x, float __y)
 N{
 N    unsigned __f = __ARM_fcmp4(__x, __y) >> 28;
 N    return (__f == 8) || (__f == 2); /* Just N set or Just Z set */
 N}
 N_ARMABI_INLINE_DEF _ARMABI_SOFTFP int __ARM_islessgreater(double __x, double __y)
-X__inline __declspec(__nothrow) __attribute__((__pcs__("aapcs"))) int __ARM_islessgreater(double __x, double __y)
+Xstatic inline __declspec(__nothrow) __attribute__((__pcs__("aapcs"))) int __ARM_islessgreater(double __x, double __y)
 N{
 N    unsigned __f = __ARM_dcmp4(__x, __y) >> 28;
 N    return (__f == 8) || (__f == 2); /* Just N set or Just Z set */
@@ -5518,13 +5518,13 @@ N     * Used by islessgreater macro
 N     */
 N
 N_ARMABI_INLINE_DEF _ARMABI_SOFTFP int __ARM_isnanf(float __x)
-X__inline __declspec(__nothrow) __attribute__((__pcs__("aapcs"))) int __ARM_isnanf(float __x)
+Xstatic inline __declspec(__nothrow) __attribute__((__pcs__("aapcs"))) int __ARM_isnanf(float __x)
 N{
 N    return (0x7f800000 - (__FLT(__x) & 0x7fffffff)) >> 31;
 X    return (0x7f800000 - ((*(unsigned *)&(__x)) & 0x7fffffff)) >> 31;
 N}
 N_ARMABI_INLINE_DEF _ARMABI_SOFTFP int __ARM_isnan(double __x)
-X__inline __declspec(__nothrow) __attribute__((__pcs__("aapcs"))) int __ARM_isnan(double __x)
+Xstatic inline __declspec(__nothrow) __attribute__((__pcs__("aapcs"))) int __ARM_isnan(double __x)
 N{
 N    unsigned __xf = __HI(__x) | ((__LO(__x) == 0) ? 0 : 1);
 X    unsigned __xf = (*(1 + (unsigned *)&(__x))) | (((*(unsigned *)&(__x)) == 0) ? 0 : 1);
@@ -5534,14 +5534,14 @@ N    /* Return 1 if __x is a NaN, 0 otherwise */
 N    /* Used by isnan macro */
 N
 N_ARMABI_INLINE_DEF _ARMABI_SOFTFP int __ARM_isnormalf(float __x)
-X__inline __declspec(__nothrow) __attribute__((__pcs__("aapcs"))) int __ARM_isnormalf(float __x)
+Xstatic inline __declspec(__nothrow) __attribute__((__pcs__("aapcs"))) int __ARM_isnormalf(float __x)
 N{
 N    unsigned __xe = (__FLT(__x) >> 23) & 0xff;
 X    unsigned __xe = ((*(unsigned *)&(__x)) >> 23) & 0xff;
 N    return (__xe != 0xff) && (__xe != 0);
 N}
 N_ARMABI_INLINE_DEF _ARMABI_SOFTFP int __ARM_isnormal(double __x)
-X__inline __declspec(__nothrow) __attribute__((__pcs__("aapcs"))) int __ARM_isnormal(double __x)
+Xstatic inline __declspec(__nothrow) __attribute__((__pcs__("aapcs"))) int __ARM_isnormal(double __x)
 N{
 N    unsigned __xe = (__HI(__x) >> 20) & 0x7ff;
 X    unsigned __xe = ((*(1 + (unsigned *)&(__x))) >> 20) & 0x7ff;
@@ -5551,13 +5551,13 @@ N    /* Return 1 if __x is a normalised number, 0 otherwise */
 N    /* used by isnormal macro */
 N
 N_ARMABI_INLINE_DEF _ARMABI_SOFTFP int __ARM_signbitf(float __x)
-X__inline __declspec(__nothrow) __attribute__((__pcs__("aapcs"))) int __ARM_signbitf(float __x)
+Xstatic inline __declspec(__nothrow) __attribute__((__pcs__("aapcs"))) int __ARM_signbitf(float __x)
 N{
 N    return __FLT(__x) >> 31;
 X    return (*(unsigned *)&(__x)) >> 31;
 N}
 N_ARMABI_INLINE_DEF _ARMABI_SOFTFP int __ARM_signbit(double __x)
-X__inline __declspec(__nothrow) __attribute__((__pcs__("aapcs"))) int __ARM_signbit(double __x)
+Xstatic inline __declspec(__nothrow) __attribute__((__pcs__("aapcs"))) int __ARM_signbit(double __x)
 N{
 N    return __HI(__x) >> 31;
 X    return (*(1 + (unsigned *)&(__x))) >> 31;
@@ -5586,7 +5586,7 @@ N  #define __has_builtin(x) 0
 N#endif
 N
 N#if !defined(__STRICT_ANSI__) || defined(__USE_C99_MATH)
-X#if !0L || 0L
+X#if !0L || 1L
 N  /* C99 additions */
 N  typedef float float_t;
 N  typedef double double_t;
@@ -5742,12 +5742,12 @@ X#if 0L && !0L
 S    _ARMABI_INLINE double _sqrt(double __x) { return __sqrt(__x); }
 N#else
 N    _ARMABI_INLINE double _sqrt(double __x) { return sqrt(__x); }
-X    __inline double _sqrt(double __x) { return sqrt(__x); }
+X    inline double _sqrt(double __x) { return sqrt(__x); }
 N#endif
 N#if defined(__TARGET_FPU_VFP_SINGLE) && !defined(__TARGET_FPU_SOFTVFP)
 X#if 1L && !0L
 N    _ARMABI_INLINE float _sqrtf(float __x) { return __sqrtf(__x); }
-X    __inline float _sqrtf(float __x) { return __sqrtf(__x); }
+X    inline float _sqrtf(float __x) { return __sqrtf(__x); }
 N#else
 S    _ARMABI_INLINE float _sqrtf(float __x) { return (float)sqrt(__x); }
 N#endif
@@ -5792,7 +5792,7 @@ N     * re-enable the legacy functionality.
 N     */
 N
 N#if !defined(__STRICT_ANSI__) || defined(__USE_C99_MATH)
-X#if !0L || 0L
+X#if !0L || 1L
 N
 Nextern _ARMABI double acosh(double /*x*/);
 Xextern __declspec(__nothrow) double acosh(double  );
@@ -5815,7 +5815,7 @@ N    /*
 N     * Cube root.
 N     */
 N_ARMABI_INLINE _ARMABI_PURE double copysign(double __x, double __y)
-X__inline __declspec(__nothrow) __attribute__((const)) double copysign(double __x, double __y)
+Xinline __declspec(__nothrow) __attribute__((const)) double copysign(double __x, double __y)
 N    /*
 N     * Returns x with sign bit replaced by sign of y.
 N     */
@@ -5825,7 +5825,7 @@ X    (*(1 + (unsigned *)&(__x))) = ((*(1 + (unsigned *)&(__x))) & 0x7fffffff) | 
 N    return __x;
 N}
 N_ARMABI_INLINE _ARMABI_PURE float copysignf(float __x, float __y)
-X__inline __declspec(__nothrow) __attribute__((const)) float copysignf(float __x, float __y)
+Xinline __declspec(__nothrow) __attribute__((const)) float copysignf(float __x, float __y)
 N    /*
 N     * Returns x with sign bit replaced by sign of y.
 N     */
@@ -6117,7 +6117,7 @@ N   identifiers for this purpose (7.13.4). */
 Nextern _ARMABI_PURE float _fabsf(float); /* old ARM name */
 Xextern __declspec(__nothrow) __attribute__((const)) float _fabsf(float);  
 N_ARMABI_INLINE _ARMABI_PURE float fabsf(float __f) { return _fabsf(__f); }
-X__inline __declspec(__nothrow) __attribute__((const)) float fabsf(float __f) { return _fabsf(__f); }
+Xinline __declspec(__nothrow) __attribute__((const)) float fabsf(float __f) { return _fabsf(__f); }
 Nextern _ARMABI float sinf(float /*x*/);
 Xextern __declspec(__nothrow) float sinf(float  );
 Nextern _ARMABI float cosf(float /*x*/);
@@ -6226,7 +6226,7 @@ N_ARMDEFLD1(tanh);
 X__declspec(__nothrow) long double tanhl(long double );
 N
 N#if !defined(__STRICT_ANSI__) || defined(__USE_C99_MATH)
-X#if !0L || 0L
+X#if !0L || 1L
 N
 N/*
 N * C99 float and long double versions of extra-C89 functions.
@@ -6285,77 +6285,105 @@ N
 N#endif
 N
 N#if (defined(__clang__) && !defined(__STRICT_ANSI)) || defined(__USE_C99_MATH)
-X#if (0L && !0L) || 0L
-S/*
-S * Functions new in C99.
-S */
-Sextern _ARMABI double exp2(double /*x*/); /* * 2.^x. */
-Sextern _ARMABI float exp2f(float /*x*/);
-S_ARMDEFLD1(exp2);
-Sextern _ARMABI double fdim(double /*x*/, double /*y*/);
-Sextern _ARMABI float fdimf(float /*x*/, float /*y*/);
-S_ARMDEFLD2(fdim);
-S#ifdef __FP_FAST_FMA
+X#if (0L && !0L) || 1L
+N/*
+N * Functions new in C99.
+N */
+Nextern _ARMABI double exp2(double /*x*/); /* * 2.^x. */
+Xextern __declspec(__nothrow) double exp2(double  );  
+Nextern _ARMABI float exp2f(float /*x*/);
+Xextern __declspec(__nothrow) float exp2f(float  );
+N_ARMDEFLD1(exp2);
+X__declspec(__nothrow) long double exp2l(long double );
+Nextern _ARMABI double fdim(double /*x*/, double /*y*/);
+Xextern __declspec(__nothrow) double fdim(double  , double  );
+Nextern _ARMABI float fdimf(float /*x*/, float /*y*/);
+Xextern __declspec(__nothrow) float fdimf(float  , float  );
+N_ARMDEFLD2(fdim);
+X__declspec(__nothrow) long double fdiml(long double , long double );
+N#ifdef __FP_FAST_FMA
 S#define FP_FAST_FMA
-S#endif
-S#ifdef __FP_FAST_FMAF
-S#define FP_FAST_FMAF
-S#endif
-S#ifdef __FP_FAST_FMAL
+N#endif
+N#ifdef __FP_FAST_FMAF
+N#define FP_FAST_FMAF
+N#endif
+N#ifdef __FP_FAST_FMAL
 S#define FP_FAST_FMAL
-S#endif
-Sextern _ARMABI double fma(double /*x*/, double /*y*/, double /*z*/);
-Sextern _ARMABI float fmaf(float /*x*/, float /*y*/, float /*z*/);
-S#ifdef __HAVE_LONGDOUBLE
-S_ARMABI_INLINE _ARMABI long double fmal(long double __x, long double __y, long double __z) \
-S    { return (long double)fma((double)__x, (double)__y, (double)__z); }
-X_ARMABI_INLINE _ARMABI long double fmal(long double __x, long double __y, long double __z)     { return (long double)fma((double)__x, (double)__y, (double)__z); }
-S#endif
-Sextern _ARMABI_FPEXCEPT double fmax(double /*x*/, double /*y*/);
-Sextern _ARMABI_FPEXCEPT float fmaxf(float /*x*/, float /*y*/);
-S_ARMDEFLD2(fmax);
-Sextern _ARMABI_FPEXCEPT double fmin(double /*x*/, double /*y*/);
-Sextern _ARMABI_FPEXCEPT float fminf(float /*x*/, float /*y*/);
-S_ARMDEFLD2(fmin);
-Sextern _ARMABI double log2(double /*x*/); /* * log base 2 of x. */
-Sextern _ARMABI float log2f(float /*x*/);
-S_ARMDEFLD1(log2);
-Sextern _ARMABI long lrint(double /*x*/);
-Sextern _ARMABI long lrintf(float /*x*/);
-S#ifdef __HAVE_LONGDOUBLE
-S_ARMABI_INLINE _ARMABI long lrintl(long double __x) \
-S    { return lrint((double)__x); }
-X_ARMABI_INLINE _ARMABI long lrintl(long double __x)     { return lrint((double)__x); }
-S#endif
-Sextern _ARMABI __LONGLONG llrint(double /*x*/);
-Sextern _ARMABI __LONGLONG llrintf(float /*x*/);
-S#ifdef __HAVE_LONGDOUBLE
-S_ARMABI_INLINE _ARMABI __LONGLONG llrintl(long double __x) \
-S    { return llrint((double)__x); }
-X_ARMABI_INLINE _ARMABI __LONGLONG llrintl(long double __x)     { return llrint((double)__x); }
-S#endif
-Sextern _ARMABI long lround(double /*x*/);
-Sextern _ARMABI long lroundf(float /*x*/);
-S#ifdef __HAVE_LONGDOUBLE
-S_ARMABI_INLINE _ARMABI long lroundl(long double __x) \
-S    { return lround((double)__x); }
-X_ARMABI_INLINE _ARMABI long lroundl(long double __x)     { return lround((double)__x); }
-S#endif
-Sextern _ARMABI __LONGLONG llround(double /*x*/);
-Sextern _ARMABI __LONGLONG llroundf(float /*x*/);
-S#ifdef __HAVE_LONGDOUBLE
-S_ARMABI_INLINE _ARMABI __LONGLONG llroundl(long double __x) \
-S    { return llround((double)__x); }
-X_ARMABI_INLINE _ARMABI __LONGLONG llroundl(long double __x)     { return llround((double)__x); }
-S#endif
-Sextern _ARMABI_PURE double nan(const char */*tagp*/);
-Sextern _ARMABI_PURE float nanf(const char */*tagp*/);
-S#ifdef __HAVE_LONGDOUBLE
-S_ARMABI_INLINE _ARMABI_PURE long double nanl(const char *__t) \
-S    { return (long double)nan(__t); }
-X_ARMABI_INLINE _ARMABI_PURE long double nanl(const char *__t)     { return (long double)nan(__t); }
-S#endif
-S#if defined(_WANT_SNAN) && defined(__SUPPORT_SNAN__)
+N#endif
+Nextern _ARMABI double fma(double /*x*/, double /*y*/, double /*z*/);
+Xextern __declspec(__nothrow) double fma(double  , double  , double  );
+Nextern _ARMABI float fmaf(float /*x*/, float /*y*/, float /*z*/);
+Xextern __declspec(__nothrow) float fmaf(float  , float  , float  );
+N#ifdef __HAVE_LONGDOUBLE
+N_ARMABI_INLINE _ARMABI long double fmal(long double __x, long double __y, long double __z) \
+N    { return (long double)fma((double)__x, (double)__y, (double)__z); }
+Xinline __declspec(__nothrow) long double fmal(long double __x, long double __y, long double __z)     { return (long double)fma((double)__x, (double)__y, (double)__z); }
+N#endif
+Nextern _ARMABI_FPEXCEPT double fmax(double /*x*/, double /*y*/);
+Xextern __declspec(__nothrow) __attribute__((const)) double fmax(double  , double  );
+Nextern _ARMABI_FPEXCEPT float fmaxf(float /*x*/, float /*y*/);
+Xextern __declspec(__nothrow) __attribute__((const)) float fmaxf(float  , float  );
+N_ARMDEFLD2(fmax);
+X__declspec(__nothrow) long double fmaxl(long double , long double );
+Nextern _ARMABI_FPEXCEPT double fmin(double /*x*/, double /*y*/);
+Xextern __declspec(__nothrow) __attribute__((const)) double fmin(double  , double  );
+Nextern _ARMABI_FPEXCEPT float fminf(float /*x*/, float /*y*/);
+Xextern __declspec(__nothrow) __attribute__((const)) float fminf(float  , float  );
+N_ARMDEFLD2(fmin);
+X__declspec(__nothrow) long double fminl(long double , long double );
+Nextern _ARMABI double log2(double /*x*/); /* * log base 2 of x. */
+Xextern __declspec(__nothrow) double log2(double  );  
+Nextern _ARMABI float log2f(float /*x*/);
+Xextern __declspec(__nothrow) float log2f(float  );
+N_ARMDEFLD1(log2);
+X__declspec(__nothrow) long double log2l(long double );
+Nextern _ARMABI long lrint(double /*x*/);
+Xextern __declspec(__nothrow) long lrint(double  );
+Nextern _ARMABI long lrintf(float /*x*/);
+Xextern __declspec(__nothrow) long lrintf(float  );
+N#ifdef __HAVE_LONGDOUBLE
+N_ARMABI_INLINE _ARMABI long lrintl(long double __x) \
+N    { return lrint((double)__x); }
+Xinline __declspec(__nothrow) long lrintl(long double __x)     { return lrint((double)__x); }
+N#endif
+Nextern _ARMABI __LONGLONG llrint(double /*x*/);
+Xextern __declspec(__nothrow) long long llrint(double  );
+Nextern _ARMABI __LONGLONG llrintf(float /*x*/);
+Xextern __declspec(__nothrow) long long llrintf(float  );
+N#ifdef __HAVE_LONGDOUBLE
+N_ARMABI_INLINE _ARMABI __LONGLONG llrintl(long double __x) \
+N    { return llrint((double)__x); }
+Xinline __declspec(__nothrow) long long llrintl(long double __x)     { return llrint((double)__x); }
+N#endif
+Nextern _ARMABI long lround(double /*x*/);
+Xextern __declspec(__nothrow) long lround(double  );
+Nextern _ARMABI long lroundf(float /*x*/);
+Xextern __declspec(__nothrow) long lroundf(float  );
+N#ifdef __HAVE_LONGDOUBLE
+N_ARMABI_INLINE _ARMABI long lroundl(long double __x) \
+N    { return lround((double)__x); }
+Xinline __declspec(__nothrow) long lroundl(long double __x)     { return lround((double)__x); }
+N#endif
+Nextern _ARMABI __LONGLONG llround(double /*x*/);
+Xextern __declspec(__nothrow) long long llround(double  );
+Nextern _ARMABI __LONGLONG llroundf(float /*x*/);
+Xextern __declspec(__nothrow) long long llroundf(float  );
+N#ifdef __HAVE_LONGDOUBLE
+N_ARMABI_INLINE _ARMABI __LONGLONG llroundl(long double __x) \
+N    { return llround((double)__x); }
+Xinline __declspec(__nothrow) long long llroundl(long double __x)     { return llround((double)__x); }
+N#endif
+Nextern _ARMABI_PURE double nan(const char */*tagp*/);
+Xextern __declspec(__nothrow) __attribute__((const)) double nan(const char * );
+Nextern _ARMABI_PURE float nanf(const char */*tagp*/);
+Xextern __declspec(__nothrow) __attribute__((const)) float nanf(const char * );
+N#ifdef __HAVE_LONGDOUBLE
+N_ARMABI_INLINE _ARMABI_PURE long double nanl(const char *__t) \
+N    { return (long double)nan(__t); }
+Xinline __declspec(__nothrow) __attribute__((const)) long double nanl(const char *__t)     { return (long double)nan(__t); }
+N#endif
+N#if defined(_WANT_SNAN) && defined(__SUPPORT_SNAN__)
+X#if 0L && 0L
 Sextern _ARMABI_PURE double nans(const char */*tagp*/);
 Sextern _ARMABI_PURE float nansf(const char */*tagp*/);
 S#ifdef __HAVE_LONGDOUBLE
@@ -6363,26 +6391,38 @@ S_ARMABI_INLINE _ARMABI_FPEXCEPT long double nansl(const char *__t) \
 S    { return (long double)nans(__t); }
 X_ARMABI_INLINE _ARMABI_FPEXCEPT long double nansl(const char *__t)     { return (long double)nans(__t); }
 S#endif
-S#endif 
-Sextern _ARMABI_FPEXCEPT double nearbyint(double /*x*/);
-Sextern _ARMABI_FPEXCEPT float nearbyintf(float /*x*/);
-S_ARMDEFLD1(nearbyint);
-Sextern  double remquo(double /*x*/, double /*y*/, int */*quo*/);
-Sextern  float remquof(float /*x*/, float /*y*/, int */*quo*/);
-S#ifdef __HAVE_LONGDOUBLE
-S_ARMABI_INLINE long double remquol(long double __x, long double __y, int *__q) \
-S    { return (long double)remquo((double)__x, (double)__y, __q); }
-X_ARMABI_INLINE long double remquol(long double __x, long double __y, int *__q)     { return (long double)remquo((double)__x, (double)__y, __q); }
-S#endif
-Sextern _ARMABI_FPEXCEPT double round(double /*x*/);
-Sextern _ARMABI_FPEXCEPT float roundf(float /*x*/);
-S_ARMDEFLD1(round);
-Sextern _ARMABI double tgamma(double /*x*/); /* * The gamma function of x. */
-Sextern _ARMABI float tgammaf(float /*x*/);
-S_ARMDEFLD1(tgamma);
-Sextern _ARMABI_FPEXCEPT double trunc(double /*x*/);
-Sextern _ARMABI_FPEXCEPT float truncf(float /*x*/);
-S_ARMDEFLD1(trunc);
+N#endif 
+Nextern _ARMABI_FPEXCEPT double nearbyint(double /*x*/);
+Xextern __declspec(__nothrow) __attribute__((const)) double nearbyint(double  );
+Nextern _ARMABI_FPEXCEPT float nearbyintf(float /*x*/);
+Xextern __declspec(__nothrow) __attribute__((const)) float nearbyintf(float  );
+N_ARMDEFLD1(nearbyint);
+X__declspec(__nothrow) long double nearbyintl(long double );
+Nextern  double remquo(double /*x*/, double /*y*/, int */*quo*/);
+Nextern  float remquof(float /*x*/, float /*y*/, int */*quo*/);
+N#ifdef __HAVE_LONGDOUBLE
+N_ARMABI_INLINE long double remquol(long double __x, long double __y, int *__q) \
+N    { return (long double)remquo((double)__x, (double)__y, __q); }
+Xinline long double remquol(long double __x, long double __y, int *__q)     { return (long double)remquo((double)__x, (double)__y, __q); }
+N#endif
+Nextern _ARMABI_FPEXCEPT double round(double /*x*/);
+Xextern __declspec(__nothrow) __attribute__((const)) double round(double  );
+Nextern _ARMABI_FPEXCEPT float roundf(float /*x*/);
+Xextern __declspec(__nothrow) __attribute__((const)) float roundf(float  );
+N_ARMDEFLD1(round);
+X__declspec(__nothrow) long double roundl(long double );
+Nextern _ARMABI double tgamma(double /*x*/); /* * The gamma function of x. */
+Xextern __declspec(__nothrow) double tgamma(double  );  
+Nextern _ARMABI float tgammaf(float /*x*/);
+Xextern __declspec(__nothrow) float tgammaf(float  );
+N_ARMDEFLD1(tgamma);
+X__declspec(__nothrow) long double tgammal(long double );
+Nextern _ARMABI_FPEXCEPT double trunc(double /*x*/);
+Xextern __declspec(__nothrow) __attribute__((const)) double trunc(double  );
+Nextern _ARMABI_FPEXCEPT float truncf(float /*x*/);
+Xextern __declspec(__nothrow) __attribute__((const)) float truncf(float  );
+N_ARMDEFLD1(trunc);
+X__declspec(__nothrow) long double truncl(long double );
 N#endif
 N
 N#undef _ARMDEFLD1
@@ -6390,7 +6430,7 @@ N#undef _ARMDEFLD1P
 N#undef _ARMDEFLD2
 N
 N#if defined(__cplusplus) && ((!defined(__STRICT_ANSI__) || defined(__USE_C99_MATH)) || defined(__ARMCOMPILER_LIBCXX))
-X#if 0L && ((!0L || 0L) || 0L)
+X#if 0L && ((!0L || 1L) || 0L)
 S  extern "C++" {
 S    inline int (fpclassify)(double __x) { return fpclassify(__x); }
 S    inline bool (isfinite)(double __x) { return isfinite(__x); }
@@ -11642,9 +11682,9 @@ N   * @param[in] in input sample to process
 N   * @return out processed output sample.
 N   */
 N
-N
-N  static __INLINE float32_t arm_pid_f32(
-X  static __inline float32_t arm_pid_f32(
+N  static __INLINE float32_t arm_pid_f32
+X  static __inline float32_t arm_pid_f32
+N  (
 N  arm_pid_instance_f32 * S,
 N  float32_t in)
 N  {
@@ -14131,10 +14171,17 @@ S#define IAR_ONLY_LOW_OPTIMIZATION_EXIT
 S
 N#endif
 N
+Nextern void arm_bitreversal_32(
+N    uint32_t * pSrc,
+N    const uint16_t bitRevLen,
+N    const uint16_t * pBitRevTable);
+N
 N
 N#ifdef	__cplusplus
 S}
 N#endif
+N
+N
 N
 N
 N#endif /* _ARM_MATH_H */

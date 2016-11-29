@@ -7524,10 +7524,17 @@ void arm_rfft_fast_f32(
 
 #endif
 
+extern void arm_bitreversal_32(
+    uint32_t * pSrc,
+    const uint16_t bitRevLen,
+    const uint16_t * pBitRevTable);
+
 
 #ifdef	__cplusplus
 }
 #endif
+
+
 
 
 #endif /* _ARM_MATH_H */
