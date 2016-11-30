@@ -16916,11 +16916,7 @@ typedef void (*p_msDelay_func_t)(uint32_t);
 
 
 
-#line 15 "..\\..\\..\\..\\..\\..\\COMMON\\SRC\\TEST\\CM_TEST_CONFIG.h"
-
-
-
-
+#line 18 "..\\..\\..\\..\\..\\..\\COMMON\\SRC\\TEST\\CM_TEST_CONFIG.h"
 
 
 
@@ -26328,18 +26324,18 @@ float ProcessGoertzel_f32_Power(Goertzel_f32_t * G, float *x);
 #line 133 "..\\..\\..\\..\\..\\..\\COMMON\\SRC\\TEST\\CM_TEST.c"
 	union
 	{
-		 q15_t 		q15[4096];
-		 q31_t 		q31[4096];
-		 float32_t	f32[4096];
+		 q15_t 		q15[8192];
+		 q31_t 		q31[8192];
+		 float32_t	f32[8192];
 	} InputData;
 
 #line 155 "..\\..\\..\\..\\..\\..\\COMMON\\SRC\\TEST\\CM_TEST.c"
 
 union
 {
-	 q15_t 		q15[4096];
-	 q31_t 		q31[4096];
-	 float32_t	f32[4096];
+	 q15_t 		q15[8192];
+	 q31_t 		q31[8192];
+	 float32_t	f32[8192];
 } OutputData;
 
 
@@ -26354,8 +26350,6 @@ union
 
 
 
-	float32_t IIR_Coef_f32 [5] = {0.1,0.2,0.3,-0.4,-0.4};
-	float32_t IIR_State_f32 [4] = {0,0,0,0};
 
 
 
@@ -26367,15 +26361,57 @@ union
 
 
 
+	q15_t IIR_Coef_q15 [5] = {0.1*0x7FFF,0.2*0x7FFF,0.3*0x7FFF,-0.4*0x7FFF,-0.4*0x7FFF};
+	q15_t IIR_State_q15 [4] = {0,0,0,0};
 
 
 
 
-#line 220 "..\\..\\..\\..\\..\\..\\COMMON\\SRC\\TEST\\CM_TEST.c"
+
+		union
+		{
+			arm_fir_instance_f32			f32;
+			arm_fir_instance_q31			q31;
+			arm_fir_instance_q15			q15;
+		} FIR_Inst;
+
+		union
+		{
+			float32_t f32[2048+32+1];
+			q31_t	  q31[2048+32+1];
+			q15_t	  q15[2048+32+1];
+		}FIR_State;
 
 
 
-#line 237 "..\\..\\..\\..\\..\\..\\COMMON\\SRC\\TEST\\CM_TEST.c"
+
+
+
+
+
+
+
+			q15_t   	FIR_Coef_q15[32];
+
+
+
+
+
+
+
+
+q31_t_IIR E_IIR;
+
+f32_IIR E_IIRf;
+
+union
+{
+	arm_pid_instance_f32	f32;
+	arm_pid_instance_q31	q31;
+	arm_pid_instance_q15	q15;
+}PID_Inst;
+
+
 
 union
 {
@@ -26387,7 +26423,7 @@ union
 
 
 
-
+	Goertzel_f32_t G;
 
 
 
@@ -26413,12 +26449,27 @@ volatile uint32_t CycleOffset = 0;
 
 
 
-	for(i=0;i<4096;i++)
+	for(i=0;i<8192;i++)
     {
     	InputData.q31[i] = rand();
     }
 
-#line 300 "..\\..\\..\\..\\..\\..\\COMMON\\SRC\\TEST\\CM_TEST.c"
+
+		for(i=0;i<32;i++)
+		{
+
+
+
+
+
+
+
+
+
+			 	 FIR_Coef_q15[i] = i<<10;
+
+		}
+
 
 
 
@@ -26449,9 +26500,9 @@ volatile uint32_t CycleOffset = 0;
 
 
 
-   	printf("\r\nBlock Processing Functions\r\n");
-
-   	printf("Length,16,32,64,128,256,512,1024,2048,4096");
+   	printf("\r\nBlock Processing Functions");
+  	printf("\r\n---------------------------------------------------------------\r\n");
+   	printf("\r\nLength,16,32,64,128,256,512,1024,2048,4096");
 
 	   
 
@@ -26463,84 +26514,6 @@ volatile uint32_t CycleOffset = 0;
 
 
  
-
-
-
-
-					printf("\r\n");
-					printf("\r\nCFFT-f32-BitReverse,");
-					((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL = 0;((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 0) | (1UL << 2);; arm_cfft_f32(&arm_cfft_sR_f32_len16,  &InputData.f32[0], 0, 1);((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 2); CycleTimer = ((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL; CycleTimer = 0x1000000 - CycleTimer;printf("%i",CycleTimer - CycleOffset);printf(",");;
-					((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL = 0;((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 0) | (1UL << 2);;arm_cfft_f32(&arm_cfft_sR_f32_len32,   &InputData.f32[0], 0, 1);((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 2); CycleTimer = ((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL; CycleTimer = 0x1000000 - CycleTimer;printf("%i",CycleTimer - CycleOffset);printf(",");;
-					((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL = 0;((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 0) | (1UL << 2);;arm_cfft_f32(&arm_cfft_sR_f32_len64,   &InputData.f32[0], 0, 1);((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 2); CycleTimer = ((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL; CycleTimer = 0x1000000 - CycleTimer;printf("%i",CycleTimer - CycleOffset);printf(",");;
-					((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL = 0;((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 0) | (1UL << 2);;arm_cfft_f32(&arm_cfft_sR_f32_len128,  &InputData.f32[0], 0, 1);((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 2); CycleTimer = ((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL; CycleTimer = 0x1000000 - CycleTimer;printf("%i",CycleTimer - CycleOffset);printf(",");;
-					((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL = 0;((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 0) | (1UL << 2);;arm_cfft_f32(&arm_cfft_sR_f32_len256,  &InputData.f32[0], 0, 1);((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 2); CycleTimer = ((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL; CycleTimer = 0x1000000 - CycleTimer;printf("%i",CycleTimer - CycleOffset);printf(",");;
-					((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL = 0;((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 0) | (1UL << 2);;arm_cfft_f32(&arm_cfft_sR_f32_len512,  &InputData.f32[0], 0, 1);((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 2); CycleTimer = ((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL; CycleTimer = 0x1000000 - CycleTimer;printf("%i",CycleTimer - CycleOffset);printf(",");;
-					((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL = 0;((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 0) | (1UL << 2);;arm_cfft_f32(&arm_cfft_sR_f32_len1024, &InputData.f32[0], 0, 1);((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 2); CycleTimer = ((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL; CycleTimer = 0x1000000 - CycleTimer;printf("%i",CycleTimer - CycleOffset);printf(",");;
-					((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL = 0;((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 0) | (1UL << 2);;arm_cfft_f32(&arm_cfft_sR_f32_len2048, &InputData.f32[0], 0, 1);((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 2); CycleTimer = ((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL; CycleTimer = 0x1000000 - CycleTimer;printf("%i",CycleTimer - CycleOffset);printf(",");;
-					((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL = 0;((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 0) | (1UL << 2);;arm_cfft_f32(&arm_cfft_sR_f32_len4096, &InputData.f32[0], 0, 1);((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 2); CycleTimer = ((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL; CycleTimer = 0x1000000 - CycleTimer;printf("%i",CycleTimer - CycleOffset);printf(",");;
-
-
-
-					printf("\r\n");
-					printf("CFFT-f32-NoBitReverse,");
-					((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL = 0;((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 0) | (1UL << 2);;arm_cfft_f32(&arm_cfft_sR_f32_len16,   &InputData.f32[0], 0, 0);((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 2); CycleTimer = ((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL; CycleTimer = 0x1000000 - CycleTimer;printf("%i",CycleTimer - CycleOffset);printf(",");;
-					((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL = 0;((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 0) | (1UL << 2);;arm_cfft_f32(&arm_cfft_sR_f32_len32,   &InputData.f32[0], 0, 0);((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 2); CycleTimer = ((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL; CycleTimer = 0x1000000 - CycleTimer;printf("%i",CycleTimer - CycleOffset);printf(",");;
-					((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL = 0;((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 0) | (1UL << 2);;arm_cfft_f32(&arm_cfft_sR_f32_len64,   &InputData.f32[0], 0, 0);((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 2); CycleTimer = ((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL; CycleTimer = 0x1000000 - CycleTimer;printf("%i",CycleTimer - CycleOffset);printf(",");;
-					((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL = 0;((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 0) | (1UL << 2);;arm_cfft_f32(&arm_cfft_sR_f32_len128,  &InputData.f32[0], 0, 0);((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 2); CycleTimer = ((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL; CycleTimer = 0x1000000 - CycleTimer;printf("%i",CycleTimer - CycleOffset);printf(",");;
-					((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL = 0;((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 0) | (1UL << 2);;arm_cfft_f32(&arm_cfft_sR_f32_len256,  &InputData.f32[0], 0, 0);((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 2); CycleTimer = ((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL; CycleTimer = 0x1000000 - CycleTimer;printf("%i",CycleTimer - CycleOffset);printf(",");;
-					((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL = 0;((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 0) | (1UL << 2);;arm_cfft_f32(&arm_cfft_sR_f32_len512,  &InputData.f32[0], 0, 0);((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 2); CycleTimer = ((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL; CycleTimer = 0x1000000 - CycleTimer;printf("%i",CycleTimer - CycleOffset);printf(",");;
-					((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL = 0;((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 0) | (1UL << 2);;arm_cfft_f32(&arm_cfft_sR_f32_len1024, &InputData.f32[0], 0, 0);((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 2); CycleTimer = ((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL; CycleTimer = 0x1000000 - CycleTimer;printf("%i",CycleTimer - CycleOffset);printf(",");;
-					((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL = 0;((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 0) | (1UL << 2);;arm_cfft_f32(&arm_cfft_sR_f32_len2048, &InputData.f32[0], 0, 0);((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 2); CycleTimer = ((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL; CycleTimer = 0x1000000 - CycleTimer;printf("%i",CycleTimer - CycleOffset);printf(",");;
-					((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL = 0;((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 0) | (1UL << 2);;arm_cfft_f32(&arm_cfft_sR_f32_len4096, &InputData.f32[0], 0, 0);((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 2); CycleTimer = ((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL; CycleTimer = 0x1000000 - CycleTimer;printf("%i",CycleTimer - CycleOffset);printf(",");;
-
-
-
-
-					printf("\r\n");
-					printf("RFFT-f32-NoBitReverse,");
-
-					printf("n/a");printf(",");;
-					arm_rfft_fast_init_f32(&FFT_Inst.rfft_fast_f32,32);((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL = 0;((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 0) | (1UL << 2);;arm_rfft_fast_f32(&FFT_Inst.rfft_fast_f32,&InputData.f32[0], &OutputData.f32[0], 0);((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 2); CycleTimer = ((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL; CycleTimer = 0x1000000 - CycleTimer;printf("%i",CycleTimer - CycleOffset);printf(",");;
-					arm_rfft_fast_init_f32(&FFT_Inst.rfft_fast_f32,64);((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL = 0;((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 0) | (1UL << 2);;arm_rfft_fast_f32(&FFT_Inst.rfft_fast_f32,&InputData.f32[0], &OutputData.f32[0], 0);((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 2); CycleTimer = ((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL; CycleTimer = 0x1000000 - CycleTimer;printf("%i",CycleTimer - CycleOffset);printf(",");;
-					arm_rfft_fast_init_f32(&FFT_Inst.rfft_fast_f32,128);((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL = 0;((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 0) | (1UL << 2);;arm_rfft_fast_f32(&FFT_Inst.rfft_fast_f32,&InputData.f32[0], &OutputData.f32[0], 0);((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 2); CycleTimer = ((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL; CycleTimer = 0x1000000 - CycleTimer;printf("%i",CycleTimer - CycleOffset);printf(",");;
-					arm_rfft_fast_init_f32(&FFT_Inst.rfft_fast_f32,256);((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL = 0;((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 0) | (1UL << 2);;arm_rfft_fast_f32(&FFT_Inst.rfft_fast_f32,&InputData.f32[0], &OutputData.f32[0], 0);((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 2); CycleTimer = ((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL; CycleTimer = 0x1000000 - CycleTimer;printf("%i",CycleTimer - CycleOffset);printf(",");;
-					arm_rfft_fast_init_f32(&FFT_Inst.rfft_fast_f32,512);((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL = 0;((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 0) | (1UL << 2);;arm_rfft_fast_f32(&FFT_Inst.rfft_fast_f32,&InputData.f32[0], &OutputData.f32[0], 0);((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 2); CycleTimer = ((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL; CycleTimer = 0x1000000 - CycleTimer;printf("%i",CycleTimer - CycleOffset);printf(",");;
-					arm_rfft_fast_init_f32(&FFT_Inst.rfft_fast_f32,1024);((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL = 0;((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 0) | (1UL << 2);;arm_rfft_fast_f32(&FFT_Inst.rfft_fast_f32,&InputData.f32[0], &OutputData.f32[0], 0);((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 2); CycleTimer = ((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL; CycleTimer = 0x1000000 - CycleTimer;printf("%i",CycleTimer - CycleOffset);printf(",");;
-					arm_rfft_fast_init_f32(&FFT_Inst.rfft_fast_f32,2048);((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL = 0;((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 0) | (1UL << 2);;arm_rfft_fast_f32(&FFT_Inst.rfft_fast_f32,&InputData.f32[0], &OutputData.f32[0], 0);((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 2); CycleTimer = ((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL; CycleTimer = 0x1000000 - CycleTimer;printf("%i",CycleTimer - CycleOffset);printf(",");;
-					arm_rfft_fast_init_f32(&FFT_Inst.rfft_fast_f32,4096);((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL = 0;((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 0) | (1UL << 2);;arm_rfft_fast_f32(&FFT_Inst.rfft_fast_f32,&InputData.f32[0], &OutputData.f32[0], 0);((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 2); CycleTimer = ((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL; CycleTimer = 0x1000000 - CycleTimer;printf("%i",CycleTimer - CycleOffset);printf(",");;
-
-
-
-					printf("\r\n");
-					printf("ComplexMag-f32,");
-					((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL = 0;((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 0) | (1UL << 2);;arm_cmplx_mag_f32(&InputData.f32[0],&OutputData.f32[0],16);((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 2); CycleTimer = ((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL; CycleTimer = 0x1000000 - CycleTimer;printf("%i",CycleTimer - CycleOffset);printf(",");;
-					((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL = 0;((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 0) | (1UL << 2);;arm_cmplx_mag_f32(&InputData.f32[0],&OutputData.f32[0],32);((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 2); CycleTimer = ((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL; CycleTimer = 0x1000000 - CycleTimer;printf("%i",CycleTimer - CycleOffset);printf(",");;
-					((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL = 0;((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 0) | (1UL << 2);;arm_cmplx_mag_f32(&InputData.f32[0],&OutputData.f32[0],64);((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 2); CycleTimer = ((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL; CycleTimer = 0x1000000 - CycleTimer;printf("%i",CycleTimer - CycleOffset);printf(",");;
-					((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL = 0;((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 0) | (1UL << 2);;arm_cmplx_mag_f32(&InputData.f32[0],&OutputData.f32[0],128);((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 2); CycleTimer = ((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL; CycleTimer = 0x1000000 - CycleTimer;printf("%i",CycleTimer - CycleOffset);printf(",");;
-					((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL = 0;((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 0) | (1UL << 2);;arm_cmplx_mag_f32(&InputData.f32[0],&OutputData.f32[0],256);((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 2); CycleTimer = ((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL; CycleTimer = 0x1000000 - CycleTimer;printf("%i",CycleTimer - CycleOffset);printf(",");;
-					((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL = 0;((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 0) | (1UL << 2);;arm_cmplx_mag_f32(&InputData.f32[0],&OutputData.f32[0],512);((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 2); CycleTimer = ((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL; CycleTimer = 0x1000000 - CycleTimer;printf("%i",CycleTimer - CycleOffset);printf(",");;
-					((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL = 0;((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 0) | (1UL << 2);;arm_cmplx_mag_f32(&InputData.f32[0],&OutputData.f32[0],1024);((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 2); CycleTimer = ((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL; CycleTimer = 0x1000000 - CycleTimer;printf("%i",CycleTimer - CycleOffset);printf(",");;
-					((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL = 0;((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 0) | (1UL << 2);;arm_cmplx_mag_f32(&InputData.f32[0],&OutputData.f32[0],2048);((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 2); CycleTimer = ((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL; CycleTimer = 0x1000000 - CycleTimer;printf("%i",CycleTimer - CycleOffset);printf(",");;
-					((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL = 0;((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 0) | (1UL << 2);;arm_cmplx_mag_f32(&InputData.f32[0],&OutputData.f32[0],4096);((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 2); CycleTimer = ((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL; CycleTimer = 0x1000000 - CycleTimer;printf("%i",CycleTimer - CycleOffset);printf(",");;
-
-
-
-					printf("\r\n");
-					printf("ComplexMagSquared-f32,");
-					((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL = 0;((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 0) | (1UL << 2);;arm_cmplx_mag_squared_f32(&InputData.f32[0],&OutputData.f32[0],16);((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 2); CycleTimer = ((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL; CycleTimer = 0x1000000 - CycleTimer;printf("%i",CycleTimer - CycleOffset);printf(",");;
-					((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL = 0;((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 0) | (1UL << 2);;arm_cmplx_mag_squared_f32(&InputData.f32[0],&OutputData.f32[0],32);((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 2); CycleTimer = ((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL; CycleTimer = 0x1000000 - CycleTimer;printf("%i",CycleTimer - CycleOffset);printf(",");;
-					((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL = 0;((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 0) | (1UL << 2);;arm_cmplx_mag_squared_f32(&InputData.f32[0],&OutputData.f32[0],64);((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 2); CycleTimer = ((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL; CycleTimer = 0x1000000 - CycleTimer;printf("%i",CycleTimer - CycleOffset);printf(",");;
-					((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL = 0;((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 0) | (1UL << 2);;arm_cmplx_mag_squared_f32(&InputData.f32[0],&OutputData.f32[0],128);((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 2); CycleTimer = ((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL; CycleTimer = 0x1000000 - CycleTimer;printf("%i",CycleTimer - CycleOffset);printf(",");;
-					((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL = 0;((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 0) | (1UL << 2);;arm_cmplx_mag_squared_f32(&InputData.f32[0],&OutputData.f32[0],256);((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 2); CycleTimer = ((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL; CycleTimer = 0x1000000 - CycleTimer;printf("%i",CycleTimer - CycleOffset);printf(",");;
-					((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL = 0;((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 0) | (1UL << 2);;arm_cmplx_mag_squared_f32(&InputData.f32[0],&OutputData.f32[0],512);((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 2); CycleTimer = ((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL; CycleTimer = 0x1000000 - CycleTimer;printf("%i",CycleTimer - CycleOffset);printf(",");;
-					((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL = 0;((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 0) | (1UL << 2);;arm_cmplx_mag_squared_f32(&InputData.f32[0],&OutputData.f32[0],1024);((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 2); CycleTimer = ((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL; CycleTimer = 0x1000000 - CycleTimer;printf("%i",CycleTimer - CycleOffset);printf(",");;
-					((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL = 0;((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 0) | (1UL << 2);;arm_cmplx_mag_squared_f32(&InputData.f32[0],&OutputData.f32[0],2048);((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 2); CycleTimer = ((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL; CycleTimer = 0x1000000 - CycleTimer;printf("%i",CycleTimer - CycleOffset);printf(",");;
-					((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL = 0;((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 0) | (1UL << 2);;arm_cmplx_mag_squared_f32(&InputData.f32[0],&OutputData.f32[0],4096);((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 2); CycleTimer = ((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL; CycleTimer = 0x1000000 - CycleTimer;printf("%i",CycleTimer - CycleOffset);printf(",");;
-
-
-#line 441 "..\\..\\..\\..\\..\\..\\COMMON\\SRC\\TEST\\CM_TEST.c"
-
-#line 473 "..\\..\\..\\..\\..\\..\\COMMON\\SRC\\TEST\\CM_TEST.c"
 
 #line 517 "..\\..\\..\\..\\..\\..\\COMMON\\SRC\\TEST\\CM_TEST.c"
 
@@ -26570,12 +26543,216 @@ volatile uint32_t CycleOffset = 0;
 
  
 
-#line 879 "..\\..\\..\\..\\..\\..\\COMMON\\SRC\\TEST\\CM_TEST.c"
+
+
+
+				printf("\r\n");
+				printf("CFFT-q15-BitReverse,");
+				((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL = 0;((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 0) | (1UL << 2);;arm_cfft_q15(&arm_cfft_sR_q15_len16,   &InputData.q15[0], 0, 1);((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 2); CycleTimer = ((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL; CycleTimer = 0x1000000 - CycleTimer;printf("%i",CycleTimer - CycleOffset);printf(",");;
+				((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL = 0;((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 0) | (1UL << 2);;arm_cfft_q15(&arm_cfft_sR_q15_len32,   &InputData.q15[0], 0, 1);((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 2); CycleTimer = ((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL; CycleTimer = 0x1000000 - CycleTimer;printf("%i",CycleTimer - CycleOffset);printf(",");;
+				((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL = 0;((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 0) | (1UL << 2);;arm_cfft_q15(&arm_cfft_sR_q15_len64,   &InputData.q15[0], 0, 1);((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 2); CycleTimer = ((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL; CycleTimer = 0x1000000 - CycleTimer;printf("%i",CycleTimer - CycleOffset);printf(",");;
+				((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL = 0;((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 0) | (1UL << 2);;arm_cfft_q15(&arm_cfft_sR_q15_len128,  &InputData.q15[0], 0, 1);((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 2); CycleTimer = ((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL; CycleTimer = 0x1000000 - CycleTimer;printf("%i",CycleTimer - CycleOffset);printf(",");;
+				((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL = 0;((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 0) | (1UL << 2);;arm_cfft_q15(&arm_cfft_sR_q15_len256,  &InputData.q15[0], 0, 1);((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 2); CycleTimer = ((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL; CycleTimer = 0x1000000 - CycleTimer;printf("%i",CycleTimer - CycleOffset);printf(",");;
+				((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL = 0;((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 0) | (1UL << 2);;arm_cfft_q15(&arm_cfft_sR_q15_len512,  &InputData.q15[0], 0, 1);((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 2); CycleTimer = ((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL; CycleTimer = 0x1000000 - CycleTimer;printf("%i",CycleTimer - CycleOffset);printf(",");;
+				((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL = 0;((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 0) | (1UL << 2);;arm_cfft_q15(&arm_cfft_sR_q15_len1024, &InputData.q15[0], 0, 1);((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 2); CycleTimer = ((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL; CycleTimer = 0x1000000 - CycleTimer;printf("%i",CycleTimer - CycleOffset);printf(",");;
+				((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL = 0;((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 0) | (1UL << 2);;arm_cfft_q15(&arm_cfft_sR_q15_len2048, &InputData.q15[0], 0, 1);((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 2); CycleTimer = ((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL; CycleTimer = 0x1000000 - CycleTimer;printf("%i",CycleTimer - CycleOffset);printf(",");;
+				((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL = 0;((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 0) | (1UL << 2);;arm_cfft_q31(&arm_cfft_sR_q31_len4096, &InputData.q31[0], 0, 1);((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 2); CycleTimer = ((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL; CycleTimer = 0x1000000 - CycleTimer;printf("%i",CycleTimer - CycleOffset);printf(",");;
+
+
+
+				printf("\r\n");
+				printf("CFFT-q15-NoBitReverse,");
+				((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL = 0;((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 0) | (1UL << 2);;arm_cfft_q15(&arm_cfft_sR_q15_len16,   &InputData.q15[0], 0, 0);((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 2); CycleTimer = ((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL; CycleTimer = 0x1000000 - CycleTimer;printf("%i",CycleTimer - CycleOffset);printf(",");;
+				((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL = 0;((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 0) | (1UL << 2);;arm_cfft_q15(&arm_cfft_sR_q15_len32,   &InputData.q15[0], 0, 0);((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 2); CycleTimer = ((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL; CycleTimer = 0x1000000 - CycleTimer;printf("%i",CycleTimer - CycleOffset);printf(",");;
+				((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL = 0;((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 0) | (1UL << 2);;arm_cfft_q15(&arm_cfft_sR_q15_len64,   &InputData.q15[0], 0, 0);((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 2); CycleTimer = ((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL; CycleTimer = 0x1000000 - CycleTimer;printf("%i",CycleTimer - CycleOffset);printf(",");;
+				((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL = 0;((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 0) | (1UL << 2);;arm_cfft_q15(&arm_cfft_sR_q15_len128,  &InputData.q15[0], 0, 0);((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 2); CycleTimer = ((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL; CycleTimer = 0x1000000 - CycleTimer;printf("%i",CycleTimer - CycleOffset);printf(",");;
+				((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL = 0;((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 0) | (1UL << 2);;arm_cfft_q15(&arm_cfft_sR_q15_len256,  &InputData.q15[0], 0, 0);((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 2); CycleTimer = ((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL; CycleTimer = 0x1000000 - CycleTimer;printf("%i",CycleTimer - CycleOffset);printf(",");;
+				((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL = 0;((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 0) | (1UL << 2);;arm_cfft_q15(&arm_cfft_sR_q15_len512,  &InputData.q15[0], 0, 0);((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 2); CycleTimer = ((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL; CycleTimer = 0x1000000 - CycleTimer;printf("%i",CycleTimer - CycleOffset);printf(",");;
+				((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL = 0;((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 0) | (1UL << 2);;arm_cfft_q15(&arm_cfft_sR_q15_len1024, &InputData.q15[0], 0, 0);((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 2); CycleTimer = ((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL; CycleTimer = 0x1000000 - CycleTimer;printf("%i",CycleTimer - CycleOffset);printf(",");;
+				((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL = 0;((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 0) | (1UL << 2);;arm_cfft_q15(&arm_cfft_sR_q15_len2048, &InputData.q15[0], 0, 0);((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 2); CycleTimer = ((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL; CycleTimer = 0x1000000 - CycleTimer;printf("%i",CycleTimer - CycleOffset);printf(",");;
+				((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL = 0;((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 0) | (1UL << 2);;arm_cfft_q31(&arm_cfft_sR_q31_len4096, &InputData.q31[0], 0, 0);((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 2); CycleTimer = ((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL; CycleTimer = 0x1000000 - CycleTimer;printf("%i",CycleTimer - CycleOffset);printf(",");;
+
+
+
+				printf("\r\nRFFT-Q15-BitReverse,");
+				printf("n/a");printf(",");;
+				arm_rfft_init_q15(&FFT_Inst.rfft_q15,32,0,1);((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL = 0;((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 0) | (1UL << 2);  ;arm_rfft_q15(&FFT_Inst.rfft_q15,&InputData.q15[0], &OutputData.q15[0]);((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 2); CycleTimer = ((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL; CycleTimer = 0x1000000 - CycleTimer;printf("%i",CycleTimer - CycleOffset);printf(",");;
+				arm_rfft_init_q15(&FFT_Inst.rfft_q15,64,0,1);((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL = 0;((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 0) | (1UL << 2);  ;arm_rfft_q15(&FFT_Inst.rfft_q15,&InputData.q15[0], &OutputData.q15[0]);((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 2); CycleTimer = ((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL; CycleTimer = 0x1000000 - CycleTimer;printf("%i",CycleTimer - CycleOffset);printf(",");;
+				arm_rfft_init_q15(&FFT_Inst.rfft_q15,128,0,1);((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL = 0;((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 0) | (1UL << 2); ;arm_rfft_q15(&FFT_Inst.rfft_q15,&InputData.q15[0], &OutputData.q15[0]);((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 2); CycleTimer = ((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL; CycleTimer = 0x1000000 - CycleTimer;printf("%i",CycleTimer - CycleOffset);printf(",");;
+				arm_rfft_init_q15(&FFT_Inst.rfft_q15,256,0,1);((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL = 0;((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 0) | (1UL << 2); ;arm_rfft_q15(&FFT_Inst.rfft_q15,&InputData.q15[0], &OutputData.q15[0]);((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 2); CycleTimer = ((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL; CycleTimer = 0x1000000 - CycleTimer;printf("%i",CycleTimer - CycleOffset);printf(",");;
+				arm_rfft_init_q15(&FFT_Inst.rfft_q15,512,0,1);((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL = 0;((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 0) | (1UL << 2); ;arm_rfft_q15(&FFT_Inst.rfft_q15,&InputData.q15[0], &OutputData.q15[0]);((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 2); CycleTimer = ((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL; CycleTimer = 0x1000000 - CycleTimer;printf("%i",CycleTimer - CycleOffset);printf(",");;
+				arm_rfft_init_q15(&FFT_Inst.rfft_q15,1024,0,1);((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL = 0;((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 0) | (1UL << 2);;arm_rfft_q15(&FFT_Inst.rfft_q15,&InputData.q15[0], &OutputData.q15[0]);((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 2); CycleTimer = ((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL; CycleTimer = 0x1000000 - CycleTimer;printf("%i",CycleTimer - CycleOffset);printf(",");;
+				arm_rfft_init_q15(&FFT_Inst.rfft_q15,2048,0,1);((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL = 0;((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 0) | (1UL << 2);;arm_rfft_q15(&FFT_Inst.rfft_q15,&InputData.q15[0], &OutputData.q15[0]);((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 2); CycleTimer = ((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL; CycleTimer = 0x1000000 - CycleTimer;printf("%i",CycleTimer - CycleOffset);printf(",");;
+				arm_rfft_init_q15(&FFT_Inst.rfft_q15,4096,0,1);((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL = 0;((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 0) | (1UL << 2);;arm_rfft_q15(&FFT_Inst.rfft_q15,&InputData.q15[0], &OutputData.q15[0]);((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 2); CycleTimer = ((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL; CycleTimer = 0x1000000 - CycleTimer;printf("%i",CycleTimer - CycleOffset);printf(",");;
+
+
+
+				printf("\r\nRFFT-Q15-NoBitReverse,");
+				printf("n/a");printf(",");;
+				arm_rfft_init_q15(&FFT_Inst.rfft_q15,32,0,0);((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL = 0;((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 0) | (1UL << 2);  ;arm_rfft_q15(&FFT_Inst.rfft_q15,&InputData.q15[0], &OutputData.q15[0]);((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 2); CycleTimer = ((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL; CycleTimer = 0x1000000 - CycleTimer;printf("%i",CycleTimer - CycleOffset);printf(",");;
+				arm_rfft_init_q15(&FFT_Inst.rfft_q15,64,0,0);((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL = 0;((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 0) | (1UL << 2);  ;arm_rfft_q15(&FFT_Inst.rfft_q15,&InputData.q15[0], &OutputData.q15[0]);((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 2); CycleTimer = ((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL; CycleTimer = 0x1000000 - CycleTimer;printf("%i",CycleTimer - CycleOffset);printf(",");;
+				arm_rfft_init_q15(&FFT_Inst.rfft_q15,128,0,0);((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL = 0;((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 0) | (1UL << 2); ;arm_rfft_q15(&FFT_Inst.rfft_q15,&InputData.q15[0], &OutputData.q15[0]);((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 2); CycleTimer = ((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL; CycleTimer = 0x1000000 - CycleTimer;printf("%i",CycleTimer - CycleOffset);printf(",");;
+				arm_rfft_init_q15(&FFT_Inst.rfft_q15,256,0,0);((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL = 0;((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 0) | (1UL << 2); ;arm_rfft_q15(&FFT_Inst.rfft_q15,&InputData.q15[0], &OutputData.q15[0]);((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 2); CycleTimer = ((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL; CycleTimer = 0x1000000 - CycleTimer;printf("%i",CycleTimer - CycleOffset);printf(",");;
+				arm_rfft_init_q15(&FFT_Inst.rfft_q15,512,0,0);((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL = 0;((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 0) | (1UL << 2); ;arm_rfft_q15(&FFT_Inst.rfft_q15,&InputData.q15[0], &OutputData.q15[0]);((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 2); CycleTimer = ((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL; CycleTimer = 0x1000000 - CycleTimer;printf("%i",CycleTimer - CycleOffset);printf(",");;
+				arm_rfft_init_q15(&FFT_Inst.rfft_q15,1024,0,0);((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL = 0;((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 0) | (1UL << 2);;arm_rfft_q15(&FFT_Inst.rfft_q15,&InputData.q15[0], &OutputData.q15[0]);((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 2); CycleTimer = ((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL; CycleTimer = 0x1000000 - CycleTimer;printf("%i",CycleTimer - CycleOffset);printf(",");;
+				arm_rfft_init_q15(&FFT_Inst.rfft_q15,2048,0,0);((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL = 0;((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 0) | (1UL << 2);;arm_rfft_q15(&FFT_Inst.rfft_q15,&InputData.q15[0], &OutputData.q15[0]);((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 2); CycleTimer = ((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL; CycleTimer = 0x1000000 - CycleTimer;printf("%i",CycleTimer - CycleOffset);printf(",");;
+				arm_rfft_init_q15(&FFT_Inst.rfft_q15,4096,0,0);((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL = 0;((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 0) | (1UL << 2);;arm_rfft_q15(&FFT_Inst.rfft_q15,&InputData.q15[0], &OutputData.q15[0]);((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 2); CycleTimer = ((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL; CycleTimer = 0x1000000 - CycleTimer;printf("%i",CycleTimer - CycleOffset);printf(",");;
+
+
+
+				printf("\r\n");
+				printf("ComplexMag-q15,");
+				((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL = 0;((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 0) | (1UL << 2);;arm_cmplx_mag_q15(&InputData.q15[0],&OutputData.q15[0],16);((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 2); CycleTimer = ((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL; CycleTimer = 0x1000000 - CycleTimer;printf("%i",CycleTimer - CycleOffset);printf(",");;
+				((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL = 0;((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 0) | (1UL << 2);;arm_cmplx_mag_q15(&InputData.q15[0],&OutputData.q15[0],32);((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 2); CycleTimer = ((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL; CycleTimer = 0x1000000 - CycleTimer;printf("%i",CycleTimer - CycleOffset);printf(",");;
+				((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL = 0;((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 0) | (1UL << 2);;arm_cmplx_mag_q15(&InputData.q15[0],&OutputData.q15[0],64);((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 2); CycleTimer = ((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL; CycleTimer = 0x1000000 - CycleTimer;printf("%i",CycleTimer - CycleOffset);printf(",");;
+				((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL = 0;((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 0) | (1UL << 2);;arm_cmplx_mag_q15(&InputData.q15[0],&OutputData.q15[0],128);((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 2); CycleTimer = ((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL; CycleTimer = 0x1000000 - CycleTimer;printf("%i",CycleTimer - CycleOffset);printf(",");;
+				((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL = 0;((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 0) | (1UL << 2);;arm_cmplx_mag_q15(&InputData.q15[0],&OutputData.q15[0],256);((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 2); CycleTimer = ((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL; CycleTimer = 0x1000000 - CycleTimer;printf("%i",CycleTimer - CycleOffset);printf(",");;
+				((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL = 0;((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 0) | (1UL << 2);;arm_cmplx_mag_q15(&InputData.q15[0],&OutputData.q15[0],512);((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 2); CycleTimer = ((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL; CycleTimer = 0x1000000 - CycleTimer;printf("%i",CycleTimer - CycleOffset);printf(",");;
+				((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL = 0;((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 0) | (1UL << 2);;arm_cmplx_mag_q15(&InputData.q15[0],&OutputData.q15[0],1024);((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 2); CycleTimer = ((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL; CycleTimer = 0x1000000 - CycleTimer;printf("%i",CycleTimer - CycleOffset);printf(",");;
+				((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL = 0;((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 0) | (1UL << 2);;arm_cmplx_mag_q15(&InputData.q15[0],&OutputData.q15[0],2048);((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 2); CycleTimer = ((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL; CycleTimer = 0x1000000 - CycleTimer;printf("%i",CycleTimer - CycleOffset);printf(",");;
+				((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL = 0;((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 0) | (1UL << 2);;arm_cmplx_mag_q15(&InputData.q15[0],&OutputData.q15[0],4096);((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 2); CycleTimer = ((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL; CycleTimer = 0x1000000 - CycleTimer;printf("%i",CycleTimer - CycleOffset);printf(",");;
+
+
+
+				printf("\r\n");
+				printf("ComplexMagSquared-q15,");
+				((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL = 0;((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 0) | (1UL << 2);;arm_cmplx_mag_squared_q15(&InputData.q15[0],&OutputData.q15[0],16);((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 2); CycleTimer = ((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL; CycleTimer = 0x1000000 - CycleTimer;printf("%i",CycleTimer - CycleOffset);printf(",");;
+				((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL = 0;((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 0) | (1UL << 2);;arm_cmplx_mag_squared_q15(&InputData.q15[0],&OutputData.q15[0],32);((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 2); CycleTimer = ((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL; CycleTimer = 0x1000000 - CycleTimer;printf("%i",CycleTimer - CycleOffset);printf(",");;
+				((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL = 0;((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 0) | (1UL << 2);;arm_cmplx_mag_squared_q15(&InputData.q15[0],&OutputData.q15[0],64);((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 2); CycleTimer = ((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL; CycleTimer = 0x1000000 - CycleTimer;printf("%i",CycleTimer - CycleOffset);printf(",");;
+				((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL = 0;((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 0) | (1UL << 2);;arm_cmplx_mag_squared_q15(&InputData.q15[0],&OutputData.q15[0],128);((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 2); CycleTimer = ((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL; CycleTimer = 0x1000000 - CycleTimer;printf("%i",CycleTimer - CycleOffset);printf(",");;
+				((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL = 0;((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 0) | (1UL << 2);;arm_cmplx_mag_squared_q15(&InputData.q15[0],&OutputData.q15[0],256);((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 2); CycleTimer = ((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL; CycleTimer = 0x1000000 - CycleTimer;printf("%i",CycleTimer - CycleOffset);printf(",");;
+				((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL = 0;((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 0) | (1UL << 2);;arm_cmplx_mag_squared_q15(&InputData.q15[0],&OutputData.q15[0],512);((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 2); CycleTimer = ((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL; CycleTimer = 0x1000000 - CycleTimer;printf("%i",CycleTimer - CycleOffset);printf(",");;
+				((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL = 0;((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 0) | (1UL << 2);;arm_cmplx_mag_squared_q15(&InputData.q15[0],&OutputData.q15[0],1024);((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 2); CycleTimer = ((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL; CycleTimer = 0x1000000 - CycleTimer;printf("%i",CycleTimer - CycleOffset);printf(",");;
+				((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL = 0;((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 0) | (1UL << 2);;arm_cmplx_mag_squared_q15(&InputData.q15[0],&OutputData.q15[0],2048);((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 2); CycleTimer = ((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL; CycleTimer = 0x1000000 - CycleTimer;printf("%i",CycleTimer - CycleOffset);printf(",");;
+				((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL = 0;((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 0) | (1UL << 2);;arm_cmplx_mag_squared_q15(&InputData.q15[0],&OutputData.q15[0],4096);((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 2); CycleTimer = ((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL; CycleTimer = 0x1000000 - CycleTimer;printf("%i",CycleTimer - CycleOffset);printf(",");;
+
+
+
+				printf("\r\n");
+				printf("IIR-q15_df1-1Stage,");
+
+				arm_biquad_cascade_df1_init_q15(&IIR_Inst.q15_df1,1,&IIR_Coef_q15[0],&IIR_State_q15[0],1);
+
+				((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL = 0;((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 0) | (1UL << 2);;arm_biquad_cascade_df1_q15(&IIR_Inst.q15_df1,&InputData.q15[0],&OutputData.q15[0],16);((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 2); CycleTimer = ((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL; CycleTimer = 0x1000000 - CycleTimer;printf("%i",CycleTimer - CycleOffset);printf(",");;
+				((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL = 0;((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 0) | (1UL << 2);;arm_biquad_cascade_df1_q15(&IIR_Inst.q15_df1,&InputData.q15[0],&OutputData.q15[0],32);((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 2); CycleTimer = ((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL; CycleTimer = 0x1000000 - CycleTimer;printf("%i",CycleTimer - CycleOffset);printf(",");;
+				((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL = 0;((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 0) | (1UL << 2);;arm_biquad_cascade_df1_q15(&IIR_Inst.q15_df1,&InputData.q15[0],&OutputData.q15[0],64);((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 2); CycleTimer = ((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL; CycleTimer = 0x1000000 - CycleTimer;printf("%i",CycleTimer - CycleOffset);printf(",");;
+				((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL = 0;((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 0) | (1UL << 2);;arm_biquad_cascade_df1_q15(&IIR_Inst.q15_df1,&InputData.q15[0],&OutputData.q15[0],128);((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 2); CycleTimer = ((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL; CycleTimer = 0x1000000 - CycleTimer;printf("%i",CycleTimer - CycleOffset);printf(",");;
+				((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL = 0;((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 0) | (1UL << 2);;arm_biquad_cascade_df1_q15(&IIR_Inst.q15_df1,&InputData.q15[0],&OutputData.q15[0],256);((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 2); CycleTimer = ((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL; CycleTimer = 0x1000000 - CycleTimer;printf("%i",CycleTimer - CycleOffset);printf(",");;
+				((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL = 0;((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 0) | (1UL << 2);;arm_biquad_cascade_df1_q15(&IIR_Inst.q15_df1,&InputData.q15[0],&OutputData.q15[0],512);((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 2); CycleTimer = ((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL; CycleTimer = 0x1000000 - CycleTimer;printf("%i",CycleTimer - CycleOffset);printf(",");;
+				((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL = 0;((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 0) | (1UL << 2);;arm_biquad_cascade_df1_q15(&IIR_Inst.q15_df1,&InputData.q15[0],&OutputData.q15[0],1024);((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 2); CycleTimer = ((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL; CycleTimer = 0x1000000 - CycleTimer;printf("%i",CycleTimer - CycleOffset);printf(",");;
+				((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL = 0;((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 0) | (1UL << 2);;arm_biquad_cascade_df1_q15(&IIR_Inst.q15_df1,&InputData.q15[0],&OutputData.q15[0],2048);((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 2); CycleTimer = ((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL; CycleTimer = 0x1000000 - CycleTimer;printf("%i",CycleTimer - CycleOffset);printf(",");;
+				((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL = 0;((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 0) | (1UL << 2);;arm_biquad_cascade_df1_q15(&IIR_Inst.q15_df1,&InputData.q15[0],&OutputData.q15[0],4096);((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 2); CycleTimer = ((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL; CycleTimer = 0x1000000 - CycleTimer;printf("%i",CycleTimer - CycleOffset);printf(",");;
+
+
+				printf("\r\n");
+				printf("IIR-q15_df1-1Stage-fast,");
+
+				arm_biquad_cascade_df1_init_q15(&IIR_Inst.q15_df1,1,&IIR_Coef_q15[0],&IIR_State_q15[0],1);
+
+				((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL = 0;((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 0) | (1UL << 2);;arm_biquad_cascade_df1_fast_q15(&IIR_Inst.q15_df1,&InputData.q15[0],&OutputData.q15[0],16);((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 2); CycleTimer = ((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL; CycleTimer = 0x1000000 - CycleTimer;printf("%i",CycleTimer - CycleOffset);printf(",");;
+				((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL = 0;((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 0) | (1UL << 2);;arm_biquad_cascade_df1_fast_q15(&IIR_Inst.q15_df1,&InputData.q15[0],&OutputData.q15[0],32);((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 2); CycleTimer = ((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL; CycleTimer = 0x1000000 - CycleTimer;printf("%i",CycleTimer - CycleOffset);printf(",");;
+				((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL = 0;((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 0) | (1UL << 2);;arm_biquad_cascade_df1_fast_q15(&IIR_Inst.q15_df1,&InputData.q15[0],&OutputData.q15[0],64);((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 2); CycleTimer = ((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL; CycleTimer = 0x1000000 - CycleTimer;printf("%i",CycleTimer - CycleOffset);printf(",");;
+				((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL = 0;((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 0) | (1UL << 2);;arm_biquad_cascade_df1_fast_q15(&IIR_Inst.q15_df1,&InputData.q15[0],&OutputData.q15[0],128);((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 2); CycleTimer = ((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL; CycleTimer = 0x1000000 - CycleTimer;printf("%i",CycleTimer - CycleOffset);printf(",");;
+				((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL = 0;((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 0) | (1UL << 2);;arm_biquad_cascade_df1_fast_q15(&IIR_Inst.q15_df1,&InputData.q15[0],&OutputData.q15[0],256);((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 2); CycleTimer = ((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL; CycleTimer = 0x1000000 - CycleTimer;printf("%i",CycleTimer - CycleOffset);printf(",");;
+				((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL = 0;((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 0) | (1UL << 2);;arm_biquad_cascade_df1_fast_q15(&IIR_Inst.q15_df1,&InputData.q15[0],&OutputData.q15[0],512);((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 2); CycleTimer = ((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL; CycleTimer = 0x1000000 - CycleTimer;printf("%i",CycleTimer - CycleOffset);printf(",");;
+				((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL = 0;((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 0) | (1UL << 2);;arm_biquad_cascade_df1_fast_q15(&IIR_Inst.q15_df1,&InputData.q15[0],&OutputData.q15[0],1024);((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 2); CycleTimer = ((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL; CycleTimer = 0x1000000 - CycleTimer;printf("%i",CycleTimer - CycleOffset);printf(",");;
+				((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL = 0;((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 0) | (1UL << 2);;arm_biquad_cascade_df1_fast_q15(&IIR_Inst.q15_df1,&InputData.q15[0],&OutputData.q15[0],2048);((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 2); CycleTimer = ((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL; CycleTimer = 0x1000000 - CycleTimer;printf("%i",CycleTimer - CycleOffset);printf(",");;
+				((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL = 0;((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 0) | (1UL << 2);;arm_biquad_cascade_df1_fast_q15(&IIR_Inst.q15_df1,&InputData.q15[0],&OutputData.q15[0],4096);((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 2); CycleTimer = ((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL; CycleTimer = 0x1000000 - CycleTimer;printf("%i",CycleTimer - CycleOffset);printf(",");;
 
 
 
 
-#line 1007 "..\\..\\..\\..\\..\\..\\COMMON\\SRC\\TEST\\CM_TEST.c"
+				printf("\r\n");
+				printf("FIR-q15_8tap,");
+				arm_fir_init_q15(&FIR_Inst.q15,8,&FIR_Coef_q15[0],&FIR_State.q15[0],2048);
+				((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL = 0;((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 0) | (1UL << 2);;arm_fir_q15(&FIR_Inst.q15,&InputData.q15[0],&OutputData.q15[0],16);((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 2); CycleTimer = ((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL; CycleTimer = 0x1000000 - CycleTimer;printf("%i",CycleTimer - CycleOffset);printf(",");;
+				((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL = 0;((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 0) | (1UL << 2);;arm_fir_q15(&FIR_Inst.q15,&InputData.q15[0],&OutputData.q15[0],32);((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 2); CycleTimer = ((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL; CycleTimer = 0x1000000 - CycleTimer;printf("%i",CycleTimer - CycleOffset);printf(",");;
+				((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL = 0;((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 0) | (1UL << 2);;arm_fir_q15(&FIR_Inst.q15,&InputData.q15[0],&OutputData.q15[0],64);((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 2); CycleTimer = ((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL; CycleTimer = 0x1000000 - CycleTimer;printf("%i",CycleTimer - CycleOffset);printf(",");;
+				((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL = 0;((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 0) | (1UL << 2);;arm_fir_q15(&FIR_Inst.q15,&InputData.q15[0],&OutputData.q15[0],128);((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 2); CycleTimer = ((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL; CycleTimer = 0x1000000 - CycleTimer;printf("%i",CycleTimer - CycleOffset);printf(",");;
+				((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL = 0;((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 0) | (1UL << 2);;arm_fir_q15(&FIR_Inst.q15,&InputData.q15[0],&OutputData.q15[0],256);((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 2); CycleTimer = ((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL; CycleTimer = 0x1000000 - CycleTimer;printf("%i",CycleTimer - CycleOffset);printf(",");;
+				((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL = 0;((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 0) | (1UL << 2);;arm_fir_q15(&FIR_Inst.q15,&InputData.q15[0],&OutputData.q15[0],512);((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 2); CycleTimer = ((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL; CycleTimer = 0x1000000 - CycleTimer;printf("%i",CycleTimer - CycleOffset);printf(",");;
+				((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL = 0;((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 0) | (1UL << 2);;arm_fir_q15(&FIR_Inst.q15,&InputData.q15[0],&OutputData.q15[0],1024);((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 2); CycleTimer = ((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL; CycleTimer = 0x1000000 - CycleTimer;printf("%i",CycleTimer - CycleOffset);printf(",");;
+				((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL = 0;((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 0) | (1UL << 2);;arm_fir_q15(&FIR_Inst.q15,&InputData.q15[0],&OutputData.q15[0],2048);((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 2); CycleTimer = ((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL; CycleTimer = 0x1000000 - CycleTimer;printf("%i",CycleTimer - CycleOffset);printf(",");;
+				printf("n/a"); 
+
+				printf("\r\n");
+				printf("FIR-q15_16tap,");
+
+				arm_fir_init_q15(&FIR_Inst.q15,16,&FIR_Coef_q15[0],&FIR_State.q15[0],2048);
+				((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL = 0;((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 0) | (1UL << 2);;arm_fir_q15(&FIR_Inst.q15,&InputData.q15[0],&OutputData.q15[0],16);((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 2); CycleTimer = ((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL; CycleTimer = 0x1000000 - CycleTimer;printf("%i",CycleTimer - CycleOffset);printf(",");;
+				((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL = 0;((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 0) | (1UL << 2);;arm_fir_q15(&FIR_Inst.q15,&InputData.q15[0],&OutputData.q15[0],32);((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 2); CycleTimer = ((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL; CycleTimer = 0x1000000 - CycleTimer;printf("%i",CycleTimer - CycleOffset);printf(",");;
+				((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL = 0;((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 0) | (1UL << 2);;arm_fir_q15(&FIR_Inst.q15,&InputData.q15[0],&OutputData.q15[0],64);((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 2); CycleTimer = ((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL; CycleTimer = 0x1000000 - CycleTimer;printf("%i",CycleTimer - CycleOffset);printf(",");;
+				((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL = 0;((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 0) | (1UL << 2);;arm_fir_q15(&FIR_Inst.q15,&InputData.q15[0],&OutputData.q15[0],128);((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 2); CycleTimer = ((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL; CycleTimer = 0x1000000 - CycleTimer;printf("%i",CycleTimer - CycleOffset);printf(",");;
+				((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL = 0;((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 0) | (1UL << 2);;arm_fir_q15(&FIR_Inst.q15,&InputData.q15[0],&OutputData.q15[0],256);((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 2); CycleTimer = ((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL; CycleTimer = 0x1000000 - CycleTimer;printf("%i",CycleTimer - CycleOffset);printf(",");;
+				((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL = 0;((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 0) | (1UL << 2);;arm_fir_q15(&FIR_Inst.q15,&InputData.q15[0],&OutputData.q15[0],512);((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 2); CycleTimer = ((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL; CycleTimer = 0x1000000 - CycleTimer;printf("%i",CycleTimer - CycleOffset);printf(",");;
+				((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL = 0;((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 0) | (1UL << 2);;arm_fir_q15(&FIR_Inst.q15,&InputData.q15[0],&OutputData.q15[0],1024);((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 2); CycleTimer = ((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL; CycleTimer = 0x1000000 - CycleTimer;printf("%i",CycleTimer - CycleOffset);printf(",");;
+				((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL = 0;((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 0) | (1UL << 2);;arm_fir_q15(&FIR_Inst.q15,&InputData.q15[0],&OutputData.q15[0],2048);((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 2); CycleTimer = ((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL; CycleTimer = 0x1000000 - CycleTimer;printf("%i",CycleTimer - CycleOffset);printf(",");;
+				printf("n/a"); 
+
+				printf("\r\n");
+				printf("FIR-q15_32tap,");
+
+				arm_fir_init_q15(&FIR_Inst.q15,32,&FIR_Coef_q15[0],&FIR_State.q15[0],2048);
+				((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL = 0;((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 0) | (1UL << 2);;arm_fir_q15(&FIR_Inst.q15,&InputData.q15[0],&OutputData.q15[0],16);((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 2); CycleTimer = ((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL; CycleTimer = 0x1000000 - CycleTimer;printf("%i",CycleTimer - CycleOffset);printf(",");;
+				((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL = 0;((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 0) | (1UL << 2);;arm_fir_q15(&FIR_Inst.q15,&InputData.q15[0],&OutputData.q15[0],32);((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 2); CycleTimer = ((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL; CycleTimer = 0x1000000 - CycleTimer;printf("%i",CycleTimer - CycleOffset);printf(",");;
+				((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL = 0;((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 0) | (1UL << 2);;arm_fir_q15(&FIR_Inst.q15,&InputData.q15[0],&OutputData.q15[0],64);((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 2); CycleTimer = ((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL; CycleTimer = 0x1000000 - CycleTimer;printf("%i",CycleTimer - CycleOffset);printf(",");;
+				((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL = 0;((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 0) | (1UL << 2);;arm_fir_q15(&FIR_Inst.q15,&InputData.q15[0],&OutputData.q15[0],128);((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 2); CycleTimer = ((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL; CycleTimer = 0x1000000 - CycleTimer;printf("%i",CycleTimer - CycleOffset);printf(",");;
+				((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL = 0;((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 0) | (1UL << 2);;arm_fir_q15(&FIR_Inst.q15,&InputData.q15[0],&OutputData.q15[0],256);((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 2); CycleTimer = ((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL; CycleTimer = 0x1000000 - CycleTimer;printf("%i",CycleTimer - CycleOffset);printf(",");;
+				((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL = 0;((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 0) | (1UL << 2);;arm_fir_q15(&FIR_Inst.q15,&InputData.q15[0],&OutputData.q15[0],512);((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 2); CycleTimer = ((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL; CycleTimer = 0x1000000 - CycleTimer;printf("%i",CycleTimer - CycleOffset);printf(",");;
+				((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL = 0;((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 0) | (1UL << 2);;arm_fir_q15(&FIR_Inst.q15,&InputData.q15[0],&OutputData.q15[0],1024);((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 2); CycleTimer = ((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL; CycleTimer = 0x1000000 - CycleTimer;printf("%i",CycleTimer - CycleOffset);printf(",");;
+				((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL = 0;((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 0) | (1UL << 2);;arm_fir_q15(&FIR_Inst.q15,&InputData.q15[0],&OutputData.q15[0],2048);((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 2); CycleTimer = ((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL; CycleTimer = 0x1000000 - CycleTimer;printf("%i",CycleTimer - CycleOffset);printf(",");;
+				printf("n/a"); 
+
+
+
+
+
+
+
+
+
+        	
+
+
+
+
+
+
+
+
+ 
+
+      	printf("\r\n\r\n\r\nSample by Sample Tests");
+      	printf("\r\n---------------------------------------------------------------\r\n");
+        printf("\r\nIteration,0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15\r\n");
+
+#line 940 "..\\..\\..\\..\\..\\..\\COMMON\\SRC\\TEST\\CM_TEST.c"
+
+
+
+
+#line 986 "..\\..\\..\\..\\..\\..\\COMMON\\SRC\\TEST\\CM_TEST.c"
+
+
+
+
+			printf("\r\n");
+			printf("PID-q15,");
+
+			PID_Inst.q15.Kp = (q31_t)(0.5 * 0x7fff);
+			PID_Inst.q15.Ki = (q31_t)(0.1 * 0x7fff);
+			PID_Inst.q15.Kd = (q31_t)(0.05 * 0x7fff);
+			arm_pid_init_q15(&PID_Inst.q15,1);
+
+			for(i=0;i<15;i++)
+			{
+				((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL = 0;((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 0) | (1UL << 2);;r=arm_pid_q15(&PID_Inst.q15,InputData.q15[i]);((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 2); CycleTimer = ((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL; CycleTimer = 0x1000000 - CycleTimer;printf("%i",CycleTimer - CycleOffset);printf(",");;
+			}
+
+
+
+	printf("\r\n");
+
 
 
     while(1)

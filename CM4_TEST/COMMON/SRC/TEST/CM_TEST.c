@@ -187,7 +187,7 @@ union
 	q15_t IIR_State_q15 [4] = {0,0,0,0};
 #endif
 
-#define MAX_FIR_LENGTH
+#define MAX_FIR_LENGTH 2048
 
 	#ifdef ENABLE_BLOCK_FIR
 		union
@@ -390,8 +390,8 @@ INIT_CYCLE_TIMER;
 					arm_rfft_fast_init_f32(&FFT_Inst.rfft_fast_f32,256);START_CYCLE_TIMER;arm_rfft_fast_f32(&FFT_Inst.rfft_fast_f32,&InputData.f32[0], &OutputData.f32[0], 0);REPORT_CYCLE_TIMER;COMMA;
 					arm_rfft_fast_init_f32(&FFT_Inst.rfft_fast_f32,512);START_CYCLE_TIMER;arm_rfft_fast_f32(&FFT_Inst.rfft_fast_f32,&InputData.f32[0], &OutputData.f32[0], 0);REPORT_CYCLE_TIMER;COMMA;
 					arm_rfft_fast_init_f32(&FFT_Inst.rfft_fast_f32,1024);START_CYCLE_TIMER;arm_rfft_fast_f32(&FFT_Inst.rfft_fast_f32,&InputData.f32[0], &OutputData.f32[0], 0);REPORT_CYCLE_TIMER;COMMA;
-					arm_rfft_fast_init_f32(&FFT_Inst.rfft_fast_f32,2048);START_CYCLE_TIMER;arm_rfft_fast_f32(&FFT_Inst.rfft_fast_f32,&InputData.f32[0], &OutputData.f32[0], 0);REPORT_CYCLE_TIMER;COMMA;
-					arm_rfft_fast_init_f32(&FFT_Inst.rfft_fast_f32,4096);START_CYCLE_TIMER;arm_rfft_fast_f32(&FFT_Inst.rfft_fast_f32,&InputData.f32[0], &OutputData.f32[0], 0);REPORT_CYCLE_TIMER;COMMA;
+					//arm_rfft_fast_init_f32(&FFT_Inst.rfft_fast_f32,2048);START_CYCLE_TIMER;arm_rfft_fast_f32(&FFT_Inst.rfft_fast_f32,&InputData.f32[0], &OutputData.f32[0], 0);REPORT_CYCLE_TIMER;COMMA;
+					//arm_rfft_fast_init_f32(&FFT_Inst.rfft_fast_f32,4096);START_CYCLE_TIMER;arm_rfft_fast_f32(&FFT_Inst.rfft_fast_f32,&InputData.f32[0], &OutputData.f32[0], 0);REPORT_CYCLE_TIMER;COMMA;
 			#endif
 
 			#ifdef COMPLEX_MAG

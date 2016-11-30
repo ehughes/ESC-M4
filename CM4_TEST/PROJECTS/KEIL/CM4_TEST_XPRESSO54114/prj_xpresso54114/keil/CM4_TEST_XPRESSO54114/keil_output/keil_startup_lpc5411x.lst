@@ -678,13 +678,13 @@ ARM Macro Assembler    Page 11
               00000000 
 Command Line: --debug --xref --diag_suppress=9931 --cpu=Cortex-M4.fp --apcs=int
 erwork --depend=.\keil_output\keil_startup_lpc5411x.d -o.\keil_output\keil_star
-tup_lpc5411x.o -IC:\Users\ehughes\Documents\GitHub\ESC-M4\CM4_TEST\PROJECTS\KEI
-L\CM4_TEST_XPRESSO54114\prj_xpresso54114\keil\CM4_TEST_XPRESSO54114\RTE\_iflash
-_nxp_lpcxpresso_lpc5411X -IC:\Keil_v5\ARM\PACK\Keil\LPC54000_DFP\2.1.0\LPCOpen\
-lpc5411x\chip_5411x\inc -IC:\Keil_v5\ARM\CMSIS\Include --predefine="__UVISION_V
-ERSION SETA 522" --predefine="CHIP_LPC5411X SETA 1" --predefine="NO_CRP SETA 1"
- --list=.\keil_output\keil_startup_lpc5411x.lst ..\..\..\chip_5411x\startup\kei
-l_startup_lpc5411x.s
+tup_lpc5411x.o -IC:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\PROJECTS\KEIL
+\CM4_TEST_XPRESSO54114\prj_xpresso54114\keil\CM4_TEST_XPRESSO54114\RTE\_iflash_
+nxp_lpcxpresso_lpc5411X -IC:\Keil_v5\ARM\PACK\Keil\LPC54000_DFP\2.1.0\LPCOpen\l
+pc5411x\chip_5411x\inc -IC:\Keil_v5\ARM\CMSIS\Include --predefine="__UVISION_VE
+RSION SETA 522" --predefine="CHIP_LPC5411X SETA 1" --predefine="NO_CRP SETA 1" 
+--list=.\keil_output\keil_startup_lpc5411x.lst ..\..\..\chip_5411x\startup\keil
+_startup_lpc5411x.s
 
 
 

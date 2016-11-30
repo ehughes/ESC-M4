@@ -1,4 +1,4 @@
-src/CM_TEST.o src/CM_TEST.d: \
+src/CM_TEST.d: \
  C:/Users/emh203/Documents/GitHub/ESC-M4/CM4_TEST/COMMON/SRC/TEST/CM_TEST.c \
  C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_board_lpcxpresso_54114\inc/board.h \
  C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\inc/chip.h \
@@ -52,6 +52,8 @@ src/CM_TEST.o src/CM_TEST.d: \
  C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\inc/i2s_5411x.h \
  C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_board_lpcxpresso_54114\inc/board_api.h \
  C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\inc/lpc_types.h \
+ C:/Users/emh203/Documents/GitHub/ESC-M4/CM4_TEST/COMMON/SRC/TEST/cr_section_macros.h \
+ C:/Users/emh203/Documents/GitHub/ESC-M4/CM4_TEST/COMMON/SRC/TEST/CM_TEST_CONFIG.h \
  C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\SRC\CMSIS_DSP_4_5\inc/arm_math.h \
  C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\SRC\CMSIS_DSP_4_5\inc/core_cm4.h \
  C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\SRC\CMSIS_DSP_4_5\inc/arm_const_structs.h \
@@ -163,6 +165,10 @@ C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_
 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_board_lpcxpresso_54114\inc/board_api.h:
 
 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\inc/lpc_types.h:
+
+C:/Users/emh203/Documents/GitHub/ESC-M4/CM4_TEST/COMMON/SRC/TEST/cr_section_macros.h:
+
+C:/Users/emh203/Documents/GitHub/ESC-M4/CM4_TEST/COMMON/SRC/TEST/CM_TEST_CONFIG.h:
 
 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\SRC\CMSIS_DSP_4_5\inc/arm_math.h:
 

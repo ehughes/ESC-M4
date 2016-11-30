@@ -1,9 +1,9 @@
 #ifndef CM_TEST_CONFIG
 #define CM_TEST_CONFIG
 
-#define _f32
+//#define _f32
 //#define _q31
-//#define _q15
+#define _q15
 
 #define ENABLE_BLOCK_PROCESSING
 #define ENABLE_CFFT_BR

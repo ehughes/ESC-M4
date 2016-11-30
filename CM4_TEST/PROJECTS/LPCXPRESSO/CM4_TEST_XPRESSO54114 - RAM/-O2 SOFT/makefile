@@ -23,25 +23,25 @@ endif
 # Add inputs and outputs from these tool invocations to the build variables 
 
 # All Target
-all: CM4_TEST_LPC54110_O2_SOFT.axf
+all: CM4_TEST_LPC54110_RAM_O2_SOFT.axf
 
 # Tool invocations
-CM4_TEST_LPC54110_O2_SOFT.axf: $(OBJS) $(USER_OBJS)
+CM4_TEST_LPC54110_RAM_O2_SOFT.axf: $(OBJS) $(USER_OBJS)
 	@echo 'Building target: $@'
 	@echo 'Invoking: MCU Linker'
-	arm-none-eabi-gcc -nostdlib -L"C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\CMSIS_DSP_4_5_0\-O0 HARD" -L"C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\lpc_board_lpcxpresso_54114\SOFT" -L"C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\CMSIS_DSP_4_5_0\-O0 SOFT" -L"C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\CMSIS_DSP_4_5_0\-O1 SOFT" -L"C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\CMSIS_DSP_4_5_0\-O2 SOFT" -L"C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\lpc_chip_5411x\libs" -L"C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\CMSIS_DSP_4_5_0\-O3 SOFT" -L"C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\CMSIS_DSP_4_5_0\-Os SOFT" -L"C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\CMSIS_DSP_4_5_0\-Og SOFT" -L"C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\CMSIS_DSP_4_5_0\-O1 HARD" -L"C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\CMSIS_DSP_4_5_0\-O2 HARD" -L"C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\CMSIS_DSP_4_5_0\-O3 HARD" -L"C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\CMSIS_DSP_4_5_0\-Os HARD" -L"C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\CMSIS_DSP_4_5_0\-Og HARD" -L"C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\lpc_chip_5411x\SOFT" -Xlinker -Map="CM4_TEST_LPC54110_O2_SOFT.map" -Xlinker --gc-sections -flto -O2 -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=softfp -mthumb -T "CM4_TEST_LPC54110_-O2_SOFT.ld" -o "CM4_TEST_LPC54110_O2_SOFT.axf" $(OBJS) $(USER_OBJS) $(LIBS)
+	arm-none-eabi-gcc -nostdlib -L"C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\CMSIS_DSP_4_5_0\-O0 HARD" -L"C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_board_lpcxpresso_54114\SOFT" -L"C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\CMSIS_DSP_4_5_0\-O0 SOFT" -L"C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\CMSIS_DSP_4_5_0\-O1 SOFT" -L"C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\CMSIS_DSP_4_5_0\-O2 SOFT" -L"C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\libs" -L"C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\CMSIS_DSP_4_5_0\-O3 SOFT" -L"C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\CMSIS_DSP_4_5_0\-Os SOFT" -L"C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\CMSIS_DSP_4_5_0\-Og SOFT" -L"C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\CMSIS_DSP_4_5_0\-O1 HARD" -L"C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\CMSIS_DSP_4_5_0\-O2 HARD" -L"C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\CMSIS_DSP_4_5_0\-O3 HARD" -L"C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\CMSIS_DSP_4_5_0\-Os HARD" -L"C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\CMSIS_DSP_4_5_0\-Og HARD" -L"C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\SOFT" -Xlinker -Map="CM4_TEST_LPC54110_RAM_O2_SOFT.map" -Xlinker --gc-sections -flto -O2 -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=softfp -mthumb -T "CM4_TEST_LPC54110_RAM_-O2_SOFT.ld" -o "CM4_TEST_LPC54110_RAM_O2_SOFT.axf" $(OBJS) $(USER_OBJS) $(LIBS)
 	@echo 'Finished building target: $@'
 	@echo ' '
 	$(MAKE) --no-print-directory post-build
 
 # Other Targets
 clean:
-	-$(RM) $(EXECUTABLES)$(OBJS)$(C_DEPS) CM4_TEST_LPC54110_O2_SOFT.axf
+	-$(RM) $(EXECUTABLES)$(OBJS)$(C_DEPS) CM4_TEST_LPC54110_RAM_O2_SOFT.axf
 	-@echo ' '
 
 post-build:
 	-@echo 'Performing post-build steps'
-	-arm-none-eabi-size "CM4_TEST_LPC54110_O2_SOFT.axf"; # arm-none-eabi-objcopy -v -O binary "CM4_TEST_LPC54110_O2_SOFT.axf" "CM4_TEST_LPC54110_O2_SOFT.bin" ; # checksum -p LPC54114J256 -d "CM4_TEST_LPC54110_O2_SOFT.bin";
+	-arm-none-eabi-size "CM4_TEST_LPC54110_RAM_O2_SOFT.axf"; # arm-none-eabi-objcopy -v -O binary "CM4_TEST_LPC54110_RAM_O2_SOFT.axf" "CM4_TEST_LPC54110_RAM_O2_SOFT.bin" ; # checksum -p LPC54114J256 -d "CM4_TEST_LPC54110_RAM_O2_SOFT.bin";
 	-@echo ' '
 
 .PHONY: all clean dependents

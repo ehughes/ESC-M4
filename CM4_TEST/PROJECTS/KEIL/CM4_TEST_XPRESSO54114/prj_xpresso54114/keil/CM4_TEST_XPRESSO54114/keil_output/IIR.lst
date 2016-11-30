@@ -4,9 +4,9 @@ L 1 "..\..\..\..\..\..\COMMON\SRC\TEST\CM_TEST_CONFIG.h" 1
 N#ifndef CM_TEST_CONFIG
 N#define CM_TEST_CONFIG
 N
-N#define _f32
+N//#define _f32
 N//#define _q31
-N//#define _q15
+N#define _q15
 N
 N#define ENABLE_BLOCK_PROCESSING
 N#define ENABLE_CFFT_BR
@@ -15,12 +15,11 @@ N#define ENABLE_RFFT_BR
 N#define ENABLE_RFFT_NBR
 N#define COMPLEX_MAG
 N#define COMPLEX_MAG_SQUARED
+N#define ENABLE_GOERTZEL
+N#define ENABLE_BLOCK_IIR
+N#define ENABLE_BLOCK_FIR
 N
-N//#define ENABLE_GOERTZEL
-N//#define ENABLE_BLOCK_IIR
-N//#define ENABLE_BLOCK_FIR
-N
-N//#define ENABLE_PER_SAMPLE
+N#define ENABLE_PER_SAMPLE
 N
 N//#define KV5_TCM_TEST
 N
