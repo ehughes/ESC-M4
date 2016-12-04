@@ -1,8 +1,0 @@
-
-    //This chunk is for used to look at the compiler output
-    x = 0;
-    for(i=0;i<MAX_INPUT_SIZE;i++)
-       {
-    		mul_output:
-    			x += (q63_t)rand()*(q63_t)rand();
-       }
