@@ -58,8 +58,6 @@ c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/
                               ./src/IIR.o (sqrt)
 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(stdio.o)
                               c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(fpprintf.o) (__Ciob)
-c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(stdlib.o)
-                              ./src/CM_TEST.o (rand)
 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(strlen.o)
                               C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_board_lpcxpresso_54114\HARD\liblpc_board_lpcxpresso_54114_HARD.a(board.o) (strlen)
 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(_sincosf.o)
@@ -102,8 +100,6 @@ c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/
                               c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(fseek.o) (ftell)
 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(ldexp.o)
                               c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(pow.o) (ldexp)
-c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(raise.o)
-                              c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(stdlib.o) (raise)
 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(remove.o)
                               c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(fclose.o) (remove)
 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(__init_alloc.o)
@@ -125,7 +121,7 @@ c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/
 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m/fpu\libcr_eabihelpers.a(memcpy.o)
                               c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(memcpy.o) (__aeabi_memcpy)
 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_semihost.a(__sys_appexit.o)
-                              c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(stdlib.o) (__sys_appexit)
+                              c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(alloc.o) (__sys_appexit)
 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_semihost.a(__sys_close.o)
                               c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(fclose.o) (__sys_close)
 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_semihost.a(__sys_flen.o)
@@ -155,10 +151,7 @@ w0                  0x8               ./src/IIR.o
 coef                0x30              ./src/IIR.o
 E_IIRf              0x3c              ./src/CM_TEST.o
 PID_Inst            0x24              ./src/CM_TEST.o
-G                   0x10              ./src/CM_TEST.o
-InputData           0x4000            ./src/CM_TEST.o
 alpha               0x8               ./src/IIR.o
-OutputData          0x4000            ./src/CM_TEST.o
 IIR_Inst            0x10              ./src/CM_TEST.o
 
 Discarded input sections
@@ -235,14 +228,34 @@ Discarded input sections
  .text          0x00000000        0x0 ./src/Goertzel.o
  .data          0x00000000        0x0 ./src/Goertzel.o
  .bss           0x00000000        0x0 ./src/Goertzel.o
+ .text.InitGoertzel_f32
+                0x00000000       0x40 ./src/Goertzel.o
+ .text.ProcessGoertzel_f32_Power
+                0x00000000       0x5c ./src/Goertzel.o
+ .debug_info    0x00000000      0x201 ./src/Goertzel.o
+ .debug_abbrev  0x00000000      0x11c ./src/Goertzel.o
+ .debug_loc     0x00000000      0x1f2 ./src/Goertzel.o
+ .debug_aranges
+                0x00000000       0x28 ./src/Goertzel.o
+ .debug_ranges  0x00000000       0x18 ./src/Goertzel.o
+ .debug_macro   0x00000000       0xa2 ./src/Goertzel.o
  .debug_macro   0x00000000      0x8d4 ./src/Goertzel.o
- .debug_macro   0x00000000       0x22 ./src/Goertzel.o
+ .debug_macro   0x00000000       0x1c ./src/Goertzel.o
  .debug_macro   0x00000000       0x10 ./src/Goertzel.o
+ .debug_macro   0x00000000       0xc4 ./src/Goertzel.o
  .debug_macro   0x00000000       0x12 ./src/Goertzel.o
+ .debug_macro   0x00000000       0x3b ./src/Goertzel.o
  .debug_macro   0x00000000      0x12d ./src/Goertzel.o
  .debug_macro   0x00000000      0x5b2 ./src/Goertzel.o
  .debug_macro   0x00000000       0x2d ./src/Goertzel.o
+ .debug_macro   0x00000000       0x26 ./src/Goertzel.o
  .debug_macro   0x00000000       0xd6 ./src/Goertzel.o
+ .debug_line    0x00000000      0x23e ./src/Goertzel.o
+ .debug_str     0x00000000     0x4df9 ./src/Goertzel.o
+ .comment       0x00000000       0x6f ./src/Goertzel.o
+ .debug_frame   0x00000000       0x4c ./src/Goertzel.o
+ .ARM.attributes
+                0x00000000       0x39 ./src/Goertzel.o
  .group         0x00000000        0x8 ./src/IIR.o
  .group         0x00000000        0x8 ./src/IIR.o
  .group         0x00000000        0x8 ./src/IIR.o
@@ -268,7 +281,7 @@ Discarded input sections
                 0x00000000      0x988 ./src/IIR.o
  .text.GetPeak  0x00000000       0x5c ./src/IIR.o
  .debug_macro   0x00000000      0x8d4 ./src/IIR.o
- .debug_macro   0x00000000       0x22 ./src/IIR.o
+ .debug_macro   0x00000000       0x1c ./src/IIR.o
  .debug_macro   0x00000000       0x12 ./src/IIR.o
  .debug_macro   0x00000000       0x3b ./src/IIR.o
  .debug_macro   0x00000000       0x10 ./src/IIR.o
@@ -1555,9 +1568,17 @@ Discarded input sections
  .text          0x00000000        0x0 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(cosf.o)
  .data          0x00000000        0x0 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(cosf.o)
  .bss           0x00000000        0x0 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(cosf.o)
+ .text.cosf     0x00000000       0x30 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(cosf.o)
+ .comment       0x00000000       0x6f c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(cosf.o)
+ .ARM.attributes
+                0x00000000       0x39 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(cosf.o)
  .text          0x00000000        0x0 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(sinf.o)
  .data          0x00000000        0x0 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(sinf.o)
  .bss           0x00000000        0x0 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(sinf.o)
+ .text.sinf     0x00000000       0x26 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(sinf.o)
+ .comment       0x00000000       0x6f c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(sinf.o)
+ .ARM.attributes
+                0x00000000       0x39 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(sinf.o)
  .text          0x00000000        0x0 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(memcpy.o)
  .data          0x00000000        0x0 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(memcpy.o)
  .bss           0x00000000        0x0 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(memcpy.o)
@@ -1656,35 +1677,24 @@ Discarded input sections
  .text.ferror   0x00000000        0x8 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(stdio.o)
  .text.clearerr
                 0x00000000        0xe c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(stdio.o)
- .text          0x00000000        0x0 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(stdlib.o)
- .data          0x00000000        0x0 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(stdlib.o)
- .bss           0x00000000        0x0 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(stdlib.o)
- .text.__rand   0x00000000       0x20 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(stdlib.o)
- .text.__srand  0x00000000        0xc c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(stdlib.o)
- .text.srand    0x00000000       0x40 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(stdlib.o)
- .text._exit_init
-                0x00000000        0xc c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(stdlib.o)
- .text.atexit   0x00000000       0x24 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(stdlib.o)
- .text.exit     0x00000000       0x2c c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(stdlib.o)
- .text.abort    0x00000000       0x12 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(stdlib.o)
- .text.abs      0x00000000        0x8 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(stdlib.o)
- .text.labs     0x00000000        0x8 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(stdlib.o)
- .text.div      0x00000000       0x10 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(stdlib.o)
- .text.ldiv     0x00000000       0x10 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(stdlib.o)
- .bss._exitvector
-                0x00000000       0x84 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(stdlib.o)
- .data.next     0x00000000        0x4 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(stdlib.o)
- .bss._number_of_exit_functions
-                0x00000000        0x4 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(stdlib.o)
  .text          0x00000000        0x0 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(strlen.o)
  .data          0x00000000        0x0 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(strlen.o)
  .bss           0x00000000        0x0 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(strlen.o)
  .text          0x00000000        0x0 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(_sincosf.o)
  .data          0x00000000        0x0 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(_sincosf.o)
  .bss           0x00000000        0x0 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(_sincosf.o)
+ .text._sincosf
+                0x00000000      0x130 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(_sincosf.o)
+ .comment       0x00000000       0x6f c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(_sincosf.o)
+ .ARM.attributes
+                0x00000000       0x39 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(_sincosf.o)
  .text          0x00000000        0x0 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(fabsf.o)
  .data          0x00000000        0x0 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(fabsf.o)
  .bss           0x00000000        0x0 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(fabsf.o)
+ .text.fabsf    0x00000000       0x10 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(fabsf.o)
+ .comment       0x00000000       0x6f c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(fabsf.o)
+ .ARM.attributes
+                0x00000000       0x39 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(fabsf.o)
  .text          0x00000000        0x0 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(__fillbuf.o)
  .data          0x00000000        0x0 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(__fillbuf.o)
  .bss           0x00000000        0x0 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(__fillbuf.o)
@@ -1767,13 +1777,6 @@ Discarded input sections
  .comment       0x00000000       0x6f c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(ldexp.o)
  .ARM.attributes
                 0x00000000       0x39 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(ldexp.o)
- .text          0x00000000        0x0 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(raise.o)
- .data          0x00000000        0x0 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(raise.o)
- .bss           0x00000000        0x0 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(raise.o)
- .text.raise    0x00000000        0x6 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(raise.o)
- .comment       0x00000000       0x6f c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(raise.o)
- .ARM.attributes
-                0x00000000       0x39 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(raise.o)
  .text          0x00000000        0x0 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(remove.o)
  .data          0x00000000        0x0 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(remove.o)
  .bss           0x00000000        0x0 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(remove.o)
@@ -1807,6 +1810,8 @@ Discarded input sections
                 0x00000000       0x1a c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m/fpu\libcr_eabihelpers.a(double.o)
  .text.__aeabi_dneg
                 0x00000000        0xc c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m/fpu\libcr_eabihelpers.a(double.o)
+ .text.__aeabi_d2f
+                0x00000000       0x58 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m/fpu\libcr_eabihelpers.a(double.o)
  .text.__aeabi_d2uiz
                 0x00000000       0x30 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m/fpu\libcr_eabihelpers.a(double.o)
  .text.__aeabi_d2lz
@@ -1864,6 +1869,8 @@ Discarded input sections
                 0x00000000       0x18 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m/fpu\libcr_eabihelpers.a(float.o)
  .text.__aeabi_ul2f
                 0x00000000        0x8 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m/fpu\libcr_eabihelpers.a(float.o)
+ .text.__aeabi_f2d
+                0x00000000       0x38 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m/fpu\libcr_eabihelpers.a(float.o)
  .text.__aeabi_fcmpeq
                 0x00000000       0x1e c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m/fpu\libcr_eabihelpers.a(float.o)
  .text.__aeabi_fcmplt
@@ -1880,6 +1887,9 @@ Discarded input sections
                 0x00000000       0x20 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m/fpu\libcr_eabihelpers.a(float.o)
  .text.__aeabi_cfrcmple
                 0x00000000        0xa c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m/fpu\libcr_eabihelpers.a(float.o)
+ .comment       0x00000000       0x6f c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m/fpu\libcr_eabihelpers.a(float.o)
+ .ARM.attributes
+                0x00000000       0x39 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m/fpu\libcr_eabihelpers.a(float.o)
  .text          0x00000000        0x0 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m/fpu\libcr_eabihelpers.a(memcpy.o)
  .data          0x00000000        0x0 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m/fpu\libcr_eabihelpers.a(memcpy.o)
  .bss           0x00000000        0x0 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m/fpu\libcr_eabihelpers.a(memcpy.o)
@@ -1930,8 +1940,7 @@ Discarded input sections
 Memory Configuration
 
 Name             Origin             Length             Attributes
-Ram0_64          0x20000000         0x00020000         xrw
-Ram2_32          0x20020000         0x00008000         xrw
+Ram0_64          0x20000000         0x00010000         xrw
 RamX_32          0x04000000         0x00008000         xrw
 *default*        0x00000000         0xffffffff
 
@@ -1955,18 +1964,14 @@ LOAD c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5
 END GROUP
                 0x20000000                __base_Ram0_64 = 0x20000000
                 0x20000000                __base_RAM = 0x20000000
-                0x20020000                __top_Ram0_64 = 0x20020000
-                0x20020000                __top_RAM = 0x20020000
-                0x20020000                __base_Ram2_32 = 0x20020000
-                0x20020000                __base_RAM2 = 0x20020000
-                0x20028000                __top_Ram2_32 = 0x20028000
-                0x20028000                __top_RAM2 = 0x20028000
+                0x20010000                __top_Ram0_64 = 0x20010000
+                0x20010000                __top_RAM = 0x20010000
                 0x04000000                __base_RamX_32 = 0x4000000
-                0x04000000                __base_RAM3 = 0x4000000
+                0x04000000                __base_RAM2 = 0x4000000
                 0x04008000                __top_RamX_32 = 0x4008000
-                0x04008000                __top_RAM3 = 0x4008000
+                0x04008000                __top_RAM2 = 0x4008000
 
-.text           0x20000000     0x4fd0
+.text           0x20000000     0x4980
  FILL mask 0xff
                 0x20000000                __vectors_start__ = ABSOLUTE (.)
  *(.isr_vector)
@@ -1975,85 +1980,80 @@ END GROUP
                 0x200000e0                . = ALIGN (0x4)
                 0x200000e0                __section_table_start = .
                 0x200000e0                __data_section_table = .
-                0x200000e0        0x4 LONG 0x20004fd0 LOADADDR (.data)
-                0x200000e4        0x4 LONG 0x20004fd0 ADDR (.data)
-                0x200000e8        0x4 LONG 0xf8 SIZEOF (.data)
-                0x200000ec        0x4 LONG 0x20004fd0 LOADADDR (.data_RAM2)
-                0x200000f0        0x4 LONG 0x20020000 ADDR (.data_RAM2)
+                0x200000e0        0x4 LONG 0x20004980 LOADADDR (.data)
+                0x200000e4        0x4 LONG 0x20004980 ADDR (.data)
+                0x200000e8        0x4 LONG 0x14 SIZEOF (.data)
+                0x200000ec        0x4 LONG 0x20004980 LOADADDR (.data_RAM2)
+                0x200000f0        0x4 LONG 0x4000000 ADDR (.data_RAM2)
                 0x200000f4        0x4 LONG 0x0 SIZEOF (.data_RAM2)
-                0x200000f8        0x4 LONG 0x20004fd0 LOADADDR (.data_RAM3)
-                0x200000fc        0x4 LONG 0x4000000 ADDR (.data_RAM3)
-                0x20000100        0x4 LONG 0x0 SIZEOF (.data_RAM3)
-                0x20000104                __data_section_table_end = .
-                0x20000104                __bss_section_table = .
-                0x20000104        0x4 LONG 0x200050c8 ADDR (.bss)
-                0x20000108        0x4 LONG 0x8258 SIZEOF (.bss)
-                0x2000010c        0x4 LONG 0x20020000 ADDR (.bss_RAM2)
-                0x20000110        0x4 LONG 0x0 SIZEOF (.bss_RAM2)
-                0x20000114        0x4 LONG 0x4000000 ADDR (.bss_RAM3)
-                0x20000118        0x4 LONG 0x0 SIZEOF (.bss_RAM3)
-                0x2000011c                __bss_section_table_end = .
-                0x2000011c                __section_table_end = .
+                0x200000f8                __data_section_table_end = .
+                0x200000f8                __bss_section_table = .
+                0x200000f8        0x4 LONG 0x20004998 ADDR (.bss)
+                0x200000fc        0x4 LONG 0x248 SIZEOF (.bss)
+                0x20000100        0x4 LONG 0x4000000 ADDR (.bss_RAM2)
+                0x20000104        0x4 LONG 0x8000 SIZEOF (.bss_RAM2)
+                0x20000108                __bss_section_table_end = .
+                0x20000108                __section_table_end = .
  *(.after_vectors*)
  .after_vectors
-                0x2000011c       0x5c ./src/cr_startup_lpc5411x.o
-                0x2000011c                NMI_Handler
-                0x20000120                HardFault_Handler
-                0x20000124                MemManage_Handler
-                0x20000128                BusFault_Handler
-                0x2000012c                UsageFault_Handler
-                0x20000130                SVC_Handler
-                0x20000134                DebugMon_Handler
-                0x20000138                PendSV_Handler
-                0x2000013c                SysTick_Handler
-                0x20000140                MRT_IRQHandler
-                0x20000140                ADC_SEQB_IRQHandler
-                0x20000140                GINT1_IRQHandler
-                0x20000140                HWVAD_IRQHandler
-                0x20000140                FLEXCOMM5_IRQHandler
-                0x20000140                FLEXCOMM3_IRQHandler
-                0x20000140                FLEXCOMM7_IRQHandler
-                0x20000140                PIN_INT6_IRQHandler
-                0x20000140                IntDefaultHandler
-                0x20000140                WDT_BOD_IRQHandler
-                0x20000140                FLEXCOMM6_IRQHandler
-                0x20000140                RTC_IRQHandler
-                0x20000140                FLEXCOMM0_IRQHandler
-                0x20000140                USB_NEEDCLK_IRQHandler
-                0x20000140                CT32B3_IRQHandler
-                0x20000140                CT32B2_IRQHandler
-                0x20000140                CT32B1_IRQHandler
-                0x20000140                PIN_INT5_IRQHandler
-                0x20000140                PIN_INT2_IRQHandler
-                0x20000140                FLEXCOMM2_IRQHandler
-                0x20000140                PIN_INT7_IRQHandler
-                0x20000140                ADC_THCMP_IRQHandler
-                0x20000140                PIN_INT1_IRQHandler
-                0x20000140                USB_IRQHandler
-                0x20000140                CT32B4_IRQHandler
-                0x20000140                IOH_IRQHandler
-                0x20000140                PIN_INT4_IRQHandler
-                0x20000140                MAILBOX_IRQHandler
-                0x20000140                SCT0_IRQHandler
-                0x20000140                ADC_SEQA_IRQHandler
-                0x20000140                PIN_INT0_IRQHandler
-                0x20000140                SPIFI_IRQHandler
-                0x20000140                UTICK_IRQHandler
-                0x20000140                CT32B0_IRQHandler
-                0x20000140                GINT0_IRQHandler
-                0x20000140                FLEXCOMM4_IRQHandler
-                0x20000140                FLEXCOMM1_IRQHandler
-                0x20000140                DMA_IRQHandler
-                0x20000140                Reserved38_IRQHandler
-                0x20000140                PIN_INT3_IRQHandler
-                0x20000140                DMIC_IRQHandler
-                0x20000144                data_init
-                0x20000160                bss_init
+                0x20000108       0x5c ./src/cr_startup_lpc5411x.o
+                0x20000108                NMI_Handler
+                0x2000010c                HardFault_Handler
+                0x20000110                MemManage_Handler
+                0x20000114                BusFault_Handler
+                0x20000118                UsageFault_Handler
+                0x2000011c                SVC_Handler
+                0x20000120                DebugMon_Handler
+                0x20000124                PendSV_Handler
+                0x20000128                SysTick_Handler
+                0x2000012c                MRT_IRQHandler
+                0x2000012c                ADC_SEQB_IRQHandler
+                0x2000012c                GINT1_IRQHandler
+                0x2000012c                HWVAD_IRQHandler
+                0x2000012c                FLEXCOMM5_IRQHandler
+                0x2000012c                FLEXCOMM3_IRQHandler
+                0x2000012c                FLEXCOMM7_IRQHandler
+                0x2000012c                PIN_INT6_IRQHandler
+                0x2000012c                IntDefaultHandler
+                0x2000012c                WDT_BOD_IRQHandler
+                0x2000012c                FLEXCOMM6_IRQHandler
+                0x2000012c                RTC_IRQHandler
+                0x2000012c                FLEXCOMM0_IRQHandler
+                0x2000012c                USB_NEEDCLK_IRQHandler
+                0x2000012c                CT32B3_IRQHandler
+                0x2000012c                CT32B2_IRQHandler
+                0x2000012c                CT32B1_IRQHandler
+                0x2000012c                PIN_INT5_IRQHandler
+                0x2000012c                PIN_INT2_IRQHandler
+                0x2000012c                FLEXCOMM2_IRQHandler
+                0x2000012c                PIN_INT7_IRQHandler
+                0x2000012c                ADC_THCMP_IRQHandler
+                0x2000012c                PIN_INT1_IRQHandler
+                0x2000012c                USB_IRQHandler
+                0x2000012c                CT32B4_IRQHandler
+                0x2000012c                IOH_IRQHandler
+                0x2000012c                PIN_INT4_IRQHandler
+                0x2000012c                MAILBOX_IRQHandler
+                0x2000012c                SCT0_IRQHandler
+                0x2000012c                ADC_SEQA_IRQHandler
+                0x2000012c                PIN_INT0_IRQHandler
+                0x2000012c                SPIFI_IRQHandler
+                0x2000012c                UTICK_IRQHandler
+                0x2000012c                CT32B0_IRQHandler
+                0x2000012c                GINT0_IRQHandler
+                0x2000012c                FLEXCOMM4_IRQHandler
+                0x2000012c                FLEXCOMM1_IRQHandler
+                0x2000012c                DMA_IRQHandler
+                0x2000012c                Reserved38_IRQHandler
+                0x2000012c                PIN_INT3_IRQHandler
+                0x2000012c                DMIC_IRQHandler
+                0x20000130                data_init
+                0x2000014c                bss_init
  .after_vectors.reset
-                0x20000178       0xa4 ./src/cr_startup_lpc5411x.o
-                0x20000178                ResetISR
+                0x20000164       0xa4 ./src/cr_startup_lpc5411x.o
+                0x20000164                ResetISR
                 0x000002fc                . = 0x2fc
- *fill*         0x2000021c       0xe0 ff
+ *fill*         0x20000208       0xf4 ff
                 0x200002fc                PROVIDE (__CRP_WORD_START__, .)
  *(.crp)
  .crp           0x200002fc        0x4 ./src/crp.o
@@ -2062,814 +2062,744 @@ END GROUP
                 0x00000001                ASSERT (! ((__CRP_WORD_START__ == __CRP_WORD_END__)), Linker CRP Enabled, but no CRP_WORD provided within application)
  *(.text*)
  .text.startup.main
-                0x20000300      0x53c ./src/CM_TEST.o
+                0x20000300      0x254 ./src/CM_TEST.o
                 0x20000300                main
- .text.InitGoertzel_f32
-                0x2000083c       0x40 ./src/Goertzel.o
-                0x2000083c                InitGoertzel_f32
- .text.ProcessGoertzel_f32_Power
-                0x2000087c       0x5c ./src/Goertzel.o
-                0x2000087c                ProcessGoertzel_f32_Power
  .text.Init_f32_IIR
-                0x200008d8       0x10 ./src/IIR.o
-                0x200008d8                Init_f32_IIR
+                0x20000554       0x10 ./src/IIR.o
+                0x20000554                Init_f32_IIR
  .text.Compute_f32_IIR
-                0x200008e8       0x50 ./src/IIR.o
-                0x200008e8                Compute_f32_IIR
+                0x20000564       0x50 ./src/IIR.o
+                0x20000564                Compute_f32_IIR
  .text.SystemInit
-                0x20000938       0x1c ./src/sysinit.o
-                0x20000938                SystemInit
+                0x200005b4       0x1c ./src/sysinit.o
+                0x200005b4                SystemInit
  .text.Board_LED_Init
-                0x20000954       0x40 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_board_lpcxpresso_54114\HARD\liblpc_board_lpcxpresso_54114_HARD.a(board.o)
+                0x200005d0       0x40 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_board_lpcxpresso_54114\HARD\liblpc_board_lpcxpresso_54114_HARD.a(board.o)
  .text.Board_TestIO_Init
-                0x20000994       0x40 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_board_lpcxpresso_54114\HARD\liblpc_board_lpcxpresso_54114_HARD.a(board.o)
+                0x20000610       0x40 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_board_lpcxpresso_54114\HARD\liblpc_board_lpcxpresso_54114_HARD.a(board.o)
  .text.Board_Button_Init
-                0x200009d4       0x3c C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_board_lpcxpresso_54114\HARD\liblpc_board_lpcxpresso_54114_HARD.a(board.o)
+                0x20000650       0x3c C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_board_lpcxpresso_54114\HARD\liblpc_board_lpcxpresso_54114_HARD.a(board.o)
  .text.Board_UART_Init
-                0x20000a10       0x3c C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_board_lpcxpresso_54114\HARD\liblpc_board_lpcxpresso_54114_HARD.a(board.o)
+                0x2000068c       0x3c C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_board_lpcxpresso_54114\HARD\liblpc_board_lpcxpresso_54114_HARD.a(board.o)
  .text.Board_UARTPutChar
-                0x20000a4c       0x1c C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_board_lpcxpresso_54114\HARD\liblpc_board_lpcxpresso_54114_HARD.a(board.o)
-                0x20000a4c                Board_UARTPutChar
+                0x200006c8       0x1c C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_board_lpcxpresso_54114\HARD\liblpc_board_lpcxpresso_54114_HARD.a(board.o)
+                0x200006c8                Board_UARTPutChar
  .text.__sys_write
-                0x20000a68       0x1c C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_board_lpcxpresso_54114\HARD\liblpc_board_lpcxpresso_54114_HARD.a(board.o)
-                0x20000a68                __sys_write
+                0x200006e4       0x1c C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_board_lpcxpresso_54114\HARD\liblpc_board_lpcxpresso_54114_HARD.a(board.o)
+                0x200006e4                __sys_write
  .text.Board_Debug_Init
-                0x20000a84        0x8 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_board_lpcxpresso_54114\HARD\liblpc_board_lpcxpresso_54114_HARD.a(board.o)
-                0x20000a84                Board_Debug_Init
+                0x20000700        0x8 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_board_lpcxpresso_54114\HARD\liblpc_board_lpcxpresso_54114_HARD.a(board.o)
+                0x20000700                Board_Debug_Init
  .text.Board_Init
-                0x20000a8c       0x58 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_board_lpcxpresso_54114\HARD\liblpc_board_lpcxpresso_54114_HARD.a(board.o)
-                0x20000a8c                Board_Init
+                0x20000708       0x58 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_board_lpcxpresso_54114\HARD\liblpc_board_lpcxpresso_54114_HARD.a(board.o)
+                0x20000708                Board_Init
  .text.ConfigureBridgeSSEL
-                0x20000ae4       0x94 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_board_lpcxpresso_54114\HARD\liblpc_board_lpcxpresso_54114_HARD.a(board_sysinit.o)
+                0x20000760       0x94 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_board_lpcxpresso_54114\HARD\liblpc_board_lpcxpresso_54114_HARD.a(board_sysinit.o)
  .text.Board_SetupMuxing
-                0x20000b78       0x38 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_board_lpcxpresso_54114\HARD\liblpc_board_lpcxpresso_54114_HARD.a(board_sysinit.o)
-                0x20000b78                Board_SetupMuxing
+                0x200007f4       0x38 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_board_lpcxpresso_54114\HARD\liblpc_board_lpcxpresso_54114_HARD.a(board_sysinit.o)
+                0x200007f4                Board_SetupMuxing
  .text.Board_SetupClocking
-                0x20000bb0       0x28 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_board_lpcxpresso_54114\HARD\liblpc_board_lpcxpresso_54114_HARD.a(board_sysinit.o)
-                0x20000bb0                Board_SetupClocking
+                0x2000082c       0x28 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_board_lpcxpresso_54114\HARD\liblpc_board_lpcxpresso_54114_HARD.a(board_sysinit.o)
+                0x2000082c                Board_SetupClocking
  .text.Board_SystemInit
-                0x20000bd8       0x20 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_board_lpcxpresso_54114\HARD\liblpc_board_lpcxpresso_54114_HARD.a(board_sysinit.o)
-                0x20000bd8                Board_SystemInit
+                0x20000854       0x20 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_board_lpcxpresso_54114\HARD\liblpc_board_lpcxpresso_54114_HARD.a(board_sysinit.o)
+                0x20000854                Board_SystemInit
  .text.Chip_POWER_SetFROHFRate
-                0x20000bf8       0x4c C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\libs\libpower_m4f_hard.a(power_library.o)
-                0x20000bf8                Chip_POWER_SetFROHFRate
+                0x20000874       0x4c C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\libs\libpower_m4f_hard.a(power_library.o)
+                0x20000874                Chip_POWER_SetFROHFRate
  .text.Chip_POWER_SetVoltage
-                0x20000c44      0x118 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\libs\libpower_m4f_hard.a(power_library.o)
-                0x20000c44                Chip_POWER_SetVoltage
+                0x200008c0      0x118 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\libs\libpower_m4f_hard.a(power_library.o)
+                0x200008c0                Chip_POWER_SetVoltage
  .text.SystemCoreClockUpdate
-                0x20000d5c       0x18 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(chip_5411x.o)
-                0x20000d5c                SystemCoreClockUpdate
+                0x200009d8       0x18 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(chip_5411x.o)
+                0x200009d8                SystemCoreClockUpdate
  .text.Chip_Clock_GetExtClockInRate
-                0x20000d74       0x18 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(clock_5411x.o)
+                0x200009f0       0x18 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(clock_5411x.o)
  .text.Chip_Clock_GetRTCOscRate
-                0x20000d8c       0x14 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(clock_5411x.o)
+                0x20000a08       0x14 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(clock_5411x.o)
  .text.Chip_Clock_GetFROHFRate
-                0x20000da0       0x2c C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(clock_5411x.o)
+                0x20000a1c       0x2c C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(clock_5411x.o)
  .text.Chip_Clock_GetMain_A_ClockSource
-                0x20000dcc       0x20 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(clock_5411x.o)
+                0x20000a48       0x20 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(clock_5411x.o)
  .text.Chip_Clock_GetMain_B_ClockSource
-                0x20000dec       0x18 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(clock_5411x.o)
+                0x20000a68       0x18 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(clock_5411x.o)
  .text.Chip_Clock_GetFRGClockSource
-                0x20000e04       0x20 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(clock_5411x.o)
+                0x20000a80       0x20 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(clock_5411x.o)
  .text.Chip_Clock_GetMain_A_ClockRate
-                0x20000e24       0x60 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(clock_5411x.o)
-                0x20000e24                Chip_Clock_GetMain_A_ClockRate
+                0x20000aa0       0x60 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(clock_5411x.o)
+                0x20000aa0                Chip_Clock_GetMain_A_ClockRate
  .text.Chip_Clock_GetMain_B_ClockRate
-                0x20000e84       0x40 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(clock_5411x.o)
-                0x20000e84                Chip_Clock_GetMain_B_ClockRate
+                0x20000b00       0x40 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(clock_5411x.o)
+                0x20000b00                Chip_Clock_GetMain_B_ClockRate
  .text.Chip_Clock_EnablePeriphClock
-                0x20000ec4       0x60 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(clock_5411x.o)
-                0x20000ec4                Chip_Clock_EnablePeriphClock
+                0x20000b40       0x60 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(clock_5411x.o)
+                0x20000b40                Chip_Clock_EnablePeriphClock
  .text.Chip_Clock_GetMainClockRate
-                0x20000f24       0x28 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(clock_5411x.o)
-                0x20000f24                Chip_Clock_GetMainClockRate
+                0x20000ba0       0x28 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(clock_5411x.o)
+                0x20000ba0                Chip_Clock_GetMainClockRate
  .text.Chip_Clock_GetSystemClockRate
-                0x20000f4c       0x20 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(clock_5411x.o)
-                0x20000f4c                Chip_Clock_GetSystemClockRate
+                0x20000bc8       0x20 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(clock_5411x.o)
+                0x20000bc8                Chip_Clock_GetSystemClockRate
  .text.Chip_Clock_GetFRGInClockRate
-                0x20000f6c       0x60 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(clock_5411x.o)
-                0x20000f6c                Chip_Clock_GetFRGInClockRate
+                0x20000be8       0x60 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(clock_5411x.o)
+                0x20000be8                Chip_Clock_GetFRGInClockRate
  .text.Chip_Clock_GetWDTOSCRate
-                0x20000fcc       0x70 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(clock_5411x.o)
-                0x20000fcc                Chip_Clock_GetWDTOSCRate
- .text.fpuInit  0x2000103c       0x74 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(fpu_init.o)
-                0x2000103c                fpuInit
+                0x20000c48       0x70 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(clock_5411x.o)
+                0x20000c48                Chip_Clock_GetWDTOSCRate
+ .text.fpuInit  0x20000cb8       0x74 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(fpu_init.o)
+                0x20000cb8                fpuInit
  .text.Chip_Clock_GetExtClockInRate
-                0x200010b0       0x18 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(pll_5411x.o)
+                0x20000d2c       0x18 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(pll_5411x.o)
  .text.Chip_Clock_GetRTCOscRate
-                0x200010c8       0x14 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(pll_5411x.o)
+                0x20000d44       0x14 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(pll_5411x.o)
  .text.pllDecodeN
-                0x200010dc       0xa0 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(pll_5411x.o)
+                0x20000d58       0xa0 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(pll_5411x.o)
  .text.pllDecodeP
-                0x2000117c       0x88 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(pll_5411x.o)
+                0x20000df8       0x88 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(pll_5411x.o)
  .text.pllDecodeM
-                0x20001204       0xa0 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(pll_5411x.o)
+                0x20000e80       0xa0 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(pll_5411x.o)
  .text.findPllPreDiv
-                0x200012a4       0x3c C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(pll_5411x.o)
-                0x200012a4                findPllPreDiv
+                0x20000f20       0x3c C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(pll_5411x.o)
+                0x20000f20                findPllPreDiv
  .text.findPllPostDiv
-                0x200012e0       0x40 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(pll_5411x.o)
-                0x200012e0                findPllPostDiv
+                0x20000f5c       0x40 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(pll_5411x.o)
+                0x20000f5c                findPllPostDiv
  .text.findPllMMult
-                0x20001320       0x40 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(pll_5411x.o)
-                0x20001320                findPllMMult
+                0x20000f9c       0x40 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(pll_5411x.o)
+                0x20000f9c                findPllMMult
  .text.Chip_Clock_GetSystemPLLOutFromSetupUpdate
-                0x20001360       0x20 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(pll_5411x.o)
+                0x20000fdc       0x20 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(pll_5411x.o)
  .text.Chip_Clock_GetSystemPLLInClockRate
-                0x20001380       0x64 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(pll_5411x.o)
-                0x20001380                Chip_Clock_GetSystemPLLInClockRate
+                0x20000ffc       0x64 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(pll_5411x.o)
+                0x20000ffc                Chip_Clock_GetSystemPLLInClockRate
  .text.Chip_Clock_GetSystemPLLOutFromSetup
-                0x200013e4      0x144 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(pll_5411x.o)
-                0x200013e4                Chip_Clock_GetSystemPLLOutFromSetup
+                0x20001060      0x144 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(pll_5411x.o)
+                0x20001060                Chip_Clock_GetSystemPLLOutFromSetup
  .text.Chip_Clock_GetSystemPLLOutClockRate
-                0x20001528       0x68 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(pll_5411x.o)
-                0x20001528                Chip_Clock_GetSystemPLLOutClockRate
+                0x200011a4       0x68 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(pll_5411x.o)
+                0x200011a4                Chip_Clock_GetSystemPLLOutClockRate
  .text.Chip_SYSCON_Enable_ASYNC_Syscon
-                0x20001590       0x30 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(syscon_5411x.o)
-                0x20001590                Chip_SYSCON_Enable_ASYNC_Syscon
+                0x2000120c       0x30 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(syscon_5411x.o)
+                0x2000120c                Chip_SYSCON_Enable_ASYNC_Syscon
  .text.Chip_SYSCON_PowerUp
-                0x200015c0       0x8c C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(syscon_5411x.o)
-                0x200015c0                Chip_SYSCON_PowerUp
+                0x2000123c       0x8c C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(syscon_5411x.o)
+                0x2000123c                Chip_SYSCON_PowerUp
  .text.Chip_SYSCON_SetFLASHAccess
-                0x2000164c       0x34 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(sysinit_5411x.o)
+                0x200012c8       0x34 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(sysinit_5411x.o)
  .text.Chip_Clock_SetMain_A_ClockSource
-                0x20001680       0x20 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(sysinit_5411x.o)
+                0x200012fc       0x20 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(sysinit_5411x.o)
  .text.Chip_Clock_SetMain_B_ClockSource
-                0x200016a0       0x20 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(sysinit_5411x.o)
+                0x2000131c       0x20 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(sysinit_5411x.o)
  .text.Chip_Clock_SetAsyncSysconClockSource
-                0x200016c0       0x20 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(sysinit_5411x.o)
+                0x2000133c       0x20 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(sysinit_5411x.o)
  .text.Chip_Clock_SetMainClockSource
-                0x200016e0       0x3c C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(sysinit_5411x.o)
+                0x2000135c       0x3c C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(sysinit_5411x.o)
  .text.setupFlashClocks
-                0x2000171c       0x68 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(sysinit_5411x.o)
+                0x20001398       0x68 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(sysinit_5411x.o)
  .text.Chip_SetupFROClocking
-                0x20001784       0x6c C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(sysinit_5411x.o)
-                0x20001784                Chip_SetupFROClocking
+                0x20001400       0x6c C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(sysinit_5411x.o)
+                0x20001400                Chip_SetupFROClocking
  .text.Chip_SYSCON_SetUSARTFRGCtrl
-                0x200017f0       0x2c C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(uart_5411x.o)
+                0x2000146c       0x2c C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(uart_5411x.o)
  .text.Chip_Clock_SetFLEXCOMMClockSource
-                0x2000181c       0x28 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(uart_5411x.o)
+                0x20001498       0x28 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(uart_5411x.o)
  .text.Chip_Clock_SetFRGClockSource
-                0x20001844       0x20 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(uart_5411x.o)
+                0x200014c0       0x20 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(uart_5411x.o)
  .text.Chip_Clock_GetFRGClockSource
-                0x20001864       0x20 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(uart_5411x.o)
+                0x200014e0       0x20 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(uart_5411x.o)
  .text.Chip_UART_SendByte
-                0x20001884       0x20 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(uart_5411x.o)
+                0x20001500       0x20 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(uart_5411x.o)
  .text.Chip_UART_GetFIFOStatus
-                0x200018a4       0x1c C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(uart_5411x.o)
+                0x20001520       0x1c C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(uart_5411x.o)
  .text.Chip_UART_SetFIFOCfg
-                0x200018c0       0x30 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(uart_5411x.o)
+                0x2000153c       0x30 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(uart_5411x.o)
  .text.Chip_UART_FlushFIFOs
-                0x200018f0       0x1c C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(uart_5411x.o)
+                0x2000156c       0x1c C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(uart_5411x.o)
  .text._UART_DivClk
-                0x2000190c       0x64 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(uart_5411x.o)
+                0x20001588       0x64 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(uart_5411x.o)
  .text._UART_GetHighDiv
-                0x20001970       0x54 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(uart_5411x.o)
+                0x200015ec       0x54 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(uart_5411x.o)
  .text._CalcErr
-                0x200019c4       0x70 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(uart_5411x.o)
+                0x20001640       0x70 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(uart_5411x.o)
  .text._UART_CalcDiv
-                0x20001a34       0xe4 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(uart_5411x.o)
+                0x200016b0       0xe4 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(uart_5411x.o)
  .text._UART_CalcMul
-                0x20001b18       0xc8 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(uart_5411x.o)
+                0x20001794       0xc8 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(uart_5411x.o)
  .text.Chip_UART_Init
-                0x20001be0       0x34 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(uart_5411x.o)
-                0x20001be0                Chip_UART_Init
+                0x2000185c       0x34 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(uart_5411x.o)
+                0x2000185c                Chip_UART_Init
  .text.Chip_UART_Send
-                0x20001c14       0x50 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(uart_5411x.o)
-                0x20001c14                Chip_UART_Send
+                0x20001890       0x50 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(uart_5411x.o)
+                0x20001890                Chip_UART_Send
  .text.Chip_UART_SendBlocking
-                0x20001c64       0x4c C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(uart_5411x.o)
-                0x20001c64                Chip_UART_SendBlocking
+                0x200018e0       0x4c C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(uart_5411x.o)
+                0x200018e0                Chip_UART_SendBlocking
  .text.Chip_UART_CalculateBaud
-                0x20001cb0       0x28 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(uart_5411x.o)
-                0x20001cb0                Chip_UART_CalculateBaud
+                0x2000192c       0x28 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(uart_5411x.o)
+                0x2000192c                Chip_UART_CalculateBaud
  .text.Chip_UART_SetBaud
-                0x20001cd8       0x90 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(uart_5411x.o)
-                0x20001cd8                Chip_UART_SetBaud
+                0x20001954       0x90 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(uart_5411x.o)
+                0x20001954                Chip_UART_SetBaud
  .text.Chip_SYSCON_PeriphReset
-                0x20001d68       0x88 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(flexcomm_5411x.o)
+                0x200019e4       0x88 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(flexcomm_5411x.o)
  .text.Chip_SYSCON_EnableWakeup
-                0x20001df0       0x38 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(flexcomm_5411x.o)
+                0x20001a6c       0x38 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(flexcomm_5411x.o)
  .text.Chip_Clock_SetFLEXCOMMClockSource
-                0x20001e28       0x28 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(flexcomm_5411x.o)
+                0x20001aa4       0x28 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(flexcomm_5411x.o)
  .text.Chip_FLEXCOMM_GetIndex
-                0x20001e50       0x9c C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(flexcomm_5411x.o)
-                0x20001e50                Chip_FLEXCOMM_GetIndex
+                0x20001acc       0x9c C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(flexcomm_5411x.o)
+                0x20001acc                Chip_FLEXCOMM_GetIndex
  .text.Chip_FLEXCOMM_Init
-                0x20001eec       0x74 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(flexcomm_5411x.o)
-                0x20001eec                Chip_FLEXCOMM_Init
+                0x20001b68       0x74 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(flexcomm_5411x.o)
+                0x20001b68                Chip_FLEXCOMM_Init
  .text.Chip_FLEXCOMM_SetPeriph
-                0x20001f60       0x90 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(flexcomm_5411x.o)
-                0x20001f60                Chip_FLEXCOMM_SetPeriph
+                0x20001bdc       0x90 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(flexcomm_5411x.o)
+                0x20001bdc                Chip_FLEXCOMM_SetPeriph
  .text.arm_biquad_cascade_df1_f32
-                0x20001ff0      0x144 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\CMSIS_DSP_4_5_0\-O3 HARD\libCMSIS_DSP_4_5_0_O3_HARD.a(arm_biquad_cascade_df1_f32.o)
-                0x20001ff0                arm_biquad_cascade_df1_f32
+                0x20001c6c      0x144 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\CMSIS_DSP_4_5_0\-O3 HARD\libCMSIS_DSP_4_5_0_O3_HARD.a(arm_biquad_cascade_df1_f32.o)
+                0x20001c6c                arm_biquad_cascade_df1_f32
  .text.arm_biquad_cascade_df1_init_f32
-                0x20002134       0x18 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\CMSIS_DSP_4_5_0\-O3 HARD\libCMSIS_DSP_4_5_0_O3_HARD.a(arm_biquad_cascade_df1_init_f32.o)
-                0x20002134                arm_biquad_cascade_df1_init_f32
+                0x20001db0       0x18 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\CMSIS_DSP_4_5_0\-O3 HARD\libCMSIS_DSP_4_5_0_O3_HARD.a(arm_biquad_cascade_df1_init_f32.o)
+                0x20001db0                arm_biquad_cascade_df1_init_f32
  .text.arm_pid_init_f32
-                0x2000214c       0x38 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\CMSIS_DSP_4_5_0\-O3 HARD\libCMSIS_DSP_4_5_0_O3_HARD.a(arm_pid_init_f32.o)
-                0x2000214c                arm_pid_init_f32
- .text.__main   0x20002184       0x14 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_semihost.a(_cr__main.o)
-                0x20002184                __CR_SEMIHOST
-                0x20002184                __main
- .text.cosf     0x20002198       0x30 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(cosf.o)
-                0x20002198                cosf
- .text.sinf     0x200021c8       0x26 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(sinf.o)
-                0x200021c8                sinf
- .text.memset   0x200021ee        0x4 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(memset.o)
-                0x200021ee                memset
+                0x20001dc8       0x38 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\CMSIS_DSP_4_5_0\-O3 HARD\libCMSIS_DSP_4_5_0_O3_HARD.a(arm_pid_init_f32.o)
+                0x20001dc8                arm_pid_init_f32
+ .text.__main   0x20001e00       0x14 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_semihost.a(_cr__main.o)
+                0x20001e00                __CR_SEMIHOST
+                0x20001e00                __main
+ .text.memset   0x20001e14        0x4 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(memset.o)
+                0x20001e14                memset
  .text.fp_round
-                0x200021f2       0x4e c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(fpprintf.o)
+                0x20001e18       0x4e c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(fpprintf.o)
  .text.pr_dec.constprop.1
-                0x20002240       0x26 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(fpprintf.o)
- *fill*         0x20002266        0x2 ff
- .text.sprintf  0x20002268       0x6c c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(fpprintf.o)
-                0x20002268                sprintf
- *fill*         0x200022d4        0x4 ff
+                0x20001e66       0x26 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(fpprintf.o)
+ .text.sprintf  0x20001e8c       0x6c c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(fpprintf.o)
+                0x20001e8c                sprintf
  .text.fp_display
-                0x200022d8      0x900 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(fpprintf.o)
+                0x20001ef8      0x900 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(fpprintf.o)
  .text.vsnprintf
-                0x20002bd8       0x5c c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(fpprintf.o)
-                0x20002bd8                vsnprintf
- .text.printf   0x20002c34       0x54 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(fpprintf.o)
-                0x20002c34                printf
- .text._initio  0x20002c88       0xa4 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(initio.o)
-                0x20002c88                _initio
+                0x200027f8       0x5c c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(fpprintf.o)
+                0x200027f8                vsnprintf
+ .text.printf   0x20002854       0x54 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(fpprintf.o)
+                0x20002854                printf
+ .text._initio  0x200028a8       0xa4 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(initio.o)
+                0x200028a8                _initio
  .text.__vfprintf
-                0x20002d2c      0xd48 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(printf.o)
-                0x20002d2c                __vfprintf
- .text.setvbuf  0x20003a74       0x40 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(setvbuf.o)
-                0x20003a74                setvbuf
- .text.rand     0x20003ab4       0x3c c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(stdlib.o)
-                0x20003ab4                rand
- .text.strlen   0x20003af0       0x4a c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(strlen.o)
-                0x20003af0                strlen
- *fill*         0x20003b3a        0x6 ff
- .text._sincosf
-                0x20003b40      0x130 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(_sincosf.o)
-                0x20003b40                _sincosf
- .text.fabsf    0x20003c70       0x10 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(fabsf.o)
-                0x20003c70                fabsf
+                0x2000294c      0xd48 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(printf.o)
+                0x2000294c                __vfprintf
+ .text.setvbuf  0x20003694       0x40 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(setvbuf.o)
+                0x20003694                setvbuf
+ .text.strlen   0x200036d4       0x4a c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(strlen.o)
+                0x200036d4                strlen
  .text._deferredlazyseek
-                0x20003c80       0x44 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(_deferredlazyseek.o)
-                0x20003c80                _deferredlazyseek
+                0x2000371e       0x44 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(_deferredlazyseek.o)
+                0x2000371e                _deferredlazyseek
  .text.__flsbuf
-                0x20003cc4      0x140 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(_deferredlazyseek.o)
-                0x20003cc4                __flsbuf
- .text._fdopen  0x20003e04       0x6a c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(_fdopen.o)
-                0x20003e04                _fdopen
- .text._fflush  0x20003e6e       0x58 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(_fflush.o)
-                0x20003e6e                _fflush
- *fill*         0x20003ec6        0x2 ff
- .text._frexpl  0x20003ec8       0x70 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(_frexpl.o)
-                0x20003ec8                _frexpl
- .text._ldexpl  0x20003f38       0x60 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(_ldexpl.o)
-                0x20003f38                _ldexpl
+                0x20003762      0x140 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(_deferredlazyseek.o)
+                0x20003762                __flsbuf
+ .text._fdopen  0x200038a2       0x6a c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(_fdopen.o)
+                0x200038a2                _fdopen
+ .text._fflush  0x2000390c       0x58 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(_fflush.o)
+                0x2000390c                _fflush
+ *fill*         0x20003964        0x4 ff
+ .text._frexpl  0x20003968       0x70 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(_frexpl.o)
+                0x20003968                _frexpl
+ .text._ldexpl  0x200039d8       0x60 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(_ldexpl.o)
+                0x200039d8                _ldexpl
  .text._Cwritebuf
-                0x20003f98       0x68 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(_writebuf.o)
-                0x20003f98                _Cwritebuf
- .text.malloc   0x20004000       0xc8 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(alloc.o)
-                0x20004000                malloc
- .text.free     0x200040c8       0x30 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(alloc.o)
-                0x200040c8                free
+                0x20003a38       0x68 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(_writebuf.o)
+                0x20003a38                _Cwritebuf
+ .text.malloc   0x20003aa0       0xc8 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(alloc.o)
+                0x20003aa0                malloc
+ .text.free     0x20003b68       0x30 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(alloc.o)
+                0x20003b68                free
  .text._Csys_alloc
-                0x200040f8       0x20 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(alloc.o)
-                0x200040f8                _Csys_alloc
- .text.fclose   0x20004118       0x6c c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(fclose.o)
-                0x20004118                fclose
- .text.fflush   0x20004184       0x30 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(fflush.o)
-                0x20004184                fflush
- .text.fseek    0x200041b4      0x110 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(fseek.o)
-                0x200041b4                fseek
- .text.ftell    0x200042c4       0x4c c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(ftell.o)
-                0x200042c4                ftell
- .text.remove   0x20004310       0x14 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(remove.o)
-                0x20004310                remove
- .text._sbrk    0x20004324       0x40 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(_cr_sbrk.o)
-                0x20004324                _sbrk
+                0x20003b98       0x20 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(alloc.o)
+                0x20003b98                _Csys_alloc
+ .text.fclose   0x20003bb8       0x6c c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(fclose.o)
+                0x20003bb8                fclose
+ .text.fflush   0x20003c24       0x30 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(fflush.o)
+                0x20003c24                fflush
+ .text.fseek    0x20003c54      0x110 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(fseek.o)
+                0x20003c54                fseek
+ .text.ftell    0x20003d64       0x4c c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(ftell.o)
+                0x20003d64                ftell
+ .text.remove   0x20003db0       0x14 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(remove.o)
+                0x20003db0                remove
+ .text._sbrk    0x20003dc4       0x40 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(_cr_sbrk.o)
+                0x20003dc4                _sbrk
  .text._do_fflush
-                0x20004364       0x44 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(_do_fflush.o)
-                0x20004364                _do_fflush
+                0x20003e04       0x44 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(_do_fflush.o)
+                0x20003e04                _do_fflush
  .text.__check_heap_overflow
-                0x200043a8       0x18 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(_cr_check_heap.o)
-                0x200043a8                __check_heap_overflow
+                0x20003e48       0x18 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(_cr_check_heap.o)
+                0x20003e48                __check_heap_overflow
  .text.__aeabi_division_uldivmod
-                0x200043c0      0x174 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m/fpu\libcr_eabihelpers.a(division_64.o)
-                0x200043c0                __aeabi_uldivmod
-                0x200043c4                __bhs_ldivmod1
+                0x20003e60      0x174 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m/fpu\libcr_eabihelpers.a(division_64.o)
+                0x20003e60                __aeabi_uldivmod
+                0x20003e64                __bhs_ldivmod1
  .text.__aeabi_division_idiv0
-                0x20004534        0x2 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m/fpu\libcr_eabihelpers.a(division_idiv0.o)
-                0x20004534                __aeabi_idiv0
- *fill*         0x20004536        0x2 ff
+                0x20003fd4        0x2 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m/fpu\libcr_eabihelpers.a(division_idiv0.o)
+                0x20003fd4                __aeabi_idiv0
+ *fill*         0x20003fd6        0x2 ff
  .text.__aeabi_dmul
-                0x20004538      0x110 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m/fpu\libcr_eabihelpers.a(double.o)
-                0x20004538                __aeabi_dmul
+                0x20003fd8      0x110 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m/fpu\libcr_eabihelpers.a(double.o)
+                0x20003fd8                __aeabi_dmul
  .text.__aeabi_ddiv
-                0x20004648      0x13c c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m/fpu\libcr_eabihelpers.a(double.o)
-                0x20004648                __aeabi_ddiv
+                0x200040e8      0x13c c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m/fpu\libcr_eabihelpers.a(double.o)
+                0x200040e8                __aeabi_ddiv
  .text.__aeabi_dsub
-                0x20004784      0x1b4 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m/fpu\libcr_eabihelpers.a(double.o)
-                0x20004784                __aeabi_dsub
+                0x20004224      0x1b4 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m/fpu\libcr_eabihelpers.a(double.o)
+                0x20004224                __aeabi_dsub
  .text.__aeabi_dadd
-                0x20004938      0x114 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m/fpu\libcr_eabihelpers.a(double.o)
-                0x20004938                __aeabi_dadd
- .text.__aeabi_d2f
-                0x20004a4c       0x58 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m/fpu\libcr_eabihelpers.a(double.o)
-                0x20004a4c                __aeabi_d2f
+                0x200043d8      0x114 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m/fpu\libcr_eabihelpers.a(double.o)
+                0x200043d8                __aeabi_dadd
  .text.__aeabi_d2iz
-                0x20004aa4       0x40 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m/fpu\libcr_eabihelpers.a(double.o)
-                0x20004aa4                __aeabi_d2iz
+                0x200044ec       0x40 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m/fpu\libcr_eabihelpers.a(double.o)
+                0x200044ec                __aeabi_d2iz
  .text.__bhs_ui2d
-                0x20004ae4       0x46 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m/fpu\libcr_eabihelpers.a(double.o)
-                0x20004ae4                __bhs_ui2d
+                0x2000452c       0x46 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m/fpu\libcr_eabihelpers.a(double.o)
+                0x2000452c                __bhs_ui2d
  .text.__aeabi_i2d
-                0x20004b2a       0x10 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m/fpu\libcr_eabihelpers.a(double.o)
-                0x20004b2a                __aeabi_i2d
+                0x20004572       0x10 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m/fpu\libcr_eabihelpers.a(double.o)
+                0x20004572                __aeabi_i2d
  .text.__aeabi_dcmpeq
-                0x20004b3a       0x30 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m/fpu\libcr_eabihelpers.a(double.o)
-                0x20004b3a                __aeabi_dcmpeq
+                0x20004582       0x30 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m/fpu\libcr_eabihelpers.a(double.o)
+                0x20004582                __aeabi_dcmpeq
  .text.__aeabi_dcmplt
-                0x20004b6a       0x58 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m/fpu\libcr_eabihelpers.a(double.o)
-                0x20004b6a                __aeabi_dcmplt
+                0x200045b2       0x58 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m/fpu\libcr_eabihelpers.a(double.o)
+                0x200045b2                __aeabi_dcmplt
  .text.__aeabi_dcmple
-                0x20004bc2       0x54 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m/fpu\libcr_eabihelpers.a(double.o)
-                0x20004bc2                __aeabi_dcmple
+                0x2000460a       0x54 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m/fpu\libcr_eabihelpers.a(double.o)
+                0x2000460a                __aeabi_dcmple
  .text.__aeabi_dcmpge
-                0x20004c16       0x54 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m/fpu\libcr_eabihelpers.a(double.o)
-                0x20004c16                __aeabi_dcmpge
- *fill*         0x20004c6a        0x2 ff
- .text.__aeabi_f2d
-                0x20004c6c       0x38 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m/fpu\libcr_eabihelpers.a(float.o)
-                0x20004c6c                __aeabi_f2d
+                0x2000465e       0x54 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m/fpu\libcr_eabihelpers.a(double.o)
+                0x2000465e                __aeabi_dcmpge
  .text.__aeabi_memset_lowlevel
-                0x20004ca4       0x32 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m/fpu\libcr_eabihelpers.a(memcpy.o)
-                0x20004ca4                __aeabi_lowlevel_memset
- *fill*         0x20004cd6        0x2 ff
+                0x200046b2       0x32 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m/fpu\libcr_eabihelpers.a(memcpy.o)
+                0x200046b2                __aeabi_lowlevel_memset
  .text.__sys_appexit
-                0x20004cd8        0xc c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_semihost.a(__sys_appexit.o)
-                0x20004cd8                __sys_appexit
-                0x20004cd8                __exit
+                0x200046e4        0xc c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_semihost.a(__sys_appexit.o)
+                0x200046e4                __sys_appexit
+                0x200046e4                __exit
  .text.__sys_close
-                0x20004ce4        0xc c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_semihost.a(__sys_close.o)
-                0x20004ce4                __sys_close
+                0x200046f0        0xc c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_semihost.a(__sys_close.o)
+                0x200046f0                __sys_close
  .text.__sys_flen
-                0x20004cf0        0xc c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_semihost.a(__sys_flen.o)
-                0x20004cf0                __sys_flen
+                0x200046fc        0xc c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_semihost.a(__sys_flen.o)
+                0x200046fc                __sys_flen
  .text.__sys_istty
-                0x20004cfc        0xc c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_semihost.a(__sys_istty.o)
-                0x20004cfc                __sys_istty
+                0x20004708        0xc c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_semihost.a(__sys_istty.o)
+                0x20004708                __sys_istty
  .text.__sys_remove
-                0x20004d08        0xc c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_semihost.a(__sys_remove.o)
-                0x20004d08                __sys_remove
+                0x20004714        0xc c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_semihost.a(__sys_remove.o)
+                0x20004714                __sys_remove
  .text.__sys_seek
-                0x20004d14        0xc c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_semihost.a(__sys_seek.o)
-                0x20004d14                __sys_seek
+                0x20004720        0xc c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_semihost.a(__sys_seek.o)
+                0x20004720                __sys_seek
  .text.__sys_tmpnam
-                0x20004d20        0xc c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_semihost.a(__sys_tmpnam.o)
-                0x20004d20                __sys_tmpnam
+                0x2000472c        0xc c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_semihost.a(__sys_tmpnam.o)
+                0x2000472c                __sys_tmpnam
  *(.rodata .rodata.* .constdata .constdata.*)
  .rodata.str1.4
-                0x20004d2c      0x1b4 ./src/CM_TEST.o
-                                0x1bc (size before relaxing)
+                0x20004738      0x158 ./src/CM_TEST.o
+                                0x15c (size before relaxing)
  .rodata.ExtClockIn
-                0x20004ee0        0x4 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_board_lpcxpresso_54114\HARD\liblpc_board_lpcxpresso_54114_HARD.a(board.o)
-                0x20004ee0                ExtClockIn
+                0x20004890        0x4 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_board_lpcxpresso_54114\HARD\liblpc_board_lpcxpresso_54114_HARD.a(board.o)
+                0x20004890                ExtClockIn
  .rodata.tstBits
-                0x20004ee4        0x4 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_board_lpcxpresso_54114\HARD\liblpc_board_lpcxpresso_54114_HARD.a(board.o)
+                0x20004894        0x4 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_board_lpcxpresso_54114\HARD\liblpc_board_lpcxpresso_54114_HARD.a(board.o)
  .rodata.btnBits
-                0x20004ee8        0x6 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_board_lpcxpresso_54114\HARD\liblpc_board_lpcxpresso_54114_HARD.a(board.o)
- *fill*         0x20004eee        0x2 ff
+                0x20004898        0x6 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_board_lpcxpresso_54114\HARD\liblpc_board_lpcxpresso_54114_HARD.a(board.o)
+ *fill*         0x2000489e        0x2 ff
  .rodata.ledBits
-                0x20004ef0        0x6 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_board_lpcxpresso_54114\HARD\liblpc_board_lpcxpresso_54114_HARD.a(board.o)
- *fill*         0x20004ef6        0x2 ff
+                0x200048a0        0x6 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_board_lpcxpresso_54114\HARD\liblpc_board_lpcxpresso_54114_HARD.a(board.o)
+ *fill*         0x200048a6        0x2 ff
  .rodata.pinmuxing
-                0x20004ef8       0x30 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_board_lpcxpresso_54114\HARD\liblpc_board_lpcxpresso_54114_HARD.a(board_sysinit.o)
- .rodata        0x20004f28       0x1f C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(clock_5411x.o)
+                0x200048a8       0x30 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_board_lpcxpresso_54114\HARD\liblpc_board_lpcxpresso_54114_HARD.a(board_sysinit.o)
+ .rodata        0x200048d8       0x1f C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(clock_5411x.o)
  .rodata.str1.1
-                0x20004f47       0x34 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(fpprintf.o)
+                0x200048f7       0x34 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(fpprintf.o)
                                  0x35 (size before relaxing)
  .rodata.str1.1
-                0x20004f7b        0x4 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(initio.o)
+                0x2000492b        0x4 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(initio.o)
  .rodata.str1.1
-                0x20004f7f       0x31 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(printf.o)
+                0x2000492f       0x31 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(printf.o)
                                  0x38 (size before relaxing)
  .rodata.__huge_vall
-                0x20004fb0        0x8 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(_hugeval.o)
-                0x20004fb0                __huge_vall
+                0x20004960        0x8 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(_hugeval.o)
+                0x20004960                __huge_vall
  .rodata.str1.1
-                0x20004fb8       0x18 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(alloc.o)
-                0x20004fd0                . = ALIGN (0x4)
+                0x20004968       0x18 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(alloc.o)
+                0x20004980                . = ALIGN (0x4)
 
-.glue_7         0x20004fd0        0x0
- .glue_7        0x20004fd0        0x0 linker stubs
+.glue_7         0x20004980        0x0
+ .glue_7        0x20004980        0x0 linker stubs
 
-.glue_7t        0x20004fd0        0x0
- .glue_7t       0x20004fd0        0x0 linker stubs
+.glue_7t        0x20004980        0x0
+ .glue_7t       0x20004980        0x0 linker stubs
 
-.vfp11_veneer   0x20004fd0        0x0
- .vfp11_veneer  0x20004fd0        0x0 linker stubs
+.vfp11_veneer   0x20004980        0x0
+ .vfp11_veneer  0x20004980        0x0 linker stubs
 
-.v4_bx          0x20004fd0        0x0
- .v4_bx         0x20004fd0        0x0 linker stubs
+.v4_bx          0x20004980        0x0
+ .v4_bx         0x20004980        0x0 linker stubs
 
-.iplt           0x20004fd0        0x0
- .iplt          0x20004fd0        0x0 ./src/CM_TEST.o
+.iplt           0x20004980        0x0
+ .iplt          0x20004980        0x0 ./src/CM_TEST.o
 
-.rel.dyn        0x20004fd0        0x0
- .rel.iplt      0x20004fd0        0x0 ./src/CM_TEST.o
+.rel.dyn        0x20004980        0x0
+ .rel.iplt      0x20004980        0x0 ./src/CM_TEST.o
 
 .ARM.extab
  *(.ARM.extab* .gnu.linkonce.armextab.*)
-                0x20004fd0                __exidx_start = .
+                0x20004980                __exidx_start = .
 
 .ARM.exidx
  *(.ARM.exidx* .gnu.linkonce.armexidx.*)
-                0x20004fd0                __exidx_end = .
-                0x20004fd0                _etext = .
+                0x20004980                __exidx_end = .
+                0x20004980                _etext = .
 
-.data_RAM2      0x20020000        0x0 load address 0x20004fd0
+.data_RAM2      0x04000000        0x0 load address 0x20004980
  FILL mask 0xff
                 [!provide]                PROVIDE (__start_data_RAM2, .)
  *(.ramfunc.$RAM2)
- *(.ramfunc.$Ram2_32)
- *(.data.$RAM2*)
- *(.data.$Ram2_32*)
-                0x20020000                . = ALIGN (0x4)
-                [!provide]                PROVIDE (__end_data_RAM2, .)
-
-.data_RAM3      0x04000000        0x0 load address 0x20004fd0
- FILL mask 0xff
-                [!provide]                PROVIDE (__start_data_RAM3, .)
- *(.ramfunc.$RAM3)
  *(.ramfunc.$RamX_32)
- *(.data.$RAM3*)
+ *(.data.$RAM2*)
  *(.data.$RamX_32*)
                 0x04000000                . = ALIGN (0x4)
-                [!provide]                PROVIDE (__end_data_RAM3, .)
+                [!provide]                PROVIDE (__end_data_RAM2, .)
 
 .uninit_RESERVED
-                0x20004fd0        0x0
+                0x20004980        0x0
  *(.bss.$RESERVED*)
-                0x20004fd0                . = ALIGN (0x4)
-                0x20004fd0                _end_uninit_RESERVED = .
+                0x20004980                . = ALIGN (0x4)
+                0x20004980                _end_uninit_RESERVED = .
 
-.data           0x20004fd0       0xf8
+.data           0x20004980       0x14
  FILL mask 0xff
-                0x20004fd0                _data = .
+                0x20004980                _data = .
  *(vtable)
  *(.ramfunc*)
  *(.data*)
  .data.IIR_Coef_f32
-                0x20004fd0       0x14 ./src/CM_TEST.o
-                0x20004fd0                IIR_Coef_f32
- .data._random_number_seed
-                0x20004fe4       0xdc c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(stdlib.o)
- .data._random_j
-                0x200050c0        0x4 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(stdlib.o)
- .data._random_k
-                0x200050c4        0x4 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(stdlib.o)
-                0x200050c8                . = ALIGN (0x4)
-                0x200050c8                _edata = .
+                0x20004980       0x14 ./src/CM_TEST.o
+                0x20004980                IIR_Coef_f32
+                0x20004994                . = ALIGN (0x4)
+                0x20004994                _edata = .
 
-.igot.plt       0x200050c8        0x0
- .igot.plt      0x200050c8        0x0 ./src/CM_TEST.o
+.igot.plt       0x20004994        0x0
+ .igot.plt      0x20004994        0x0 ./src/CM_TEST.o
 
-.bss_RAM2       0x20020000        0x0
+.bss_RAM2       0x04000000     0x8000
                 [!provide]                PROVIDE (__start_bss_RAM2, .)
  *(.bss.$RAM2*)
- *(.bss.$Ram2_32*)
-                0x20020000                . = ALIGN ((. != 0x0)?0x4:0x1)
+ .bss.$RAM2     0x04000000     0x8000 ./src/CM_TEST.o
+                0x04000000                InputData
+                0x04004000                OutputData
+ *(.bss.$RamX_32*)
+                0x04008000                . = ALIGN ((. != 0x0)?0x4:0x1)
                 [!provide]                PROVIDE (__end_bss_RAM2, .)
 
-.bss_RAM3       0x04000000        0x0
-                [!provide]                PROVIDE (__start_bss_RAM3, .)
- *(.bss.$RAM3*)
- *(.bss.$RamX_32*)
-                0x04000000                . = ALIGN ((. != 0x0)?0x4:0x1)
-                [!provide]                PROVIDE (__end_bss_RAM3, .)
-
-.bss            0x200050c8     0x8258
-                0x200050c8                _bss = .
+.bss            0x20004998      0x248
+                0x20004998                _bss = .
  *(.bss*)
  .bss.IIR_State_f32
-                0x200050c8       0x10 ./src/CM_TEST.o
-                0x200050c8                IIR_State_f32
+                0x20004998       0x10 ./src/CM_TEST.o
+                0x20004998                IIR_State_f32
  .bss.curPllRate
-                0x200050d8        0x4 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(pll_5411x.o)
- .bss._extra    0x200050dc        0x4 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(initio.o)
-                0x200050dc                _extra
- .bss.__Ciob    0x200050e0      0x140 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(stdio.o)
-                0x200050e0                __Ciob
- .bss.errno     0x20005220        0x4 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(errno.o)
-                0x20005220                errno
- .bss.__heaps   0x20005224        0x4 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(__init_alloc.o)
-                0x20005224                __heaps
+                0x200049a8        0x4 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(pll_5411x.o)
+ .bss._extra    0x200049ac        0x4 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(initio.o)
+                0x200049ac                _extra
+ .bss.__Ciob    0x200049b0      0x140 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(stdio.o)
+                0x200049b0                __Ciob
+ .bss.errno     0x20004af0        0x4 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(errno.o)
+                0x20004af0                errno
+ .bss.__heaps   0x20004af4        0x4 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(__init_alloc.o)
+                0x20004af4                __heaps
  .bss.__end_of_heap
-                0x20005228        0x4 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(__init_alloc.o)
-                0x20005228                __end_of_heap
+                0x20004af8        0x4 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(__init_alloc.o)
+                0x20004af8                __end_of_heap
  *(COMMON)
- *fill*         0x2000522c        0x4 
- COMMON         0x20005230     0x80e8 ./src/CM_TEST.o
-                0x20005230                FFT_Inst
-                0x20005248                E_IIR
-                0x20005298                E_IIRf
-                0x200052d4                PID_Inst
-                0x200052f8                G
-                0x20005308                InputData
-                0x20009308                OutputData
-                0x2000d308                IIR_Inst
- COMMON         0x2000d318        0x4 ./src/cr_startup_lpc5411x.o
-                0x2000d318                __SWVtrace_Enabled
- COMMON         0x2000d31c        0x4 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(chip_5411x.o)
-                0x2000d31c                SystemCoreClock
-                0x2000d320                . = ALIGN (0x4)
-                0x2000d320                _ebss = .
+ *fill*         0x20004afc        0x4 
+ COMMON         0x20004b00       0xd8 ./src/CM_TEST.o
+                0x20004b00                FFT_Inst
+                0x20004b18                E_IIR
+                0x20004b68                E_IIRf
+                0x20004ba4                PID_Inst
+                0x20004bc8                IIR_Inst
+ COMMON         0x20004bd8        0x4 ./src/cr_startup_lpc5411x.o
+                0x20004bd8                __SWVtrace_Enabled
+ COMMON         0x20004bdc        0x4 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(chip_5411x.o)
+                0x20004bdc                SystemCoreClock
+                0x20004be0                . = ALIGN (0x4)
+                0x20004be0                _ebss = .
                 [!provide]                PROVIDE (end, .)
 
-.noinit_RAM2    0x20020000        0x0
+.noinit_RAM2    0x04008000        0x0
  *(.noinit.$RAM2*)
- *(.noinit.$Ram2_32*)
-                0x20020000                . = ALIGN (0x4)
-
-.noinit_RAM3    0x04000000        0x0
- *(.noinit.$RAM3*)
  *(.noinit.$RamX_32*)
-                0x04000000                . = ALIGN (0x4)
+                0x04008000                . = ALIGN (0x4)
 
-.noinit         0x2000d320        0x0
-                0x2000d320                _noinit = .
+.noinit         0x20004be0        0x0
+                0x20004be0                _noinit = .
  *(.noinit*)
-                0x2000d320                . = ALIGN (0x4)
-                0x2000d320                _end_noinit = .
-                0x2000d320                PROVIDE (_pvHeapStart, DEFINED (__user_heap_base)?__user_heap_base:.)
-                0x20020000                PROVIDE (_vStackTop, DEFINED (__user_stack_top)?__user_stack_top:(__top_Ram0_64 - 0x0))
-                0x1ffdf8ce                PROVIDE (__valid_user_code_checksum, (0x0 - ((((((_vStackTop + (ResetISR + 0x1)) + (NMI_Handler + 0x1)) + (HardFault_Handler + 0x1)) + (DEFINED (MemManage_Handler)?MemManage_Handler:0x0 + 0x1)) + (DEFINED (BusFault_Handler)?BusFault_Handler:0x0 + 0x1)) + (DEFINED (UsageFault_Handler)?UsageFault_Handler:0x0 + 0x1))))
+                0x20004be0                . = ALIGN (0x4)
+                0x20004be0                _end_noinit = .
+                0x20004be0                PROVIDE (_pvHeapStart, DEFINED (__user_heap_base)?__user_heap_base:.)
+                0x20010000                PROVIDE (_vStackTop, DEFINED (__user_stack_top)?__user_stack_top:(__top_Ram0_64 - 0x0))
+                0x1ffef946                PROVIDE (__valid_user_code_checksum, (0x0 - ((((((_vStackTop + (ResetISR + 0x1)) + (NMI_Handler + 0x1)) + (HardFault_Handler + 0x1)) + (DEFINED (MemManage_Handler)?MemManage_Handler:0x0 + 0x1)) + (DEFINED (BusFault_Handler)?BusFault_Handler:0x0 + 0x1)) + (DEFINED (UsageFault_Handler)?UsageFault_Handler:0x0 + 0x1))))
 OUTPUT(CM4_TEST_LPC54110_RAM_O3_HARD.axf elf32-littlearm)
 
-.debug_info     0x00000000     0xc910
- .debug_info    0x00000000     0x11bb ./src/CM_TEST.o
- .debug_info    0x000011bb      0x201 ./src/Goertzel.o
- .debug_info    0x000013bc      0x899 ./src/IIR.o
- .debug_info    0x00001c55      0x3b2 ./src/cr_startup_lpc5411x.o
- .debug_info    0x00002007       0x3f ./src/crp.o
- .debug_info    0x00002046      0x2ec ./src/sysinit.o
- .debug_info    0x00002332     0x1815 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_board_lpcxpresso_54114\HARD\liblpc_board_lpcxpresso_54114_HARD.a(board.o)
- .debug_info    0x00003b47     0x10ea C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_board_lpcxpresso_54114\HARD\liblpc_board_lpcxpresso_54114_HARD.a(board_sysinit.o)
- .debug_info    0x00004c31      0xd72 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(chip_5411x.o)
- .debug_info    0x000059a3     0x10c4 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(clock_5411x.o)
- .debug_info    0x00006a67      0x128 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(fpu_init.o)
- .debug_info    0x00006b8f     0x1329 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(pll_5411x.o)
- .debug_info    0x00007eb8      0x9e5 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(syscon_5411x.o)
- .debug_info    0x0000889d     0x1046 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(sysinit_5411x.o)
- .debug_info    0x000098e3     0x1c7f C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(uart_5411x.o)
- .debug_info    0x0000b562      0xeca C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(flexcomm_5411x.o)
- .debug_info    0x0000c42c      0x223 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\CMSIS_DSP_4_5_0\-O3 HARD\libCMSIS_DSP_4_5_0_O3_HARD.a(arm_biquad_cascade_df1_f32.o)
- .debug_info    0x0000c64f      0x155 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\CMSIS_DSP_4_5_0\-O3 HARD\libCMSIS_DSP_4_5_0_O3_HARD.a(arm_biquad_cascade_df1_init_f32.o)
- .debug_info    0x0000c7a4      0x16c C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\CMSIS_DSP_4_5_0\-O3 HARD\libCMSIS_DSP_4_5_0_O3_HARD.a(arm_pid_init_f32.o)
+.debug_info     0x00000000     0xc364
+ .debug_info    0x00000000      0xe10 ./src/CM_TEST.o
+ .debug_info    0x00000e10      0x899 ./src/IIR.o
+ .debug_info    0x000016a9      0x3b2 ./src/cr_startup_lpc5411x.o
+ .debug_info    0x00001a5b       0x3f ./src/crp.o
+ .debug_info    0x00001a9a      0x2ec ./src/sysinit.o
+ .debug_info    0x00001d86     0x1815 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_board_lpcxpresso_54114\HARD\liblpc_board_lpcxpresso_54114_HARD.a(board.o)
+ .debug_info    0x0000359b     0x10ea C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_board_lpcxpresso_54114\HARD\liblpc_board_lpcxpresso_54114_HARD.a(board_sysinit.o)
+ .debug_info    0x00004685      0xd72 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(chip_5411x.o)
+ .debug_info    0x000053f7     0x10c4 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(clock_5411x.o)
+ .debug_info    0x000064bb      0x128 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(fpu_init.o)
+ .debug_info    0x000065e3     0x1329 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(pll_5411x.o)
+ .debug_info    0x0000790c      0x9e5 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(syscon_5411x.o)
+ .debug_info    0x000082f1     0x1046 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(sysinit_5411x.o)
+ .debug_info    0x00009337     0x1c7f C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(uart_5411x.o)
+ .debug_info    0x0000afb6      0xeca C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(flexcomm_5411x.o)
+ .debug_info    0x0000be80      0x223 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\CMSIS_DSP_4_5_0\-O3 HARD\libCMSIS_DSP_4_5_0_O3_HARD.a(arm_biquad_cascade_df1_f32.o)
+ .debug_info    0x0000c0a3      0x155 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\CMSIS_DSP_4_5_0\-O3 HARD\libCMSIS_DSP_4_5_0_O3_HARD.a(arm_biquad_cascade_df1_init_f32.o)
+ .debug_info    0x0000c1f8      0x16c C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\CMSIS_DSP_4_5_0\-O3 HARD\libCMSIS_DSP_4_5_0_O3_HARD.a(arm_pid_init_f32.o)
 
-.debug_abbrev   0x00000000     0x215e
- .debug_abbrev  0x00000000      0x253 ./src/CM_TEST.o
- .debug_abbrev  0x00000253      0x11c ./src/Goertzel.o
- .debug_abbrev  0x0000036f      0x25a ./src/IIR.o
- .debug_abbrev  0x000005c9      0x1d3 ./src/cr_startup_lpc5411x.o
- .debug_abbrev  0x0000079c       0x36 ./src/crp.o
- .debug_abbrev  0x000007d2      0x10d ./src/sysinit.o
- .debug_abbrev  0x000008df      0x30f C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_board_lpcxpresso_54114\HARD\liblpc_board_lpcxpresso_54114_HARD.a(board.o)
- .debug_abbrev  0x00000bee      0x2b9 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_board_lpcxpresso_54114\HARD\liblpc_board_lpcxpresso_54114_HARD.a(board_sysinit.o)
- .debug_abbrev  0x00000ea7      0x1e7 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(chip_5411x.o)
- .debug_abbrev  0x0000108e      0x271 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(clock_5411x.o)
- .debug_abbrev  0x000012ff       0x84 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(fpu_init.o)
- .debug_abbrev  0x00001383      0x2af C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(pll_5411x.o)
- .debug_abbrev  0x00001632      0x14c C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(syscon_5411x.o)
- .debug_abbrev  0x0000177e      0x23e C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(sysinit_5411x.o)
- .debug_abbrev  0x000019bc      0x302 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(uart_5411x.o)
- .debug_abbrev  0x00001cbe      0x212 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(flexcomm_5411x.o)
- .debug_abbrev  0x00001ed0       0xd6 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\CMSIS_DSP_4_5_0\-O3 HARD\libCMSIS_DSP_4_5_0_O3_HARD.a(arm_biquad_cascade_df1_f32.o)
- .debug_abbrev  0x00001fa6       0xca C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\CMSIS_DSP_4_5_0\-O3 HARD\libCMSIS_DSP_4_5_0_O3_HARD.a(arm_biquad_cascade_df1_init_f32.o)
- .debug_abbrev  0x00002070       0xee C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\CMSIS_DSP_4_5_0\-O3 HARD\libCMSIS_DSP_4_5_0_O3_HARD.a(arm_pid_init_f32.o)
+.debug_abbrev   0x00000000     0x2040
+ .debug_abbrev  0x00000000      0x251 ./src/CM_TEST.o
+ .debug_abbrev  0x00000251      0x25a ./src/IIR.o
+ .debug_abbrev  0x000004ab      0x1d3 ./src/cr_startup_lpc5411x.o
+ .debug_abbrev  0x0000067e       0x36 ./src/crp.o
+ .debug_abbrev  0x000006b4      0x10d ./src/sysinit.o
+ .debug_abbrev  0x000007c1      0x30f C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_board_lpcxpresso_54114\HARD\liblpc_board_lpcxpresso_54114_HARD.a(board.o)
+ .debug_abbrev  0x00000ad0      0x2b9 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_board_lpcxpresso_54114\HARD\liblpc_board_lpcxpresso_54114_HARD.a(board_sysinit.o)
+ .debug_abbrev  0x00000d89      0x1e7 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(chip_5411x.o)
+ .debug_abbrev  0x00000f70      0x271 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(clock_5411x.o)
+ .debug_abbrev  0x000011e1       0x84 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(fpu_init.o)
+ .debug_abbrev  0x00001265      0x2af C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(pll_5411x.o)
+ .debug_abbrev  0x00001514      0x14c C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(syscon_5411x.o)
+ .debug_abbrev  0x00001660      0x23e C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(sysinit_5411x.o)
+ .debug_abbrev  0x0000189e      0x302 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(uart_5411x.o)
+ .debug_abbrev  0x00001ba0      0x212 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(flexcomm_5411x.o)
+ .debug_abbrev  0x00001db2       0xd6 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\CMSIS_DSP_4_5_0\-O3 HARD\libCMSIS_DSP_4_5_0_O3_HARD.a(arm_biquad_cascade_df1_f32.o)
+ .debug_abbrev  0x00001e88       0xca C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\CMSIS_DSP_4_5_0\-O3 HARD\libCMSIS_DSP_4_5_0_O3_HARD.a(arm_biquad_cascade_df1_init_f32.o)
+ .debug_abbrev  0x00001f52       0xee C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\CMSIS_DSP_4_5_0\-O3 HARD\libCMSIS_DSP_4_5_0_O3_HARD.a(arm_pid_init_f32.o)
 
-.debug_loc      0x00000000     0x1b2d
- .debug_loc     0x00000000       0x78 ./src/CM_TEST.o
- .debug_loc     0x00000078      0x1f2 ./src/Goertzel.o
- .debug_loc     0x0000026a      0x61c ./src/IIR.o
- .debug_loc     0x00000886      0x240 ./src/cr_startup_lpc5411x.o
- .debug_loc     0x00000ac6      0x70a C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_board_lpcxpresso_54114\HARD\liblpc_board_lpcxpresso_54114_HARD.a(board.o)
- .debug_loc     0x000011d0      0x3e1 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_board_lpcxpresso_54114\HARD\liblpc_board_lpcxpresso_54114_HARD.a(board_sysinit.o)
- .debug_loc     0x000015b1      0x497 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\CMSIS_DSP_4_5_0\-O3 HARD\libCMSIS_DSP_4_5_0_O3_HARD.a(arm_biquad_cascade_df1_f32.o)
- .debug_loc     0x00001a48       0x96 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\CMSIS_DSP_4_5_0\-O3 HARD\libCMSIS_DSP_4_5_0_O3_HARD.a(arm_biquad_cascade_df1_init_f32.o)
- .debug_loc     0x00001ade       0x4f C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\CMSIS_DSP_4_5_0\-O3 HARD\libCMSIS_DSP_4_5_0_O3_HARD.a(arm_pid_init_f32.o)
+.debug_loc      0x00000000     0x192f
+ .debug_loc     0x00000000       0x6c ./src/CM_TEST.o
+ .debug_loc     0x0000006c      0x61c ./src/IIR.o
+ .debug_loc     0x00000688      0x240 ./src/cr_startup_lpc5411x.o
+ .debug_loc     0x000008c8      0x70a C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_board_lpcxpresso_54114\HARD\liblpc_board_lpcxpresso_54114_HARD.a(board.o)
+ .debug_loc     0x00000fd2      0x3e1 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_board_lpcxpresso_54114\HARD\liblpc_board_lpcxpresso_54114_HARD.a(board_sysinit.o)
+ .debug_loc     0x000013b3      0x497 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\CMSIS_DSP_4_5_0\-O3 HARD\libCMSIS_DSP_4_5_0_O3_HARD.a(arm_biquad_cascade_df1_f32.o)
+ .debug_loc     0x0000184a       0x96 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\CMSIS_DSP_4_5_0\-O3 HARD\libCMSIS_DSP_4_5_0_O3_HARD.a(arm_biquad_cascade_df1_init_f32.o)
+ .debug_loc     0x000018e0       0x4f C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\CMSIS_DSP_4_5_0\-O3 HARD\libCMSIS_DSP_4_5_0_O3_HARD.a(arm_pid_init_f32.o)
 
-.debug_aranges  0x00000000      0x758
+.debug_aranges  0x00000000      0x730
  .debug_aranges
                 0x00000000       0x20 ./src/CM_TEST.o
  .debug_aranges
-                0x00000020       0x28 ./src/Goertzel.o
+                0x00000020       0x50 ./src/IIR.o
  .debug_aranges
-                0x00000048       0x50 ./src/IIR.o
+                0x00000070       0x80 ./src/cr_startup_lpc5411x.o
  .debug_aranges
-                0x00000098       0x80 ./src/cr_startup_lpc5411x.o
+                0x000000f0       0x18 ./src/crp.o
  .debug_aranges
-                0x00000118       0x18 ./src/crp.o
+                0x00000108       0x20 ./src/sysinit.o
  .debug_aranges
-                0x00000130       0x20 ./src/sysinit.o
+                0x00000128       0xa8 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_board_lpcxpresso_54114\HARD\liblpc_board_lpcxpresso_54114_HARD.a(board.o)
  .debug_aranges
-                0x00000150       0xa8 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_board_lpcxpresso_54114\HARD\liblpc_board_lpcxpresso_54114_HARD.a(board.o)
+                0x000001d0       0x38 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_board_lpcxpresso_54114\HARD\liblpc_board_lpcxpresso_54114_HARD.a(board_sysinit.o)
  .debug_aranges
-                0x000001f8       0x38 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_board_lpcxpresso_54114\HARD\liblpc_board_lpcxpresso_54114_HARD.a(board_sysinit.o)
+                0x00000208       0x48 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(chip_5411x.o)
  .debug_aranges
-                0x00000230       0x48 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(chip_5411x.o)
+                0x00000250      0x100 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(clock_5411x.o)
  .debug_aranges
-                0x00000278      0x100 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(clock_5411x.o)
+                0x00000350       0x20 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(fpu_init.o)
  .debug_aranges
-                0x00000378       0x20 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(fpu_init.o)
+                0x00000370       0xf0 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(pll_5411x.o)
  .debug_aranges
-                0x00000398       0xf0 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(pll_5411x.o)
+                0x00000460       0x50 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(syscon_5411x.o)
  .debug_aranges
-                0x00000488       0x50 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(syscon_5411x.o)
+                0x000004b0       0x88 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(sysinit_5411x.o)
  .debug_aranges
-                0x000004d8       0x88 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(sysinit_5411x.o)
+                0x00000538      0x138 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(uart_5411x.o)
  .debug_aranges
-                0x00000560      0x138 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(uart_5411x.o)
+                0x00000670       0x60 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(flexcomm_5411x.o)
  .debug_aranges
-                0x00000698       0x60 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(flexcomm_5411x.o)
+                0x000006d0       0x20 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\CMSIS_DSP_4_5_0\-O3 HARD\libCMSIS_DSP_4_5_0_O3_HARD.a(arm_biquad_cascade_df1_f32.o)
  .debug_aranges
-                0x000006f8       0x20 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\CMSIS_DSP_4_5_0\-O3 HARD\libCMSIS_DSP_4_5_0_O3_HARD.a(arm_biquad_cascade_df1_f32.o)
+                0x000006f0       0x20 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\CMSIS_DSP_4_5_0\-O3 HARD\libCMSIS_DSP_4_5_0_O3_HARD.a(arm_biquad_cascade_df1_init_f32.o)
  .debug_aranges
-                0x00000718       0x20 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\CMSIS_DSP_4_5_0\-O3 HARD\libCMSIS_DSP_4_5_0_O3_HARD.a(arm_biquad_cascade_df1_init_f32.o)
- .debug_aranges
-                0x00000738       0x20 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\CMSIS_DSP_4_5_0\-O3 HARD\libCMSIS_DSP_4_5_0_O3_HARD.a(arm_pid_init_f32.o)
+                0x00000710       0x20 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\CMSIS_DSP_4_5_0\-O3 HARD\libCMSIS_DSP_4_5_0_O3_HARD.a(arm_pid_init_f32.o)
 
-.debug_ranges   0x00000000      0x6c8
+.debug_ranges   0x00000000      0x6b0
  .debug_ranges  0x00000000       0x50 ./src/CM_TEST.o
- .debug_ranges  0x00000050       0x18 ./src/Goertzel.o
- .debug_ranges  0x00000068       0x78 ./src/IIR.o
- .debug_ranges  0x000000e0       0x88 ./src/cr_startup_lpc5411x.o
- .debug_ranges  0x00000168       0x10 ./src/sysinit.o
- .debug_ranges  0x00000178       0x98 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_board_lpcxpresso_54114\HARD\liblpc_board_lpcxpresso_54114_HARD.a(board.o)
- .debug_ranges  0x00000210       0x28 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_board_lpcxpresso_54114\HARD\liblpc_board_lpcxpresso_54114_HARD.a(board_sysinit.o)
- .debug_ranges  0x00000238       0x38 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(chip_5411x.o)
- .debug_ranges  0x00000270       0xf0 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(clock_5411x.o)
- .debug_ranges  0x00000360       0x10 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(fpu_init.o)
- .debug_ranges  0x00000370       0xe0 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(pll_5411x.o)
- .debug_ranges  0x00000450       0x40 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(syscon_5411x.o)
- .debug_ranges  0x00000490       0x78 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(sysinit_5411x.o)
- .debug_ranges  0x00000508      0x140 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(uart_5411x.o)
- .debug_ranges  0x00000648       0x50 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(flexcomm_5411x.o)
- .debug_ranges  0x00000698       0x10 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\CMSIS_DSP_4_5_0\-O3 HARD\libCMSIS_DSP_4_5_0_O3_HARD.a(arm_biquad_cascade_df1_f32.o)
- .debug_ranges  0x000006a8       0x10 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\CMSIS_DSP_4_5_0\-O3 HARD\libCMSIS_DSP_4_5_0_O3_HARD.a(arm_biquad_cascade_df1_init_f32.o)
- .debug_ranges  0x000006b8       0x10 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\CMSIS_DSP_4_5_0\-O3 HARD\libCMSIS_DSP_4_5_0_O3_HARD.a(arm_pid_init_f32.o)
+ .debug_ranges  0x00000050       0x78 ./src/IIR.o
+ .debug_ranges  0x000000c8       0x88 ./src/cr_startup_lpc5411x.o
+ .debug_ranges  0x00000150       0x10 ./src/sysinit.o
+ .debug_ranges  0x00000160       0x98 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_board_lpcxpresso_54114\HARD\liblpc_board_lpcxpresso_54114_HARD.a(board.o)
+ .debug_ranges  0x000001f8       0x28 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_board_lpcxpresso_54114\HARD\liblpc_board_lpcxpresso_54114_HARD.a(board_sysinit.o)
+ .debug_ranges  0x00000220       0x38 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(chip_5411x.o)
+ .debug_ranges  0x00000258       0xf0 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(clock_5411x.o)
+ .debug_ranges  0x00000348       0x10 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(fpu_init.o)
+ .debug_ranges  0x00000358       0xe0 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(pll_5411x.o)
+ .debug_ranges  0x00000438       0x40 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(syscon_5411x.o)
+ .debug_ranges  0x00000478       0x78 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(sysinit_5411x.o)
+ .debug_ranges  0x000004f0      0x140 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(uart_5411x.o)
+ .debug_ranges  0x00000630       0x50 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(flexcomm_5411x.o)
+ .debug_ranges  0x00000680       0x10 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\CMSIS_DSP_4_5_0\-O3 HARD\libCMSIS_DSP_4_5_0_O3_HARD.a(arm_biquad_cascade_df1_f32.o)
+ .debug_ranges  0x00000690       0x10 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\CMSIS_DSP_4_5_0\-O3 HARD\libCMSIS_DSP_4_5_0_O3_HARD.a(arm_biquad_cascade_df1_init_f32.o)
+ .debug_ranges  0x000006a0       0x10 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\CMSIS_DSP_4_5_0\-O3 HARD\libCMSIS_DSP_4_5_0_O3_HARD.a(arm_pid_init_f32.o)
 
-.debug_macro    0x00000000     0x7d7a
- .debug_macro   0x00000000      0x353 ./src/CM_TEST.o
- .debug_macro   0x00000353      0x8d4 ./src/CM_TEST.o
- .debug_macro   0x00000c27       0x10 ./src/CM_TEST.o
- .debug_macro   0x00000c37      0x12d ./src/CM_TEST.o
- .debug_macro   0x00000d64      0x5b2 ./src/CM_TEST.o
- .debug_macro   0x00001316       0x22 ./src/CM_TEST.o
- .debug_macro   0x00001338       0x89 ./src/CM_TEST.o
- .debug_macro   0x000013c1       0xab ./src/CM_TEST.o
- .debug_macro   0x0000146c       0x3b ./src/CM_TEST.o
- .debug_macro   0x000014a7       0x2d ./src/CM_TEST.o
- .debug_macro   0x000014d4       0x42 ./src/CM_TEST.o
- .debug_macro   0x00001516      0xd39 ./src/CM_TEST.o
- .debug_macro   0x0000224f      0x1b7 ./src/CM_TEST.o
- .debug_macro   0x00002406       0x10 ./src/CM_TEST.o
- .debug_macro   0x00002416       0xca ./src/CM_TEST.o
- .debug_macro   0x000024e0       0x18 ./src/CM_TEST.o
- .debug_macro   0x000024f8       0x16 ./src/CM_TEST.o
- .debug_macro   0x0000250e      0x106 ./src/CM_TEST.o
- .debug_macro   0x00002614       0x2d ./src/CM_TEST.o
- .debug_macro   0x00002641       0x28 ./src/CM_TEST.o
- .debug_macro   0x00002669       0x16 ./src/CM_TEST.o
- .debug_macro   0x0000267f       0xb8 ./src/CM_TEST.o
- .debug_macro   0x00002737       0x70 ./src/CM_TEST.o
- .debug_macro   0x000027a7       0x6a ./src/CM_TEST.o
- .debug_macro   0x00002811       0x76 ./src/CM_TEST.o
- .debug_macro   0x00002887       0x34 ./src/CM_TEST.o
- .debug_macro   0x000028bb      0x205 ./src/CM_TEST.o
- .debug_macro   0x00002ac0       0x46 ./src/CM_TEST.o
- .debug_macro   0x00002b06       0x6a ./src/CM_TEST.o
- .debug_macro   0x00002b70       0x28 ./src/CM_TEST.o
- .debug_macro   0x00002b98       0x1c ./src/CM_TEST.o
- .debug_macro   0x00002bb4       0x10 ./src/CM_TEST.o
- .debug_macro   0x00002bc4       0x1f ./src/CM_TEST.o
- .debug_macro   0x00002be3       0x40 ./src/CM_TEST.o
- .debug_macro   0x00002c23      0x1f5 ./src/CM_TEST.o
- .debug_macro   0x00002e18      0x152 ./src/CM_TEST.o
- .debug_macro   0x00002f6a       0x95 ./src/CM_TEST.o
- .debug_macro   0x00002fff       0x16 ./src/CM_TEST.o
- .debug_macro   0x00003015      0x380 ./src/CM_TEST.o
- .debug_macro   0x00003395      0x3a2 ./src/CM_TEST.o
- .debug_macro   0x00003737       0x1f ./src/CM_TEST.o
- .debug_macro   0x00003756      0x5ca ./src/CM_TEST.o
- .debug_macro   0x00003d20       0x2e ./src/CM_TEST.o
- .debug_macro   0x00003d4e      0x193 ./src/CM_TEST.o
- .debug_macro   0x00003ee1       0x3a ./src/CM_TEST.o
- .debug_macro   0x00003f1b       0x9a ./src/CM_TEST.o
- .debug_macro   0x00003fb5       0x58 ./src/CM_TEST.o
- .debug_macro   0x0000400d       0x82 ./src/CM_TEST.o
- .debug_macro   0x0000408f       0x22 ./src/CM_TEST.o
- .debug_macro   0x000040b1       0x12 ./src/CM_TEST.o
- .debug_macro   0x000040c3       0xc4 ./src/CM_TEST.o
- .debug_macro   0x00004187       0xd6 ./src/CM_TEST.o
- .debug_macro   0x0000425d       0x22 ./src/CM_TEST.o
- .debug_macro   0x0000427f       0x7c ./src/CM_TEST.o
- .debug_macro   0x000042fb       0x40 ./src/CM_TEST.o
- .debug_macro   0x0000433b       0x10 ./src/CM_TEST.o
- .debug_macro   0x0000434b       0xa2 ./src/Goertzel.o
- .debug_macro   0x000043ed       0xc4 ./src/Goertzel.o
- .debug_macro   0x000044b1       0x3b ./src/Goertzel.o
- .debug_macro   0x000044ec       0x26 ./src/Goertzel.o
- .debug_macro   0x00004512       0xd0 ./src/IIR.o
- .debug_macro   0x000045e2       0x1d ./src/cr_startup_lpc5411x.o
- .debug_macro   0x000045ff       0x1a ./src/crp.o
- .debug_macro   0x00004619       0x34 ./src/crp.o
- .debug_macro   0x0000464d      0x289 ./src/sysinit.o
- .debug_macro   0x000048d6      0x2a4 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_board_lpcxpresso_54114\HARD\liblpc_board_lpcxpresso_54114_HARD.a(board.o)
- .debug_macro   0x00004b7a      0x89e C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_board_lpcxpresso_54114\HARD\liblpc_board_lpcxpresso_54114_HARD.a(board.o)
- .debug_macro   0x00005418       0x2d C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_board_lpcxpresso_54114\HARD\liblpc_board_lpcxpresso_54114_HARD.a(board.o)
- .debug_macro   0x00005445       0x12 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_board_lpcxpresso_54114\HARD\liblpc_board_lpcxpresso_54114_HARD.a(board.o)
- .debug_macro   0x00005457      0x297 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_board_lpcxpresso_54114\HARD\liblpc_board_lpcxpresso_54114_HARD.a(board_sysinit.o)
- .debug_macro   0x000056ee      0x254 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(chip_5411x.o)
- .debug_macro   0x00005942      0x8a4 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(chip_5411x.o)
- .debug_macro   0x000061e6      0x25a C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(clock_5411x.o)
- .debug_macro   0x00006440       0xb2 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(fpu_init.o)
- .debug_macro   0x000064f2      0x4b4 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(pll_5411x.o)
- .debug_macro   0x000069a6      0x254 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(syscon_5411x.o)
- .debug_macro   0x00006bfa      0x254 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(sysinit_5411x.o)
- .debug_macro   0x00006e4e      0x254 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(uart_5411x.o)
- .debug_macro   0x000070a2      0x254 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(flexcomm_5411x.o)
- .debug_macro   0x000072f6       0x9a C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\CMSIS_DSP_4_5_0\-O3 HARD\libCMSIS_DSP_4_5_0_O3_HARD.a(arm_biquad_cascade_df1_f32.o)
- .debug_macro   0x00007390      0x8b6 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\CMSIS_DSP_4_5_0\-O3 HARD\libCMSIS_DSP_4_5_0_O3_HARD.a(arm_biquad_cascade_df1_f32.o)
- .debug_macro   0x00007c46       0x9a C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\CMSIS_DSP_4_5_0\-O3 HARD\libCMSIS_DSP_4_5_0_O3_HARD.a(arm_biquad_cascade_df1_init_f32.o)
- .debug_macro   0x00007ce0       0x9a C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\CMSIS_DSP_4_5_0\-O3 HARD\libCMSIS_DSP_4_5_0_O3_HARD.a(arm_pid_init_f32.o)
+.debug_macro    0x00000000     0x7ba6
+ .debug_macro   0x00000000      0x34c ./src/CM_TEST.o
+ .debug_macro   0x0000034c      0x8d4 ./src/CM_TEST.o
+ .debug_macro   0x00000c20       0x10 ./src/CM_TEST.o
+ .debug_macro   0x00000c30      0x12d ./src/CM_TEST.o
+ .debug_macro   0x00000d5d      0x5b2 ./src/CM_TEST.o
+ .debug_macro   0x0000130f       0x22 ./src/CM_TEST.o
+ .debug_macro   0x00001331       0x89 ./src/CM_TEST.o
+ .debug_macro   0x000013ba       0xab ./src/CM_TEST.o
+ .debug_macro   0x00001465       0x3b ./src/CM_TEST.o
+ .debug_macro   0x000014a0       0x2d ./src/CM_TEST.o
+ .debug_macro   0x000014cd       0x42 ./src/CM_TEST.o
+ .debug_macro   0x0000150f      0xd39 ./src/CM_TEST.o
+ .debug_macro   0x00002248      0x1b7 ./src/CM_TEST.o
+ .debug_macro   0x000023ff       0x10 ./src/CM_TEST.o
+ .debug_macro   0x0000240f       0xca ./src/CM_TEST.o
+ .debug_macro   0x000024d9       0x18 ./src/CM_TEST.o
+ .debug_macro   0x000024f1       0x16 ./src/CM_TEST.o
+ .debug_macro   0x00002507      0x106 ./src/CM_TEST.o
+ .debug_macro   0x0000260d       0x2d ./src/CM_TEST.o
+ .debug_macro   0x0000263a       0x28 ./src/CM_TEST.o
+ .debug_macro   0x00002662       0x16 ./src/CM_TEST.o
+ .debug_macro   0x00002678       0xb8 ./src/CM_TEST.o
+ .debug_macro   0x00002730       0x70 ./src/CM_TEST.o
+ .debug_macro   0x000027a0       0x6a ./src/CM_TEST.o
+ .debug_macro   0x0000280a       0x76 ./src/CM_TEST.o
+ .debug_macro   0x00002880       0x34 ./src/CM_TEST.o
+ .debug_macro   0x000028b4      0x205 ./src/CM_TEST.o
+ .debug_macro   0x00002ab9       0x46 ./src/CM_TEST.o
+ .debug_macro   0x00002aff       0x6a ./src/CM_TEST.o
+ .debug_macro   0x00002b69       0x28 ./src/CM_TEST.o
+ .debug_macro   0x00002b91       0x1c ./src/CM_TEST.o
+ .debug_macro   0x00002bad       0x10 ./src/CM_TEST.o
+ .debug_macro   0x00002bbd       0x1f ./src/CM_TEST.o
+ .debug_macro   0x00002bdc       0x40 ./src/CM_TEST.o
+ .debug_macro   0x00002c1c      0x1f5 ./src/CM_TEST.o
+ .debug_macro   0x00002e11      0x152 ./src/CM_TEST.o
+ .debug_macro   0x00002f63       0x95 ./src/CM_TEST.o
+ .debug_macro   0x00002ff8       0x16 ./src/CM_TEST.o
+ .debug_macro   0x0000300e      0x380 ./src/CM_TEST.o
+ .debug_macro   0x0000338e      0x3a2 ./src/CM_TEST.o
+ .debug_macro   0x00003730       0x1f ./src/CM_TEST.o
+ .debug_macro   0x0000374f      0x5ca ./src/CM_TEST.o
+ .debug_macro   0x00003d19       0x2e ./src/CM_TEST.o
+ .debug_macro   0x00003d47      0x193 ./src/CM_TEST.o
+ .debug_macro   0x00003eda       0x3a ./src/CM_TEST.o
+ .debug_macro   0x00003f14       0x9a ./src/CM_TEST.o
+ .debug_macro   0x00003fae       0x58 ./src/CM_TEST.o
+ .debug_macro   0x00004006       0x82 ./src/CM_TEST.o
+ .debug_macro   0x00004088       0x1c ./src/CM_TEST.o
+ .debug_macro   0x000040a4       0x12 ./src/CM_TEST.o
+ .debug_macro   0x000040b6       0xc4 ./src/CM_TEST.o
+ .debug_macro   0x0000417a       0xd6 ./src/CM_TEST.o
+ .debug_macro   0x00004250       0x22 ./src/CM_TEST.o
+ .debug_macro   0x00004272       0x7c ./src/CM_TEST.o
+ .debug_macro   0x000042ee       0x40 ./src/CM_TEST.o
+ .debug_macro   0x0000432e       0x10 ./src/CM_TEST.o
+ .debug_macro   0x0000433e       0xd0 ./src/IIR.o
+ .debug_macro   0x0000440e       0x1d ./src/cr_startup_lpc5411x.o
+ .debug_macro   0x0000442b       0x1a ./src/crp.o
+ .debug_macro   0x00004445       0x34 ./src/crp.o
+ .debug_macro   0x00004479      0x289 ./src/sysinit.o
+ .debug_macro   0x00004702      0x2a4 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_board_lpcxpresso_54114\HARD\liblpc_board_lpcxpresso_54114_HARD.a(board.o)
+ .debug_macro   0x000049a6      0x89e C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_board_lpcxpresso_54114\HARD\liblpc_board_lpcxpresso_54114_HARD.a(board.o)
+ .debug_macro   0x00005244       0x2d C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_board_lpcxpresso_54114\HARD\liblpc_board_lpcxpresso_54114_HARD.a(board.o)
+ .debug_macro   0x00005271       0x12 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_board_lpcxpresso_54114\HARD\liblpc_board_lpcxpresso_54114_HARD.a(board.o)
+ .debug_macro   0x00005283      0x297 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_board_lpcxpresso_54114\HARD\liblpc_board_lpcxpresso_54114_HARD.a(board_sysinit.o)
+ .debug_macro   0x0000551a      0x254 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(chip_5411x.o)
+ .debug_macro   0x0000576e      0x8a4 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(chip_5411x.o)
+ .debug_macro   0x00006012      0x25a C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(clock_5411x.o)
+ .debug_macro   0x0000626c       0xb2 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(fpu_init.o)
+ .debug_macro   0x0000631e      0x4b4 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(pll_5411x.o)
+ .debug_macro   0x000067d2      0x254 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(syscon_5411x.o)
+ .debug_macro   0x00006a26      0x254 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(sysinit_5411x.o)
+ .debug_macro   0x00006c7a      0x254 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(uart_5411x.o)
+ .debug_macro   0x00006ece      0x254 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(flexcomm_5411x.o)
+ .debug_macro   0x00007122       0x9a C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\CMSIS_DSP_4_5_0\-O3 HARD\libCMSIS_DSP_4_5_0_O3_HARD.a(arm_biquad_cascade_df1_f32.o)
+ .debug_macro   0x000071bc      0x8b6 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\CMSIS_DSP_4_5_0\-O3 HARD\libCMSIS_DSP_4_5_0_O3_HARD.a(arm_biquad_cascade_df1_f32.o)
+ .debug_macro   0x00007a72       0x9a C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\CMSIS_DSP_4_5_0\-O3 HARD\libCMSIS_DSP_4_5_0_O3_HARD.a(arm_biquad_cascade_df1_init_f32.o)
+ .debug_macro   0x00007b0c       0x9a C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\CMSIS_DSP_4_5_0\-O3 HARD\libCMSIS_DSP_4_5_0_O3_HARD.a(arm_pid_init_f32.o)
 
-.debug_line     0x00000000     0x5978
- .debug_line    0x00000000      0x7a4 ./src/CM_TEST.o
- .debug_line    0x000007a4      0x23e ./src/Goertzel.o
- .debug_line    0x000009e2      0x4ba ./src/IIR.o
- .debug_line    0x00000e9c       0xd3 ./src/cr_startup_lpc5411x.o
- .debug_line    0x00000f6f       0x78 ./src/crp.o
- .debug_line    0x00000fe7      0x55c ./src/sysinit.o
- .debug_line    0x00001543      0x776 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_board_lpcxpresso_54114\HARD\liblpc_board_lpcxpresso_54114_HARD.a(board.o)
- .debug_line    0x00001cb9      0x59b C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_board_lpcxpresso_54114\HARD\liblpc_board_lpcxpresso_54114_HARD.a(board_sysinit.o)
- .debug_line    0x00002254      0x502 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(chip_5411x.o)
- .debug_line    0x00002756      0x73b C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(clock_5411x.o)
- .debug_line    0x00002e91      0x1fd C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(fpu_init.o)
- .debug_line    0x0000308e      0x891 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(pll_5411x.o)
- .debug_line    0x0000391f      0x51c C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(syscon_5411x.o)
- .debug_line    0x00003e3b      0x5da C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(sysinit_5411x.o)
- .debug_line    0x00004415      0x926 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(uart_5411x.o)
- .debug_line    0x00004d3b      0x568 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(flexcomm_5411x.o)
- .debug_line    0x000052a3      0x287 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\CMSIS_DSP_4_5_0\-O3 HARD\libCMSIS_DSP_4_5_0_O3_HARD.a(arm_biquad_cascade_df1_f32.o)
- .debug_line    0x0000552a      0x22b C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\CMSIS_DSP_4_5_0\-O3 HARD\libCMSIS_DSP_4_5_0_O3_HARD.a(arm_biquad_cascade_df1_init_f32.o)
- .debug_line    0x00005755      0x223 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\CMSIS_DSP_4_5_0\-O3 HARD\libCMSIS_DSP_4_5_0_O3_HARD.a(arm_pid_init_f32.o)
+.debug_line     0x00000000     0x56e8
+ .debug_line    0x00000000      0x752 ./src/CM_TEST.o
+ .debug_line    0x00000752      0x4ba ./src/IIR.o
+ .debug_line    0x00000c0c       0xd3 ./src/cr_startup_lpc5411x.o
+ .debug_line    0x00000cdf       0x78 ./src/crp.o
+ .debug_line    0x00000d57      0x55c ./src/sysinit.o
+ .debug_line    0x000012b3      0x776 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_board_lpcxpresso_54114\HARD\liblpc_board_lpcxpresso_54114_HARD.a(board.o)
+ .debug_line    0x00001a29      0x59b C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_board_lpcxpresso_54114\HARD\liblpc_board_lpcxpresso_54114_HARD.a(board_sysinit.o)
+ .debug_line    0x00001fc4      0x502 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(chip_5411x.o)
+ .debug_line    0x000024c6      0x73b C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(clock_5411x.o)
+ .debug_line    0x00002c01      0x1fd C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(fpu_init.o)
+ .debug_line    0x00002dfe      0x891 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(pll_5411x.o)
+ .debug_line    0x0000368f      0x51c C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(syscon_5411x.o)
+ .debug_line    0x00003bab      0x5da C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(sysinit_5411x.o)
+ .debug_line    0x00004185      0x926 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(uart_5411x.o)
+ .debug_line    0x00004aab      0x568 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(flexcomm_5411x.o)
+ .debug_line    0x00005013      0x287 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\CMSIS_DSP_4_5_0\-O3 HARD\libCMSIS_DSP_4_5_0_O3_HARD.a(arm_biquad_cascade_df1_f32.o)
+ .debug_line    0x0000529a      0x22b C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\CMSIS_DSP_4_5_0\-O3 HARD\libCMSIS_DSP_4_5_0_O3_HARD.a(arm_biquad_cascade_df1_init_f32.o)
+ .debug_line    0x000054c5      0x223 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\CMSIS_DSP_4_5_0\-O3 HARD\libCMSIS_DSP_4_5_0_O3_HARD.a(arm_pid_init_f32.o)
 
-.debug_str      0x00000000    0x19892
- .debug_str     0x00000000    0x14638 ./src/CM_TEST.o
-                              0x14752 (size before relaxing)
- .debug_str     0x00014638       0xcb ./src/Goertzel.o
-                               0x4e07 (size before relaxing)
- .debug_str     0x00014703      0x124 ./src/IIR.o
-                               0x5050 (size before relaxing)
- .debug_str     0x00014827      0x21b ./src/cr_startup_lpc5411x.o
+.debug_str      0x00000000    0x197a6
+ .debug_str     0x00000000    0x145b6 ./src/CM_TEST.o
+                              0x146d0 (size before relaxing)
+ .debug_str     0x000145b6      0x185 ./src/IIR.o
+                               0x5042 (size before relaxing)
+ .debug_str     0x0001473b      0x21b ./src/cr_startup_lpc5411x.o
                                0x281d (size before relaxing)
- .debug_str     0x00014a42       0xe9 ./src/crp.o
+ .debug_str     0x00014956       0xe9 ./src/crp.o
                                0x26d1 (size before relaxing)
- .debug_str     0x00014b2b       0x76 ./src/sysinit.o
+ .debug_str     0x00014a3f       0x76 ./src/sysinit.o
                               0x12b17 (size before relaxing)
- .debug_str     0x00014ba1      0xe16 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_board_lpcxpresso_54114\HARD\liblpc_board_lpcxpresso_54114_HARD.a(board.o)
+ .debug_str     0x00014ab5      0xe16 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_board_lpcxpresso_54114\HARD\liblpc_board_lpcxpresso_54114_HARD.a(board.o)
                               0x137a2 (size before relaxing)
- .debug_str     0x000159b7      0x261 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_board_lpcxpresso_54114\HARD\liblpc_board_lpcxpresso_54114_HARD.a(board_sysinit.o)
+ .debug_str     0x000158cb      0x261 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_board_lpcxpresso_54114\HARD\liblpc_board_lpcxpresso_54114_HARD.a(board_sysinit.o)
                               0x1345b (size before relaxing)
- .debug_str     0x00015c18      0x5a7 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(chip_5411x.o)
+ .debug_str     0x00015b2c      0x5a7 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(chip_5411x.o)
                               0x133d0 (size before relaxing)
- .debug_str     0x000161bf      0x870 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(clock_5411x.o)
+ .debug_str     0x000160d3      0x870 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(clock_5411x.o)
                               0x13643 (size before relaxing)
- .debug_str     0x00016a2f       0xad C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(fpu_init.o)
+ .debug_str     0x00016943       0xad C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(fpu_init.o)
                                0x9bc5 (size before relaxing)
- .debug_str     0x00016adc     0x1499 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(pll_5411x.o)
+ .debug_str     0x000169f0     0x1499 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(pll_5411x.o)
                               0x13f0e (size before relaxing)
- .debug_str     0x00017f75      0x113 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(syscon_5411x.o)
+ .debug_str     0x00017e89      0x113 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(syscon_5411x.o)
                               0x12b2d (size before relaxing)
- .debug_str     0x00018088      0x207 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(sysinit_5411x.o)
+ .debug_str     0x00017f9c      0x207 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(sysinit_5411x.o)
                               0x13489 (size before relaxing)
- .debug_str     0x0001828f     0x136e C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(uart_5411x.o)
+ .debug_str     0x000181a3     0x136e C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(uart_5411x.o)
                               0x1401b (size before relaxing)
- .debug_str     0x000195fd       0xd2 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(flexcomm_5411x.o)
+ .debug_str     0x00019511       0xd2 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(flexcomm_5411x.o)
                               0x1353e (size before relaxing)
- .debug_str     0x000196cf       0xb5 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\CMSIS_DSP_4_5_0\-O3 HARD\libCMSIS_DSP_4_5_0_O3_HARD.a(arm_biquad_cascade_df1_f32.o)
+ .debug_str     0x000195e3       0xb5 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\CMSIS_DSP_4_5_0\-O3 HARD\libCMSIS_DSP_4_5_0_O3_HARD.a(arm_biquad_cascade_df1_f32.o)
                                0x4dc3 (size before relaxing)
- .debug_str     0x00019784       0x8a C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\CMSIS_DSP_4_5_0\-O3 HARD\libCMSIS_DSP_4_5_0_O3_HARD.a(arm_biquad_cascade_df1_init_f32.o)
+ .debug_str     0x00019698       0x8a C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\CMSIS_DSP_4_5_0\-O3 HARD\libCMSIS_DSP_4_5_0_O3_HARD.a(arm_biquad_cascade_df1_init_f32.o)
                                0x4db6 (size before relaxing)
- .debug_str     0x0001980e       0x84 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\CMSIS_DSP_4_5_0\-O3 HARD\libCMSIS_DSP_4_5_0_O3_HARD.a(arm_pid_init_f32.o)
+ .debug_str     0x00019722       0x84 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\CMSIS_DSP_4_5_0\-O3 HARD\libCMSIS_DSP_4_5_0_O3_HARD.a(arm_pid_init_f32.o)
                                0x4d84 (size before relaxing)
 
 .comment        0x00000000      0x14c
  .comment       0x00000000       0x6e ./src/CM_TEST.o
                                  0x6f (size before relaxing)
- .comment       0x0000006e       0x6f ./src/Goertzel.o
  .comment       0x0000006e       0x6f ./src/IIR.o
  .comment       0x0000006e       0x6f ./src/cr_startup_lpc5411x.o
  .comment       0x0000006e       0x6f ./src/crp.o
@@ -2891,18 +2821,13 @@ OUTPUT(CM4_TEST_LPC54110_RAM_O3_HARD.axf elf32-littlearm)
  .comment       0x000000de       0x6f C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\CMSIS_DSP_4_5_0\-O3 HARD\libCMSIS_DSP_4_5_0_O3_HARD.a(arm_pid_init_f32.o)
  .comment       0x000000de       0x6e c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_semihost.a(_cr__main.o)
                                  0x6f (size before relaxing)
- .comment       0x0000014c       0x6f c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(cosf.o)
- .comment       0x0000014c       0x6f c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(sinf.o)
  .comment       0x0000014c       0x6f c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(memset.o)
  .comment       0x0000014c       0x6f c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(fpprintf.o)
  .comment       0x0000014c       0x6f c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(initio.o)
  .comment       0x0000014c       0x6f c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(printf.o)
  .comment       0x0000014c       0x6f c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(setvbuf.o)
  .comment       0x0000014c       0x6f c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(stdio.o)
- .comment       0x0000014c       0x6f c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(stdlib.o)
  .comment       0x0000014c       0x6f c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(strlen.o)
- .comment       0x0000014c       0x6f c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(_sincosf.o)
- .comment       0x0000014c       0x6f c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(fabsf.o)
  .comment       0x0000014c       0x6f c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(_deferredlazyseek.o)
  .comment       0x0000014c       0x6f c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(_fdopen.o)
  .comment       0x0000014c       0x6f c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(_fflush.o)
@@ -2922,153 +2847,137 @@ OUTPUT(CM4_TEST_LPC54110_RAM_O3_HARD.axf elf32-littlearm)
  .comment       0x0000014c       0x6f c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(_do_fflush.o)
  .comment       0x0000014c       0x6f c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(_cr_check_heap.o)
  .comment       0x0000014c       0x6f c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m/fpu\libcr_eabihelpers.a(double.o)
- .comment       0x0000014c       0x6f c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m/fpu\libcr_eabihelpers.a(float.o)
 
 .ARM.attributes
                 0x00000000       0x37
  .ARM.attributes
                 0x00000000       0x39 ./src/CM_TEST.o
  .ARM.attributes
-                0x00000039       0x39 ./src/Goertzel.o
+                0x00000039       0x39 ./src/IIR.o
  .ARM.attributes
-                0x00000072       0x39 ./src/IIR.o
+                0x00000072       0x39 ./src/cr_startup_lpc5411x.o
  .ARM.attributes
-                0x000000ab       0x39 ./src/cr_startup_lpc5411x.o
+                0x000000ab       0x39 ./src/crp.o
  .ARM.attributes
-                0x000000e4       0x39 ./src/crp.o
+                0x000000e4       0x39 ./src/sysinit.o
  .ARM.attributes
-                0x0000011d       0x39 ./src/sysinit.o
+                0x0000011d       0x39 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_board_lpcxpresso_54114\HARD\liblpc_board_lpcxpresso_54114_HARD.a(board.o)
  .ARM.attributes
-                0x00000156       0x39 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_board_lpcxpresso_54114\HARD\liblpc_board_lpcxpresso_54114_HARD.a(board.o)
+                0x00000156       0x39 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_board_lpcxpresso_54114\HARD\liblpc_board_lpcxpresso_54114_HARD.a(board_sysinit.o)
  .ARM.attributes
-                0x0000018f       0x39 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_board_lpcxpresso_54114\HARD\liblpc_board_lpcxpresso_54114_HARD.a(board_sysinit.o)
+                0x0000018f       0x39 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\libs\libpower_m4f_hard.a(power_library.o)
  .ARM.attributes
-                0x000001c8       0x39 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\libs\libpower_m4f_hard.a(power_library.o)
+                0x000001c8       0x39 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(chip_5411x.o)
  .ARM.attributes
-                0x00000201       0x39 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(chip_5411x.o)
+                0x00000201       0x39 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(clock_5411x.o)
  .ARM.attributes
-                0x0000023a       0x39 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(clock_5411x.o)
+                0x0000023a       0x39 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(fpu_init.o)
  .ARM.attributes
-                0x00000273       0x39 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(fpu_init.o)
+                0x00000273       0x39 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(pll_5411x.o)
  .ARM.attributes
-                0x000002ac       0x39 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(pll_5411x.o)
+                0x000002ac       0x39 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(syscon_5411x.o)
  .ARM.attributes
-                0x000002e5       0x39 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(syscon_5411x.o)
+                0x000002e5       0x39 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(sysinit_5411x.o)
  .ARM.attributes
-                0x0000031e       0x39 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(sysinit_5411x.o)
+                0x0000031e       0x39 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(uart_5411x.o)
  .ARM.attributes
-                0x00000357       0x39 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(uart_5411x.o)
+                0x00000357       0x39 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(flexcomm_5411x.o)
  .ARM.attributes
-                0x00000390       0x39 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(flexcomm_5411x.o)
+                0x00000390       0x39 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\CMSIS_DSP_4_5_0\-O3 HARD\libCMSIS_DSP_4_5_0_O3_HARD.a(arm_biquad_cascade_df1_f32.o)
  .ARM.attributes
-                0x000003c9       0x39 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\CMSIS_DSP_4_5_0\-O3 HARD\libCMSIS_DSP_4_5_0_O3_HARD.a(arm_biquad_cascade_df1_f32.o)
+                0x000003c9       0x39 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\CMSIS_DSP_4_5_0\-O3 HARD\libCMSIS_DSP_4_5_0_O3_HARD.a(arm_biquad_cascade_df1_init_f32.o)
  .ARM.attributes
-                0x00000402       0x39 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\CMSIS_DSP_4_5_0\-O3 HARD\libCMSIS_DSP_4_5_0_O3_HARD.a(arm_biquad_cascade_df1_init_f32.o)
+                0x00000402       0x39 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\CMSIS_DSP_4_5_0\-O3 HARD\libCMSIS_DSP_4_5_0_O3_HARD.a(arm_pid_init_f32.o)
  .ARM.attributes
-                0x0000043b       0x39 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\CMSIS_DSP_4_5_0\-O3 HARD\libCMSIS_DSP_4_5_0_O3_HARD.a(arm_pid_init_f32.o)
+                0x0000043b       0x39 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_semihost.a(_cr__main.o)
  .ARM.attributes
-                0x00000474       0x39 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_semihost.a(_cr__main.o)
+                0x00000474       0x39 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(memset.o)
  .ARM.attributes
-                0x000004ad       0x39 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(cosf.o)
+                0x000004ad       0x39 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(fpprintf.o)
  .ARM.attributes
-                0x000004e6       0x39 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(sinf.o)
+                0x000004e6       0x39 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(initio.o)
  .ARM.attributes
-                0x0000051f       0x39 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(memset.o)
+                0x0000051f       0x39 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(printf.o)
  .ARM.attributes
-                0x00000558       0x39 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(fpprintf.o)
+                0x00000558       0x39 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(setvbuf.o)
  .ARM.attributes
-                0x00000591       0x39 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(initio.o)
+                0x00000591       0x39 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(stdio.o)
  .ARM.attributes
-                0x000005ca       0x39 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(printf.o)
+                0x000005ca       0x39 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(strlen.o)
  .ARM.attributes
-                0x00000603       0x39 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(setvbuf.o)
+                0x00000603       0x39 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(_deferredlazyseek.o)
  .ARM.attributes
-                0x0000063c       0x39 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(stdio.o)
+                0x0000063c       0x39 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(_fdopen.o)
  .ARM.attributes
-                0x00000675       0x39 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(stdlib.o)
+                0x00000675       0x39 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(_fflush.o)
  .ARM.attributes
-                0x000006ae       0x39 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(strlen.o)
+                0x000006ae       0x39 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(_frexpl.o)
  .ARM.attributes
-                0x000006e7       0x39 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(_sincosf.o)
+                0x000006e7       0x39 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(_hugeval.o)
  .ARM.attributes
-                0x00000720       0x39 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(fabsf.o)
+                0x00000720       0x39 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(_ldexpl.o)
  .ARM.attributes
-                0x00000759       0x39 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(_deferredlazyseek.o)
+                0x00000759       0x39 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(_writebuf.o)
  .ARM.attributes
-                0x00000792       0x39 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(_fdopen.o)
+                0x00000792       0x39 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(alloc.o)
  .ARM.attributes
-                0x000007cb       0x39 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(_fflush.o)
+                0x000007cb       0x39 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(errno.o)
  .ARM.attributes
-                0x00000804       0x39 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(_frexpl.o)
+                0x00000804       0x39 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(fclose.o)
  .ARM.attributes
-                0x0000083d       0x39 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(_hugeval.o)
+                0x0000083d       0x39 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(fflush.o)
  .ARM.attributes
-                0x00000876       0x39 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(_ldexpl.o)
+                0x00000876       0x39 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(fseek.o)
  .ARM.attributes
-                0x000008af       0x39 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(_writebuf.o)
+                0x000008af       0x39 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(ftell.o)
  .ARM.attributes
-                0x000008e8       0x39 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(alloc.o)
+                0x000008e8       0x39 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(remove.o)
  .ARM.attributes
-                0x00000921       0x39 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(errno.o)
+                0x00000921       0x39 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(__init_alloc.o)
  .ARM.attributes
-                0x0000095a       0x39 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(fclose.o)
+                0x0000095a       0x39 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(_cr_sbrk.o)
  .ARM.attributes
-                0x00000993       0x39 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(fflush.o)
+                0x00000993       0x39 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(_do_fflush.o)
  .ARM.attributes
-                0x000009cc       0x39 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(fseek.o)
+                0x000009cc       0x39 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(_cr_check_heap.o)
  .ARM.attributes
-                0x00000a05       0x39 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(ftell.o)
+                0x00000a05       0x25 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m/fpu\libcr_eabihelpers.a(division_64.o)
  .ARM.attributes
-                0x00000a3e       0x39 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(remove.o)
+                0x00000a2a       0x25 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m/fpu\libcr_eabihelpers.a(division_idiv0.o)
  .ARM.attributes
-                0x00000a77       0x39 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(__init_alloc.o)
+                0x00000a4f       0x39 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m/fpu\libcr_eabihelpers.a(double.o)
  .ARM.attributes
-                0x00000ab0       0x39 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(_cr_sbrk.o)
+                0x00000a88       0x25 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m/fpu\libcr_eabihelpers.a(memcpy.o)
  .ARM.attributes
-                0x00000ae9       0x39 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(_do_fflush.o)
+                0x00000aad       0x25 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_semihost.a(__sys_appexit.o)
  .ARM.attributes
-                0x00000b22       0x39 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_c.a(_cr_check_heap.o)
+                0x00000ad2       0x25 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_semihost.a(__sys_close.o)
  .ARM.attributes
-                0x00000b5b       0x25 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m/fpu\libcr_eabihelpers.a(division_64.o)
+                0x00000af7       0x25 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_semihost.a(__sys_flen.o)
  .ARM.attributes
-                0x00000b80       0x25 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m/fpu\libcr_eabihelpers.a(division_idiv0.o)
+                0x00000b1c       0x25 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_semihost.a(__sys_istty.o)
  .ARM.attributes
-                0x00000ba5       0x39 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m/fpu\libcr_eabihelpers.a(double.o)
+                0x00000b41       0x25 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_semihost.a(__sys_remove.o)
  .ARM.attributes
-                0x00000bde       0x39 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m/fpu\libcr_eabihelpers.a(float.o)
+                0x00000b66       0x25 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_semihost.a(__sys_seek.o)
  .ARM.attributes
-                0x00000c17       0x25 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m/fpu\libcr_eabihelpers.a(memcpy.o)
- .ARM.attributes
-                0x00000c3c       0x25 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_semihost.a(__sys_appexit.o)
- .ARM.attributes
-                0x00000c61       0x25 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_semihost.a(__sys_close.o)
- .ARM.attributes
-                0x00000c86       0x25 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_semihost.a(__sys_flen.o)
- .ARM.attributes
-                0x00000cab       0x25 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_semihost.a(__sys_istty.o)
- .ARM.attributes
-                0x00000cd0       0x25 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_semihost.a(__sys_remove.o)
- .ARM.attributes
-                0x00000cf5       0x25 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_semihost.a(__sys_seek.o)
- .ARM.attributes
-                0x00000d1a       0x25 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_semihost.a(__sys_tmpnam.o)
+                0x00000b8b       0x25 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libcr_semihost.a(__sys_tmpnam.o)
 
-.debug_frame    0x00000000     0x18c8
- .debug_frame   0x00000000       0x38 ./src/CM_TEST.o
- .debug_frame   0x00000038       0x4c ./src/Goertzel.o
- .debug_frame   0x00000084      0x12c ./src/IIR.o
- .debug_frame   0x000001b0      0x104 ./src/cr_startup_lpc5411x.o
- .debug_frame   0x000002b4       0x2c ./src/sysinit.o
- .debug_frame   0x000002e0      0x1b8 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_board_lpcxpresso_54114\HARD\liblpc_board_lpcxpresso_54114_HARD.a(board.o)
- .debug_frame   0x00000498       0x78 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_board_lpcxpresso_54114\HARD\liblpc_board_lpcxpresso_54114_HARD.a(board_sysinit.o)
- .debug_frame   0x00000510       0xe8 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(chip_5411x.o)
- .debug_frame   0x000005f8      0x408 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(clock_5411x.o)
- .debug_frame   0x00000a00       0x38 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(fpu_init.o)
- .debug_frame   0x00000a38      0x40c C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(pll_5411x.o)
- .debug_frame   0x00000e44      0x114 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(syscon_5411x.o)
- .debug_frame   0x00000f58      0x220 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(sysinit_5411x.o)
- .debug_frame   0x00001178      0x560 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(uart_5411x.o)
- .debug_frame   0x000016d8      0x170 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(flexcomm_5411x.o)
- .debug_frame   0x00001848       0x34 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\CMSIS_DSP_4_5_0\-O3 HARD\libCMSIS_DSP_4_5_0_O3_HARD.a(arm_biquad_cascade_df1_f32.o)
- .debug_frame   0x0000187c       0x2c C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\CMSIS_DSP_4_5_0\-O3 HARD\libCMSIS_DSP_4_5_0_O3_HARD.a(arm_biquad_cascade_df1_init_f32.o)
- .debug_frame   0x000018a8       0x20 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\CMSIS_DSP_4_5_0\-O3 HARD\libCMSIS_DSP_4_5_0_O3_HARD.a(arm_pid_init_f32.o)
+.debug_frame    0x00000000     0x1878
+ .debug_frame   0x00000000       0x34 ./src/CM_TEST.o
+ .debug_frame   0x00000034      0x12c ./src/IIR.o
+ .debug_frame   0x00000160      0x104 ./src/cr_startup_lpc5411x.o
+ .debug_frame   0x00000264       0x2c ./src/sysinit.o
+ .debug_frame   0x00000290      0x1b8 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_board_lpcxpresso_54114\HARD\liblpc_board_lpcxpresso_54114_HARD.a(board.o)
+ .debug_frame   0x00000448       0x78 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_board_lpcxpresso_54114\HARD\liblpc_board_lpcxpresso_54114_HARD.a(board_sysinit.o)
+ .debug_frame   0x000004c0       0xe8 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(chip_5411x.o)
+ .debug_frame   0x000005a8      0x408 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(clock_5411x.o)
+ .debug_frame   0x000009b0       0x38 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(fpu_init.o)
+ .debug_frame   0x000009e8      0x40c C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(pll_5411x.o)
+ .debug_frame   0x00000df4      0x114 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(syscon_5411x.o)
+ .debug_frame   0x00000f08      0x220 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(sysinit_5411x.o)
+ .debug_frame   0x00001128      0x560 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(uart_5411x.o)
+ .debug_frame   0x00001688      0x170 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\lpc_chip_5411x\HARD\liblpc_chip_5411x_HARD.a(flexcomm_5411x.o)
+ .debug_frame   0x000017f8       0x34 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\CMSIS_DSP_4_5_0\-O3 HARD\libCMSIS_DSP_4_5_0_O3_HARD.a(arm_biquad_cascade_df1_f32.o)
+ .debug_frame   0x0000182c       0x2c C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\CMSIS_DSP_4_5_0\-O3 HARD\libCMSIS_DSP_4_5_0_O3_HARD.a(arm_biquad_cascade_df1_init_f32.o)
+ .debug_frame   0x00001858       0x20 C:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\LPCXPRESSO\CMSIS_DSP_4_5_0\-O3 HARD\libCMSIS_DSP_4_5_0_O3_HARD.a(arm_pid_init_f32.o)

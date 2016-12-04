@@ -7,8 +7,7 @@
 <memory can_program="true" id="Flash" is_ro="true" type="Flash"/>
 <memory id="RAM" type="RAM"/>
 <memory id="Periph" is_volatile="true" type="Peripheral"/>
-<memoryInstance derived_from="RAM" id="Ram0_64" location="0x20000000" size="0x20000"/>
-<memoryInstance derived_from="RAM" id="Ram2_32" location="0x20020000" size="0x8000"/>
+<memoryInstance derived_from="RAM" id="Ram0_64" location="0x20000000" size="0x10000"/>
 <memoryInstance derived_from="RAM" id="RamX_32" location="0x4000000" size="0x8000"/>
 <peripheralInstance derived_from="V7M_MPU" id="MPU" location="0xe000ed90"/>
 <peripheralInstance derived_from="V7M_NVIC" id="NVIC" location="0xe000e000"/>

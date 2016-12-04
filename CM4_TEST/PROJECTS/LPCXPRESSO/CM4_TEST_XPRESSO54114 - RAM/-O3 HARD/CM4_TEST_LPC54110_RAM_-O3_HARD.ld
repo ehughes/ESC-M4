@@ -5,7 +5,7 @@
  * Generated linker script file for LPC54114J256
  * Created from linkscript.ldt by FMCreateLinkLibraries
  * Using Freemarker v2.3.23
- * LPCXpresso v8.2.2 [Build 650] [2016-09-09]  on Nov 29, 2016 2:23:19 PM
+ * LPCXpresso v8.2.2 [Build 650] [2016-09-09]  on Dec 4, 2016 12:27:40 PM
  */
 
 INCLUDE "CM4_TEST_LPC54110_RAM_-O3_HARD_library.ld"
@@ -31,17 +31,12 @@ SECTIONS
         LONG(LOADADDR(.data_RAM2));
         LONG(    ADDR(.data_RAM2));
         LONG(  SIZEOF(.data_RAM2));
-        LONG(LOADADDR(.data_RAM3));
-        LONG(    ADDR(.data_RAM3));
-        LONG(  SIZEOF(.data_RAM3));
         __data_section_table_end = .;
         __bss_section_table = .;
         LONG(    ADDR(.bss));
         LONG(  SIZEOF(.bss));
         LONG(    ADDR(.bss_RAM2));
         LONG(  SIZEOF(.bss_RAM2));
-        LONG(    ADDR(.bss_RAM3));
-        LONG(  SIZEOF(.bss_RAM3));
         __bss_section_table_end = .;
         __section_table_end = . ;
 	    /* End of Global Section Table */
@@ -81,30 +76,17 @@ SECTIONS
 
     _etext = .;
         
-    /* DATA section for Ram2_32 */
+    /* DATA section for RamX_32 */
     .data_RAM2 : ALIGN(4)
     {
         FILL(0xff)
         PROVIDE(__start_data_RAM2 = .) ;
         *(.ramfunc.$RAM2)
-        *(.ramfunc.$Ram2_32)
-        *(.data.$RAM2*)
-        *(.data.$Ram2_32*)
-        . = ALIGN(4) ;
-        PROVIDE(__end_data_RAM2 = .) ;
-     } > Ram2_32 AT>Ram0_64
-
-    /* DATA section for RamX_32 */
-    .data_RAM3 : ALIGN(4)
-    {
-        FILL(0xff)
-        PROVIDE(__start_data_RAM3 = .) ;
-        *(.ramfunc.$RAM3)
         *(.ramfunc.$RamX_32)
-        *(.data.$RAM3*)
+        *(.data.$RAM2*)
         *(.data.$RamX_32*)
         . = ALIGN(4) ;
-        PROVIDE(__end_data_RAM3 = .) ;
+        PROVIDE(__end_data_RAM2 = .) ;
      } > RamX_32 AT>Ram0_64
 
     /* MAIN DATA SECTION */
@@ -125,23 +107,14 @@ SECTIONS
        . = ALIGN(4) ;
        _edata = . ;
     } > Ram0_64 AT>Ram0_64
-    /* BSS section for Ram2_32 */
+    /* BSS section for RamX_32 */
     .bss_RAM2 : ALIGN(4)
     {
        PROVIDE(__start_bss_RAM2 = .) ;
        *(.bss.$RAM2*)
-       *(.bss.$Ram2_32*)
-       . = ALIGN (. != 0 ? 4 : 1) ; /* avoid empty segment */
-       PROVIDE(__end_bss_RAM2 = .) ;
-    } > Ram2_32 
-    /* BSS section for RamX_32 */
-    .bss_RAM3 : ALIGN(4)
-    {
-       PROVIDE(__start_bss_RAM3 = .) ;
-       *(.bss.$RAM3*)
        *(.bss.$RamX_32*)
        . = ALIGN (. != 0 ? 4 : 1) ; /* avoid empty segment */
-       PROVIDE(__end_bss_RAM3 = .) ;
+       PROVIDE(__end_bss_RAM2 = .) ;
     } > RamX_32 
     /* MAIN BSS SECTION */
     .bss : ALIGN(4)
@@ -153,17 +126,10 @@ SECTIONS
         _ebss = .;
         PROVIDE(end = .);
     } > Ram0_64
-    /* NOINIT section for Ram2_32 */
+    /* NOINIT section for RamX_32 */
     .noinit_RAM2 (NOLOAD) : ALIGN(4)
     {
        *(.noinit.$RAM2*)
-       *(.noinit.$Ram2_32*)
-       . = ALIGN(4) ;
-    } > Ram2_32 
-    /* NOINIT section for RamX_32 */
-    .noinit_RAM3 (NOLOAD) : ALIGN(4)
-    {
-       *(.noinit.$RAM3*)
        *(.noinit.$RamX_32*)
        . = ALIGN(4) ;
     } > RamX_32 

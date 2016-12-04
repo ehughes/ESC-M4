@@ -5,7 +5,7 @@
  * Generated linker script file for LPC4370
  * Created from memory.ldt by FMCreateLinkMemory
  * Using Freemarker v2.3.23
- * LPCXpresso v8.2.2 [Build 650] [2016-09-09]  on Oct 11, 2016 2:37:59 PM
+ * LPCXpresso v8.2.2 [Build 650] [2016-09-09]  on Dec 4, 2016 2:09:18 PM
  */
 
 MEMORY

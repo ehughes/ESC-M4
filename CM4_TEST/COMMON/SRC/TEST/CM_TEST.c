@@ -46,12 +46,12 @@
 #endif
 
 
-#define MAX_INPUT_SIZE	8192
+#define MAX_INPUT_SIZE	4096
 
 #define FIR_TAP_SIZE	32
 
 
-#if (BOARD==0 || BOARD==1  || BOARD==3)
+#if ( BOARD==3)
 
 
 	#define INIT_CYCLE_TIMER			        SysTick->CTRL = 0;SysTick->LOAD = 0xFFFFFF;SysTick->VAL = 0;
@@ -60,7 +60,7 @@
 	#define REPORT_CYCLE_TIMER			   		SysTick->CTRL = 0;	 CycleTimer = SysTick->VAL; CycleTimer = 0x1000000 - CycleTimer;CM_PRINTF("%i",CycleTimer - CycleOffset)
 	#define COMMA													CM_PRINTF(",");
 
-#elif  BOARD==2
+#elif  (BOARD==2 || BOARD==0 || BOARD==1)
 
 	#define INIT_CYCLE_TIMER			        SysTick->CTRL = SysTick_CTRL_CLKSOURCE_Msk;SysTick->LOAD = 0xFFFFFF;SysTick->VAL = 0;
 	#define START_CYCLE_TIMER					SysTick->VAL = 0;SysTick->CTRL = SysTick_CTRL_ENABLE_Msk | SysTick_CTRL_CLKSOURCE_Msk;
@@ -113,8 +113,6 @@
 #endif
 
 
-#ifdef ENABLE_BLOCK_PROCESSING
-
 	#if BOARD == 0
 		#ifdef DATA_IN_ALTERNATE_AHB_BANK
 			__BSS(RAM2)
@@ -152,13 +150,13 @@
 			__BSS(RAM2)
 		#endif
 	#endif
-
 union
 {
 	 q15_t 		q15[MAX_INPUT_SIZE];
 	 q31_t 		q31[MAX_INPUT_SIZE];
 	 float32_t	f32[MAX_INPUT_SIZE];
 } OutputData;
+
 
 
 union
@@ -218,7 +216,6 @@ union
 
 	#endif
 
-#endif
 
 #ifdef ENABLE_PER_SAMPLE
 
@@ -390,8 +387,8 @@ INIT_CYCLE_TIMER;
 					arm_rfft_fast_init_f32(&FFT_Inst.rfft_fast_f32,256);START_CYCLE_TIMER;arm_rfft_fast_f32(&FFT_Inst.rfft_fast_f32,&InputData.f32[0], &OutputData.f32[0], 0);REPORT_CYCLE_TIMER;COMMA;
 					arm_rfft_fast_init_f32(&FFT_Inst.rfft_fast_f32,512);START_CYCLE_TIMER;arm_rfft_fast_f32(&FFT_Inst.rfft_fast_f32,&InputData.f32[0], &OutputData.f32[0], 0);REPORT_CYCLE_TIMER;COMMA;
 					arm_rfft_fast_init_f32(&FFT_Inst.rfft_fast_f32,1024);START_CYCLE_TIMER;arm_rfft_fast_f32(&FFT_Inst.rfft_fast_f32,&InputData.f32[0], &OutputData.f32[0], 0);REPORT_CYCLE_TIMER;COMMA;
-					//arm_rfft_fast_init_f32(&FFT_Inst.rfft_fast_f32,2048);START_CYCLE_TIMER;arm_rfft_fast_f32(&FFT_Inst.rfft_fast_f32,&InputData.f32[0], &OutputData.f32[0], 0);REPORT_CYCLE_TIMER;COMMA;
-					//arm_rfft_fast_init_f32(&FFT_Inst.rfft_fast_f32,4096);START_CYCLE_TIMER;arm_rfft_fast_f32(&FFT_Inst.rfft_fast_f32,&InputData.f32[0], &OutputData.f32[0], 0);REPORT_CYCLE_TIMER;COMMA;
+					arm_rfft_fast_init_f32(&FFT_Inst.rfft_fast_f32,2048);START_CYCLE_TIMER;arm_rfft_fast_f32(&FFT_Inst.rfft_fast_f32,&InputData.f32[0], &OutputData.f32[0], 0);REPORT_CYCLE_TIMER;COMMA;
+					arm_rfft_fast_init_f32(&FFT_Inst.rfft_fast_f32,4096);START_CYCLE_TIMER;arm_rfft_fast_f32(&FFT_Inst.rfft_fast_f32,&InputData.f32[0], &OutputData.f32[0], 0);REPORT_CYCLE_TIMER;COMMA;
 			#endif
 
 			#ifdef COMPLEX_MAG

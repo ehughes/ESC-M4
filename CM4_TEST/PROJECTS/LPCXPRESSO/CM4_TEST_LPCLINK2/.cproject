@@ -639,7 +639,7 @@
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/lpc_board_nxp_lpclink2_4370/inc}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/lpc_chip_43xx/inc}&quot;"/>
 								</option>
-								<option id="com.crt.advproject.gas.fpu.332973069" name="Floating point" superClass="com.crt.advproject.gas.fpu" value="com.crt.advproject.gas.fpu.fpv4.hard" valueType="enumerated"/>
+								<option id="com.crt.advproject.gas.fpu.332973069" name="Floating point" superClass="com.crt.advproject.gas.fpu" value="com.crt.advproject.gas.fpu.fpv4" valueType="enumerated"/>
 								<inputType id="cdt.managedbuild.tool.gnu.assembler.input.654577287" superClass="cdt.managedbuild.tool.gnu.assembler.input"/>
 								<inputType id="com.crt.advproject.assembler.input.59792335" name="Additional Assembly Source Files" superClass="com.crt.advproject.assembler.input"/>
 							</tool>
