@@ -52,7 +52,6 @@ Section Cross References
     cm_test.o(i.main) refers to arm_fir_init_q15.o(i.arm_fir_init_q15) for arm_fir_init_q15
     cm_test.o(i.main) refers to arm_fir_q15.o(i.arm_fir_q15) for arm_fir_q15
     cm_test.o(i.main) refers to arm_pid_init_q15.o(i.arm_pid_init_q15) for arm_pid_init_q15
-    iir.o(i.Compute_q31_t_IIR) refers to iir.o(i.mult32x64) for mult32x64
     iir.o(i.Compute_q31_t_IIR) refers to llshl.o(.text) for __aeabi_llsl
     iir.o(i.DesignAudioBiquadIIR_f32) refers to f2d.o(x$fpl$f2d) for __aeabi_f2d
     iir.o(i.DesignAudioBiquadIIR_f32) refers to pow.o(i.__hardfp_pow) for __hardfp_pow
@@ -63,11 +62,11 @@ Section Cross References
     iir.o(i.DesignAudioBiquadIIR_f32) refers to cos.o(i.__hardfp_cos) for __hardfp_cos
     iir.o(i.DesignAudioBiquadIIR_f32) refers to daddsub_clz.o(x$fpl$drsb) for __aeabi_drsub
     iir.o(i.DesignAudioBiquadIIR_f32) refers to daddsub_clz.o(x$fpl$dadd) for __aeabi_dadd
-    iir.o(i.DesignAudioBiquadIIR_f32) refers to basic.o(x$fpl$basic) for __aeabi_dneg
-    iir.o(i.DesignAudioBiquadIIR_f32) refers to d2f.o(x$fpl$d2f) for __aeabi_d2f
     iir.o(i.DesignAudioBiquadIIR_f32) refers to daddsub_clz.o(x$fpl$dsub) for __aeabi_dsub
+    iir.o(i.DesignAudioBiquadIIR_f32) refers to basic.o(x$fpl$basic) for __aeabi_dneg
     iir.o(i.DesignAudioBiquadIIR_f32) refers to iir.o(.data) for .data
     iir.o(i.DesignAudioBiquadIIR_f32) refers to iir.o(.bss) for .bss
+    iir.o(i.DesignAudioBiquadIIR_f32) refers to d2f.o(x$fpl$d2f) for __aeabi_d2f
     iir.o(i.DesignAudioBiquadIIR_q31_t) refers to f2d.o(x$fpl$f2d) for __aeabi_f2d
     iir.o(i.DesignAudioBiquadIIR_q31_t) refers to pow.o(i.__hardfp_pow) for __hardfp_pow
     iir.o(i.DesignAudioBiquadIIR_q31_t) refers to sqrt.o(i.__hardfp_sqrt) for __hardfp_sqrt
@@ -77,11 +76,11 @@ Section Cross References
     iir.o(i.DesignAudioBiquadIIR_q31_t) refers to cos.o(i.__hardfp_cos) for __hardfp_cos
     iir.o(i.DesignAudioBiquadIIR_q31_t) refers to daddsub_clz.o(x$fpl$drsb) for __aeabi_drsub
     iir.o(i.DesignAudioBiquadIIR_q31_t) refers to daddsub_clz.o(x$fpl$dadd) for __aeabi_dadd
-    iir.o(i.DesignAudioBiquadIIR_q31_t) refers to basic.o(x$fpl$basic) for __aeabi_dneg
     iir.o(i.DesignAudioBiquadIIR_q31_t) refers to daddsub_clz.o(x$fpl$dsub) for __aeabi_dsub
+    iir.o(i.DesignAudioBiquadIIR_q31_t) refers to basic.o(x$fpl$basic) for __aeabi_dneg
     iir.o(i.DesignAudioBiquadIIR_q31_t) refers to iir.o(.data) for .data
     iir.o(i.DesignAudioBiquadIIR_q31_t) refers to iir.o(.bss) for .bss
-    iir.o(i.DesignAudioBiquadIIR_q31_t) refers to iir.o(i.GetPeak) for GetPeak
+    iir.o(i.DesignAudioBiquadIIR_q31_t) refers to dleqf.o(x$fpl$dleqf) for __aeabi_cdcmple
     iir.o(i.DesignAudioBiquadIIR_q31_t) refers to drleqf.o(x$fpl$drleqf) for __aeabi_cdrcmple
     iir.o(i.DesignAudioBiquadIIR_q31_t) refers to dfix.o(x$fpl$dfix) for __aeabi_d2iz
     iir.o(i.GetPeak) refers to dleqf.o(x$fpl$dleqf) for __aeabi_cdcmple
@@ -745,13 +744,12 @@ Removing Unused input sections from the image.
     Removing iir.o(.rev16_text), (4 bytes).
     Removing iir.o(.revsh_text), (4 bytes).
     Removing iir.o(i.Compute_f32_IIR), (78 bytes).
-    Removing iir.o(i.Compute_q31_t_IIR), (100 bytes).
-    Removing iir.o(i.DesignAudioBiquadIIR_f32), (2424 bytes).
-    Removing iir.o(i.DesignAudioBiquadIIR_q31_t), (2780 bytes).
+    Removing iir.o(i.Compute_q31_t_IIR), (178 bytes).
+    Removing iir.o(i.DesignAudioBiquadIIR_f32), (2762 bytes).
+    Removing iir.o(i.DesignAudioBiquadIIR_q31_t), (3192 bytes).
     Removing iir.o(i.GetPeak), (128 bytes).
     Removing iir.o(i.Init_f32_IIR), (24 bytes).
     Removing iir.o(i.Init_q31_t_IIR), (16 bytes).
-    Removing iir.o(i.mult32x64), (40 bytes).
     Removing iir.o(.bss), (48 bytes).
     Removing iir.o(.data), (24 bytes).
     Removing goertzel.o(.rev16_text), (4 bytes).
@@ -969,7 +967,7 @@ Removing Unused input sections from the image.
     Removing arm_bitreversal.o(i.arm_bitreversal_q15), (102 bytes).
     Removing arm_bitreversal.o(i.arm_bitreversal_q31), (170 bytes).
 
-233 unused section(s) (total 163252 bytes) removed from the image.
+232 unused section(s) (total 164040 bytes) removed from the image.
 
 ==============================================================================
 
@@ -1341,50 +1339,50 @@ Image Symbol Table
     i.fpuInit                                0x00002c48   Section        0  fpu_init.o(i.fpuInit)
     i.fputc                                  0x00002c84   Section        0  board.o(i.fputc)
     i.main                                   0x00002c90   Section        0  cm_test.o(i.main)
-    i.setupFlashClocks                       0x000043fc   Section        0  sysinit_5411x.o(i.setupFlashClocks)
-    setupFlashClocks                         0x000043fd   Thumb Code    46  sysinit_5411x.o(i.setupFlashClocks)
-    x$fpl$fpinit                             0x0000443c   Section       10  fpinit.o(x$fpl$fpinit)
-    $v0                                      0x0000443c   Number         0  fpinit.o(x$fpl$fpinit)
-    .constdata                               0x00004446   Section       16  board.o(.constdata)
-    tstBits                                  0x00004446   Data           4  board.o(.constdata)
-    ledBits                                  0x0000444a   Data           6  board.o(.constdata)
-    btnBits                                  0x00004450   Data           6  board.o(.constdata)
-    .constdata                               0x00004458   Section        4  board.o(.constdata)
-    .constdata                               0x0000445c   Section       52  board_sysinit.o(.constdata)
-    pinmuxing                                0x00004460   Data          48  board_sysinit.o(.constdata)
-    .constdata                               0x00004490   Section       16  arm_const_structs.o(.constdata)
-    .constdata                               0x000044a0   Section       16  arm_const_structs.o(.constdata)
-    .constdata                               0x000044b0   Section       16  arm_const_structs.o(.constdata)
-    .constdata                               0x000044c0   Section       16  arm_const_structs.o(.constdata)
-    .constdata                               0x000044d0   Section       16  arm_const_structs.o(.constdata)
-    .constdata                               0x000044e0   Section       16  arm_const_structs.o(.constdata)
-    .constdata                               0x000044f0   Section       16  arm_const_structs.o(.constdata)
-    .constdata                               0x00004500   Section       16  arm_const_structs.o(.constdata)
-    .constdata                               0x00004510   Section       16  arm_const_structs.o(.constdata)
-    .constdata                               0x00004520   Section       16  arm_const_structs.o(.constdata)
-    .constdata                               0x00004530   Section    32768  arm_rfft_init_q15.o(.constdata)
-    realCoefAQ15                             0x00004530   Data       16384  arm_rfft_init_q15.o(.constdata)
-    realCoefBQ15                             0x00008530   Data       16384  arm_rfft_init_q15.o(.constdata)
-    .constdata                               0x0000c530   Section    24576  arm_common_tables.o(.constdata)
-    .constdata                               0x00012530   Section       48  arm_common_tables.o(.constdata)
-    .constdata                               0x00012560   Section       96  arm_common_tables.o(.constdata)
-    .constdata                               0x000125c0   Section      192  arm_common_tables.o(.constdata)
-    .constdata                               0x00012680   Section      384  arm_common_tables.o(.constdata)
-    .constdata                               0x00012800   Section      768  arm_common_tables.o(.constdata)
-    .constdata                               0x00012b00   Section     1536  arm_common_tables.o(.constdata)
-    .constdata                               0x00013100   Section     3072  arm_common_tables.o(.constdata)
-    .constdata                               0x00013d00   Section     6144  arm_common_tables.o(.constdata)
-    .constdata                               0x00015500   Section    12288  arm_common_tables.o(.constdata)
-    .constdata                               0x00018500   Section       24  arm_common_tables.o(.constdata)
-    .constdata                               0x00018518   Section       48  arm_common_tables.o(.constdata)
-    .constdata                               0x00018548   Section      112  arm_common_tables.o(.constdata)
-    .constdata                               0x000185b8   Section      224  arm_common_tables.o(.constdata)
-    .constdata                               0x00018698   Section      480  arm_common_tables.o(.constdata)
-    .constdata                               0x00018878   Section      960  arm_common_tables.o(.constdata)
-    .constdata                               0x00018c38   Section     1984  arm_common_tables.o(.constdata)
-    .constdata                               0x000193f8   Section     3968  arm_common_tables.o(.constdata)
-    .constdata                               0x0001a378   Section     8064  arm_common_tables.o(.constdata)
-    .conststring                             0x0001c2f8   Section       68  cm_test.o(.conststring)
+    i.setupFlashClocks                       0x00004494   Section        0  sysinit_5411x.o(i.setupFlashClocks)
+    setupFlashClocks                         0x00004495   Thumb Code    46  sysinit_5411x.o(i.setupFlashClocks)
+    x$fpl$fpinit                             0x000044d4   Section       10  fpinit.o(x$fpl$fpinit)
+    $v0                                      0x000044d4   Number         0  fpinit.o(x$fpl$fpinit)
+    .constdata                               0x000044de   Section       16  board.o(.constdata)
+    tstBits                                  0x000044de   Data           4  board.o(.constdata)
+    ledBits                                  0x000044e2   Data           6  board.o(.constdata)
+    btnBits                                  0x000044e8   Data           6  board.o(.constdata)
+    .constdata                               0x000044f0   Section        4  board.o(.constdata)
+    .constdata                               0x000044f4   Section       52  board_sysinit.o(.constdata)
+    pinmuxing                                0x000044f8   Data          48  board_sysinit.o(.constdata)
+    .constdata                               0x00004528   Section       16  arm_const_structs.o(.constdata)
+    .constdata                               0x00004538   Section       16  arm_const_structs.o(.constdata)
+    .constdata                               0x00004548   Section       16  arm_const_structs.o(.constdata)
+    .constdata                               0x00004558   Section       16  arm_const_structs.o(.constdata)
+    .constdata                               0x00004568   Section       16  arm_const_structs.o(.constdata)
+    .constdata                               0x00004578   Section       16  arm_const_structs.o(.constdata)
+    .constdata                               0x00004588   Section       16  arm_const_structs.o(.constdata)
+    .constdata                               0x00004598   Section       16  arm_const_structs.o(.constdata)
+    .constdata                               0x000045a8   Section       16  arm_const_structs.o(.constdata)
+    .constdata                               0x000045b8   Section       16  arm_const_structs.o(.constdata)
+    .constdata                               0x000045c8   Section    32768  arm_rfft_init_q15.o(.constdata)
+    realCoefAQ15                             0x000045c8   Data       16384  arm_rfft_init_q15.o(.constdata)
+    realCoefBQ15                             0x000085c8   Data       16384  arm_rfft_init_q15.o(.constdata)
+    .constdata                               0x0000c5c8   Section    24576  arm_common_tables.o(.constdata)
+    .constdata                               0x000125c8   Section       48  arm_common_tables.o(.constdata)
+    .constdata                               0x000125f8   Section       96  arm_common_tables.o(.constdata)
+    .constdata                               0x00012658   Section      192  arm_common_tables.o(.constdata)
+    .constdata                               0x00012718   Section      384  arm_common_tables.o(.constdata)
+    .constdata                               0x00012898   Section      768  arm_common_tables.o(.constdata)
+    .constdata                               0x00012b98   Section     1536  arm_common_tables.o(.constdata)
+    .constdata                               0x00013198   Section     3072  arm_common_tables.o(.constdata)
+    .constdata                               0x00013d98   Section     6144  arm_common_tables.o(.constdata)
+    .constdata                               0x00015598   Section    12288  arm_common_tables.o(.constdata)
+    .constdata                               0x00018598   Section       24  arm_common_tables.o(.constdata)
+    .constdata                               0x000185b0   Section       48  arm_common_tables.o(.constdata)
+    .constdata                               0x000185e0   Section      112  arm_common_tables.o(.constdata)
+    .constdata                               0x00018650   Section      224  arm_common_tables.o(.constdata)
+    .constdata                               0x00018730   Section      480  arm_common_tables.o(.constdata)
+    .constdata                               0x00018910   Section      960  arm_common_tables.o(.constdata)
+    .constdata                               0x00018cd0   Section     1984  arm_common_tables.o(.constdata)
+    .constdata                               0x00019490   Section     3968  arm_common_tables.o(.constdata)
+    .constdata                               0x0001a410   Section     8064  arm_common_tables.o(.constdata)
+    .conststring                             0x0001c390   Section       68  cm_test.o(.conststring)
     .data                                    0x20000000   Section       18  cm_test.o(.data)
     .data                                    0x20000014   Section        4  chip_5411x.o(.data)
     .data                                    0x20000018   Section        4  board.o(.data)
@@ -1636,42 +1634,42 @@ Image Symbol Table
     findPllPreDiv                            0x00002bef   Thumb Code    90  pll_5411x.o(i.findPllPreDiv)
     fpuInit                                  0x00002c49   Thumb Code    46  fpu_init.o(i.fpuInit)
     fputc                                    0x00002c85   Thumb Code    12  board.o(i.fputc)
-    main                                     0x00002c91   Thumb Code  5888  cm_test.o(i.main)
-    _fp_init                                 0x0000443d   Thumb Code    10  fpinit.o(x$fpl$fpinit)
-    __fplib_config_fpu_vfp                   0x00004445   Thumb Code     0  fpinit.o(x$fpl$fpinit)
-    __fplib_config_pureend_doubles           0x00004445   Thumb Code     0  fpinit.o(x$fpl$fpinit)
-    ExtClockIn                               0x00004458   Data           4  board.o(.constdata)
-    arm_cfft_sR_q31_len4096                  0x00004490   Data          16  arm_const_structs.o(.constdata)
-    arm_cfft_sR_q15_len16                    0x000044a0   Data          16  arm_const_structs.o(.constdata)
-    arm_cfft_sR_q15_len32                    0x000044b0   Data          16  arm_const_structs.o(.constdata)
-    arm_cfft_sR_q15_len64                    0x000044c0   Data          16  arm_const_structs.o(.constdata)
-    arm_cfft_sR_q15_len128                   0x000044d0   Data          16  arm_const_structs.o(.constdata)
-    arm_cfft_sR_q15_len256                   0x000044e0   Data          16  arm_const_structs.o(.constdata)
-    arm_cfft_sR_q15_len512                   0x000044f0   Data          16  arm_const_structs.o(.constdata)
-    arm_cfft_sR_q15_len1024                  0x00004500   Data          16  arm_const_structs.o(.constdata)
-    arm_cfft_sR_q15_len2048                  0x00004510   Data          16  arm_const_structs.o(.constdata)
-    arm_cfft_sR_q15_len4096                  0x00004520   Data          16  arm_const_structs.o(.constdata)
-    twiddleCoef_4096_q31                     0x0000c530   Data       24576  arm_common_tables.o(.constdata)
-    twiddleCoef_16_q15                       0x00012530   Data          48  arm_common_tables.o(.constdata)
-    twiddleCoef_32_q15                       0x00012560   Data          96  arm_common_tables.o(.constdata)
-    twiddleCoef_64_q15                       0x000125c0   Data         192  arm_common_tables.o(.constdata)
-    twiddleCoef_128_q15                      0x00012680   Data         384  arm_common_tables.o(.constdata)
-    twiddleCoef_256_q15                      0x00012800   Data         768  arm_common_tables.o(.constdata)
-    twiddleCoef_512_q15                      0x00012b00   Data        1536  arm_common_tables.o(.constdata)
-    twiddleCoef_1024_q15                     0x00013100   Data        3072  arm_common_tables.o(.constdata)
-    twiddleCoef_2048_q15                     0x00013d00   Data        6144  arm_common_tables.o(.constdata)
-    twiddleCoef_4096_q15                     0x00015500   Data       12288  arm_common_tables.o(.constdata)
-    armBitRevIndexTable_fixed_16             0x00018500   Data          24  arm_common_tables.o(.constdata)
-    armBitRevIndexTable_fixed_32             0x00018518   Data          48  arm_common_tables.o(.constdata)
-    armBitRevIndexTable_fixed_64             0x00018548   Data         112  arm_common_tables.o(.constdata)
-    armBitRevIndexTable_fixed_128            0x000185b8   Data         224  arm_common_tables.o(.constdata)
-    armBitRevIndexTable_fixed_256            0x00018698   Data         480  arm_common_tables.o(.constdata)
-    armBitRevIndexTable_fixed_512            0x00018878   Data         960  arm_common_tables.o(.constdata)
-    armBitRevIndexTable_fixed_1024           0x00018c38   Data        1984  arm_common_tables.o(.constdata)
-    armBitRevIndexTable_fixed_2048           0x000193f8   Data        3968  arm_common_tables.o(.constdata)
-    armBitRevIndexTable_fixed_4096           0x0001a378   Data        8064  arm_common_tables.o(.constdata)
-    Region$$Table$$Base                      0x0001c33c   Number         0  anon$$obj.o(Region$$Table)
-    Region$$Table$$Limit                     0x0001c35c   Number         0  anon$$obj.o(Region$$Table)
+    main                                     0x00002c91   Thumb Code  6034  cm_test.o(i.main)
+    _fp_init                                 0x000044d5   Thumb Code    10  fpinit.o(x$fpl$fpinit)
+    __fplib_config_fpu_vfp                   0x000044dd   Thumb Code     0  fpinit.o(x$fpl$fpinit)
+    __fplib_config_pureend_doubles           0x000044dd   Thumb Code     0  fpinit.o(x$fpl$fpinit)
+    ExtClockIn                               0x000044f0   Data           4  board.o(.constdata)
+    arm_cfft_sR_q31_len4096                  0x00004528   Data          16  arm_const_structs.o(.constdata)
+    arm_cfft_sR_q15_len16                    0x00004538   Data          16  arm_const_structs.o(.constdata)
+    arm_cfft_sR_q15_len32                    0x00004548   Data          16  arm_const_structs.o(.constdata)
+    arm_cfft_sR_q15_len64                    0x00004558   Data          16  arm_const_structs.o(.constdata)
+    arm_cfft_sR_q15_len128                   0x00004568   Data          16  arm_const_structs.o(.constdata)
+    arm_cfft_sR_q15_len256                   0x00004578   Data          16  arm_const_structs.o(.constdata)
+    arm_cfft_sR_q15_len512                   0x00004588   Data          16  arm_const_structs.o(.constdata)
+    arm_cfft_sR_q15_len1024                  0x00004598   Data          16  arm_const_structs.o(.constdata)
+    arm_cfft_sR_q15_len2048                  0x000045a8   Data          16  arm_const_structs.o(.constdata)
+    arm_cfft_sR_q15_len4096                  0x000045b8   Data          16  arm_const_structs.o(.constdata)
+    twiddleCoef_4096_q31                     0x0000c5c8   Data       24576  arm_common_tables.o(.constdata)
+    twiddleCoef_16_q15                       0x000125c8   Data          48  arm_common_tables.o(.constdata)
+    twiddleCoef_32_q15                       0x000125f8   Data          96  arm_common_tables.o(.constdata)
+    twiddleCoef_64_q15                       0x00012658   Data         192  arm_common_tables.o(.constdata)
+    twiddleCoef_128_q15                      0x00012718   Data         384  arm_common_tables.o(.constdata)
+    twiddleCoef_256_q15                      0x00012898   Data         768  arm_common_tables.o(.constdata)
+    twiddleCoef_512_q15                      0x00012b98   Data        1536  arm_common_tables.o(.constdata)
+    twiddleCoef_1024_q15                     0x00013198   Data        3072  arm_common_tables.o(.constdata)
+    twiddleCoef_2048_q15                     0x00013d98   Data        6144  arm_common_tables.o(.constdata)
+    twiddleCoef_4096_q15                     0x00015598   Data       12288  arm_common_tables.o(.constdata)
+    armBitRevIndexTable_fixed_16             0x00018598   Data          24  arm_common_tables.o(.constdata)
+    armBitRevIndexTable_fixed_32             0x000185b0   Data          48  arm_common_tables.o(.constdata)
+    armBitRevIndexTable_fixed_64             0x000185e0   Data         112  arm_common_tables.o(.constdata)
+    armBitRevIndexTable_fixed_128            0x00018650   Data         224  arm_common_tables.o(.constdata)
+    armBitRevIndexTable_fixed_256            0x00018730   Data         480  arm_common_tables.o(.constdata)
+    armBitRevIndexTable_fixed_512            0x00018910   Data         960  arm_common_tables.o(.constdata)
+    armBitRevIndexTable_fixed_1024           0x00018cd0   Data        1984  arm_common_tables.o(.constdata)
+    armBitRevIndexTable_fixed_2048           0x00019490   Data        3968  arm_common_tables.o(.constdata)
+    armBitRevIndexTable_fixed_4096           0x0001a410   Data        8064  arm_common_tables.o(.constdata)
+    Region$$Table$$Base                      0x0001c3d4   Number         0  anon$$obj.o(Region$$Table)
+    Region$$Table$$Limit                     0x0001c3f4   Number         0  anon$$obj.o(Region$$Table)
     IIR_State_q15                            0x20000000   Data           8  cm_test.o(.data)
     IIR_Coef_q15                             0x20000008   Data          10  cm_test.o(.data)
     SystemCoreClock                          0x20000014   Data           4  chip_5411x.o(.data)
@@ -1696,209 +1694,209 @@ Memory Map of the image
 
   Image Entry point : 0x000000e1
 
-  Load Region LR_IROM1 (Base: 0x00000000, Size: 0x0001c37c, Max: 0x00040000, ABSOLUTE)
+  Load Region LR_IROM1 (Base: 0x00000000, Size: 0x0001c414, Max: 0x00040000, ABSOLUTE)
 
-    Execution Region ER_IROM1 (Base: 0x00000000, Size: 0x0001c35c, Max: 0x00040000, ABSOLUTE)
+    Execution Region ER_IROM1 (Base: 0x00000000, Size: 0x0001c3f4, Max: 0x00040000, ABSOLUTE)
 
     Base Addr    Size         Type   Attr      Idx    E Section Name        Object
 
     0x00000000   0x000000e0   Data   RO          191    RESET               keil_startup_lpc5411x.o
-    0x000000e0   0x00000008   Code   RO         2233  * !!!main             c_w.l(__main.o)
-    0x000000e8   0x00000034   Code   RO         2605    !!!scatter          c_w.l(__scatter.o)
-    0x0000011c   0x0000001a   Code   RO         2607    !!handler_copy      c_w.l(__scatter_copy.o)
+    0x000000e0   0x00000008   Code   RO         2228  * !!!main             c_w.l(__main.o)
+    0x000000e8   0x00000034   Code   RO         2600    !!!scatter          c_w.l(__scatter.o)
+    0x0000011c   0x0000001a   Code   RO         2602    !!handler_copy      c_w.l(__scatter_copy.o)
     0x00000136   0x00000002   PAD
-    0x00000138   0x0000001c   Code   RO         2609    !!handler_zi        c_w.l(__scatter_zi.o)
-    0x00000154   0x000000c0   Code   RO         1908    . text              CMSIS_DSP_4_5_O3.lib(arm_bitreversal2.o)
-    0x00000214   0x00000000   Code   RO         2217    .ARM.Collect$$_printf_percent$$00000000  c_w.l(_printf_percent.o)
-    0x00000214   0x00000006   Code   RO         2215    .ARM.Collect$$_printf_percent$$00000008  c_w.l(_printf_i.o)
-    0x0000021a   0x00000006   Code   RO         2216    .ARM.Collect$$_printf_percent$$00000009  c_w.l(_printf_d.o)
-    0x00000220   0x00000006   Code   RO         2214    .ARM.Collect$$_printf_percent$$00000014  c_w.l(_printf_s.o)
-    0x00000226   0x00000004   Code   RO         2348    .ARM.Collect$$_printf_percent$$00000017  c_w.l(_printf_percent_end.o)
-    0x0000022a   0x00000002   Code   RO         2529    .ARM.Collect$$libinit$$00000000  c_w.l(libinit.o)
-    0x0000022c   0x00000004   Code   RO         2353    .ARM.Collect$$libinit$$00000001  c_w.l(libinit2.o)
-    0x00000230   0x00000000   Code   RO         2356    .ARM.Collect$$libinit$$00000004  c_w.l(libinit2.o)
-    0x00000230   0x00000000   Code   RO         2359    .ARM.Collect$$libinit$$0000000A  c_w.l(libinit2.o)
-    0x00000230   0x00000000   Code   RO         2361    .ARM.Collect$$libinit$$0000000C  c_w.l(libinit2.o)
-    0x00000230   0x00000004   Code   RO         2362    .ARM.Collect$$libinit$$0000000D  c_w.l(libinit2.o)
-    0x00000234   0x00000000   Code   RO         2363    .ARM.Collect$$libinit$$0000000E  c_w.l(libinit2.o)
-    0x00000234   0x00000000   Code   RO         2366    .ARM.Collect$$libinit$$00000011  c_w.l(libinit2.o)
-    0x00000234   0x00000000   Code   RO         2368    .ARM.Collect$$libinit$$00000013  c_w.l(libinit2.o)
-    0x00000234   0x00000000   Code   RO         2370    .ARM.Collect$$libinit$$00000015  c_w.l(libinit2.o)
-    0x00000234   0x00000000   Code   RO         2372    .ARM.Collect$$libinit$$00000017  c_w.l(libinit2.o)
-    0x00000234   0x00000000   Code   RO         2374    .ARM.Collect$$libinit$$00000019  c_w.l(libinit2.o)
-    0x00000234   0x00000000   Code   RO         2376    .ARM.Collect$$libinit$$0000001B  c_w.l(libinit2.o)
-    0x00000234   0x00000000   Code   RO         2378    .ARM.Collect$$libinit$$0000001D  c_w.l(libinit2.o)
-    0x00000234   0x00000000   Code   RO         2380    .ARM.Collect$$libinit$$0000001F  c_w.l(libinit2.o)
-    0x00000234   0x00000000   Code   RO         2382    .ARM.Collect$$libinit$$00000021  c_w.l(libinit2.o)
-    0x00000234   0x00000000   Code   RO         2384    .ARM.Collect$$libinit$$00000023  c_w.l(libinit2.o)
-    0x00000234   0x00000000   Code   RO         2386    .ARM.Collect$$libinit$$00000025  c_w.l(libinit2.o)
-    0x00000234   0x00000000   Code   RO         2390    .ARM.Collect$$libinit$$0000002C  c_w.l(libinit2.o)
-    0x00000234   0x00000000   Code   RO         2392    .ARM.Collect$$libinit$$0000002E  c_w.l(libinit2.o)
-    0x00000234   0x00000000   Code   RO         2394    .ARM.Collect$$libinit$$00000030  c_w.l(libinit2.o)
-    0x00000234   0x00000000   Code   RO         2396    .ARM.Collect$$libinit$$00000032  c_w.l(libinit2.o)
-    0x00000234   0x00000002   Code   RO         2397    .ARM.Collect$$libinit$$00000033  c_w.l(libinit2.o)
-    0x00000236   0x00000002   Code   RO         2572    .ARM.Collect$$libshutdown$$00000000  c_w.l(libshutdown.o)
-    0x00000238   0x00000000   Code   RO         2588    .ARM.Collect$$libshutdown$$00000002  c_w.l(libshutdown2.o)
-    0x00000238   0x00000000   Code   RO         2590    .ARM.Collect$$libshutdown$$00000004  c_w.l(libshutdown2.o)
-    0x00000238   0x00000000   Code   RO         2593    .ARM.Collect$$libshutdown$$00000007  c_w.l(libshutdown2.o)
-    0x00000238   0x00000000   Code   RO         2596    .ARM.Collect$$libshutdown$$0000000A  c_w.l(libshutdown2.o)
-    0x00000238   0x00000000   Code   RO         2598    .ARM.Collect$$libshutdown$$0000000C  c_w.l(libshutdown2.o)
-    0x00000238   0x00000000   Code   RO         2601    .ARM.Collect$$libshutdown$$0000000F  c_w.l(libshutdown2.o)
-    0x00000238   0x00000002   Code   RO         2602    .ARM.Collect$$libshutdown$$00000010  c_w.l(libshutdown2.o)
-    0x0000023a   0x00000000   Code   RO         2335    .ARM.Collect$$rtentry$$00000000  c_w.l(__rtentry.o)
-    0x0000023a   0x00000000   Code   RO         2478    .ARM.Collect$$rtentry$$00000002  c_w.l(__rtentry2.o)
-    0x0000023a   0x00000006   Code   RO         2490    .ARM.Collect$$rtentry$$00000004  c_w.l(__rtentry4.o)
-    0x00000240   0x00000000   Code   RO         2480    .ARM.Collect$$rtentry$$00000009  c_w.l(__rtentry2.o)
-    0x00000240   0x00000004   Code   RO         2481    .ARM.Collect$$rtentry$$0000000A  c_w.l(__rtentry2.o)
-    0x00000244   0x00000000   Code   RO         2483    .ARM.Collect$$rtentry$$0000000C  c_w.l(__rtentry2.o)
-    0x00000244   0x00000008   Code   RO         2484    .ARM.Collect$$rtentry$$0000000D  c_w.l(__rtentry2.o)
-    0x0000024c   0x00000002   Code   RO         2534    .ARM.Collect$$rtexit$$00000000  c_w.l(rtexit.o)
-    0x0000024e   0x00000000   Code   RO         2554    .ARM.Collect$$rtexit$$00000002  c_w.l(rtexit2.o)
-    0x0000024e   0x00000004   Code   RO         2555    .ARM.Collect$$rtexit$$00000003  c_w.l(rtexit2.o)
-    0x00000252   0x00000006   Code   RO         2556    .ARM.Collect$$rtexit$$00000004  c_w.l(rtexit2.o)
-    0x00000258   0x00000034   Code   RO         2218    .emb_text           c_w.l(rand.o)
+    0x00000138   0x0000001c   Code   RO         2604    !!handler_zi        c_w.l(__scatter_zi.o)
+    0x00000154   0x000000c0   Code   RO         1903    . text              CMSIS_DSP_4_5_O3.lib(arm_bitreversal2.o)
+    0x00000214   0x00000000   Code   RO         2212    .ARM.Collect$$_printf_percent$$00000000  c_w.l(_printf_percent.o)
+    0x00000214   0x00000006   Code   RO         2210    .ARM.Collect$$_printf_percent$$00000008  c_w.l(_printf_i.o)
+    0x0000021a   0x00000006   Code   RO         2211    .ARM.Collect$$_printf_percent$$00000009  c_w.l(_printf_d.o)
+    0x00000220   0x00000006   Code   RO         2209    .ARM.Collect$$_printf_percent$$00000014  c_w.l(_printf_s.o)
+    0x00000226   0x00000004   Code   RO         2343    .ARM.Collect$$_printf_percent$$00000017  c_w.l(_printf_percent_end.o)
+    0x0000022a   0x00000002   Code   RO         2524    .ARM.Collect$$libinit$$00000000  c_w.l(libinit.o)
+    0x0000022c   0x00000004   Code   RO         2348    .ARM.Collect$$libinit$$00000001  c_w.l(libinit2.o)
+    0x00000230   0x00000000   Code   RO         2351    .ARM.Collect$$libinit$$00000004  c_w.l(libinit2.o)
+    0x00000230   0x00000000   Code   RO         2354    .ARM.Collect$$libinit$$0000000A  c_w.l(libinit2.o)
+    0x00000230   0x00000000   Code   RO         2356    .ARM.Collect$$libinit$$0000000C  c_w.l(libinit2.o)
+    0x00000230   0x00000004   Code   RO         2357    .ARM.Collect$$libinit$$0000000D  c_w.l(libinit2.o)
+    0x00000234   0x00000000   Code   RO         2358    .ARM.Collect$$libinit$$0000000E  c_w.l(libinit2.o)
+    0x00000234   0x00000000   Code   RO         2361    .ARM.Collect$$libinit$$00000011  c_w.l(libinit2.o)
+    0x00000234   0x00000000   Code   RO         2363    .ARM.Collect$$libinit$$00000013  c_w.l(libinit2.o)
+    0x00000234   0x00000000   Code   RO         2365    .ARM.Collect$$libinit$$00000015  c_w.l(libinit2.o)
+    0x00000234   0x00000000   Code   RO         2367    .ARM.Collect$$libinit$$00000017  c_w.l(libinit2.o)
+    0x00000234   0x00000000   Code   RO         2369    .ARM.Collect$$libinit$$00000019  c_w.l(libinit2.o)
+    0x00000234   0x00000000   Code   RO         2371    .ARM.Collect$$libinit$$0000001B  c_w.l(libinit2.o)
+    0x00000234   0x00000000   Code   RO         2373    .ARM.Collect$$libinit$$0000001D  c_w.l(libinit2.o)
+    0x00000234   0x00000000   Code   RO         2375    .ARM.Collect$$libinit$$0000001F  c_w.l(libinit2.o)
+    0x00000234   0x00000000   Code   RO         2377    .ARM.Collect$$libinit$$00000021  c_w.l(libinit2.o)
+    0x00000234   0x00000000   Code   RO         2379    .ARM.Collect$$libinit$$00000023  c_w.l(libinit2.o)
+    0x00000234   0x00000000   Code   RO         2381    .ARM.Collect$$libinit$$00000025  c_w.l(libinit2.o)
+    0x00000234   0x00000000   Code   RO         2385    .ARM.Collect$$libinit$$0000002C  c_w.l(libinit2.o)
+    0x00000234   0x00000000   Code   RO         2387    .ARM.Collect$$libinit$$0000002E  c_w.l(libinit2.o)
+    0x00000234   0x00000000   Code   RO         2389    .ARM.Collect$$libinit$$00000030  c_w.l(libinit2.o)
+    0x00000234   0x00000000   Code   RO         2391    .ARM.Collect$$libinit$$00000032  c_w.l(libinit2.o)
+    0x00000234   0x00000002   Code   RO         2392    .ARM.Collect$$libinit$$00000033  c_w.l(libinit2.o)
+    0x00000236   0x00000002   Code   RO         2567    .ARM.Collect$$libshutdown$$00000000  c_w.l(libshutdown.o)
+    0x00000238   0x00000000   Code   RO         2583    .ARM.Collect$$libshutdown$$00000002  c_w.l(libshutdown2.o)
+    0x00000238   0x00000000   Code   RO         2585    .ARM.Collect$$libshutdown$$00000004  c_w.l(libshutdown2.o)
+    0x00000238   0x00000000   Code   RO         2588    .ARM.Collect$$libshutdown$$00000007  c_w.l(libshutdown2.o)
+    0x00000238   0x00000000   Code   RO         2591    .ARM.Collect$$libshutdown$$0000000A  c_w.l(libshutdown2.o)
+    0x00000238   0x00000000   Code   RO         2593    .ARM.Collect$$libshutdown$$0000000C  c_w.l(libshutdown2.o)
+    0x00000238   0x00000000   Code   RO         2596    .ARM.Collect$$libshutdown$$0000000F  c_w.l(libshutdown2.o)
+    0x00000238   0x00000002   Code   RO         2597    .ARM.Collect$$libshutdown$$00000010  c_w.l(libshutdown2.o)
+    0x0000023a   0x00000000   Code   RO         2330    .ARM.Collect$$rtentry$$00000000  c_w.l(__rtentry.o)
+    0x0000023a   0x00000000   Code   RO         2473    .ARM.Collect$$rtentry$$00000002  c_w.l(__rtentry2.o)
+    0x0000023a   0x00000006   Code   RO         2485    .ARM.Collect$$rtentry$$00000004  c_w.l(__rtentry4.o)
+    0x00000240   0x00000000   Code   RO         2475    .ARM.Collect$$rtentry$$00000009  c_w.l(__rtentry2.o)
+    0x00000240   0x00000004   Code   RO         2476    .ARM.Collect$$rtentry$$0000000A  c_w.l(__rtentry2.o)
+    0x00000244   0x00000000   Code   RO         2478    .ARM.Collect$$rtentry$$0000000C  c_w.l(__rtentry2.o)
+    0x00000244   0x00000008   Code   RO         2479    .ARM.Collect$$rtentry$$0000000D  c_w.l(__rtentry2.o)
+    0x0000024c   0x00000002   Code   RO         2529    .ARM.Collect$$rtexit$$00000000  c_w.l(rtexit.o)
+    0x0000024e   0x00000000   Code   RO         2549    .ARM.Collect$$rtexit$$00000002  c_w.l(rtexit2.o)
+    0x0000024e   0x00000004   Code   RO         2550    .ARM.Collect$$rtexit$$00000003  c_w.l(rtexit2.o)
+    0x00000252   0x00000006   Code   RO         2551    .ARM.Collect$$rtexit$$00000004  c_w.l(rtexit2.o)
+    0x00000258   0x00000034   Code   RO         2213    .emb_text           c_w.l(rand.o)
     0x0000028c   0x00000094   Code   RO          192    .text               keil_startup_lpc5411x.o
-    0x00000320   0x000000ee   Code   RO         2180    .text               c_w.l(lludivv7m.o)
+    0x00000320   0x000000ee   Code   RO         2175    .text               c_w.l(lludivv7m.o)
     0x0000040e   0x00000002   PAD
-    0x00000410   0x00000018   Code   RO         2186    .text               c_w.l(noretval__2printf.o)
-    0x00000428   0x00000068   Code   RO         2188    .text               c_w.l(__printf.o)
-    0x00000490   0x00000052   Code   RO         2190    .text               c_w.l(_printf_str.o)
+    0x00000410   0x00000018   Code   RO         2181    .text               c_w.l(noretval__2printf.o)
+    0x00000428   0x00000068   Code   RO         2183    .text               c_w.l(__printf.o)
+    0x00000490   0x00000052   Code   RO         2185    .text               c_w.l(_printf_str.o)
     0x000004e2   0x00000002   PAD
-    0x000004e4   0x00000078   Code   RO         2192    .text               c_w.l(_printf_dec.o)
-    0x0000055c   0x0000003c   Code   RO         2219    .text               c_w.l(rand.o)
-    0x00000598   0x00000044   Code   RO         2229    .text               c_w.l(rt_memclr.o)
-    0x000005dc   0x00000006   Code   RO         2231    .text               c_w.l(heapauxi.o)
-    0x000005e2   0x000000b2   Code   RO         2342    .text               c_w.l(_printf_intcommon.o)
-    0x00000694   0x0000002c   Code   RO         2344    .text               c_w.l(_printf_char.o)
-    0x000006c0   0x00000024   Code   RO         2346    .text               c_w.l(_printf_char_file.o)
-    0x000006e4   0x0000004e   Code   RO         2351    .text               c_w.l(rt_memclr_w.o)
+    0x000004e4   0x00000078   Code   RO         2187    .text               c_w.l(_printf_dec.o)
+    0x0000055c   0x0000003c   Code   RO         2214    .text               c_w.l(rand.o)
+    0x00000598   0x00000044   Code   RO         2224    .text               c_w.l(rt_memclr.o)
+    0x000005dc   0x00000006   Code   RO         2226    .text               c_w.l(heapauxi.o)
+    0x000005e2   0x000000b2   Code   RO         2337    .text               c_w.l(_printf_intcommon.o)
+    0x00000694   0x0000002c   Code   RO         2339    .text               c_w.l(_printf_char.o)
+    0x000006c0   0x00000024   Code   RO         2341    .text               c_w.l(_printf_char_file.o)
+    0x000006e4   0x0000004e   Code   RO         2346    .text               c_w.l(rt_memclr_w.o)
     0x00000732   0x00000002   PAD
-    0x00000734   0x00000030   Code   RO         2499    .text               c_w.l(_printf_char_common.o)
-    0x00000764   0x00000008   Code   RO         2507    .text               c_w.l(libspace.o)
-    0x0000076c   0x0000004a   Code   RO         2510    .text               c_w.l(sys_stackheap_outer.o)
-    0x000007b6   0x00000012   Code   RO         2514    .text               c_w.l(exit.o)
-    0x000007c8   0x0000003c   Code   RO          572    i.Board_Debug_Init  lib_board_lpcxpresso_54114.lib(board.o)
-    0x00000804   0x000000bc   Code   RO          573    i.Board_Init        lib_board_lpcxpresso_54114.lib(board.o)
-    0x000008c0   0x00000028   Code   RO          878    i.Board_SetupClocking  lib_board_lpcxpresso_54114.lib(board_sysinit.o)
-    0x000008e8   0x00000024   Code   RO          879    i.Board_SetupMuxing  lib_board_lpcxpresso_54114.lib(board_sysinit.o)
-    0x0000090c   0x00000022   Code   RO          880    i.Board_SystemInit  lib_board_lpcxpresso_54114.lib(board_sysinit.o)
+    0x00000734   0x00000030   Code   RO         2494    .text               c_w.l(_printf_char_common.o)
+    0x00000764   0x00000008   Code   RO         2502    .text               c_w.l(libspace.o)
+    0x0000076c   0x0000004a   Code   RO         2505    .text               c_w.l(sys_stackheap_outer.o)
+    0x000007b6   0x00000012   Code   RO         2509    .text               c_w.l(exit.o)
+    0x000007c8   0x0000003c   Code   RO          567    i.Board_Debug_Init  lib_board_lpcxpresso_54114.lib(board.o)
+    0x00000804   0x000000bc   Code   RO          568    i.Board_Init        lib_board_lpcxpresso_54114.lib(board.o)
+    0x000008c0   0x00000028   Code   RO          873    i.Board_SetupClocking  lib_board_lpcxpresso_54114.lib(board_sysinit.o)
+    0x000008e8   0x00000024   Code   RO          874    i.Board_SetupMuxing  lib_board_lpcxpresso_54114.lib(board_sysinit.o)
+    0x0000090c   0x00000022   Code   RO          875    i.Board_SystemInit  lib_board_lpcxpresso_54114.lib(board_sysinit.o)
     0x0000092e   0x00000002   PAD
-    0x00000930   0x00000014   Code   RO          581    i.Board_UARTPutChar  lib_board_lpcxpresso_54114.lib(board.o)
-    0x00000944   0x00000030   Code   RO         1470    i.Chip_Clock_EnablePeriphClock  lib_chip_5411x.lib(clock_5411x.o)
-    0x00000974   0x00000034   Code   RO         1475    i.Chip_Clock_GetFRGInClockRate  lib_chip_5411x.lib(clock_5411x.o)
-    0x000009a8   0x0000001c   Code   RO         1476    i.Chip_Clock_GetFROHFRate  lib_chip_5411x.lib(clock_5411x.o)
-    0x000009c4   0x00000016   Code   RO         1478    i.Chip_Clock_GetMainClockRate  lib_chip_5411x.lib(clock_5411x.o)
+    0x00000930   0x00000014   Code   RO          576    i.Board_UARTPutChar  lib_board_lpcxpresso_54114.lib(board.o)
+    0x00000944   0x00000030   Code   RO         1465    i.Chip_Clock_EnablePeriphClock  lib_chip_5411x.lib(clock_5411x.o)
+    0x00000974   0x00000034   Code   RO         1470    i.Chip_Clock_GetFRGInClockRate  lib_chip_5411x.lib(clock_5411x.o)
+    0x000009a8   0x0000001c   Code   RO         1471    i.Chip_Clock_GetFROHFRate  lib_chip_5411x.lib(clock_5411x.o)
+    0x000009c4   0x00000016   Code   RO         1473    i.Chip_Clock_GetMainClockRate  lib_chip_5411x.lib(clock_5411x.o)
     0x000009da   0x00000002   PAD
-    0x000009dc   0x00000038   Code   RO         1480    i.Chip_Clock_GetMain_A_ClockRate  lib_chip_5411x.lib(clock_5411x.o)
-    0x00000a14   0x00000028   Code   RO         1481    i.Chip_Clock_GetMain_B_ClockRate  lib_chip_5411x.lib(clock_5411x.o)
-    0x00000a3c   0x00000018   Code   RO         1483    i.Chip_Clock_GetSystemClockRate  lib_chip_5411x.lib(clock_5411x.o)
-    0x00000a54   0x00000038   Code   RO         1979    i.Chip_Clock_GetSystemPLLInClockRate  lib_chip_5411x.lib(pll_5411x.o)
-    0x00000a8c   0x00000048   Code   RO         1980    i.Chip_Clock_GetSystemPLLOutClockRate  lib_chip_5411x.lib(pll_5411x.o)
-    0x00000ad4   0x00000070   Code   RO         1981    i.Chip_Clock_GetSystemPLLOutFromSetup  lib_chip_5411x.lib(pll_5411x.o)
-    0x00000b44   0x00000010   Code   RO         1982    i.Chip_Clock_GetSystemPLLOutFromSetupUpdate  lib_chip_5411x.lib(pll_5411x.o)
-    0x00000b54   0x00000064   Code   RO         1484    i.Chip_Clock_GetWDTOSCRate  lib_chip_5411x.lib(clock_5411x.o)
-    0x00000bb8   0x0000001a   Code   RO         1344    i.Chip_Clock_SetMainClockSource  lib_chip_5411x.lib(sysinit_5411x.o)
+    0x000009dc   0x00000038   Code   RO         1475    i.Chip_Clock_GetMain_A_ClockRate  lib_chip_5411x.lib(clock_5411x.o)
+    0x00000a14   0x00000028   Code   RO         1476    i.Chip_Clock_GetMain_B_ClockRate  lib_chip_5411x.lib(clock_5411x.o)
+    0x00000a3c   0x00000018   Code   RO         1478    i.Chip_Clock_GetSystemClockRate  lib_chip_5411x.lib(clock_5411x.o)
+    0x00000a54   0x00000038   Code   RO         1974    i.Chip_Clock_GetSystemPLLInClockRate  lib_chip_5411x.lib(pll_5411x.o)
+    0x00000a8c   0x00000048   Code   RO         1975    i.Chip_Clock_GetSystemPLLOutClockRate  lib_chip_5411x.lib(pll_5411x.o)
+    0x00000ad4   0x00000070   Code   RO         1976    i.Chip_Clock_GetSystemPLLOutFromSetup  lib_chip_5411x.lib(pll_5411x.o)
+    0x00000b44   0x00000010   Code   RO         1977    i.Chip_Clock_GetSystemPLLOutFromSetupUpdate  lib_chip_5411x.lib(pll_5411x.o)
+    0x00000b54   0x00000064   Code   RO         1479    i.Chip_Clock_GetWDTOSCRate  lib_chip_5411x.lib(clock_5411x.o)
+    0x00000bb8   0x0000001a   Code   RO         1339    i.Chip_Clock_SetMainClockSource  lib_chip_5411x.lib(sysinit_5411x.o)
     0x00000bd2   0x00000002   PAD
-    0x00000bd4   0x00000060   Code   RO         2093    i.Chip_FLEXCOMM_GetIndex  lib_chip_5411x.lib(flexcomm_5411x.o)
-    0x00000c34   0x00000058   Code   RO         2094    i.Chip_FLEXCOMM_Init  lib_chip_5411x.lib(flexcomm_5411x.o)
-    0x00000c8c   0x0000003e   Code   RO         2095    i.Chip_FLEXCOMM_SetPeriph  lib_chip_5411x.lib(flexcomm_5411x.o)
-    0x00000cca   0x00000014   Code   RO          584    i.Chip_GPIO_SetPinDIROutput  lib_board_lpcxpresso_54114.lib(board.o)
+    0x00000bd4   0x00000060   Code   RO         2088    i.Chip_FLEXCOMM_GetIndex  lib_chip_5411x.lib(flexcomm_5411x.o)
+    0x00000c34   0x00000058   Code   RO         2089    i.Chip_FLEXCOMM_Init  lib_chip_5411x.lib(flexcomm_5411x.o)
+    0x00000c8c   0x0000003e   Code   RO         2090    i.Chip_FLEXCOMM_SetPeriph  lib_chip_5411x.lib(flexcomm_5411x.o)
+    0x00000cca   0x00000014   Code   RO          579    i.Chip_GPIO_SetPinDIROutput  lib_board_lpcxpresso_54114.lib(board.o)
     0x00000cde   0x00000002   PAD
-    0x00000ce0   0x00000024   Code   RO          881    i.Chip_IOCON_SetPinMuxing  lib_board_lpcxpresso_54114.lib(board_sysinit.o)
-    0x00000d04   0x0000004c   Code   RO         1724    i.Chip_POWER_SetFROHFRate  keil_lib_power.lib(power_library.o)
-    0x00000d50   0x00000118   Code   RO         1727    i.Chip_POWER_SetVoltage  keil_lib_power.lib(power_library.o)
-    0x00000e68   0x0000000c   Code   RO         1415    i.Chip_SYSCON_Enable_ASYNC_Syscon  lib_chip_5411x.lib(syscon_5411x.o)
-    0x00000e74   0x00000040   Code   RO          585    i.Chip_SYSCON_PeriphReset  lib_board_lpcxpresso_54114.lib(board.o)
-    0x00000eb4   0x00000040   Code   RO         2096    i.Chip_SYSCON_PeriphReset  lib_chip_5411x.lib(flexcomm_5411x.o)
-    0x00000ef4   0x00000044   Code   RO         1417    i.Chip_SYSCON_PowerUp  lib_chip_5411x.lib(syscon_5411x.o)
-    0x00000f38   0x00000014   Code   RO         1345    i.Chip_SYSCON_SetFLASHAccess  lib_chip_5411x.lib(sysinit_5411x.o)
-    0x00000f4c   0x00000054   Code   RO         1347    i.Chip_SetupFROClocking  lib_chip_5411x.lib(sysinit_5411x.o)
-    0x00000fa0   0x00000018   Code   RO         1590    i.Chip_UART_CalculateBaud  lib_chip_5411x.lib(uart_5411x.o)
-    0x00000fb8   0x00000034   Code   RO         1595    i.Chip_UART_Init    lib_chip_5411x.lib(uart_5411x.o)
-    0x00000fec   0x00000020   Code   RO         1600    i.Chip_UART_Send    lib_chip_5411x.lib(uart_5411x.o)
-    0x0000100c   0x00000024   Code   RO         1601    i.Chip_UART_SendBlocking  lib_chip_5411x.lib(uart_5411x.o)
-    0x00001030   0x0000007a   Code   RO         1603    i.Chip_UART_SetBaud  lib_chip_5411x.lib(uart_5411x.o)
+    0x00000ce0   0x00000024   Code   RO          876    i.Chip_IOCON_SetPinMuxing  lib_board_lpcxpresso_54114.lib(board_sysinit.o)
+    0x00000d04   0x0000004c   Code   RO         1719    i.Chip_POWER_SetFROHFRate  keil_lib_power.lib(power_library.o)
+    0x00000d50   0x00000118   Code   RO         1722    i.Chip_POWER_SetVoltage  keil_lib_power.lib(power_library.o)
+    0x00000e68   0x0000000c   Code   RO         1410    i.Chip_SYSCON_Enable_ASYNC_Syscon  lib_chip_5411x.lib(syscon_5411x.o)
+    0x00000e74   0x00000040   Code   RO          580    i.Chip_SYSCON_PeriphReset  lib_board_lpcxpresso_54114.lib(board.o)
+    0x00000eb4   0x00000040   Code   RO         2091    i.Chip_SYSCON_PeriphReset  lib_chip_5411x.lib(flexcomm_5411x.o)
+    0x00000ef4   0x00000044   Code   RO         1412    i.Chip_SYSCON_PowerUp  lib_chip_5411x.lib(syscon_5411x.o)
+    0x00000f38   0x00000014   Code   RO         1340    i.Chip_SYSCON_SetFLASHAccess  lib_chip_5411x.lib(sysinit_5411x.o)
+    0x00000f4c   0x00000054   Code   RO         1342    i.Chip_SetupFROClocking  lib_chip_5411x.lib(sysinit_5411x.o)
+    0x00000fa0   0x00000018   Code   RO         1585    i.Chip_UART_CalculateBaud  lib_chip_5411x.lib(uart_5411x.o)
+    0x00000fb8   0x00000034   Code   RO         1590    i.Chip_UART_Init    lib_chip_5411x.lib(uart_5411x.o)
+    0x00000fec   0x00000020   Code   RO         1595    i.Chip_UART_Send    lib_chip_5411x.lib(uart_5411x.o)
+    0x0000100c   0x00000024   Code   RO         1596    i.Chip_UART_SendBlocking  lib_chip_5411x.lib(uart_5411x.o)
+    0x00001030   0x0000007a   Code   RO         1598    i.Chip_UART_SetBaud  lib_chip_5411x.lib(uart_5411x.o)
     0x000010aa   0x00000002   PAD
-    0x000010ac   0x00000054   Code   RO          882    i.ConfigureBridgeSSEL  lib_board_lpcxpresso_54114.lib(board_sysinit.o)
-    0x00001100   0x00000010   Code   RO          417    i.SystemCoreClockUpdate  lib_chip_5411x.lib(chip_5411x.o)
+    0x000010ac   0x00000054   Code   RO          877    i.ConfigureBridgeSSEL  lib_board_lpcxpresso_54114.lib(board_sysinit.o)
+    0x00001100   0x00000010   Code   RO          412    i.SystemCoreClockUpdate  lib_chip_5411x.lib(chip_5411x.o)
     0x00001110   0x0000001c   Code   RO            3    i.SystemInit        sysinit.o
-    0x0000112c   0x00000034   Code   RO         1605    i._CalcErr          lib_chip_5411x.lib(uart_5411x.o)
-    0x00001160   0x00000064   Code   RO         1606    i._UART_CalcDiv     lib_chip_5411x.lib(uart_5411x.o)
-    0x000011c4   0x0000009e   Code   RO         1607    i._UART_CalcMul     lib_chip_5411x.lib(uart_5411x.o)
-    0x00001262   0x00000004   Code   RO          586    i._sys_exit         lib_board_lpcxpresso_54114.lib(board.o)
+    0x0000112c   0x00000034   Code   RO         1600    i._CalcErr          lib_chip_5411x.lib(uart_5411x.o)
+    0x00001160   0x00000064   Code   RO         1601    i._UART_CalcDiv     lib_chip_5411x.lib(uart_5411x.o)
+    0x000011c4   0x0000009e   Code   RO         1602    i._UART_CalcMul     lib_chip_5411x.lib(uart_5411x.o)
+    0x00001262   0x00000004   Code   RO          581    i._sys_exit         lib_board_lpcxpresso_54114.lib(board.o)
     0x00001266   0x00000002   PAD
-    0x00001268   0x000000ca   Code   RO         1087    i.arm_biquad_cascade_df1_fast_q15  CMSIS_DSP_4_5_O3.lib(arm_biquad_cascade_df1_fast_q15.o)
-    0x00001332   0x0000001a   Code   RO         1111    i.arm_biquad_cascade_df1_init_q15  CMSIS_DSP_4_5_O3.lib(arm_biquad_cascade_df1_init_q15.o)
-    0x0000134c   0x000000f2   Code   RO         1135    i.arm_biquad_cascade_df1_q15  CMSIS_DSP_4_5_O3.lib(arm_biquad_cascade_df1_q15.o)
-    0x0000143e   0x000000b0   Code   RO         1207    i.arm_cfft_q15      CMSIS_DSP_4_5_O3.lib(arm_cfft_q15.o)
-    0x000014ee   0x000000b0   Code   RO         1243    i.arm_cfft_q31      CMSIS_DSP_4_5_O3.lib(arm_cfft_q31.o)
+    0x00001268   0x000000ca   Code   RO         1082    i.arm_biquad_cascade_df1_fast_q15  CMSIS_DSP_4_5_O3.lib(arm_biquad_cascade_df1_fast_q15.o)
+    0x00001332   0x0000001a   Code   RO         1106    i.arm_biquad_cascade_df1_init_q15  CMSIS_DSP_4_5_O3.lib(arm_biquad_cascade_df1_init_q15.o)
+    0x0000134c   0x000000f2   Code   RO         1130    i.arm_biquad_cascade_df1_q15  CMSIS_DSP_4_5_O3.lib(arm_biquad_cascade_df1_q15.o)
+    0x0000143e   0x000000b0   Code   RO         1202    i.arm_cfft_q15      CMSIS_DSP_4_5_O3.lib(arm_cfft_q15.o)
+    0x000014ee   0x000000b0   Code   RO         1238    i.arm_cfft_q31      CMSIS_DSP_4_5_O3.lib(arm_cfft_q31.o)
     0x0000159e   0x00000002   PAD
-    0x000015a0   0x0000009c   Code   RO         1208    i.arm_cfft_radix4by2_inverse_q15  CMSIS_DSP_4_5_O3.lib(arm_cfft_q15.o)
-    0x0000163c   0x000000d0   Code   RO         1244    i.arm_cfft_radix4by2_inverse_q31  CMSIS_DSP_4_5_O3.lib(arm_cfft_q31.o)
-    0x0000170c   0x0000009c   Code   RO         1209    i.arm_cfft_radix4by2_q15  CMSIS_DSP_4_5_O3.lib(arm_cfft_q15.o)
-    0x000017a8   0x000000d0   Code   RO         1245    i.arm_cfft_radix4by2_q31  CMSIS_DSP_4_5_O3.lib(arm_cfft_q31.o)
-    0x00001878   0x0000008c   Code   RO         1015    i.arm_cmplx_mag_q15  CMSIS_DSP_4_5_O3.lib(arm_cmplx_mag_q15.o)
-    0x00001904   0x00000062   Code   RO         1039    i.arm_cmplx_mag_squared_q15  CMSIS_DSP_4_5_O3.lib(arm_cmplx_mag_squared_q15.o)
-    0x00001966   0x00000026   Code   RO         1159    i.arm_fir_init_q15  CMSIS_DSP_4_5_O3.lib(arm_fir_init_q15.o)
-    0x0000198c   0x00000230   Code   RO         1183    i.arm_fir_q15       CMSIS_DSP_4_5_O3.lib(arm_fir_q15.o)
-    0x00001bbc   0x00000034   Code   RO         1063    i.arm_pid_init_q15  CMSIS_DSP_4_5_O3.lib(arm_pid_init_q15.o)
-    0x00001bf0   0x0000026e   Code   RO         1840    i.arm_radix4_butterfly_inverse_q15  CMSIS_DSP_4_5_O3.lib(arm_cfft_radix4_q15.o)
+    0x000015a0   0x0000009c   Code   RO         1203    i.arm_cfft_radix4by2_inverse_q15  CMSIS_DSP_4_5_O3.lib(arm_cfft_q15.o)
+    0x0000163c   0x000000d0   Code   RO         1239    i.arm_cfft_radix4by2_inverse_q31  CMSIS_DSP_4_5_O3.lib(arm_cfft_q31.o)
+    0x0000170c   0x0000009c   Code   RO         1204    i.arm_cfft_radix4by2_q15  CMSIS_DSP_4_5_O3.lib(arm_cfft_q15.o)
+    0x000017a8   0x000000d0   Code   RO         1240    i.arm_cfft_radix4by2_q31  CMSIS_DSP_4_5_O3.lib(arm_cfft_q31.o)
+    0x00001878   0x0000008c   Code   RO         1010    i.arm_cmplx_mag_q15  CMSIS_DSP_4_5_O3.lib(arm_cmplx_mag_q15.o)
+    0x00001904   0x00000062   Code   RO         1034    i.arm_cmplx_mag_squared_q15  CMSIS_DSP_4_5_O3.lib(arm_cmplx_mag_squared_q15.o)
+    0x00001966   0x00000026   Code   RO         1154    i.arm_fir_init_q15  CMSIS_DSP_4_5_O3.lib(arm_fir_init_q15.o)
+    0x0000198c   0x00000230   Code   RO         1178    i.arm_fir_q15       CMSIS_DSP_4_5_O3.lib(arm_fir_q15.o)
+    0x00001bbc   0x00000034   Code   RO         1058    i.arm_pid_init_q15  CMSIS_DSP_4_5_O3.lib(arm_pid_init_q15.o)
+    0x00001bf0   0x0000026e   Code   RO         1835    i.arm_radix4_butterfly_inverse_q15  CMSIS_DSP_4_5_O3.lib(arm_cfft_radix4_q15.o)
     0x00001e5e   0x00000002   PAD
-    0x00001e60   0x000003b0   Code   RO         1876    i.arm_radix4_butterfly_inverse_q31  CMSIS_DSP_4_5_O3.lib(arm_cfft_radix4_q31.o)
-    0x00002210   0x0000026e   Code   RO         1841    i.arm_radix4_butterfly_q15  CMSIS_DSP_4_5_O3.lib(arm_cfft_radix4_q15.o)
+    0x00001e60   0x000003b0   Code   RO         1871    i.arm_radix4_butterfly_inverse_q31  CMSIS_DSP_4_5_O3.lib(arm_cfft_radix4_q31.o)
+    0x00002210   0x0000026e   Code   RO         1836    i.arm_radix4_butterfly_q15  CMSIS_DSP_4_5_O3.lib(arm_cfft_radix4_q15.o)
     0x0000247e   0x00000002   PAD
-    0x00002480   0x000003ac   Code   RO         1877    i.arm_radix4_butterfly_q31  CMSIS_DSP_4_5_O3.lib(arm_cfft_radix4_q31.o)
-    0x0000282c   0x000000c4   Code   RO         1279    i.arm_rfft_init_q15  CMSIS_DSP_4_5_O3.lib(arm_rfft_init_q15.o)
-    0x000028f0   0x0000006c   Code   RO         1309    i.arm_rfft_q15      CMSIS_DSP_4_5_O3.lib(arm_rfft_q15.o)
-    0x0000295c   0x000000bc   Code   RO         1310    i.arm_split_rfft_q15  CMSIS_DSP_4_5_O3.lib(arm_rfft_q15.o)
-    0x00002a18   0x00000054   Code   RO         1311    i.arm_split_rifft_q15  CMSIS_DSP_4_5_O3.lib(arm_rfft_q15.o)
-    0x00002a6c   0x000000cc   Code   RO         1815    i.arm_sqrt_q15      CMSIS_DSP_4_5_O3.lib(arm_sqrt_q15.o)
-    0x00002b38   0x00000006   Code   RO          588    i.ferror            lib_board_lpcxpresso_54114.lib(board.o)
+    0x00002480   0x000003ac   Code   RO         1872    i.arm_radix4_butterfly_q31  CMSIS_DSP_4_5_O3.lib(arm_cfft_radix4_q31.o)
+    0x0000282c   0x000000c4   Code   RO         1274    i.arm_rfft_init_q15  CMSIS_DSP_4_5_O3.lib(arm_rfft_init_q15.o)
+    0x000028f0   0x0000006c   Code   RO         1304    i.arm_rfft_q15      CMSIS_DSP_4_5_O3.lib(arm_rfft_q15.o)
+    0x0000295c   0x000000bc   Code   RO         1305    i.arm_split_rfft_q15  CMSIS_DSP_4_5_O3.lib(arm_rfft_q15.o)
+    0x00002a18   0x00000054   Code   RO         1306    i.arm_split_rifft_q15  CMSIS_DSP_4_5_O3.lib(arm_rfft_q15.o)
+    0x00002a6c   0x000000cc   Code   RO         1810    i.arm_sqrt_q15      CMSIS_DSP_4_5_O3.lib(arm_sqrt_q15.o)
+    0x00002b38   0x00000006   Code   RO          583    i.ferror            lib_board_lpcxpresso_54114.lib(board.o)
     0x00002b3e   0x00000002   PAD
-    0x00002b40   0x0000005c   Code   RO         1989    i.findPllMMult      lib_chip_5411x.lib(pll_5411x.o)
-    0x00002b9c   0x00000052   Code   RO         1990    i.findPllPostDiv    lib_chip_5411x.lib(pll_5411x.o)
-    0x00002bee   0x0000005a   Code   RO         1991    i.findPllPreDiv     lib_chip_5411x.lib(pll_5411x.o)
-    0x00002c48   0x0000003c   Code   RO          368    i.fpuInit           lib_chip_5411x.lib(fpu_init.o)
-    0x00002c84   0x0000000c   Code   RO          590    i.fputc             lib_board_lpcxpresso_54114.lib(board.o)
-    0x00002c90   0x0000176c   Code   RO          198    i.main              cm_test.o
-    0x000043fc   0x00000040   Code   RO         1350    i.setupFlashClocks  lib_chip_5411x.lib(sysinit_5411x.o)
-    0x0000443c   0x0000000a   Code   RO         2505    x$fpl$fpinit        fz_wm.l(fpinit.o)
-    0x00004446   0x00000010   Data   RO          591    .constdata          lib_board_lpcxpresso_54114.lib(board.o)
-    0x00004456   0x00000002   PAD
-    0x00004458   0x00000004   Data   RO          592    .constdata          lib_board_lpcxpresso_54114.lib(board.o)
-    0x0000445c   0x00000034   Data   RO          883    .constdata          lib_board_lpcxpresso_54114.lib(board_sysinit.o)
-    0x00004490   0x00000010   Data   RO          963    .constdata          CMSIS_DSP_4_5_O3.lib(arm_const_structs.o)
-    0x000044a0   0x00000010   Data   RO          964    .constdata          CMSIS_DSP_4_5_O3.lib(arm_const_structs.o)
-    0x000044b0   0x00000010   Data   RO          965    .constdata          CMSIS_DSP_4_5_O3.lib(arm_const_structs.o)
-    0x000044c0   0x00000010   Data   RO          966    .constdata          CMSIS_DSP_4_5_O3.lib(arm_const_structs.o)
-    0x000044d0   0x00000010   Data   RO          967    .constdata          CMSIS_DSP_4_5_O3.lib(arm_const_structs.o)
-    0x000044e0   0x00000010   Data   RO          968    .constdata          CMSIS_DSP_4_5_O3.lib(arm_const_structs.o)
-    0x000044f0   0x00000010   Data   RO          969    .constdata          CMSIS_DSP_4_5_O3.lib(arm_const_structs.o)
-    0x00004500   0x00000010   Data   RO          970    .constdata          CMSIS_DSP_4_5_O3.lib(arm_const_structs.o)
-    0x00004510   0x00000010   Data   RO          971    .constdata          CMSIS_DSP_4_5_O3.lib(arm_const_structs.o)
-    0x00004520   0x00000010   Data   RO          972    .constdata          CMSIS_DSP_4_5_O3.lib(arm_const_structs.o)
-    0x00004530   0x00008000   Data   RO         1280    .constdata          CMSIS_DSP_4_5_O3.lib(arm_rfft_init_q15.o)
-    0x0000c530   0x00006000   Data   RO         1751    .constdata          CMSIS_DSP_4_5_O3.lib(arm_common_tables.o)
-    0x00012530   0x00000030   Data   RO         1752    .constdata          CMSIS_DSP_4_5_O3.lib(arm_common_tables.o)
-    0x00012560   0x00000060   Data   RO         1753    .constdata          CMSIS_DSP_4_5_O3.lib(arm_common_tables.o)
-    0x000125c0   0x000000c0   Data   RO         1754    .constdata          CMSIS_DSP_4_5_O3.lib(arm_common_tables.o)
-    0x00012680   0x00000180   Data   RO         1755    .constdata          CMSIS_DSP_4_5_O3.lib(arm_common_tables.o)
-    0x00012800   0x00000300   Data   RO         1756    .constdata          CMSIS_DSP_4_5_O3.lib(arm_common_tables.o)
-    0x00012b00   0x00000600   Data   RO         1757    .constdata          CMSIS_DSP_4_5_O3.lib(arm_common_tables.o)
-    0x00013100   0x00000c00   Data   RO         1758    .constdata          CMSIS_DSP_4_5_O3.lib(arm_common_tables.o)
-    0x00013d00   0x00001800   Data   RO         1759    .constdata          CMSIS_DSP_4_5_O3.lib(arm_common_tables.o)
-    0x00015500   0x00003000   Data   RO         1760    .constdata          CMSIS_DSP_4_5_O3.lib(arm_common_tables.o)
-    0x00018500   0x00000018   Data   RO         1772    .constdata          CMSIS_DSP_4_5_O3.lib(arm_common_tables.o)
-    0x00018518   0x00000030   Data   RO         1773    .constdata          CMSIS_DSP_4_5_O3.lib(arm_common_tables.o)
-    0x00018548   0x00000070   Data   RO         1774    .constdata          CMSIS_DSP_4_5_O3.lib(arm_common_tables.o)
-    0x000185b8   0x000000e0   Data   RO         1775    .constdata          CMSIS_DSP_4_5_O3.lib(arm_common_tables.o)
-    0x00018698   0x000001e0   Data   RO         1776    .constdata          CMSIS_DSP_4_5_O3.lib(arm_common_tables.o)
-    0x00018878   0x000003c0   Data   RO         1777    .constdata          CMSIS_DSP_4_5_O3.lib(arm_common_tables.o)
-    0x00018c38   0x000007c0   Data   RO         1778    .constdata          CMSIS_DSP_4_5_O3.lib(arm_common_tables.o)
-    0x000193f8   0x00000f80   Data   RO         1779    .constdata          CMSIS_DSP_4_5_O3.lib(arm_common_tables.o)
-    0x0001a378   0x00001f80   Data   RO         1780    .constdata          CMSIS_DSP_4_5_O3.lib(arm_common_tables.o)
-    0x0001c2f8   0x00000044   Data   RO          203    .conststring        cm_test.o
-    0x0001c33c   0x00000020   Data   RO         2603    Region$$Table       anon$$obj.o
+    0x00002b40   0x0000005c   Code   RO         1984    i.findPllMMult      lib_chip_5411x.lib(pll_5411x.o)
+    0x00002b9c   0x00000052   Code   RO         1985    i.findPllPostDiv    lib_chip_5411x.lib(pll_5411x.o)
+    0x00002bee   0x0000005a   Code   RO         1986    i.findPllPreDiv     lib_chip_5411x.lib(pll_5411x.o)
+    0x00002c48   0x0000003c   Code   RO          363    i.fpuInit           lib_chip_5411x.lib(fpu_init.o)
+    0x00002c84   0x0000000c   Code   RO          585    i.fputc             lib_board_lpcxpresso_54114.lib(board.o)
+    0x00002c90   0x00001804   Code   RO          198    i.main              cm_test.o
+    0x00004494   0x00000040   Code   RO         1345    i.setupFlashClocks  lib_chip_5411x.lib(sysinit_5411x.o)
+    0x000044d4   0x0000000a   Code   RO         2500    x$fpl$fpinit        fz_wm.l(fpinit.o)
+    0x000044de   0x00000010   Data   RO          586    .constdata          lib_board_lpcxpresso_54114.lib(board.o)
+    0x000044ee   0x00000002   PAD
+    0x000044f0   0x00000004   Data   RO          587    .constdata          lib_board_lpcxpresso_54114.lib(board.o)
+    0x000044f4   0x00000034   Data   RO          878    .constdata          lib_board_lpcxpresso_54114.lib(board_sysinit.o)
+    0x00004528   0x00000010   Data   RO          958    .constdata          CMSIS_DSP_4_5_O3.lib(arm_const_structs.o)
+    0x00004538   0x00000010   Data   RO          959    .constdata          CMSIS_DSP_4_5_O3.lib(arm_const_structs.o)
+    0x00004548   0x00000010   Data   RO          960    .constdata          CMSIS_DSP_4_5_O3.lib(arm_const_structs.o)
+    0x00004558   0x00000010   Data   RO          961    .constdata          CMSIS_DSP_4_5_O3.lib(arm_const_structs.o)
+    0x00004568   0x00000010   Data   RO          962    .constdata          CMSIS_DSP_4_5_O3.lib(arm_const_structs.o)
+    0x00004578   0x00000010   Data   RO          963    .constdata          CMSIS_DSP_4_5_O3.lib(arm_const_structs.o)
+    0x00004588   0x00000010   Data   RO          964    .constdata          CMSIS_DSP_4_5_O3.lib(arm_const_structs.o)
+    0x00004598   0x00000010   Data   RO          965    .constdata          CMSIS_DSP_4_5_O3.lib(arm_const_structs.o)
+    0x000045a8   0x00000010   Data   RO          966    .constdata          CMSIS_DSP_4_5_O3.lib(arm_const_structs.o)
+    0x000045b8   0x00000010   Data   RO          967    .constdata          CMSIS_DSP_4_5_O3.lib(arm_const_structs.o)
+    0x000045c8   0x00008000   Data   RO         1275    .constdata          CMSIS_DSP_4_5_O3.lib(arm_rfft_init_q15.o)
+    0x0000c5c8   0x00006000   Data   RO         1746    .constdata          CMSIS_DSP_4_5_O3.lib(arm_common_tables.o)
+    0x000125c8   0x00000030   Data   RO         1747    .constdata          CMSIS_DSP_4_5_O3.lib(arm_common_tables.o)
+    0x000125f8   0x00000060   Data   RO         1748    .constdata          CMSIS_DSP_4_5_O3.lib(arm_common_tables.o)
+    0x00012658   0x000000c0   Data   RO         1749    .constdata          CMSIS_DSP_4_5_O3.lib(arm_common_tables.o)
+    0x00012718   0x00000180   Data   RO         1750    .constdata          CMSIS_DSP_4_5_O3.lib(arm_common_tables.o)
+    0x00012898   0x00000300   Data   RO         1751    .constdata          CMSIS_DSP_4_5_O3.lib(arm_common_tables.o)
+    0x00012b98   0x00000600   Data   RO         1752    .constdata          CMSIS_DSP_4_5_O3.lib(arm_common_tables.o)
+    0x00013198   0x00000c00   Data   RO         1753    .constdata          CMSIS_DSP_4_5_O3.lib(arm_common_tables.o)
+    0x00013d98   0x00001800   Data   RO         1754    .constdata          CMSIS_DSP_4_5_O3.lib(arm_common_tables.o)
+    0x00015598   0x00003000   Data   RO         1755    .constdata          CMSIS_DSP_4_5_O3.lib(arm_common_tables.o)
+    0x00018598   0x00000018   Data   RO         1767    .constdata          CMSIS_DSP_4_5_O3.lib(arm_common_tables.o)
+    0x000185b0   0x00000030   Data   RO         1768    .constdata          CMSIS_DSP_4_5_O3.lib(arm_common_tables.o)
+    0x000185e0   0x00000070   Data   RO         1769    .constdata          CMSIS_DSP_4_5_O3.lib(arm_common_tables.o)
+    0x00018650   0x000000e0   Data   RO         1770    .constdata          CMSIS_DSP_4_5_O3.lib(arm_common_tables.o)
+    0x00018730   0x000001e0   Data   RO         1771    .constdata          CMSIS_DSP_4_5_O3.lib(arm_common_tables.o)
+    0x00018910   0x000003c0   Data   RO         1772    .constdata          CMSIS_DSP_4_5_O3.lib(arm_common_tables.o)
+    0x00018cd0   0x000007c0   Data   RO         1773    .constdata          CMSIS_DSP_4_5_O3.lib(arm_common_tables.o)
+    0x00019490   0x00000f80   Data   RO         1774    .constdata          CMSIS_DSP_4_5_O3.lib(arm_common_tables.o)
+    0x0001a410   0x00001f80   Data   RO         1775    .constdata          CMSIS_DSP_4_5_O3.lib(arm_common_tables.o)
+    0x0001c390   0x00000044   Data   RO          203    .conststring        cm_test.o
+    0x0001c3d4   0x00000020   Data   RO         2598    Region$$Table       anon$$obj.o
 
 
     Execution Region RW_IRAM1 (Base: 0x20000000, Size: 0x00012580, Max: 0x00020000, ABSOLUTE)
@@ -1907,12 +1905,12 @@ Memory Map of the image
 
     0x20000000   0x00000012   Data   RW          204    .data               cm_test.o
     0x20000012   0x00000002   PAD
-    0x20000014   0x00000004   Data   RW          418    .data               lib_chip_5411x.lib(chip_5411x.o)
-    0x20000018   0x00000004   Data   RW          593    .data               lib_board_lpcxpresso_54114.lib(board.o)
-    0x2000001c   0x00000004   Data   RW         1993    .data               lib_chip_5411x.lib(pll_5411x.o)
+    0x20000014   0x00000004   Data   RW          413    .data               lib_chip_5411x.lib(chip_5411x.o)
+    0x20000018   0x00000004   Data   RW          588    .data               lib_board_lpcxpresso_54114.lib(board.o)
+    0x2000001c   0x00000004   Data   RW         1988    .data               lib_chip_5411x.lib(pll_5411x.o)
     0x20000020   0x0001211c   Zero   RW          199    .bss                cm_test.o
-    0x2001213c   0x000000e4   Zero   RW         2220    .bss                c_w.l(rand.o)
-    0x20012220   0x00000060   Zero   RW         2508    .bss                c_w.l(libspace.o)
+    0x2001213c   0x000000e4   Zero   RW         2215    .bss                c_w.l(rand.o)
+    0x20012220   0x00000060   Zero   RW         2503    .bss                c_w.l(libspace.o)
     0x20012280   0x00000100   Zero   RW          190    HEAP                keil_startup_lpc5411x.o
     0x20012380   0x00000200   Zero   RW          189    STACK               keil_startup_lpc5411x.o
 
@@ -1924,12 +1922,12 @@ Image component sizes
 
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Object Name
 
-      5996        670         68         18      74012      21903   cm_test.o
+      6148        682         68         18      74012      22167   cm_test.o
        148         50        224          0        768       1024   keil_startup_lpc5411x.o
         28          8          0          0          0       5157   sysinit.o
 
     ----------------------------------------------------------------------
-      6172        728        324         20      74780      28084   Object Totals
+      6324        740        324         20      74780      28348   Object Totals
          0          0         32          0          0          0   (incl. Generated)
          0          0          0          2          0          0   (incl. Padding)
 
@@ -1939,21 +1937,21 @@ Image component sizes
 
        202          0          0          0          0       1858   arm_biquad_cascade_df1_fast_q15.o
         26          0          0          0          0       1282   arm_biquad_cascade_df1_init_q15.o
-       242          0          0          0          0       2049   arm_biquad_cascade_df1_q15.o
+       242          0          0          0          0       2045   arm_biquad_cascade_df1_q15.o
        192          0          0          0          0        608   arm_bitreversal2.o
-       488          0          0          0          0       3321   arm_cfft_q15.o
-       592          0          0          0          0       3201   arm_cfft_q31.o
+       488          0          0          0          0       3317   arm_cfft_q15.o
+       592          0          0          0          0       3197   arm_cfft_q31.o
       1244          0          0          0          0       3638   arm_cfft_radix4_q15.o
-      1884          0          0          0          0       4022   arm_cfft_radix4_q31.o
+      1884          0          0          0          0       4014   arm_cfft_radix4_q31.o
        140          0          0          0          0       1028   arm_cmplx_mag_q15.o
         98          0          0          0          0       1036   arm_cmplx_mag_squared_q15.o
-         0          0      64968          0          0       4772   arm_common_tables.o
-         0          0        160          0          0      15647   arm_const_structs.o
-        38          0          0          0          0       1299   arm_fir_init_q15.o
+         0          0      64968          0          0       4768   arm_common_tables.o
+         0          0        160          0          0      15643   arm_const_structs.o
+        38          0          0          0          0       1295   arm_fir_init_q15.o
        560          0          0          0          0       1822   arm_fir_q15.o
         52          0          0          0          0        695   arm_pid_init_q15.o
        196         42      32768          0          0       1684   arm_rfft_init_q15.o
-       380          0          0          0          0       3406   arm_rfft_q15.o
+       380          0          0          0          0       3402   arm_rfft_q15.o
        204         14          0          0          0       1055   arm_sqrt_q15.o
          8          0          0          0          0         68   __main.o
        104          0          0          0          0         84   __printf.o
@@ -2003,14 +2001,14 @@ Image component sizes
        576         10          0          0          0      30920   uart_5411x.o
 
     ----------------------------------------------------------------------
-     11082        482      97970         12        324     198410   Library Totals
+     11082        482      97970         12        324     198374   Library Totals
         28          0          2          0          0          0   (incl. Padding)
 
     ----------------------------------------------------------------------
 
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Library Name
 
-      6538         56      97896          0          0      52423   CMSIS_DSP_4_5_O3.lib
+      6538         56      97896          0          0      52387   CMSIS_DSP_4_5_O3.lib
       1420         60          0          0        324       1568   c_w.l
         10          0          0          0          0        116   fz_wm.l
        356        120          0          0          0          0   keil_lib_power.lib
@@ -2018,7 +2016,7 @@ Image component sizes
       2126        186          0          8          0     102230   lib_chip_5411x.lib
 
     ----------------------------------------------------------------------
-     11082        482      97970         12        324     198410   Library Totals
+     11082        482      97970         12        324     198374   Library Totals
 
     ----------------------------------------------------------------------
 
@@ -2027,15 +2025,15 @@ Image component sizes
 
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   
 
-     17254       1210      98294         32      75104     219066   Grand Totals
-     17254       1210      98294         32      75104     219066   ELF Image Totals
-     17254       1210      98294         32          0          0   ROM Totals
+     17406       1222      98294         32      75104     219294   Grand Totals
+     17406       1222      98294         32      75104     219294   ELF Image Totals
+     17406       1222      98294         32          0          0   ROM Totals
 
 ==============================================================================
 
-    Total RO  Size (Code + RO Data)               115548 ( 112.84kB)
+    Total RO  Size (Code + RO Data)               115700 ( 112.99kB)
     Total RW  Size (RW Data + ZI Data)             75136 (  73.38kB)
-    Total ROM Size (Code + RO Data + RW Data)     115580 ( 112.87kB)
+    Total ROM Size (Code + RO Data + RW Data)     115732 ( 113.02kB)
 
 ==============================================================================
 

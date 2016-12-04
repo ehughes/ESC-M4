@@ -1,0 +1,20 @@
+Cortex M4/7 Performance Test.
+GCC Version: 4.8.4
+MKV58F24 -O3 HardABI
+NOTES:   Goertzel_f32 in iTCM Memory, Data in DTCM
+Cycle Offset: 2
+
+Block Processing Functions
+Length,16,32,64,128,256,512,1024,2048,4096
+Goertzel_f32_,276,467,874,1705,3372,6697,13357,26668,53289,
+
+
+
+GCC Version: 4.8.4
+MKV58F24 -O3 HardABI
+NOTES: Goertzel_f32 in Flash.    Data it DTCM
+Cycle Offset: 2
+
+Block Processing Functions
+Length,16,32,64,128,256,512,1024,2048,4096
+Goertzel_f32_,262,444,861,1693,3358,6688,13340,26653,53285,

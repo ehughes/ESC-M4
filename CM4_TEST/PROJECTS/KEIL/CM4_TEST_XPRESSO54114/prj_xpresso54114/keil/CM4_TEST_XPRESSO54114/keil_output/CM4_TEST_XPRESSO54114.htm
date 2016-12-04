@@ -3,9 +3,9 @@
 <title>Static Call Graph - [.\keil_output\CM4_TEST_XPRESSO54114.axf]</title></head>
 <body><HR>
 <H1>Static Call Graph for image .\keil_output\CM4_TEST_XPRESSO54114.axf</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060422: Last Updated: Tue Nov 29 14:56:11 2016
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060422: Last Updated: Sun Dec 04 15:27:58 2016
 <BR><P>
-<H3>Maximum Stack Usage =        244 bytes + Unknown(Functions without stacksize, Cycles, Untraceable Function Pointers)</H3><H3>
+<H3>Maximum Stack Usage =        236 bytes + Unknown(Functions without stacksize, Cycles, Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
 __rt_entry_main &rArr; main &rArr; arm_rfft_q15 &rArr; arm_cfft_q15 &rArr; arm_cfft_radix4by2_q15 &rArr; arm_radix4_butterfly_q15
 <P>
@@ -249,7 +249,7 @@ Global Symbols
 <P><STRONG><a name="[cd]"></a>__rt_entry_postsh_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __rtentry2.o(.ARM.Collect$$rtentry$$00000009))
 
 <P><STRONG><a name="[4b]"></a>__rt_entry_main</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __rtentry2.o(.ARM.Collect$$rtentry$$0000000D))
-<BR><BR>[Stack]<UL><LI>Max Depth = 244 + Unknown Stack Size
+<BR><BR>[Stack]<UL><LI>Max Depth = 236 + Unknown Stack Size
 <LI>Call Chain = __rt_entry_main &rArr; main &rArr; arm_rfft_q15 &rArr; arm_cfft_q15 &rArr; arm_cfft_radix4by2_q15 &rArr; arm_radix4_butterfly_q15
 </UL>
 <BR>[Calls]<UL><LI><a href="#[4c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
@@ -1097,8 +1097,8 @@ Global Symbols
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> _printf_char_file.o(.text)
 </UL>
-<P><STRONG><a name="[4c]"></a>main</STRONG> (Thumb, 5888 bytes, Stack size 16 bytes, cm_test.o(i.main))
-<BR><BR>[Stack]<UL><LI>Max Depth = 244 + Unknown Stack Size
+<P><STRONG><a name="[4c]"></a>main</STRONG> (Thumb, 6034 bytes, Stack size 8 bytes, cm_test.o(i.main))
+<BR><BR>[Stack]<UL><LI>Max Depth = 236 + Unknown Stack Size
 <LI>Call Chain = main &rArr; arm_rfft_q15 &rArr; arm_cfft_q15 &rArr; arm_cfft_radix4by2_q15 &rArr; arm_radix4_butterfly_q15
 </UL>
 <BR>[Calls]<UL><LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;arm_rfft_q15

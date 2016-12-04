@@ -46,7 +46,7 @@
 #endif
 
 
-#define MAX_INPUT_SIZE	4096
+#define MAX_INPUT_SIZE	8192
 
 #define FIR_TAP_SIZE	32
 

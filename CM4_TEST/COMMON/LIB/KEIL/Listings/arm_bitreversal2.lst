@@ -159,12 +159,12 @@ ARM Macro Assembler    Page 3
   211 000000C0                 END
 Command Line: --debug --xref --cpreproc --diag_suppress=9931 --cpu=Cortex-M4.fp
  --apcs=interwork --depend=.\objects\arm_bitreversal2.d -o.\objects\arm_bitreve
-rsal2.o -IC:\Users\ehughes\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\KEIL\RTE
-\_CMSIS_DSP_4_5_O3 -IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0\Device\ARM\ARMCM4\Incl
-ude -IC:\Keil_v5\ARM\CMSIS\Include --predefine="__EVAL SETA 1" --predefine="__U
-VISION_VERSION SETA 522" --predefine="ARMCM4_FP SETA 1" --predefine="__CC_ARM S
-ETA 1" --cpreproc_opts=-D,ARM_MATH_CM4 --list=.\listings\arm_bitreversal2.lst .
-.\..\SRC\CMSIS_DSP_4_5\src\TransformFunctions\arm_bitreversal2.S
+rsal2.o -IC:\Users\emh203\Documents\GitHub\ESC-M4\CM4_TEST\COMMON\LIB\KEIL\RTE\
+_CMSIS_DSP_4_5_O3 -IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0\Device\ARM\ARMCM4\Inclu
+de -IC:\Keil_v5\ARM\CMSIS\Include --predefine="__UVISION_VERSION SETA 522" --pr
+edefine="ARMCM4_FP SETA 1" --predefine="__CC_ARM SETA 1" --cpreproc_opts=-D,ARM
+_MATH_CM4 --list=.\listings\arm_bitreversal2.lst ..\..\SRC\CMSIS_DSP_4_5\src\Tr
+ansformFunctions\arm_bitreversal2.S
 
 
 
@@ -221,4 +221,4 @@ rm_bitreversal2.S
       None
 Comment: |. text| unused
 5 symbols
-340 symbols in table
+339 symbols in table
