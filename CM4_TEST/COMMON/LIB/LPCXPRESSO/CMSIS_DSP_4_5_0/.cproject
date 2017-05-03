@@ -856,7 +856,7 @@
 	<storageModule moduleId="com.crt.config">
 		<projectStorage>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&#13;
 &lt;TargetConfig&gt;&#13;
-&lt;Properties property_0="" property_3="NXP" property_4="Generic-M4" property_count="5" version="70200"/&gt;&#13;
+&lt;Properties property_3="NXP" property_4="Generic-M4" property_count="5" version="70200"/&gt;&#13;
 &lt;infoList vendor="NXP"&gt;&lt;info chip="Generic-M4" match_id="0x0" name="Generic-M4" stub="crt_emu_cm3_gen"&gt;&lt;chip&gt;&lt;name&gt;Generic-M4&lt;/name&gt;&#13;
 &lt;family&gt;Generic-M4&lt;/family&gt;&#13;
 &lt;vendor&gt;NXP (formerly Philips)&lt;/vendor&gt;&#13;
@@ -917,4 +917,6 @@
 			<resource resourceType="PROJECT" workspacePath="/CMSIS_DSP_4_5_0"/>
 		</configuration>
 	</storageModule>
+	<storageModule moduleId="org.eclipse.cdt.make.core.buildtargets"/>
+	<storageModule moduleId="com.crt.advproject"/>
 </cproject>

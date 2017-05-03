@@ -66,10 +66,10 @@
 							<tool id="com.crt.advproject.link.cpp.exe.debug.580100543" name="MCU C++ Linker" superClass="com.crt.advproject.link.cpp.exe.debug"/>
 							<tool id="com.crt.advproject.link.exe.debug.2135640616" name="MCU Linker" superClass="com.crt.advproject.link.exe.debug">
 								<option id="com.crt.advproject.link.gcc.multicore.master.1207620081" name="Multicore master" superClass="com.crt.advproject.link.gcc.multicore.master"/>
-								<option id="com.crt.advproject.link.gcc.multicore.master.userobjs.1460180460" name="Slave Objects (not visible)" superClass="com.crt.advproject.link.gcc.multicore.master.userobjs" valueType="userObjs"/>
+								<option id="com.crt.advproject.link.gcc.multicore.master.userobjs.1460180460" name="Slave Objects (not visible)" superClass="com.crt.advproject.link.gcc.multicore.master.userobjs" useByScannerDiscovery="false" valueType="userObjs"/>
 								<option id="com.crt.advproject.link.arch.1093953675" name="Architecture" superClass="com.crt.advproject.link.arch" value="com.crt.advproject.link.target.cm4" valueType="enumerated"/>
 								<option id="com.crt.advproject.link.thumb.66636201" name="Thumb mode" superClass="com.crt.advproject.link.thumb" value="true" valueType="boolean"/>
-								<option id="com.crt.advproject.link.script.194687458" name="Linker script" superClass="com.crt.advproject.link.script" value="&quot;CM4_TEST_LPC54110_-O1_HARD.ld&quot;" valueType="string"/>
+								<option id="com.crt.advproject.link.script.194687458" name="Linker script" superClass="com.crt.advproject.link.script" useByScannerDiscovery="false" value="&quot;CM4_TEST_LPC54110_-O1_HARD.ld&quot;" valueType="string"/>
 								<option id="com.crt.advproject.link.manage.1667177055" name="Manage linker script" superClass="com.crt.advproject.link.manage" value="true" valueType="boolean"/>
 								<option id="gnu.c.link.option.nostdlibs.193234626" name="No startup or default libs (-nostdlib)" superClass="gnu.c.link.option.nostdlibs" value="true" valueType="boolean"/>
 								<option id="gnu.c.link.option.other.1189998113" name="Other options (-Xlinker [option])" superClass="gnu.c.link.option.other" valueType="stringList">
@@ -101,11 +101,13 @@
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/lpc_chip_5411x/HARD}&quot;"/>
 								</option>
 								<option id="com.crt.advproject.link.fpu.819047955" name="Floating point" superClass="com.crt.advproject.link.fpu" value="com.crt.advproject.link.fpu.fpv4.hard" valueType="enumerated"/>
-								<option id="com.crt.advproject.link.crpenable.1676296430" name="Enable Code Read Protection" superClass="com.crt.advproject.link.crpenable" value="true" valueType="boolean"/>
+								<option id="com.crt.advproject.link.crpenable.1676296430" name="Enable automatic placement of Code Read Protection field in image" superClass="com.crt.advproject.link.crpenable" value="true" valueType="boolean"/>
 								<option id="com.crt.advproject.link.gcc.multicore.slave.1142224067" name="Multicore configuration" superClass="com.crt.advproject.link.gcc.multicore.slave"/>
 								<option id="gnu.c.link.option.noshared.1895974165" name="No shared libraries (-static)" superClass="gnu.c.link.option.noshared" value="false" valueType="boolean"/>
 								<option id="com.crt.advproject.link.gcc.lto.1567803586" name="Enable Link-time optimization (-flto)" superClass="com.crt.advproject.link.gcc.lto" value="true" valueType="boolean"/>
 								<option id="com.crt.advproject.link.gcc.lto.optmization.level.2114968252" name="Link-time optimization level" superClass="com.crt.advproject.link.gcc.lto.optmization.level" value="link.c.optimization.level.optimize" valueType="enumerated"/>
+								<option id="com.crt.advproject.link.memory.heapAndStack.1827420932" name="Heap and Stack options" superClass="com.crt.advproject.link.memory.heapAndStack" useByScannerDiscovery="false" value="&amp;Heap:Default;Post Data;Default&amp;Stack:Default;End;Default" valueType="string"/>
+								<option defaultValue="com.crt.advproject.heapAndStack.lpcXpressoStyle" id="com.crt.advproject.link.memory.heapAndStack.style.796162606" superClass="com.crt.advproject.link.memory.heapAndStack.style" useByScannerDiscovery="false" valueType="enumerated"/>
 								<inputType id="cdt.managedbuild.tool.gnu.c.linker.input.1632008344" superClass="cdt.managedbuild.tool.gnu.c.linker.input">
 									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
 									<additionalInput kind="additionalinput" paths="$(LIBS)"/>
@@ -220,10 +222,11 @@
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/lpc_chip_5411x/libs}&quot;"/>
 								</option>
 								<option id="com.crt.advproject.link.fpu.1272008319" name="Floating point" superClass="com.crt.advproject.link.fpu" value="com.crt.advproject.link.fpu.fpv4.hard" valueType="enumerated"/>
-								<option id="com.crt.advproject.link.crpenable.1029596325" name="Enable Code Read Protection" superClass="com.crt.advproject.link.crpenable" value="true" valueType="boolean"/>
+								<option id="com.crt.advproject.link.crpenable.1029596325" name="Enable automatic placement of Code Read Protection field in image" superClass="com.crt.advproject.link.crpenable" value="true" valueType="boolean"/>
 								<option id="com.crt.advproject.link.gcc.multicore.slave.1729923140" name="Multicore configuration" superClass="com.crt.advproject.link.gcc.multicore.slave"/>
 								<option id="com.crt.advproject.link.gcc.lto.1239607257" name="Enable Link-time optimization (-flto)" superClass="com.crt.advproject.link.gcc.lto" value="true" valueType="boolean"/>
 								<option id="com.crt.advproject.link.gcc.lto.optmization.level.1063269105" name="Link-time optimization level" superClass="com.crt.advproject.link.gcc.lto.optmization.level" value="link.c.optimization.level.more" valueType="enumerated"/>
+								<option id="com.crt.advproject.link.memory.heapAndStack.1195519242" name="Heap and Stack options" superClass="com.crt.advproject.link.memory.heapAndStack" value="&amp;Heap:Default;Post Data;Default&amp;Stack:Default;End;Default" valueType="string"/>
 								<inputType id="cdt.managedbuild.tool.gnu.c.linker.input.362921328" superClass="cdt.managedbuild.tool.gnu.c.linker.input">
 									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
 									<additionalInput kind="additionalinput" paths="$(LIBS)"/>
@@ -338,10 +341,11 @@
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/lpc_chip_5411x/libs}&quot;"/>
 								</option>
 								<option id="com.crt.advproject.link.fpu.970885349" name="Floating point" superClass="com.crt.advproject.link.fpu" value="com.crt.advproject.link.fpu.fpv4.hard" valueType="enumerated"/>
-								<option id="com.crt.advproject.link.crpenable.1455909297" name="Enable Code Read Protection" superClass="com.crt.advproject.link.crpenable" value="true" valueType="boolean"/>
+								<option id="com.crt.advproject.link.crpenable.1455909297" name="Enable automatic placement of Code Read Protection field in image" superClass="com.crt.advproject.link.crpenable" value="true" valueType="boolean"/>
 								<option id="com.crt.advproject.link.gcc.multicore.slave.872590511" name="Multicore configuration" superClass="com.crt.advproject.link.gcc.multicore.slave"/>
 								<option id="com.crt.advproject.link.gcc.lto.318839738" name="Enable Link-time optimization (-flto)" superClass="com.crt.advproject.link.gcc.lto" value="true" valueType="boolean"/>
 								<option id="com.crt.advproject.link.gcc.lto.optmization.level.890295857" name="Link-time optimization level" superClass="com.crt.advproject.link.gcc.lto.optmization.level" value="link.c.optimization.level.most" valueType="enumerated"/>
+								<option id="com.crt.advproject.link.memory.heapAndStack.597930871" name="Heap and Stack options" superClass="com.crt.advproject.link.memory.heapAndStack" value="&amp;Heap:Default;Post Data;Default&amp;Stack:Default;End;Default" valueType="string"/>
 								<inputType id="cdt.managedbuild.tool.gnu.c.linker.input.420320953" superClass="cdt.managedbuild.tool.gnu.c.linker.input">
 									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
 									<additionalInput kind="additionalinput" paths="$(LIBS)"/>
@@ -456,10 +460,11 @@
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/lpc_chip_5411x/HARD}&quot;"/>
 								</option>
 								<option id="com.crt.advproject.link.fpu.1351522163" name="Floating point" superClass="com.crt.advproject.link.fpu" value="com.crt.advproject.link.fpu.fpv4.hard" valueType="enumerated"/>
-								<option id="com.crt.advproject.link.crpenable.1202661768" name="Enable Code Read Protection" superClass="com.crt.advproject.link.crpenable" value="true" valueType="boolean"/>
+								<option id="com.crt.advproject.link.crpenable.1202661768" name="Enable automatic placement of Code Read Protection field in image" superClass="com.crt.advproject.link.crpenable" value="true" valueType="boolean"/>
 								<option id="com.crt.advproject.link.gcc.multicore.slave.847486649" name="Multicore configuration" superClass="com.crt.advproject.link.gcc.multicore.slave"/>
 								<option id="com.crt.advproject.link.gcc.lto.1873177477" name="Enable Link-time optimization (-flto)" superClass="com.crt.advproject.link.gcc.lto" value="true" valueType="boolean"/>
 								<option id="com.crt.advproject.link.gcc.lto.optmization.level.1207849391" name="Link-time optimization level" superClass="com.crt.advproject.link.gcc.lto.optmization.level" value="link.c.optimization.level.size" valueType="enumerated"/>
+								<option id="com.crt.advproject.link.memory.heapAndStack.541485382" name="Heap and Stack options" superClass="com.crt.advproject.link.memory.heapAndStack" value="&amp;Heap:Default;Post Data;Default&amp;Stack:Default;End;Default" valueType="string"/>
 								<inputType id="cdt.managedbuild.tool.gnu.c.linker.input.620442697" superClass="cdt.managedbuild.tool.gnu.c.linker.input">
 									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
 									<additionalInput kind="additionalinput" paths="$(LIBS)"/>
@@ -574,10 +579,11 @@
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/lpc_chip_5411x/HARD}&quot;"/>
 								</option>
 								<option id="com.crt.advproject.link.fpu.797233367" name="Floating point" superClass="com.crt.advproject.link.fpu" value="com.crt.advproject.link.fpu.fpv4.hard" valueType="enumerated"/>
-								<option id="com.crt.advproject.link.crpenable.1821965488" name="Enable Code Read Protection" superClass="com.crt.advproject.link.crpenable" value="true" valueType="boolean"/>
+								<option id="com.crt.advproject.link.crpenable.1821965488" name="Enable automatic placement of Code Read Protection field in image" superClass="com.crt.advproject.link.crpenable" value="true" valueType="boolean"/>
 								<option id="com.crt.advproject.link.gcc.multicore.slave.1690993618" name="Multicore configuration" superClass="com.crt.advproject.link.gcc.multicore.slave"/>
 								<option id="com.crt.advproject.link.gcc.lto.1257466967" name="Enable Link-time optimization (-flto)" superClass="com.crt.advproject.link.gcc.lto" value="true" valueType="boolean"/>
 								<option id="com.crt.advproject.link.gcc.lto.optmization.level.8987523" name="Link-time optimization level" superClass="com.crt.advproject.link.gcc.lto.optmization.level" value="link.c.optimization.level.general" valueType="enumerated"/>
+								<option id="com.crt.advproject.link.memory.heapAndStack.86997501" name="Heap and Stack options" superClass="com.crt.advproject.link.memory.heapAndStack" value="&amp;Heap:Default;Post Data;Default&amp;Stack:Default;End;Default" valueType="string"/>
 								<inputType id="cdt.managedbuild.tool.gnu.c.linker.input.682323604" superClass="cdt.managedbuild.tool.gnu.c.linker.input">
 									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
 									<additionalInput kind="additionalinput" paths="$(LIBS)"/>
@@ -691,9 +697,10 @@
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/lpc_chip_5411x/SOFT}&quot;"/>
 								</option>
 								<option id="com.crt.advproject.link.fpu.1485338967" name="Floating point" superClass="com.crt.advproject.link.fpu" value="com.crt.advproject.link.fpu.fpv4" valueType="enumerated"/>
-								<option id="com.crt.advproject.link.crpenable.230725436" name="Enable Code Read Protection" superClass="com.crt.advproject.link.crpenable" value="true" valueType="boolean"/>
+								<option id="com.crt.advproject.link.crpenable.230725436" name="Enable automatic placement of Code Read Protection field in image" superClass="com.crt.advproject.link.crpenable" value="true" valueType="boolean"/>
 								<option id="com.crt.advproject.link.gcc.multicore.slave.396941331" name="Multicore configuration" superClass="com.crt.advproject.link.gcc.multicore.slave"/>
 								<option id="com.crt.advproject.link.gcc.lto.1170813332" name="Enable Link-time optimization (-flto)" superClass="com.crt.advproject.link.gcc.lto" value="true" valueType="boolean"/>
+								<option id="com.crt.advproject.link.memory.heapAndStack.2012483030" name="Heap and Stack options" superClass="com.crt.advproject.link.memory.heapAndStack" value="&amp;Heap:Default;Post Data;Default&amp;Stack:Default;End;Default" valueType="string"/>
 								<inputType id="cdt.managedbuild.tool.gnu.c.linker.input.1958961570" superClass="cdt.managedbuild.tool.gnu.c.linker.input">
 									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
 									<additionalInput kind="additionalinput" paths="$(LIBS)"/>
@@ -807,10 +814,11 @@
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/lpc_chip_5411x/SOFT}&quot;"/>
 								</option>
 								<option id="com.crt.advproject.link.fpu.1543147827" name="Floating point" superClass="com.crt.advproject.link.fpu" value="com.crt.advproject.link.fpu.fpv4" valueType="enumerated"/>
-								<option id="com.crt.advproject.link.crpenable.1982505334" name="Enable Code Read Protection" superClass="com.crt.advproject.link.crpenable" value="true" valueType="boolean"/>
+								<option id="com.crt.advproject.link.crpenable.1982505334" name="Enable automatic placement of Code Read Protection field in image" superClass="com.crt.advproject.link.crpenable" value="true" valueType="boolean"/>
 								<option id="com.crt.advproject.link.gcc.multicore.slave.57314519" name="Multicore configuration" superClass="com.crt.advproject.link.gcc.multicore.slave"/>
 								<option id="com.crt.advproject.link.gcc.lto.1601944747" name="Enable Link-time optimization (-flto)" superClass="com.crt.advproject.link.gcc.lto" value="true" valueType="boolean"/>
 								<option id="com.crt.advproject.link.gcc.lto.optmization.level.1847073383" name="Link-time optimization level" superClass="com.crt.advproject.link.gcc.lto.optmization.level" value="link.c.optimization.level.optimize" valueType="enumerated"/>
+								<option id="com.crt.advproject.link.memory.heapAndStack.780073556" name="Heap and Stack options" superClass="com.crt.advproject.link.memory.heapAndStack" value="&amp;Heap:Default;Post Data;Default&amp;Stack:Default;End;Default" valueType="string"/>
 								<inputType id="cdt.managedbuild.tool.gnu.c.linker.input.1035056062" superClass="cdt.managedbuild.tool.gnu.c.linker.input">
 									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
 									<additionalInput kind="additionalinput" paths="$(LIBS)"/>
@@ -924,10 +932,11 @@
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/lpc_chip_5411x/SOFT}&quot;"/>
 								</option>
 								<option id="com.crt.advproject.link.fpu.1606745117" name="Floating point" superClass="com.crt.advproject.link.fpu" value="com.crt.advproject.link.fpu.fpv4" valueType="enumerated"/>
-								<option id="com.crt.advproject.link.crpenable.84341390" name="Enable Code Read Protection" superClass="com.crt.advproject.link.crpenable" value="true" valueType="boolean"/>
+								<option id="com.crt.advproject.link.crpenable.84341390" name="Enable automatic placement of Code Read Protection field in image" superClass="com.crt.advproject.link.crpenable" value="true" valueType="boolean"/>
 								<option id="com.crt.advproject.link.gcc.multicore.slave.645759893" name="Multicore configuration" superClass="com.crt.advproject.link.gcc.multicore.slave"/>
 								<option id="com.crt.advproject.link.gcc.lto.488752467" name="Enable Link-time optimization (-flto)" superClass="com.crt.advproject.link.gcc.lto" value="true" valueType="boolean"/>
 								<option id="com.crt.advproject.link.gcc.lto.optmization.level.1823666683" name="Link-time optimization level" superClass="com.crt.advproject.link.gcc.lto.optmization.level" value="link.c.optimization.level.more" valueType="enumerated"/>
+								<option id="com.crt.advproject.link.memory.heapAndStack.1172757843" name="Heap and Stack options" superClass="com.crt.advproject.link.memory.heapAndStack" value="&amp;Heap:Default;Post Data;Default&amp;Stack:Default;End;Default" valueType="string"/>
 								<inputType id="cdt.managedbuild.tool.gnu.c.linker.input.477445893" superClass="cdt.managedbuild.tool.gnu.c.linker.input">
 									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
 									<additionalInput kind="additionalinput" paths="$(LIBS)"/>
@@ -1041,10 +1050,11 @@
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/lpc_chip_5411x/SOFT}&quot;"/>
 								</option>
 								<option id="com.crt.advproject.link.fpu.1880935488" name="Floating point" superClass="com.crt.advproject.link.fpu" value="com.crt.advproject.link.fpu.fpv4" valueType="enumerated"/>
-								<option id="com.crt.advproject.link.crpenable.108945085" name="Enable Code Read Protection" superClass="com.crt.advproject.link.crpenable" value="true" valueType="boolean"/>
+								<option id="com.crt.advproject.link.crpenable.108945085" name="Enable automatic placement of Code Read Protection field in image" superClass="com.crt.advproject.link.crpenable" value="true" valueType="boolean"/>
 								<option id="com.crt.advproject.link.gcc.multicore.slave.1343247537" name="Multicore configuration" superClass="com.crt.advproject.link.gcc.multicore.slave"/>
 								<option id="com.crt.advproject.link.gcc.lto.363874327" name="Enable Link-time optimization (-flto)" superClass="com.crt.advproject.link.gcc.lto" value="true" valueType="boolean"/>
 								<option id="com.crt.advproject.link.gcc.lto.optmization.level.945802308" name="Link-time optimization level" superClass="com.crt.advproject.link.gcc.lto.optmization.level" value="link.c.optimization.level.most" valueType="enumerated"/>
+								<option id="com.crt.advproject.link.memory.heapAndStack.1176540183" name="Heap and Stack options" superClass="com.crt.advproject.link.memory.heapAndStack" value="&amp;Heap:Default;Post Data;Default&amp;Stack:Default;End;Default" valueType="string"/>
 								<inputType id="cdt.managedbuild.tool.gnu.c.linker.input.338380272" superClass="cdt.managedbuild.tool.gnu.c.linker.input">
 									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
 									<additionalInput kind="additionalinput" paths="$(LIBS)"/>
@@ -1158,10 +1168,11 @@
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/lpc_chip_5411x/SOFT}&quot;"/>
 								</option>
 								<option id="com.crt.advproject.link.fpu.1389899011" name="Floating point" superClass="com.crt.advproject.link.fpu" value="com.crt.advproject.link.fpu.fpv4" valueType="enumerated"/>
-								<option id="com.crt.advproject.link.crpenable.955682435" name="Enable Code Read Protection" superClass="com.crt.advproject.link.crpenable" value="true" valueType="boolean"/>
+								<option id="com.crt.advproject.link.crpenable.955682435" name="Enable automatic placement of Code Read Protection field in image" superClass="com.crt.advproject.link.crpenable" value="true" valueType="boolean"/>
 								<option id="com.crt.advproject.link.gcc.multicore.slave.1215808069" name="Multicore configuration" superClass="com.crt.advproject.link.gcc.multicore.slave"/>
 								<option id="com.crt.advproject.link.gcc.lto.1516259868" name="Enable Link-time optimization (-flto)" superClass="com.crt.advproject.link.gcc.lto" value="true" valueType="boolean"/>
 								<option id="com.crt.advproject.link.gcc.lto.optmization.level.1347911031" name="Link-time optimization level" superClass="com.crt.advproject.link.gcc.lto.optmization.level" value="link.c.optimization.level.size" valueType="enumerated"/>
+								<option id="com.crt.advproject.link.memory.heapAndStack.646125486" name="Heap and Stack options" superClass="com.crt.advproject.link.memory.heapAndStack" value="&amp;Heap:Default;Post Data;Default&amp;Stack:Default;End;Default" valueType="string"/>
 								<inputType id="cdt.managedbuild.tool.gnu.c.linker.input.1955446360" superClass="cdt.managedbuild.tool.gnu.c.linker.input">
 									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
 									<additionalInput kind="additionalinput" paths="$(LIBS)"/>
@@ -1275,10 +1286,11 @@
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/lpc_chip_5411x/SOFT}&quot;"/>
 								</option>
 								<option id="com.crt.advproject.link.fpu.2131232237" name="Floating point" superClass="com.crt.advproject.link.fpu" value="com.crt.advproject.link.fpu.fpv4" valueType="enumerated"/>
-								<option id="com.crt.advproject.link.crpenable.369863535" name="Enable Code Read Protection" superClass="com.crt.advproject.link.crpenable" value="true" valueType="boolean"/>
+								<option id="com.crt.advproject.link.crpenable.369863535" name="Enable automatic placement of Code Read Protection field in image" superClass="com.crt.advproject.link.crpenable" value="true" valueType="boolean"/>
 								<option id="com.crt.advproject.link.gcc.multicore.slave.2108469419" name="Multicore configuration" superClass="com.crt.advproject.link.gcc.multicore.slave"/>
 								<option id="com.crt.advproject.link.gcc.lto.349779467" name="Enable Link-time optimization (-flto)" superClass="com.crt.advproject.link.gcc.lto" value="true" valueType="boolean"/>
 								<option id="com.crt.advproject.link.gcc.lto.optmization.level.449656686" name="Link-time optimization level" superClass="com.crt.advproject.link.gcc.lto.optmization.level" value="link.c.optimization.level.size" valueType="enumerated"/>
+								<option id="com.crt.advproject.link.memory.heapAndStack.1023743250" name="Heap and Stack options" superClass="com.crt.advproject.link.memory.heapAndStack" value="&amp;Heap:Default;Post Data;Default&amp;Stack:Default;End;Default" valueType="string"/>
 								<inputType id="cdt.managedbuild.tool.gnu.c.linker.input.1432122352" superClass="cdt.managedbuild.tool.gnu.c.linker.input">
 									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
 									<additionalInput kind="additionalinput" paths="$(LIBS)"/>
@@ -1394,11 +1406,12 @@
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/lpc_chip_5411x/libs}&quot;"/>
 								</option>
 								<option id="com.crt.advproject.link.fpu.150485735" name="Floating point" superClass="com.crt.advproject.link.fpu" value="com.crt.advproject.link.fpu.fpv4.hard" valueType="enumerated"/>
-								<option id="com.crt.advproject.link.crpenable.365383619" name="Enable Code Read Protection" superClass="com.crt.advproject.link.crpenable" value="true" valueType="boolean"/>
+								<option id="com.crt.advproject.link.crpenable.365383619" name="Enable automatic placement of Code Read Protection field in image" superClass="com.crt.advproject.link.crpenable" value="true" valueType="boolean"/>
 								<option id="com.crt.advproject.link.gcc.multicore.slave.1289090291" name="Multicore configuration" superClass="com.crt.advproject.link.gcc.multicore.slave"/>
 								<option id="gnu.c.link.option.noshared.284222390" name="No shared libraries (-static)" superClass="gnu.c.link.option.noshared" value="false" valueType="boolean"/>
 								<option id="com.crt.advproject.link.gcc.lto.1576666193" name="Enable Link-time optimization (-flto)" superClass="com.crt.advproject.link.gcc.lto" value="true" valueType="boolean"/>
 								<option id="com.crt.advproject.link.gcc.lto.optmization.level.1874780657" name="Link-time optimization level" superClass="com.crt.advproject.link.gcc.lto.optmization.level" value="link.c.optimization.level.none" valueType="enumerated"/>
+								<option id="com.crt.advproject.link.memory.heapAndStack.894635398" name="Heap and Stack options" superClass="com.crt.advproject.link.memory.heapAndStack" value="&amp;Heap:Default;Post Data;Default&amp;Stack:Default;End;Default" valueType="string"/>
 								<inputType id="cdt.managedbuild.tool.gnu.c.linker.input.1249482790" superClass="cdt.managedbuild.tool.gnu.c.linker.input">
 									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
 									<additionalInput kind="additionalinput" paths="$(LIBS)"/>
@@ -1534,4 +1547,5 @@
 		</scannerConfigBuildInfo>
 	</storageModule>
 	<storageModule moduleId="org.eclipse.cdt.make.core.buildtargets"/>
+	<storageModule moduleId="com.crt.advproject"/>
 </cproject>

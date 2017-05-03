@@ -104,6 +104,7 @@
 								<option id="gnu.c.link.option.noshared.1895974165" name="No shared libraries (-static)" superClass="gnu.c.link.option.noshared" value="false" valueType="boolean"/>
 								<option id="com.crt.advproject.link.gcc.lto.1567803586" name="Enable Link-time optimization (-flto)" superClass="com.crt.advproject.link.gcc.lto" value="true" valueType="boolean"/>
 								<option id="com.crt.advproject.link.gcc.lto.optmization.level.2114968252" name="Link-time optimization level" superClass="com.crt.advproject.link.gcc.lto.optmization.level" value="link.c.optimization.level.optimize" valueType="enumerated"/>
+								<option id="com.crt.advproject.link.memory.heapAndStack.1233415856" superClass="com.crt.advproject.link.memory.heapAndStack" value="&amp;Heap:Default;Post Data;Default&amp;Stack:Default;End;Default" valueType="string"/>
 								<inputType id="cdt.managedbuild.tool.gnu.c.linker.input.1632008344" superClass="cdt.managedbuild.tool.gnu.c.linker.input">
 									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
 									<additionalInput kind="additionalinput" paths="$(LIBS)"/>
@@ -220,6 +221,7 @@
 								<option id="com.crt.advproject.link.gcc.multicore.slave.1729923140" name="Multicore configuration" superClass="com.crt.advproject.link.gcc.multicore.slave"/>
 								<option id="com.crt.advproject.link.gcc.lto.1239607257" name="Enable Link-time optimization (-flto)" superClass="com.crt.advproject.link.gcc.lto" value="true" valueType="boolean"/>
 								<option id="com.crt.advproject.link.gcc.lto.optmization.level.1063269105" name="Link-time optimization level" superClass="com.crt.advproject.link.gcc.lto.optmization.level" value="link.c.optimization.level.more" valueType="enumerated"/>
+								<option id="com.crt.advproject.link.memory.heapAndStack.1915823368" superClass="com.crt.advproject.link.memory.heapAndStack" value="&amp;Heap:Default;Post Data;Default&amp;Stack:Default;End;Default" valueType="string"/>
 								<inputType id="cdt.managedbuild.tool.gnu.c.linker.input.362921328" superClass="cdt.managedbuild.tool.gnu.c.linker.input">
 									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
 									<additionalInput kind="additionalinput" paths="$(LIBS)"/>
@@ -336,6 +338,7 @@
 								<option id="com.crt.advproject.link.gcc.multicore.slave.872590511" name="Multicore configuration" superClass="com.crt.advproject.link.gcc.multicore.slave"/>
 								<option id="com.crt.advproject.link.gcc.lto.318839738" name="Enable Link-time optimization (-flto)" superClass="com.crt.advproject.link.gcc.lto" value="true" valueType="boolean"/>
 								<option id="com.crt.advproject.link.gcc.lto.optmization.level.890295857" name="Link-time optimization level" superClass="com.crt.advproject.link.gcc.lto.optmization.level" value="link.c.optimization.level.most" valueType="enumerated"/>
+								<option id="com.crt.advproject.link.memory.heapAndStack.836583102" superClass="com.crt.advproject.link.memory.heapAndStack" value="&amp;Heap:Default;Post Data;Default&amp;Stack:Default;End;Default" valueType="string"/>
 								<inputType id="cdt.managedbuild.tool.gnu.c.linker.input.420320953" superClass="cdt.managedbuild.tool.gnu.c.linker.input">
 									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
 									<additionalInput kind="additionalinput" paths="$(LIBS)"/>
@@ -452,6 +455,7 @@
 								<option id="com.crt.advproject.link.gcc.multicore.slave.847486649" name="Multicore configuration" superClass="com.crt.advproject.link.gcc.multicore.slave"/>
 								<option id="com.crt.advproject.link.gcc.lto.1873177477" name="Enable Link-time optimization (-flto)" superClass="com.crt.advproject.link.gcc.lto" value="true" valueType="boolean"/>
 								<option id="com.crt.advproject.link.gcc.lto.optmization.level.1207849391" name="Link-time optimization level" superClass="com.crt.advproject.link.gcc.lto.optmization.level" value="link.c.optimization.level.size" valueType="enumerated"/>
+								<option id="com.crt.advproject.link.memory.heapAndStack.484872389" superClass="com.crt.advproject.link.memory.heapAndStack" value="&amp;Heap:Default;Post Data;Default&amp;Stack:Default;End;Default" valueType="string"/>
 								<inputType id="cdt.managedbuild.tool.gnu.c.linker.input.620442697" superClass="cdt.managedbuild.tool.gnu.c.linker.input">
 									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
 									<additionalInput kind="additionalinput" paths="$(LIBS)"/>
@@ -568,6 +572,7 @@
 								<option id="com.crt.advproject.link.gcc.multicore.slave.1690993618" name="Multicore configuration" superClass="com.crt.advproject.link.gcc.multicore.slave"/>
 								<option id="com.crt.advproject.link.gcc.lto.1257466967" name="Enable Link-time optimization (-flto)" superClass="com.crt.advproject.link.gcc.lto" value="true" valueType="boolean"/>
 								<option id="com.crt.advproject.link.gcc.lto.optmization.level.8987523" name="Link-time optimization level" superClass="com.crt.advproject.link.gcc.lto.optmization.level" value="link.c.optimization.level.general" valueType="enumerated"/>
+								<option id="com.crt.advproject.link.memory.heapAndStack.853921634" superClass="com.crt.advproject.link.memory.heapAndStack" value="&amp;Heap:Default;Post Data;Default&amp;Stack:Default;End;Default" valueType="string"/>
 								<inputType id="cdt.managedbuild.tool.gnu.c.linker.input.682323604" superClass="cdt.managedbuild.tool.gnu.c.linker.input">
 									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
 									<additionalInput kind="additionalinput" paths="$(LIBS)"/>
@@ -682,6 +687,7 @@
 								<option id="com.crt.advproject.link.crpenable.230725436" name="Enable Code Read Protection" superClass="com.crt.advproject.link.crpenable" value="true" valueType="boolean"/>
 								<option id="com.crt.advproject.link.gcc.multicore.slave.396941331" name="Multicore configuration" superClass="com.crt.advproject.link.gcc.multicore.slave"/>
 								<option id="com.crt.advproject.link.gcc.lto.1170813332" name="Enable Link-time optimization (-flto)" superClass="com.crt.advproject.link.gcc.lto" value="true" valueType="boolean"/>
+								<option id="com.crt.advproject.link.memory.heapAndStack.1586915217" superClass="com.crt.advproject.link.memory.heapAndStack" value="&amp;Heap:Default;Post Data;Default&amp;Stack:Default;End;Default" valueType="string"/>
 								<inputType id="cdt.managedbuild.tool.gnu.c.linker.input.1958961570" superClass="cdt.managedbuild.tool.gnu.c.linker.input">
 									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
 									<additionalInput kind="additionalinput" paths="$(LIBS)"/>
@@ -797,6 +803,7 @@
 								<option id="com.crt.advproject.link.gcc.multicore.slave.57314519" name="Multicore configuration" superClass="com.crt.advproject.link.gcc.multicore.slave"/>
 								<option id="com.crt.advproject.link.gcc.lto.1601944747" name="Enable Link-time optimization (-flto)" superClass="com.crt.advproject.link.gcc.lto" value="true" valueType="boolean"/>
 								<option id="com.crt.advproject.link.gcc.lto.optmization.level.1847073383" name="Link-time optimization level" superClass="com.crt.advproject.link.gcc.lto.optmization.level" value="link.c.optimization.level.optimize" valueType="enumerated"/>
+								<option id="com.crt.advproject.link.memory.heapAndStack.1534826308" superClass="com.crt.advproject.link.memory.heapAndStack" value="&amp;Heap:Default;Post Data;Default&amp;Stack:Default;End;Default" valueType="string"/>
 								<inputType id="cdt.managedbuild.tool.gnu.c.linker.input.1035056062" superClass="cdt.managedbuild.tool.gnu.c.linker.input">
 									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
 									<additionalInput kind="additionalinput" paths="$(LIBS)"/>
@@ -912,6 +919,7 @@
 								<option id="com.crt.advproject.link.gcc.multicore.slave.645759893" name="Multicore configuration" superClass="com.crt.advproject.link.gcc.multicore.slave"/>
 								<option id="com.crt.advproject.link.gcc.lto.488752467" name="Enable Link-time optimization (-flto)" superClass="com.crt.advproject.link.gcc.lto" value="true" valueType="boolean"/>
 								<option id="com.crt.advproject.link.gcc.lto.optmization.level.1823666683" name="Link-time optimization level" superClass="com.crt.advproject.link.gcc.lto.optmization.level" value="link.c.optimization.level.more" valueType="enumerated"/>
+								<option id="com.crt.advproject.link.memory.heapAndStack.1488566954" superClass="com.crt.advproject.link.memory.heapAndStack" value="&amp;Heap:Default;Post Data;Default&amp;Stack:Default;End;Default" valueType="string"/>
 								<inputType id="cdt.managedbuild.tool.gnu.c.linker.input.477445893" superClass="cdt.managedbuild.tool.gnu.c.linker.input">
 									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
 									<additionalInput kind="additionalinput" paths="$(LIBS)"/>
@@ -1027,6 +1035,7 @@
 								<option id="com.crt.advproject.link.gcc.multicore.slave.1343247537" name="Multicore configuration" superClass="com.crt.advproject.link.gcc.multicore.slave"/>
 								<option id="com.crt.advproject.link.gcc.lto.363874327" name="Enable Link-time optimization (-flto)" superClass="com.crt.advproject.link.gcc.lto" value="true" valueType="boolean"/>
 								<option id="com.crt.advproject.link.gcc.lto.optmization.level.945802308" name="Link-time optimization level" superClass="com.crt.advproject.link.gcc.lto.optmization.level" value="link.c.optimization.level.most" valueType="enumerated"/>
+								<option id="com.crt.advproject.link.memory.heapAndStack.957433433" superClass="com.crt.advproject.link.memory.heapAndStack" value="&amp;Heap:Default;Post Data;Default&amp;Stack:Default;End;Default" valueType="string"/>
 								<inputType id="cdt.managedbuild.tool.gnu.c.linker.input.338380272" superClass="cdt.managedbuild.tool.gnu.c.linker.input">
 									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
 									<additionalInput kind="additionalinput" paths="$(LIBS)"/>
@@ -1142,6 +1151,7 @@
 								<option id="com.crt.advproject.link.gcc.multicore.slave.1215808069" name="Multicore configuration" superClass="com.crt.advproject.link.gcc.multicore.slave"/>
 								<option id="com.crt.advproject.link.gcc.lto.1516259868" name="Enable Link-time optimization (-flto)" superClass="com.crt.advproject.link.gcc.lto" value="true" valueType="boolean"/>
 								<option id="com.crt.advproject.link.gcc.lto.optmization.level.1347911031" name="Link-time optimization level" superClass="com.crt.advproject.link.gcc.lto.optmization.level" value="link.c.optimization.level.size" valueType="enumerated"/>
+								<option id="com.crt.advproject.link.memory.heapAndStack.1221713075" superClass="com.crt.advproject.link.memory.heapAndStack" value="&amp;Heap:Default;Post Data;Default&amp;Stack:Default;End;Default" valueType="string"/>
 								<inputType id="cdt.managedbuild.tool.gnu.c.linker.input.1955446360" superClass="cdt.managedbuild.tool.gnu.c.linker.input">
 									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
 									<additionalInput kind="additionalinput" paths="$(LIBS)"/>
@@ -1257,6 +1267,7 @@
 								<option id="com.crt.advproject.link.gcc.multicore.slave.2108469419" name="Multicore configuration" superClass="com.crt.advproject.link.gcc.multicore.slave"/>
 								<option id="com.crt.advproject.link.gcc.lto.349779467" name="Enable Link-time optimization (-flto)" superClass="com.crt.advproject.link.gcc.lto" value="true" valueType="boolean"/>
 								<option id="com.crt.advproject.link.gcc.lto.optmization.level.449656686" name="Link-time optimization level" superClass="com.crt.advproject.link.gcc.lto.optmization.level" value="link.c.optimization.level.size" valueType="enumerated"/>
+								<option id="com.crt.advproject.link.memory.heapAndStack.1023433027" superClass="com.crt.advproject.link.memory.heapAndStack" value="&amp;Heap:Default;Post Data;Default&amp;Stack:Default;End;Default" valueType="string"/>
 								<inputType id="cdt.managedbuild.tool.gnu.c.linker.input.1432122352" superClass="cdt.managedbuild.tool.gnu.c.linker.input">
 									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
 									<additionalInput kind="additionalinput" paths="$(LIBS)"/>
@@ -1374,6 +1385,7 @@
 								<option id="gnu.c.link.option.noshared.284222390" name="No shared libraries (-static)" superClass="gnu.c.link.option.noshared" value="false" valueType="boolean"/>
 								<option id="com.crt.advproject.link.gcc.lto.1576666193" name="Enable Link-time optimization (-flto)" superClass="com.crt.advproject.link.gcc.lto" value="true" valueType="boolean"/>
 								<option id="com.crt.advproject.link.gcc.lto.optmization.level.1874780657" name="Link-time optimization level" superClass="com.crt.advproject.link.gcc.lto.optmization.level" value="link.c.optimization.level.none" valueType="enumerated"/>
+								<option id="com.crt.advproject.link.memory.heapAndStack.1353016634" superClass="com.crt.advproject.link.memory.heapAndStack" value="&amp;Heap:Default;Post Data;Default&amp;Stack:Default;End;Default" valueType="string"/>
 								<inputType id="cdt.managedbuild.tool.gnu.c.linker.input.1249482790" superClass="cdt.managedbuild.tool.gnu.c.linker.input">
 									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
 									<additionalInput kind="additionalinput" paths="$(LIBS)"/>
@@ -1513,4 +1525,5 @@
 			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.crt.advproject.GCCManagedMakePerProjectProfile"/>
 		</scannerConfigBuildInfo>
 	</storageModule>
+	<storageModule moduleId="com.crt.advproject"/>
 </cproject>

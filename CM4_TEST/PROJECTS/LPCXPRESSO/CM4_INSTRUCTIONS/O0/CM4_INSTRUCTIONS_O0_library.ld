@@ -1,11 +1,11 @@
 /*
  * GENERATED FILE - DO NOT EDIT
  * (c) Code Red Technologies Ltd, 2008-2013
- * (c) NXP Semiconductors 2013-2016
+ * (c) NXP Semiconductors 2013-2017
  * Generated linker script file for LPC4357
  * Created from library.ldt by FMCreateLinkLibraries
  * Using Freemarker v2.3.23
- * LPCXpresso v8.2.2 [Build 650] [2016-09-09]  on Dec 4, 2016 11:36:51 AM
+ * MCUXpresso IDE v10.0.0 [Build 344] [2017-03-21]  on May 2, 2017 8:46:35 PM
  */
 
 GROUP (

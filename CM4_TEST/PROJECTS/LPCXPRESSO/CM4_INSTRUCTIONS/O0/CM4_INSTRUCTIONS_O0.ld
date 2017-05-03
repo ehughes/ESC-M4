@@ -1,11 +1,11 @@
 /*
  * GENERATED FILE - DO NOT EDIT
  * (c) Code Red Technologies Ltd, 2008-2013
- * (c) NXP Semiconductors 2013-2016
+ * (c) NXP Semiconductors 2013-2017
  * Generated linker script file for LPC4357
  * Created from linkscript.ldt by FMCreateLinkLibraries
  * Using Freemarker v2.3.23
- * LPCXpresso v8.2.2 [Build 650] [2016-09-09]  on Dec 4, 2016 11:36:51 AM
+ * MCUXpresso IDE v10.0.0 [Build 344] [2017-03-21]  on May 2, 2017 8:46:35 PM
  */
 
 INCLUDE "CM4_INSTRUCTIONS_O0_library.ld"
@@ -33,7 +33,7 @@ SECTIONS
         __vectors_start__ = ABSOLUTE(.) ;
         KEEP(*(.isr_vector))
         /* Global Section Table */
-        . = ALIGN(4) ; 
+        . = ALIGN(4) ;
         __section_table_start = .;
         __data_section_table = .;
         LONG(LOADADDR(.data));
@@ -76,9 +76,11 @@ SECTIONS
         PROVIDE(__CRP_WORD_END__ = .) ;
         ASSERT(!(__CRP_WORD_START__ == __CRP_WORD_END__), "Linker CRP Enabled, but no CRP_WORD provided within application");
         /* End of Code Read Protection */
+
+
     } >MFlashA512
 
-    .text : ALIGN(4)    
+    .text : ALIGN(4)
     {
         *(.text*)
         *(.rodata .rodata.* .constdata .constdata.*)
@@ -254,7 +256,6 @@ SECTIONS
          . = ALIGN(4) ;
         _end_noinit = .;
     } > RamLoc32
-
     PROVIDE(_pvHeapStart = DEFINED(__user_heap_base) ? __user_heap_base : .);
     PROVIDE(_vStackTop = DEFINED(__user_stack_top) ? __user_stack_top : __top_RamLoc32 - 0);
 
